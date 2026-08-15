@@ -70,10 +70,10 @@ async function load(append = false) {
     } else {
       lastMode = "browse";
       const clauses = [];
-      if (filters.category) clauses.push(`categories LIKE '%${esc(filters.category)}%'`);
-      if (filters.start) clauses.push(`published >= '${esc(filters.start)}'`);
-      if (filters.end) clauses.push(`published <= '${esc(filters.end)} 23:59:59'`);
-      data = await request("filter", { where: clauses.join(" AND ") || "1 = 1", orderby: "published DESC", offset, length: perPage });
+      if (filters.category) clauses.push(`"primary_category" = '${esc(filters.category)}'`);
+      if (filters.start) clauses.push(`"published" >= '${esc(filters.start)}'`);
+      if (filters.end) clauses.push(`"published" <= '${esc(filters.end)} 23:59:59'`);
+      data = await request("filter", { where: clauses.join(" AND ") || "\"arxiv_id\" <> ''", orderby: "\"published\" DESC", offset, length: perPage });
     }
     const rows = data.rows.map(item => item.row).filter(row => matches(row, filters));
     rows.slice(0, perPage).forEach(row => paperList.append(card(row)));
