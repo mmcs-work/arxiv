@@ -26,9 +26,8 @@ archive, use the static GitHub Pages + Hugging Face Dataset setup below.
 ## Publish the public archive
 
 This repository includes a static site in `pages/`, and a small publisher in
-`dataset/`. The publisher makes one small Parquet file per submission day. This
-means the daily update only replaces the recent days rather than re-uploading
-the whole archive.
+`dataset/`. The live `fast` configuration uses monthly historical Parquet files
+and small daily update files, so arbitrary date/category filters remain fast.
 
 1. Create a **public** Hugging Face Dataset, or let the first command create it.
    Make a write token at <https://huggingface.co/settings/tokens>.
@@ -41,7 +40,8 @@ the whole archive.
    pip install -r requirements.txt -r dataset/requirements.txt
    # Put HF_TOKEN=hf_your_write_token in .env (see .env.example).
    # HF_DATASET is optional; it defaults to your-username/single-author-arxiv.
-   python dataset/publish.py --database backfill/papers.db --upload
+   python dataset/publish.py --database backfill/papers.db \
+     --output dataset/fast-build --prefix monthly --partition month --upload
    ```
 
 4. On GitHub, add `HF_TOKEN` as an Actions secret. Add `HF_DATASET` as an
@@ -69,10 +69,11 @@ GitHub Pages <──────────────────────
 ```
 
 `backfill/harvest.py` is the resumable, one-time historical collector.
-`dataset/publish.py --database ... --upload` converts its SQLite output into
-day-partitioned Parquet files. The published layout is `data/YYYY/YYYY-MM-DD.parquet`.
-`dataset/publish.py --recent --upload` refetches a short date overlap, then
-replaces only those day files. arXiv IDs are de-duplicated before writing.
+`dataset/publish.py --database ... --partition month --prefix monthly --upload`
+converts its SQLite output into `monthly/YYYY/YYYY-MM.parquet`. The daily job
+writes only `updates/YYYY/YYYY-MM-DD.parquet`. Both file sets have the exact
+submission timestamp, so any date range can still be filtered. arXiv IDs are
+de-duplicated before writing.
 
 ## Routine operation and recovery
 

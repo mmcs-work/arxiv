@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt -r dataset/requirements.txt
-      - run: python dataset/publish.py --recent --days "${{ inputs.days || '2' }}" --upload
+      - run: python dataset/publish.py --recent --days "${{ inputs.days || '2' }}" --output dataset/fast-build --prefix updates --upload
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_DATASET: ${{ vars.HF_DATASET }}

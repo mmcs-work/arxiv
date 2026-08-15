@@ -62,15 +62,16 @@ def recent_rows(days):
     return [row for row in found.values() if row["published"][:10] >= str(first_day)]
 
 
-def write_partitions(rows, output):
+def write_partitions(rows, output, prefix, partition):
     by_day = defaultdict(list)
     for row in rows:
-        by_day[row["published"][:10]].append(row)
+        key = row["published"][:7] if partition == "month" else row["published"][:10]
+        by_day[key].append(row)
 
     schema = pa.schema([(column, pa.string()) for column in COLUMNS])
     written = []
-    for day, records in sorted(by_day.items()):
-        target = output / "data" / day[:4] / f"{day}.parquet"
+    for key, records in sorted(by_day.items()):
+        target = output / prefix / key[:4] / f"{key}.parquet"
         target.parent.mkdir(parents=True, exist_ok=True)
         table = pa.Table.from_pylist(records, schema=schema)
         pq.write_table(table, target, compression="zstd")
@@ -117,14 +118,16 @@ def main():
     source.add_argument("--recent", action="store_true", help="Fetch recent records from arXiv")
     parser.add_argument("--days", type=int, default=2, help="Recent overlap in days (default: 2)")
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--prefix", default="data", help="dataset folder to write (default: data)")
+    parser.add_argument("--partition", choices=("day", "month"), default="day")
     parser.add_argument("--upload", action="store_true", help="Upload to the public Hugging Face dataset")
     args = parser.parse_args()
     if args.days < 1:
         parser.error("--days must be positive")
 
     rows = recent_rows(args.days) if args.recent else list(database_rows(args.database))
-    paths = write_partitions(rows, args.output)
-    print(f"Wrote {len(rows):,} records across {len(paths):,} day file(s).")
+    paths = write_partitions(rows, args.output, args.prefix, args.partition)
+    print(f"Wrote {len(rows):,} records across {len(paths):,} {args.partition} file(s).")
     if args.upload:
         upload(paths, args.output, initial=not args.recent)
 
