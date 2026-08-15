@@ -20,73 +20,57 @@ Edit the `CATEGORIES` dictionary in [`config.py`](config.py). It currently
 watches every category in arXiv's Computer Science taxonomy; the first five
 entries are the most prominent in the site selector.
 
-The local Flask app is useful for experimenting. For a public, maintenance-free
-archive, use the static GitHub Pages + Hugging Face Dataset setup below.
+The local Flask app is useful for experimenting. The public archive is a static
+GitHub Pages site with data stored alongside it in this repository.
 
-## Publish the public archive
+## Static public archive
 
-This repository includes a static site in `pages/`, and a small publisher in
-`dataset/`. The live `fast` configuration uses monthly historical Parquet files
-and small daily update files, so arbitrary date/category filters remain fast.
+This repository includes a static site in `pages/` and generated JSON under
+`pages/data/`. It makes no third-party API calls: the browser fetches only the
+small files needed for the current category or date range.
 
-1. Create a **public** Hugging Face Dataset, or let the first command create it.
-   Make a write token at <https://huggingface.co/settings/tokens>.
-2. Set the dataset name in [`pages/config.js`](pages/config.js).
-3. With Python 3.11 or newer, publish the historical database once:
+With Python 3.11 or newer, build the historical data once:
 
    ```sh
    python -m venv .venv
    source .venv/bin/activate
-   pip install -r requirements.txt -r dataset/requirements.txt
-   # Put HF_TOKEN=hf_your_write_token in .env (see .env.example).
-   # HF_DATASET is optional; it defaults to your-username/single-author-arxiv.
-   python dataset/publish.py --database backfill/papers.db \
-     --output dataset/fast-build --prefix monthly --partition month --upload
+   pip install -r requirements.txt
+   python static_data/build.py --database backfill/papers.db
    ```
 
-4. On GitHub, add `HF_TOKEN` as an Actions secret. Add `HF_DATASET` as an
-   Actions variable only if you chose a dataset name other than the default. In
-   **Settings → Pages**, set the source to **GitHub Actions**. Pushes deploy the
-   site; the daily job refreshes the latest three days at 09:37 UTC.
+In GitHub **Settings → Pages**, set the source to **GitHub Actions**. Pushes
+deploy the site; the daily job refreshes the latest two days at 09:37 UTC.
 
 ## What is deployed
 
-- Data: [mainakmanna/single-author-arxiv](https://huggingface.co/datasets/mainakmanna/single-author-arxiv)
 - Frontend source: [`pages/`](pages/), deployed by the `Deploy archive site`
   workflow once GitHub Pages is enabled for this repository.
 - Historical coverage: 84,592 single-author CS-classified arXiv records from
   1990-01-01 through 2026-08-13.
 
-The frontend queries Hugging Face's public Dataset Viewer API directly. It has
-no server and never receives a write token, so the dataset must remain public.
+The frontend uses same-origin JSON files from GitHub Pages. It needs no server,
+token, or external search/indexing service.
 
 ## How the pieces fit together
 
 ```text
-arXiv OAI-PMH backfill ──> backfill/papers.db ──> dataset/publish.py ──> Hugging Face Dataset
-arXiv API (daily) ─────────────────────────────> dataset/publish.py ──> Hugging Face Dataset
-GitHub Pages <────────────────────── pages/app.js queries Hugging Face's public API
+arXiv OAI-PMH backfill ──> backfill/papers.db ──> static_data/build.py ──> pages/data
+arXiv API (daily) ─────────────────────────────> static_data/build.py ──> pages/data
+GitHub Pages <──────────────────────────────────────────── pages/app.js fetches pages/data
 ```
 
 `backfill/harvest.py` is the resumable, one-time historical collector.
-`dataset/publish.py --database ... --partition month --prefix monthly --upload`
-converts its SQLite output into `monthly/YYYY/YYYY-MM.parquet`. The daily job
-writes only `updates/YYYY/YYYY-MM-DD.parquet`. Both file sets have the exact
-submission timestamp, so any date range can still be filtered. arXiv IDs are
-de-duplicated before writing.
+`static_data/build.py --database ...` creates per-month files for exact date
+ranges, per-category files for topic browsing, and a compact title/author
+search index. Each paper keeps its exact submission timestamp.
 
 ## Routine operation and recovery
 
-The `Update public dataset` GitHub Action runs at 09:37 UTC each day. It uses a
-two-day overlap so a late-indexed record can be picked up on the next run.
+The `Update static archive data` GitHub Action runs at 09:37 UTC each day. It
+uses a two-day overlap so a late-indexed record can be picked up on the next run.
 
-- `HF_TOKEN` is a GitHub Actions **secret** with Hugging Face dataset-write access.
-- `HF_DATASET` is optional; when omitted, the script derives
-  `YOUR_HF_USERNAME/single-author-arxiv` from the token.
-- `.env` is for local use only, is ignored by Git, and must never be committed.
 - If a scheduled update fails, run the workflow manually with a larger `days`
   value. Rewriting an existing day is safe.
 
-The source Parquet build directory (`dataset/build/`) is generated and ignored;
-it can be deleted after a successful upload and recreated at any time from
-`backfill/papers.db`.
+The generated `pages/data/` files are committed intentionally: GitHub Pages
+serves them directly. The old Hugging Face integration has been removed.
