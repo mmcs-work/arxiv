@@ -44,7 +44,10 @@ function card(item) {
   const title = document.createElement("a");
   title.href = item.arxiv_url; title.target = "_blank"; title.rel = "noreferrer"; title.textContent = item.title;
   const meta = document.createElement("p"); meta.className = "meta"; meta.textContent = `${item.author} · ${item.published.slice(0, 10)} · ${item.primary_category}`;
-  const abstract = document.createElement("p"); abstract.className = "abstract"; abstract.textContent = item.abstract;
+  const abstract = document.createElement("details"); abstract.className = "abstract";
+  const summary = document.createElement("summary"); summary.textContent = "Read abstract";
+  const text = document.createElement("p"); text.textContent = item.abstract;
+  abstract.append(summary, text);
   article.append(title, meta, abstract);
   return article;
 }
