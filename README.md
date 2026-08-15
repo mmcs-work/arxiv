@@ -32,24 +32,60 @@ the whole archive.
 
 1. Create a **public** Hugging Face Dataset, or let the first command create it.
    Make a write token at <https://huggingface.co/settings/tokens>.
-2. In [`pages/config.js`](pages/config.js), replace `YOUR_HF_USERNAME/...` with
-   your dataset name, for example `mainak/single-author-arxiv`.
+2. Set the dataset name in [`pages/config.js`](pages/config.js).
 3. With Python 3.11 or newer, publish the historical database once:
 
    ```sh
    python -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt -r dataset/requirements.txt
-   export HF_TOKEN=hf_your_write_token
-   export HF_DATASET=mainak/single-author-arxiv
+   # Put HF_TOKEN=hf_your_write_token in .env (see .env.example).
+   # HF_DATASET is optional; it defaults to your-username/single-author-arxiv.
    python dataset/publish.py --database backfill/papers.db --upload
    ```
 
-4. On GitHub, add `HF_TOKEN` as an Actions secret and `HF_DATASET` as an Actions
-   variable with the same dataset name. In **Settings → Pages**, set the source
-   to **GitHub Actions**. Pushes deploy the site; the daily job refreshes the
-   latest three days at 09:37 UTC.
+4. On GitHub, add `HF_TOKEN` as an Actions secret. Add `HF_DATASET` as an
+   Actions variable only if you chose a dataset name other than the default. In
+   **Settings → Pages**, set the source to **GitHub Actions**. Pushes deploy the
+   site; the daily job refreshes the latest three days at 09:37 UTC.
 
-The frontend queries Hugging Face's public Dataset Viewer API directly, so it
-needs no server and never exposes your token. The dataset must stay public for
-this version.
+## What is deployed
+
+- Data: [mainakmanna/single-author-arxiv](https://huggingface.co/datasets/mainakmanna/single-author-arxiv)
+- Frontend source: [`pages/`](pages/), deployed by the `Deploy archive site`
+  workflow once GitHub Pages is enabled for this repository.
+- Historical coverage: 84,592 single-author CS-classified arXiv records from
+  1990-01-01 through 2026-08-13.
+
+The frontend queries Hugging Face's public Dataset Viewer API directly. It has
+no server and never receives a write token, so the dataset must remain public.
+
+## How the pieces fit together
+
+```text
+arXiv OAI-PMH backfill ──> backfill/papers.db ──> dataset/publish.py ──> Hugging Face Dataset
+arXiv API (daily) ─────────────────────────────> dataset/publish.py ──> Hugging Face Dataset
+GitHub Pages <────────────────────── pages/app.js queries Hugging Face's public API
+```
+
+`backfill/harvest.py` is the resumable, one-time historical collector.
+`dataset/publish.py --database ... --upload` converts its SQLite output into
+day-partitioned Parquet files. The published layout is `data/YYYY/YYYY-MM-DD.parquet`.
+`dataset/publish.py --recent --upload` refetches a short date overlap, then
+replaces only those day files. arXiv IDs are de-duplicated before writing.
+
+## Routine operation and recovery
+
+The `Update public dataset` GitHub Action runs at 09:37 UTC each day. It uses a
+two-day overlap so a late-indexed record can be picked up on the next run.
+
+- `HF_TOKEN` is a GitHub Actions **secret** with Hugging Face dataset-write access.
+- `HF_DATASET` is optional; when omitted, the script derives
+  `YOUR_HF_USERNAME/single-author-arxiv` from the token.
+- `.env` is for local use only, is ignored by Git, and must never be committed.
+- If a scheduled update fails, run the workflow manually with a larger `days`
+  value. Rewriting an existing day is safe.
+
+The source Parquet build directory (`dataset/build/`) is generated and ignored;
+it can be deleted after a successful upload and recreated at any time from
+`backfill/papers.db`.

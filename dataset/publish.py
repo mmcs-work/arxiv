@@ -11,6 +11,7 @@ from pathlib import Path
 import pyarrow as pa
 import pyarrow.parquet as pq
 
+ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = Path(__file__).parent / "build"
 COLUMNS = (
     "arxiv_id", "title", "author", "abstract", "primary_category", "categories",
@@ -21,6 +22,16 @@ COLUMNS = (
 def normalize(row):
     """Turn a database/API tuple into a JSON/Parquet-friendly record."""
     return dict(zip(COLUMNS, row))
+
+
+def load_dotenv(path):
+    """Load the two optional Hugging Face settings without adding a dependency."""
+    if not path.exists():
+        return
+    for line in path.read_text().splitlines():
+        key, separator, value = line.strip().partition("=")
+        if separator and key in {"HF_TOKEN", "HF_DATASET"} and key not in os.environ:
+            os.environ[key] = value.strip().strip("'\"")
 
 
 def database_rows(database):
@@ -37,7 +48,7 @@ def recent_rows(days):
     from fetch import fetch_category, paper_from
 
     now = datetime.now(timezone.utc)
-    first_day = (now - timedelta(days=days)).date()
+    first_day = (now - timedelta(days=days - 1)).date()
     start = f"{first_day:%Y%m%d}0000"
     end = f"{now:%Y%m%d%H%M}"
     found = {}
@@ -71,11 +82,14 @@ def upload(paths, output, initial):
     from huggingface_hub import HfApi
 
     token = os.environ.get("HF_TOKEN")
-    repository = os.environ.get("HF_DATASET")
-    if not token or not repository:
-        raise SystemExit("Set HF_TOKEN and HF_DATASET (for example, alice/single-author-arxiv).")
+    if not token:
+        raise SystemExit("Set HF_TOKEN in .env or the environment.")
 
     api = HfApi(token=token)
+    repository = os.environ.get("HF_DATASET")
+    if not repository:
+        repository = f"{api.whoami(token=token)['name']}/single-author-arxiv"
+    print(f"Publishing to https://huggingface.co/datasets/{repository}")
     api.create_repo(repository, repo_type="dataset", private=False, exist_ok=True)
     card = Path(__file__).with_name("README.md")
     api.upload_file(
@@ -83,9 +97,9 @@ def upload(paths, output, initial):
         repo_type="dataset", commit_message="Describe dataset",
     )
     if initial:
-        api.upload_folder(
-            folder_path=str(output / "data"), path_in_repo="data", repo_id=repository,
-            repo_type="dataset", commit_message="Publish historical metadata",
+        api.upload_large_folder(
+            folder_path=str(output), repo_id=repository, repo_type="dataset",
+            num_workers=32, print_report_every=300,
         )
     else:
         for path in paths:
@@ -96,11 +110,12 @@ def upload(paths, output, initial):
 
 
 def main():
+    load_dotenv(ROOT / ".env")
     parser = argparse.ArgumentParser(description=__doc__)
     source = parser.add_mutually_exclusive_group(required=True)
     source.add_argument("--database", type=Path, help="SQLite database from backfill/harvest.py")
     source.add_argument("--recent", action="store_true", help="Fetch recent records from arXiv")
-    parser.add_argument("--days", type=int, default=3, help="Recent overlap in days (default: 3)")
+    parser.add_argument("--days", type=int, default=2, help="Recent overlap in days (default: 2)")
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--upload", action="store_true", help="Upload to the public Hugging Face dataset")
     args = parser.parse_args()
