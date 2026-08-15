@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>One Author / arXiv CS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">a quiet arXiv archive</p>
+        <h1>One Author</h1>
+        <p class="lede">Computer Science papers written by one person.</p>
+      </header>
+      <form id="filters">
+        <label>Search <input name="query" type="search" placeholder="title, author, abstract"></label>
+        <label>Topic <select name="category"><option value="">All CS topics</option></select></label>
+        <label>From <input name="start" type="date"></label>
+        <label>To <input name="end" type="date"></label>
+        <button>Explore</button>
+      </form>
+      <p id="status" role="status">Connecting to the archive…</p>
+      <section id="papers" aria-live="polite"></section>
+      <button id="more" hidden>Show more</button>
+      <footer>Metadata from <a href="https://arxiv.org">arXiv</a>. Full text remains with arXiv.</footer>
+    </main>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
