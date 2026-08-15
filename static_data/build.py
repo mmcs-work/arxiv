@@ -88,6 +88,7 @@ def rebuild(records):
     write_json(DATA / "manifest.json", {
         "records": len(records),
         "months": sorted(by_month),
+        "categories": CATEGORIES,
         "updated": datetime.now(timezone.utc).isoformat(),
     })
 
@@ -109,6 +110,10 @@ def refresh(records):
     index = {item["arxiv_id"]: item for item in read_json(DATA / "search.json")}
     index.update({item["arxiv_id"]: item for item in search_rows(records)})
     write_json(DATA / "search.json", sort(index.values()))
+    manifest_path = DATA / "manifest.json"
+    manifest = read_json(manifest_path) if manifest_path.exists() else {}
+    manifest.update({"categories": CATEGORIES, "updated": datetime.now(timezone.utc).isoformat()})
+    write_json(manifest_path, manifest)
 
 
 def main():

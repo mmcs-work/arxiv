@@ -1,76 +1,63 @@
 # One Author
 
-An archive of arXiv Computer Science papers whose metadata lists exactly one author.
+A small, static archive of arXiv papers in selected categories whose metadata
+lists exactly one author. The website lets people browse a category, select any
+date range, search titles or authors, and open the full abstract. It is hosted
+on GitHub Pages and needs no server, database, token, or external service at
+runtime.
 
-## Run it
+## How it works
 
-```sh
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python fetch.py
-python app.py
+`pages/` is the website. Its JSON data lives in `pages/data/` and is committed
+to this repository so GitHub Pages can serve it directly:
+
+```text
+arXiv → collection scripts → pages/data → GitHub Pages
 ```
 
-Open <http://127.0.0.1:5000>. The database is created automatically.
+The browser downloads only the category, month, or search index it needs.
 
-## Choose categories
+## Daily updates
 
-Edit the `CATEGORIES` dictionary in [`config.py`](config.py). It currently
-watches every category in arXiv's Computer Science taxonomy; the first five
-entries are the most prominent in the site selector.
+[`Update static archive data`](.github/workflows/update-static-data.yml) runs
+every day at 09:37 UTC. It fetches the last two days from arXiv, keeps
+single-author records, merges them into `pages/data/`, and commits only when
+there is new data. The normal Pages workflow then deploys the site.
 
-The local Flask app is useful for experimenting. The public archive is a static
-GitHub Pages site with data stored alongside it in this repository.
+Run the workflow manually from GitHub Actions to refresh more days after an
+interruption. Overlapping days are safe.
 
-## Static public archive
+## Make an archive for other arXiv categories
 
-This repository includes a static site in `pages/` and generated JSON under
-`pages/data/`. It makes no third-party API calls: the browser fetches only the
-small files needed for the current category or date range.
-
-With Python 3.11 or newer, build the historical data once:
+1. Edit [`config.py`](config.py) and replace `CATEGORIES` with the arXiv
+   category codes you want (for example, `stat.ML` or `math.PR`). The labels
+   become the website selector labels.
+2. Fetch the full history with the one-time, resumable collector:
 
    ```sh
-   python -m venv .venv
-   source .venv/bin/activate
-   pip install -r requirements.txt
+   python backfill/harvest.py
+   ```
+
+   The collector currently requests arXiv's Computer Science OAI-PMH set. For
+   another top-level archive, change `set: "cs"` in
+   [`backfill/harvest.py`](backfill/harvest.py) to the appropriate arXiv set.
+3. Build the static files and commit them:
+
+   ```sh
    python static_data/build.py --database backfill/papers.db
    ```
 
-In GitHub **Settings → Pages**, set the source to **GitHub Actions**. Pushes
-deploy the site; the daily job refreshes the latest two days at 09:37 UTC.
+4. Push to `main`. With GitHub Pages set to **GitHub Actions**, the site deploys
+   automatically. The daily updater will then use your revised categories.
 
-## What is deployed
+All scripts use Python's standard library; Python 3.11 or newer is sufficient.
 
-- Frontend source: [`pages/`](pages/), deployed by the `Deploy archive site`
-  workflow once GitHub Pages is enabled for this repository.
-- Historical coverage: 84,592 single-author CS-classified arXiv records from
-  1990-01-01 through 2026-08-13.
+## Repository map
 
-The frontend uses same-origin JSON files from GitHub Pages. It needs no server,
-token, or external search/indexing service.
-
-## How the pieces fit together
-
-```text
-arXiv OAI-PMH backfill ──> backfill/papers.db ──> static_data/build.py ──> pages/data
-arXiv API (daily) ─────────────────────────────> static_data/build.py ──> pages/data
-GitHub Pages <──────────────────────────────────────────── pages/app.js fetches pages/data
-```
-
-`backfill/harvest.py` is the resumable, one-time historical collector.
-`static_data/build.py --database ...` creates per-month files for exact date
-ranges, per-category files for topic browsing, and a compact title/author
-search index. Each paper keeps its exact submission timestamp.
-
-## Routine operation and recovery
-
-The `Update static archive data` GitHub Action runs at 09:37 UTC each day. It
-uses a two-day overlap so a late-indexed record can be picked up on the next run.
-
-- If a scheduled update fails, run the workflow manually with a larger `days`
-  value. Rewriting an existing day is safe.
-
-The generated `pages/data/` files are committed intentionally: GitHub Pages
-serves them directly. The old Hugging Face integration has been removed.
+- `pages/` — the deployed website and its static data.
+- `config.py` — categories and labels to collect.
+- `fetch.py` — small arXiv API parser used by daily updates.
+- `static_data/build.py` — creates or refreshes website JSON.
+- `backfill/` — optional one-time historical collector; its SQLite output stays
+  local and is ignored by Git.
+- `.github/workflows/` — daily refresh and Pages deployment.

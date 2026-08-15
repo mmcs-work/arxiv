@@ -3,15 +3,12 @@ const cache = new Map();
 let shown = [];
 let offset = 0;
 
-const categories = {
-  "cs.AI": "Artificial Intelligence", "cs.AR": "Hardware Architecture", "cs.CC": "Computational Complexity", "cs.CE": "Computational Engineering", "cs.CG": "Computational Geometry", "cs.CL": "Computation and Language", "cs.CR": "Cryptography and Security", "cs.CV": "Computer Vision", "cs.CY": "Computers and Society", "cs.DB": "Databases", "cs.DC": "Distributed Computing", "cs.DL": "Digital Libraries", "cs.DM": "Discrete Mathematics", "cs.DS": "Data Structures and Algorithms", "cs.ET": "Emerging Technologies", "cs.FL": "Formal Languages", "cs.GL": "General Literature", "cs.GR": "Graphics", "cs.GT": "Computer Science and Game Theory", "cs.HC": "Human-Computer Interaction", "cs.IR": "Information Retrieval", "cs.IT": "Information Theory", "cs.LG": "Machine Learning", "cs.LO": "Logic in Computer Science", "cs.MA": "Multiagent Systems", "cs.MM": "Multimedia", "cs.MS": "Mathematical Software", "cs.NA": "Numerical Analysis", "cs.NE": "Neural and Evolutionary Computing", "cs.NI": "Networking and Internet Architecture", "cs.OH": "Other Computer Science", "cs.OS": "Operating Systems", "cs.PF": "Performance", "cs.PL": "Programming Languages", "cs.RO": "Robotics", "cs.SC": "Symbolic Computation", "cs.SD": "Sound", "cs.SE": "Software Engineering", "cs.SI": "Social and Information Networks", "cs.SY": "Systems and Control"
-};
+const categories = {};
 
 const form = document.querySelector("#filters");
 const paperList = document.querySelector("#papers");
 const status = document.querySelector("#status");
 const more = document.querySelector("#more");
-for (const [code, name] of Object.entries(categories)) form.elements.category.add(new Option(`${code} — ${name}`, code));
 
 function url(path) { return new URL(path, document.baseURI).href; }
 async function data(path) {
@@ -85,4 +82,11 @@ async function load() {
 }
 form.addEventListener("submit", event => { event.preventDefault(); load(); });
 more.addEventListener("click", render);
-load();
+async function initialize() {
+  try {
+    Object.assign(categories, (await data("data/manifest.json")).categories || {});
+    for (const [code, name] of Object.entries(categories)) form.elements.category.add(new Option(`${code} — ${name}`, code));
+    load();
+  } catch (error) { status.textContent = error.message; }
+}
+initialize();
