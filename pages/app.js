@@ -9,6 +9,8 @@ const form = document.querySelector("#filters");
 const paperList = document.querySelector("#papers");
 const status = document.querySelector("#status");
 const more = document.querySelector("#more");
+const rssCategory = document.querySelector("#rss-category");
+const rssOpen = document.querySelector("#rss-open");
 
 function url(path) { return new URL(path, document.baseURI).href; }
 async function data(path) {
@@ -85,7 +87,13 @@ more.addEventListener("click", render);
 async function initialize() {
   try {
     Object.assign(categories, (await data("data/manifest.json")).categories || {});
-    for (const [code, name] of Object.entries(categories)) form.elements.category.add(new Option(`${code} — ${name}`, code));
+    for (const [code, name] of Object.entries(categories)) {
+      form.elements.category.add(new Option(`${code} — ${name}`, code));
+      rssCategory.add(new Option(`${code} — ${name}`, code));
+    }
+    rssCategory.addEventListener("change", () => {
+      rssOpen.href = rssCategory.value ? `feeds/${rssCategory.value}.xml` : "feed.xml";
+    });
     load();
   } catch (error) { status.textContent = error.message; }
 }
