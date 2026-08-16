@@ -27,6 +27,12 @@ there is new data. The normal Pages workflow then deploys the site.
 Run the workflow manually from GitHub Actions to refresh more days after an
 interruption. Overlapping days are safe.
 
+## RSS feeds
+
+The newest papers are available at `/feed.xml`. Each category also has its own
+feed at `/feeds/<category>.xml`, for example `/feeds/cs.LG.xml`. The feeds are
+rebuilt with the daily archive update.
+
 ## Make an archive for other arXiv categories
 
 1. Edit [`config.py`](config.py) and replace `CATEGORIES` with the arXiv

@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>One Author — Symbolic Computation</title>
+    <link>https://mmcs-work.github.io/arxiv</link>
+    <description>Single-author arXiv papers.</description>
+    <item>
+      <title>Stationarity is not enough: tightness of the quantum mechanical bootstrap and the copositive cone</title>
+      <link>https://arxiv.org/abs/2608.07047</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.07047</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 -0000</pubDate>
+      <description>The numerical bootstrap for quantum mechanics tests a candidate state's positivity only against sums of squares, whereas every physical state assigns nonnegative expectation to every pointwise nonnegative polynomial. In one dimension the two coincide; in two or more they do not. Whether this gap is realized depends sharply on which constraint set is imposed. For the stationary bootstrap, which imposes &lt;[H,O]&gt; = 0 and is the relaxation appropriate to thermal and mixed states, we exhibit a two-dimensional quartic double well and a moment vector that satisfies every level-three stationary constraint exactly, has a positive definite moment matrix, and yet assigns a negative expectation to a polynomial nonnegative on R^2; it is therefore the moment sequence of no state. All data are rational, and every step is verified in exact arithmetic. For the eigenstate bootstrap, which additionally imposes &lt;OH&gt; = E&lt;O&gt;, the same search finds no violation in any of five settings spanning two, three and five degrees of freedom and truncation levels three and four, tested against complete families of separating polynomials. The single exception occurs at a truncation so low that only one eigenstate constraint survives, and the theory presented here accounts for it. We identify the mechanism: the eigenstate constraints bound the high momentum moments, otherwise unbounded on the feasible set, and it is those unbounded directions that reach the region between the two cones. Finally, under the reflection symmetries of a typical potential the relevant obstruction is copositivity rather than nonnegativity, which, for the quartic witnesses available at the lowest truncation, places the first possible failure at five degrees of freedom. We conjecture that the eigenstate constraints imply an Archimedean-type bound on the momentum moments, and formulate the corresponding tightness statement.</description>
+    </item>
+    <item>
+      <title>Some Experiments with Twee-Style Goal-Directedness</title>
+      <link>https://arxiv.org/abs/2607.27442</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.27442</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 -0000</pubDate>
+      <description>In saturation-based theorem proving, selecting the next clause for processing is a major concern. Twee has successfully applied the idea of preferring clauses that share terms with the conjecture by adding equational definitions to transform the problem. In this paper, we apply the idea to the full first-order case, and offer an alternative implementation based on shared terms. Both approaches have complementary applications and show very promising results.</description>
+    </item>
+    <item>
+      <title>Existence and computation of monomial families of near-optimal strategies for recursive games</title>
+      <link>https://arxiv.org/abs/2608.08017</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.08017</guid>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 -0000</pubDate>
+      <description>In a finite recursive game in the sense of Everett, both players have stationary epsilon-optimal strategies for every epsilon&gt;0. Frederiksen and Miltersen strengthened this result by showing that the strategies for all sufficiently small epsilon can be encoded by finitely many monomials: at every state, all but possibly one of the action probabilities are constants times integer powers of epsilon. The resulting finite symbolic object specifies a strategy for every sufficiently small accuracy. Their proof uses semialgebraic selection and Puiseux series. We give an alternative elementary proof of this regularity theorem for recursive games. We start with stationary strategies that guarantee vectors approaching the value through Everett's one-sided region. After fixing their support, we express, for each pure stationary reply, all absorption probabilities as quotients of directed-forest polynomials with nonnegative coefficients and a common positive denominator. Each payoff is a fixed signed linear combination of these quotients. We then compress the asymptotic orders of the finitely many forest monomials into one integer weight vector. This proof uses neither semialgebraic selection nor Puiseux series. Furthermore, for rational games with a fixed number N of active states, we present a deterministic polynomial-time algorithm that computes a monomial family exactly. It returns all algebraic coefficients in one ordered real univariate representation. The representation length and running time are at most L^{(N+1)^{O(N)}}, where L is the input length.</description>
+    </item>
+    <item>
+      <title>On the Radical Computation of Parametric Ideals over Finite Fields</title>
+      <link>https://arxiv.org/abs/2608.07058</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.07058</guid>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 -0000</pubDate>
+      <description>Matsumoto's algorithm for computing the radical of a polynomial ideal is generalized to the parametric setting within the framework of symbolic computation. The main tool is a comprehensive Gröbner system over a finite field, also known as a parametric Gröbner basis. As a result, an algorithm for computing the radical of a parametric ideal over a finite field is proposed.</description>
+    </item>
+    <item>
+      <title>Faster Deterministic Integer Root Finding for Integer Polynomials</title>
+      <link>https://arxiv.org/abs/2608.00668</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.00668</guid>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 -0000</pubDate>
+      <description>We give a deterministic algorithm for finding all integer roots of a square-free polynomial $f\in\mathbb Z[x]$ of degree $n$ with $\lVert f\rVert_\infty&lt;2^b$. The running time is $$ \tilde{O}(n^{3/2}b), $$ improving the $\tilde{O}(n^2b)$ bound of Harvey and Hittmeir (Research in Number Theory, 2022). The algorithm follows the classical $p$-adic framework: find roots modulo a prime $p$, lift them modulo a high power of $p$, and verify the lifted candidates. The main new idea is to avoid searching for a prime for which $f\bmod p$ is square-free. Instead, we find a prime for which the total multiplicity of repeated roots modulo $p$ is small. This requires lifting repeated roots, which we handle using a weighted lifting tree. We also give a faster deterministic candidate-verification algorithm: given $n$ candidate integers smaller in absolute value than $2^b$, we decide which are roots of $f$ in $$ \tilde{O}(nb+\min(n^2,nb^2)) $$ bit operations. Together, these ingredients give the first deterministic subquadratic-in-$n$ improvement for integer root finding in the square-free case.</description>
+    </item>
+    <item>
+      <title>Machine-Checked Arithmetic Bit Complexity of the Kannan-Bachem Smith Normal Form in Lean 4</title>
+      <link>https://arxiv.org/abs/2607.22524</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.22524</guid>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 -0000</pubDate>
+      <description>We formalize in Lean 4 the Kannan-Bachem Smith normal form algorithm for nonsingular square integer matrices. The program returns $S,U,U^{-1},V,V^{-1}$ and proves $UAV=S$, $U^{-1}SV^{-1}=A$, four inverse identities, the Smith divisibility conditions, and equality of $S$ with a canonical reference matrix. Stabilization terminates because each recursive pass strictly decreases the binary size of the active pivot; the outer algorithm recurses on the lower-right block. The computation also emits a flat trace of designated sign-magnitude arithmetic leaves. Branch conditions, quotients, Bezout data, and matrix entries are taken from the recorded primitive runs. Composite phases form their traces by concatenating the charge lists returned by the executed children. Verified self-delimiting codecs define the input and output sizes. Coefficient and work recurrences, closed by a kernel-checked polynomial-envelope calculus, give fixed polynomial bounds for both trace cost and the encoded length of the five output matrices. The theorem concerns these arithmetic primitives; structural operations and compiled Lean runtime are outside the model.</description>
+    </item>
+    <item>
+      <title>Groebner.jl: Fast Gröbner Tracing in Julia</title>
+      <link>https://arxiv.org/abs/2607.06372</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.06372</guid>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 -0000</pubDate>
+      <description>A standard way to control expression swell in computer algebra is to use multi-modular or evaluation-interpolation methods. In computations involving Gröbner bases, these techniques typically require repeatedly computing Gröbner bases of specializations of the same ideal. These repeated computations can be accelerated through precomputation, notably using Traverso's tracing. We present Groebner$.$jl (https://github.com/sumiya11/Groebner.jl), a Julia implementation of the F4 algorithm that exposes Traverso's tracing through a reusable public interface. The implementation supports SIMD-friendly coefficient types, such as tuples of machine integers, which Julia compiles to efficient code with little manual intervention. This lets other Julia software leverage tracing to obtain speedups in applications such as structural identifiability of ordinary differential equation models and polynomial system solving.</description>
+    </item>
+    <item>
+      <title>SAT Certificates for the Matrix-Multiplication Challenges over F2: All Ten `Expected-UNSAT` Instances Are Satisfiable, and a Type-3-Free Rank-23 Scheme</title>
+      <link>https://arxiv.org/abs/2607.29291</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.29291</guid>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 -0000</pubDate>
+      <description>The matrix-multiplication SAT benchmark of Heule, Kauers, and Seidl asks, among other tasks, for solutions of ten known-satisfiable rank-23 formulas, proofs of unsatisfiability for ten formulas expected to be unsatisfiable, and a rank-23 scheme over $\mathbb{F}_2$ having a summand with no type-3 monomial. We give complete satisfying assignments for the 21 CNFs in the repository's top-level challenge1/, challenge2/, and challenge3/ directories at commit 150b2e2f. The principal finding is that all ten top-level Challenge-2 formulas are satisfiable. A direct audit shows that their hardcoded type-3 pairings are imposed by positive unit clauses on the 621 base variables: the formulas require selected incidences but do not forbid additional type-3 incidences. Starting from exact 23-summand schemes, we use the $\mathrm{GL}(3,2)^3$ isotropy action, cyclic trace symmetry, and perfect matching of transformed summands to constrained slots to construct witnesses for all ten files. For Challenge 3, we combine a locked semantic repair with a two-term identity over $\mathbb{F}_2$ to obtain a distinguished summand of type-3 count zero. Every semantic decomposition has zero residual in all 729 Brent equations. The accompanying DIMACS models assign all 26,541 variables of each formula and satisfy all 2,461,316 clauses across the 21 instances. A separate parser and clause evaluator rechecks the emitted models. A deterministic one-file Python reproducer regenerates the 21 certificates from the original CNFs in approximately nine seconds on the reported test host.</description>
+    </item>
+    <item>
+      <title>Confluence of conditional rewriting modulo</title>
+      <link>https://arxiv.org/abs/2504.01847</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2504.01847</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 -0000</pubDate>
+      <description>Sets of equations E play an important computational role in rewriting-based systems R. The equivalence relation =E induced by E introduces a partition of terms into E-equivalence classes on which rewriting computations, denoted -&gt;R/E and called rewriting modulo E, are issued. This paper investigates confluence of -&gt;R/E, usually called E-confluence, for conditional rewriting-based systems, where rewriting steps are determined by conditional rules. We rely on Jouannaud and Kirchner's framework to investigate confluence of an abstract relation R modulo an abstract equivalence relation E on a set A. We show how to particularize such a framework to be used with conditional systems. Then, we show how to define appropriate finite sets of conditional pairs to prove and disprove E-confluence. We introduce (i) Logic-based Conditional Critical Pairs, which do not require the use of (often infinitely many) E-unifiers to provide a finite representation of the local peaks considered in the abstract framework. We also introduce (ii) parametric Conditional Variable Pairs which are essential to deal with conditional rules in the analysis of E-confluence. Finally, we introduce (iii) Down Conditional Pairs which are often necessary to disprove E-confluence. Our results apply to well-known classes of rewriting-based systems, improving on previous results. As for unconditional systems, our results apply to Equational Term Rewriting Systems, first investigated by Huet and then by Jouannaud, and Jouannaud and Kirchner, among others. As for conditional systems, our results also apply to conditional rewrite theories and Maude.</description>
+    </item>
+    <item>
+      <title>Verification of Provers and Solvers</title>
+      <link>https://arxiv.org/abs/2607.25793</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.25793</guid>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 -0000</pubDate>
+      <description>Automatic deduction tools such as automatic theorem provers, SAT (satisfiability) solvers, SMT (satisfiability modulo theories) solvers, and termination analyzers can be connected to proof assistants using various approaches, notably by certification and verification. This chapter reviews and compares the approaches available, and mentions several successful applications.</description>
+    </item>
+    <item>
+      <title>A Forced-Structure Reduction and Verifiable Bounds for Conway's 99-Graph</title>
+      <link>https://arxiv.org/abs/2608.11211</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2608.11211</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 -0000</pubDate>
+      <description>Conway's 99-graph problem asks whether a strongly regular graph with parameters $\mathrm{srg}(99,14,1,2)$ exists. We report a systematic, fully reproducible attack by an autonomous AI research agent, scored under the track's partial-credit metric. Our verifiable contributions are: (1) an exhaustive proof that no circulant graph on $\mathbb{Z}/99$ satisfies more than $3366/4950=68.0\%$ of the constraints ($33$ of $49$ difference-classes), with the same ceiling for the other abelian group of order $99$; (2) a forced-structure reduction: $λ=1$ makes each neighbourhood a perfect matching and $μ=2$ puts the outer vertices in bijection with non-matched neighbour-pairs, collapsing existence to a $12$-regular graph on $84$ vertices, encoded for CP-SAT and validated by recovering the unique $\mathrm{srg}(9,4,1,2)$; (3) a validated prescribed-automorphism orbit-existence framework (fixed-point-free and single-fixed-point actions, checked on $\mathrm{srg}(9,4,1,2)$ and the Paley graph $\mathrm{srg}(13,6,2,3)$), and (4) a best verified artifact at $69.43\%$, with evidence that this is a robust frontier (fourteen distinct methods, none exceeding it) entangled with the open question, since any provable bound below $4950$ is a non-existence proof.</description>
+    </item>
+    <item>
+      <title>Computing Smith Forms Modulo $p^2$ of Sparse Matrices Faster Than Matrix Multiplication</title>
+      <link>https://arxiv.org/abs/2607.05800</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.05800</guid>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 -0000</pubDate>
+      <description>Let $p$ be a prime and $R=\mathbb{Z}/p^2\mathbb{Z}$ the ring of integers modulo $p^2$. Any $A\in R^{n\times n}$ is unimodularly equivalent to its Smith form \[ S=diag\bigl(\underbrace{1,\ldots,1}_{r_0}, \underbrace{p,\ldots,p}_{r_1}, \underbrace{0,\ldots,0}_{r_2}\bigr) \in R^{n\times n}, \] i.e., there exist $U,V\in R^{n\times n}$ such that $UAV=S$, with $\det U,\det V\in R^*$ (where $R^*$ is the set of units in $R$, elements not equivalent to $0\bmod p$). Our goal in this paper is to determine $r_0,r_1,r_2$ quickly when $A$ is sparse or structured. By ``sparse'' we mean $A$ is given by a black box such that for any $v\in R^{n\times 1}$ we can compute $v\mapsto Av$ with $\tilde{O}(n)$ operations in $R$, which captures having few nonzero elements or a multiplicative structure (e.g., Hankel or Toeplitz matrices). We present a randomized algorithm which requires an expected number of \[ \tilde{O}\left(n^{3-1/(ω-1)}\right) \] operations in $R$ to compute the Smith form, where $ω$ is the exponent of dense matrix multiplication. Using standard cubic matrix multiplication ($ω=3$) our algorithm thus requires $\tilde{O}(n^{2.5})$ operations in $R$, while using the current asymptotically fastest matrix multiplication, with $ω&lt;2.371339$, our algorithm requires $\tilde{O}(n^{2.270786})$ operations in $R$. Our algorithm is probabilistic of the Monte Carlo type, meaning it fails on any invocation with controllably small probability. We employ iterative block-Wiedemann-style matrix techniques and structured preconditioners. To our knowledge, this is the first algorithm to compute the modular Smith Normal Form modulo $p^2$ requiring fewer than $\tilde{O}(n^ω)$ operations in $R$, i.e., faster than any dense algorithm.</description>
+    </item>
+    <item>
+      <title>On Factoring Quantum-Plane Skew Polynomials over $\mathbb{Q}(ω)(t)$</title>
+      <link>https://arxiv.org/abs/2607.02751</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.02751</guid>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 -0000</pubDate>
+      <description>We study algorithms for factorization in the quantum plane of (dilation) skew polynomials over a function field of a cyclotomic field: \[ \mathsf{R}=\mathsf{K}(t)[x;σ], \qquad \mathsf{K}=\mathbb{Q}(ω), \qquad σ(t)=ωt, \] where $ω\in\mathbb{C}$ is a primitive $m$-th root of unity. We start with the established approach through central elements and factor the central left multiples, staying in characteristic zero, to obtain a partial decomposition. A two-level modular approach is proposed: specialize a central parameter to good algebraic values, study the resulting cyclic algebras over number fields, and then reduce further at good inert primes so that fast finite-field skew-factorization algorithms apply. A prototype SageMath implementation is provided to experiment with the algorithms. We then look at the effect of extending the field of constants from $\mathbb{Q}(ω)$ to $\bar{\mathbb{Q}}$, an algebraic closure of $\mathbb{Q}$, and factoring over ${\bar{\mathbb{Q}}}(t)[x;σ]$. In this case we show factorization is decidable in the exact algebraic model based on finite extensions.</description>
+    </item>
+    <item>
+      <title>Deterministic and Efficient Ideal Arithmetic via Two-Element Representations</title>
+      <link>https://arxiv.org/abs/2606.26993</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2606.26993</guid>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 -0000</pubDate>
+      <description>Given an ideal in a number field, it is desirable in many situations to find two elements that generate the ideal over the ring of the integers of the field. Existing algorithms are either randomized, or impractical at cryptographic sizes. In the paper, we present a deterministic polynomial time algorithm to find the two-element representation of an ideal. For a monic irreducible integral polynomial \( f(x) \), let \( K=\Q[x]/(f) \) be the number field, and \( O_K \) be the integral closure. Our algorithm works when the norm of the input ideal is co-prime to the index \( [O_K:\Z[x]/f] \). In particular, it handles all ideals for monogenic \( f(x) \), a class that includes the cyclotomic polynomials widely used in lattice based cryptography. A key technical ingredient in our result is a generalized version of Dedekind criterion.</description>
+    </item>
+    <item>
+      <title>Towards Version-aware Operations and Transaction Memories for Multi-layer MeMo</title>
+      <link>https://arxiv.org/abs/2606.24040</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2606.24040</guid>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 -0000</pubDate>
+      <description>MeMo proposes language models with explicit multi-layer correlation matrix memories (CMMs), where memorization, retrieval, and forgetting are architectural operations. This paper asks how such memories can reduce the need for retraining when knowledge changes. For changes expressible as MeMo memory associations, the model's accessible knowledge can be updated by editing explicit memories rather than retraining the whole model. We propose a version-aware operation layer in which high-level operations such as replace, obsolete, keep-history, rollback, and trace are compiled into MeMo-native primitive calls over sequences and tokens. The key observation is that a version-aware operation is rarely a single MeMo association. It is an ordered transaction of primitive edits, for example forgetting one sequence-token chain, memorizing another, preserving a historical chain, and recording an inverse program. The framework introduces two auxiliary CMMs: a Version CMM (V-CMM) for mapping version transitions to transaction handles, and a Transaction CMM (T-CMM) for storing reusable change contents and inverse programs. It supports both direct sequence-level edits and structured diff-level inputs, and outlines an evaluation route for update success, rollback, traceability, locality, and transaction reuse.</description>
+    </item>
+    <item>
+      <title>Faster enumeration of primes</title>
+      <link>https://arxiv.org/abs/2606.22851</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2606.22851</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 -0000</pubDate>
+      <description>We describe several new algorithms for finding all prime numbers up to a given bound $N$, achieving the first ever speedup by a positive power of $\log N$ over the ancient sieve of Eratosthenes. The fastest version, which is not fully rigorous, runs in \[ N (\log \log N)^{1+o(1)} \] bit operations when analysed in the multitape Turing model. This improves on the best existing algorithms due to Pritchard (1981), Atkin--Bernstein (2004) and Sergeev (2016) by a factor of almost $\log N$. We also present a rigorous randomised (Las Vegas) variant that is slower by a factor of $(\log \log N)^{1+o(1)}$, and a rigorous deterministic variant that is slower by a factor of $(\log N)^{1/2+o(1)}$. The new algorithms make heavy use of fast polynomial arithmetic over finite fields, and also involve ideas from the theory of error-correcting codes.</description>
+    </item>
+    <item>
+      <title>Polynomial-Time Algorithms for Black-Box Distributive Expanded Groups</title>
+      <link>https://arxiv.org/abs/2505.20497</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2505.20497</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 -0000</pubDate>
+      <description>Let $Ω$ be a finite set of finitary operation symbols. An $Ω$-expanded group is a group (written additively and called the additive group of the $Ω$-expanded group) with an $Ω$-algebra structure. We use the black-box model of computation in $Ω$-expanded groups. In this model, elements of a finite $Ω$-expanded group $H$ are represented (not necessarily uniquely) by bit strings of the same length, say, $n$. Given representations of elements of $H$, equality testing and the fundamental operations of $H$ are performed by an oracle. Assume that $H$ is distributive, i.e., all its fundamental operations associated with nonnullary operation symbols in $Ω$ are distributive over addition. Suppose $s=(s_1,\dots,s_m)$ is a generating system of $H$. In this paper, we present probabilistic polynomial-time black-box $Ω$-expanded group algorithms for the following problems: (i) given $(1^n,s)$, construct a generating system of the additive group of $H$, (ii) given $(1^n,s,(t_1,\dots,t_k))$ with $t_1,\dots,t_k\in H$, find a generating system of the additive group of the ideal in $H$ generated by $\{t_1,\dots,t_k\}$, and (iii) given $(1^n,s)$, decide whether $H\in\mathfrak V$, where $\mathfrak V$ is an arbitrary finitely based variety of distributive $Ω$-expanded groups with nilpotent additive groups. The error probability of these algorithms is exponentially small in $n$. In particular, this can be applied to groups, rings, $R$-modules, and $R$-algebras, where $R$ is a fixed finitely generated commutative associative ring with $1$. Rings and $R$-algebras may be here with or without $1$, where $1$ is considered as a nullary fundamental operation.</description>
+    </item>
+    <item>
+      <title>Degree bounds for linear differential equations and recurrences</title>
+      <link>https://arxiv.org/abs/2601.08522</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2601.08522</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 -0000</pubDate>
+      <description>Linear differential equations and recurrences reveal many properties about their solutions. Therefore, these equations are well-suited for representing solutions and computing with special functions. We identify a large class of existing algorithms that compute such representations as a linear relation between the iterates of an elementary operator known as a \emph{pseudo-linear map}. Algorithms of this form have been designed and used for solving various computational problems, in different contexts, including effective closure properties for linear differential or recurrence equations, the computation of a differential equation satisfied by an algebraic function, and many others. We propose a unified approach for establishing precise degree bounds on the solutions of all these problems. This approach relies on a common structure shared by all the specific instances of the class. For each problem, the obtained bound is tight. It either improves or recovers the previous best known bound that was derived by ad hoc methods.</description>
+    </item>
+    <item>
+      <title>Quotient Tree Arithmetic: Deferred-Division Computation with Bounded Symbolic Depth and Cross-Subtree Cancellation</title>
+      <link>https://arxiv.org/abs/2607.22612</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.22612</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 -0000</pubDate>
+      <description>We introduce Quotient Tree Arithmetic (QTA), a computational substrate in which values are represented as deferred quotient pairs (N, D) whose ratio is evaluated lazily at a designated materialization boundary. The framework applies to any domain: IEEE 754 doubles used as exact integer containers give exact rational arithmetic within the 2^53 exactness window; arbitrary IEEE doubles extend coverage to transcendental values including machine learning activations such as exp(x) and sqrt(x). Three structural theorems underpin QTA. (1) Bounded Depth Growth: each arithmetic operation increases tree depth by at most 1, giving O(m) tree size after m operations with no combinatorial explosion. (2) Cross-Subtree Cancellation: subtrees appearing in both numerator and denominator positions cancel via reference identity without arithmetic, including transcendental values computed once and shared. (3) Deferred Stability: a single IEEE division at the materialization boundary introduces at most one-half ULP of rounding error, versus O(m) ULP for eager evaluation. For machine learning training, QTA provides: structural prevention of gradient underflow to zero; O(1)-cost gradient computation via chain-rule tape collapse when intermediate activations are reference-identical; shared-weight batch compression reducing DAG storage from O(BLd) to O(L+Bd) for a batch of B examples through L layers; and tracked factor cancellation replacing O(log n) GCD with O(1) trial division when denominators are known. We propose a vectorized hardware normalization instruction (RatCleanup) for SIMD-parallel rational pair reduction. The algebraic foundation is the localization of a ring at its multiplicative set, connecting QTA to algebraic structure theory while grounding it in hardware-native IEEE arithmetic.</description>
+    </item>
+    <item>
+      <title>A catalog of fast matrix multiplication algorithms with frontier-closure search</title>
+      <link>https://arxiv.org/abs/2606.13408</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2606.13408</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 -0000</pubDate>
+      <description>The 2022--2026 burst of activity in small-format matrix multiplication (AlphaTensor 2022, AlphaEvolve 2025, Schwartz--Zwecher 2025) has produced striking individual results but scattered them across different fields, attribution conventions, and serialisation formats. A complementary line of work -- Perminov's open-source flip-graph framework~\cite{perminov2026fast,perminov2025fast} -- instead drives existing construction methods, notably flip-graph and \emph{meta-flip-graph} search, at scale across large format spaces, discovering many new low-rank schemes (including ternary-integer ones) that further enrich the landscape this catalog must unify. We present a unified, machine-checkable catalog covering shapes up to \nmpshape{32}{32}{32} over \Rationals, \Integers, \Reals, \Complex, and \Ftwo, with a separate axis for commutative algorithms (Waksman 1970, Makarov 1986, Rosowski 2019). Derivation over this catalog is performed by a \emph{frontier-closure search} that recombines catalog entries by axis-flip, Kronecker, axis concatenation, serendipitous products, recombination-with-allocation (with optional output peeling and pair fusion), and downward projection. A central methodological point is the \emph{non-overlap property}: our recombination does not, and cannot, rediscover the shared bilinear products that hand-crafted constructions (Strassen, Laderman, Smirnov, AlphaTensor) are built around. This draws a clean line between the ``find a cleverer bilinear core'' and ``compose known cores'' axes of progress, and resolves several attribution puzzles in the literature. We refresh the DIS09 comparison tables, split per field and with a commutative column, and provide the tooling to regenerate them automatically as the catalog evolves.</description>
+    </item>
+    <item>
+      <title>A Lean 4 Formalization of Euclidean Domain Algorithms from a 1986 Icon Experimentation Package</title>
+      <link>https://arxiv.org/abs/2606.15520</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2606.15520</guid>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 -0000</pubDate>
+      <description>We describe a Lean 4 formalization of the algorithms and domain types from NYU Computer Science Technical Report \#232, \emph{An ICON Package for Experimenting with Euclidean Domains} (Ericson, 1986). The original system implemented Lipson's catalog of procedures over integers, rationals, modular rings, polynomial rings, and truncated power series via a custom runtime dispatch mechanism in Icon. The present work separates three concerns: mathematical definitions grounded in Mathlib's \texttt{EuclideanDomain} hierarchy, computable mirrors suitable for evaluation and regression testing, and report-formatting infrastructure that reproduces the 1986 benchmark output line-for-line. All fourteen application algorithms from Section 3 of the report are defined and typecheck without \texttt{sorry}; those grounded in Mathlib -- chiefly integer gcd and extended Euclid -- additionally carry machine-checked proofs. We classify each procedure by its epistemic status relative to Mathlib, enumerate the coherence obligations between the proof and computable layers, and state precisely what is theorem-backed versus regression-trusted. The formalization makes explicit the verification boundary that the 1986 package crossed only informally.</description>
+    </item>
+    <item>
+      <title>Compile Once, Differentiate Everywhere: A Differentiable Meta-Circular Interpreter</title>
+      <link>https://arxiv.org/abs/2606.09930</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2606.09930</guid>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 -0000</pubDate>
+      <description>The boundary between program execution and gradient-based optimization has long limited the use of code itself as a learnable scientific model. We present a compiler that translates a self-hosting subset of Scheme into differentiable computation graphs for autograd backends. Because the subset can compile its own evaluator, this yields differentiable meta-circular interpretation (DMCI): a compiled Scheme interpreter executes programs supplied as data, while reverse-mode autodiff propagates gradients to continuous constants embedded in those programs. The interpreter is compiled once, so new programs inherit differentiability without recompilation or custom gradient machinery, while retaining closures, recursion, and data structures. We prove that gradients through the compiled interpreter are correct almost everywhere and show that they match direct compilation to numerical precision across 171 recursive and higher-order program-seed pairs. We then use DMCI for program-and-parameter co-search, where a large language model proposes Scheme programs and exact gradients calibrate their continuous parameters through a single frozen interpreter. This enables OpenEvolve-style program search in which an outer loop proposes discrete program structures and DMCI supplies exact gradient-based calibration of each candidate's continuous parameters. On battery capacity-fade data, the search recovers a knee-like degradation structure and improves held-out extrapolation over hand-crafted baselines on the harder early-extrapolation split, matching them on the later split. On a high-dimensional El Nino inverse problem, DMCI optimizes an interpreted Kalman-filter likelihood where gradient-free search fails. These results extend symbolic regression and neurosymbolic search from closed-form expressions to executable, stateful programs, making model-generated code directly optimizable against data.</description>
+    </item>
+    <item>
+      <title>Meta Flip Graph meets Serendipitous Product: new Fast Matrix Multiplication results</title>
+      <link>https://arxiv.org/abs/2606.02480</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2606.02480</guid>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 -0000</pubDate>
+      <description>This paper presents new results for fast matrix multiplication in small formats obtained by combining the meta flip graph framework with the serendipitous product construction. The framework has been extended to support all 680 rectangular formats with dimensions up to $16 \times 16 \times 16$. Compared to the previous state of the art, ranks are improved for 207 formats. For 84 formats, ternary schemes are found where previously only integer or rational coefficients were known. Additionally, 23 new schemes with asymptotic exponent $ω&lt; \log_2 7$ are discovered, bringing the total number of such schemes to 52. The overall distribution of coefficient types across all investigated formats is 375 ternary, 18 integer, and 287 rational. All code and discovered schemes are available as open source.</description>
+    </item>
+    <item>
+      <title>Algebraic anti-unification</title>
+      <link>https://arxiv.org/abs/2407.15510</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2407.15510</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 -0000</pubDate>
+      <description>Abstraction is key to human and artificial intelligence as it allows one to identify common structure in otherwise distinct objects or situations. Anti-unification (or generalization) is the branch of theoretical computer science and artificial intelligence that studies abstraction and has found applications in areas such as inductive logic programming, program synthesis, and analogy-making. To date, anti-unification has been studied almost exclusively from a syntactic perspective. In this paper, we initiate an algebraic (i.e.\ semantic) theory of anti-unification in the general setting of universal algebra, thereby extending anti-unification from term-based representations to arbitrary algebras and beyond equational theories. In particular, we introduce the notions of algebraic generalization ordering and minimally general generalization, establish basic structural properties, prove compatibility with homomorphisms and isomorphisms, and investigate computability in finite unary algebras and finite algebras via automata-theoretic methods.</description>
+    </item>
+    <item>
+      <title>A Foundation Model for Zero-Shot Logical Rule Induction</title>
+      <link>https://arxiv.org/abs/2605.04916</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2605.04916</guid>
+      <pubDate>Thu, 28 May 2026 00:00:00 -0000</pubDate>
+      <description>Inductive Logic Programming (ILP) learns interpretable logical rules from data. Existing methods are transductive: their learned parameters are bound to specific predicates and require retraining for each new task. We introduce Neural Rule Inducer (NRI), a pretrained model for zero-shot rule induction. Rather than encoding literal identities, NRI represents literals using domain-agnostic statistical properties such as class-conditional rates, entropy, and co-occurrence, which generalize across variable identities and counts without retraining. The model consists of a statistical encoder and a parallel slot-based decoder. Parallel decoding preserves the permutation invariance of logical disjunction; an autoregressive decoder would instead impose an arbitrary clause order. Product T-norm relaxation makes rule execution differentiable, allowing end-to-end training on prediction accuracy alone. We evaluate NRI on rule recovery, robustness to label noise and spurious correlations, and zero-shot transfer to real-world benchmarks, and we believe this work opens up the possibility of foundation models for symbolic reasoning. Code and the reference checkpoint are available at https://github.com/phuayj/neural-rule-inducer.</description>
+    </item>
+    <item>
+      <title>Indicial polynomials and $b$-functions of $D$-modules along arbitrary varieties and their computation</title>
+      <link>https://arxiv.org/abs/2605.27797</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2605.27797</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 -0000</pubDate>
+      <description>We define an indicial polynomial of a $D$-module along an arbitrary subvariety as a generalization of both the classical indicial polynomial for a single linear differential equation and the Bernstein-Sato polynomial of a variety defined by Budur-Mustata-Saito. An indicial polynomial is also a generalization of the $b$-function of a $D$-module along a submanifold and can be used in the computation of the $D$-module theoretic inverse image by the embedding instead of the $b$-function. We consider properties of indicial polynomials and relations with $b$-functions. An indicial polynomial may exist even if the $b$-function does not, and gives the set of the roots of the $b$-function if it exists. Computation of an indicial polynomial is easier than the $b$-function and naturally includes the case with parameters.</description>
+    </item>
+    <item>
+      <title>A Symbolic Homotopy Algorithm for Solving Composable Polynomial Systems</title>
+      <link>https://arxiv.org/abs/2605.22514</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2605.22514</guid>
+      <pubDate>Thu, 21 May 2026 00:00:00 -0000</pubDate>
+      <description>We study the problem of computing the isolated regular solutions of a system \((f_1,\ldots,f_n)\) of \(n\) polynomial equations in \(n\) variables \((X_1, \dots, X_n)\) over a field of characteristic zero \(k\). We focus on systems with a \emph{composable structure}, where each polynomial \(f_i\) can be expressed as a composition \( f_i = h_i(g_1,\dots,g_n)\). Exploiting this structure allows us to reduce the original system to one in the \(g_j\) variables, thereby significantly improving the efficiency of symbolic solution algorithms. We present a probabilistic algorithm that computes all isolated regular solutions, with arithmetic complexity being polynomial in the input size and in the number of solutions. A first important application is when \(f_1, \dots, f_n\) belong to the subring \(k[g_1, \dots, g_n]\), where \(g_1, \dots, g_n\) are algebraically independent polynomials in \(k[X_1, \dots, X_n]\). Another important application is to systems of invariant polynomials under finite reflection groups, since by the Chevalley-Shephard-Todd theorem their invariant rings are polynomial algebras. Typical examples include the symmetric groups \(S_n\), the hyperoctahedral groups \(B_n\), the dihedral groups \(I_2(m)\), and the exceptional finite reflection groups \(E_6, E_7, E_8, F_4, H_3, H_4\).</description>
+    </item>
+    <item>
+      <title>The Neural Compiler: Program-to-Network Translation for Hybrid Scientific Machine Learning</title>
+      <link>https://arxiv.org/abs/2605.22498</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2605.22498</guid>
+      <pubDate>Thu, 21 May 2026 00:00:00 -0000</pubDate>
+      <description>Scientific machine learning often requires combining known physics with unknown parameters or correction terms learned from data. Existing approaches either ignore known structure, encode it as a soft penalty, or require hand-written PyTorch code for each equation. We present The Neural Compiler, a system that translates programs written in a first-order Scheme-like expression language into frozen, differentiable PyTorch modules. These modules match the source program to floating-point precision and provide gradients through autograd. In hybrid models, the compiled module encodes known physics exactly while learned components model the unknown remainder. We evaluate the compiler across six experiment domains: Feynman physics equations, Lotka-Volterra dynamics, a damped pendulum, a one-dimensional heat equation, three-dimensional vector mechanics, and compositional generalization. Compiled modules match hand-coded PyTorch implementations numerically for single equations, showing no accuracy loss from compilation. With only 1 to 4 trainable parameters, compiled models recover physical constants to less than 1 percent error in most cases, while standard PINN baselines with more than 8500 parameters show 7 to 93 percent error. Compiled modules also compose with zero error, while neural approximations can accumulate large errors in deep composition chains. The main value of the compiler is not improved accuracy over hand-coded equations, but systematic composability: it generates correct, differentiable modules from symbolic specifications without rewriting each equation by hand. The system supports 51 primitive operations, including vector and matrix algebra, enabling PDE discretizations and hybrid scientific models. This string-in, module-out interface also provides a natural target for large language models that translate scientific descriptions into executable differentiable modules.</description>
+    </item>
+    <item>
+      <title>Exhaustive Symbolic Integration: Integration by Differentiation and the Landscape of Symbolic Integrability</title>
+      <link>https://arxiv.org/abs/2605.04978</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2605.04978</guid>
+      <pubDate>Wed, 06 May 2026 00:00:00 -0000</pubDate>
+      <description>We introduce Exhaustive Symbolic Integration (ESI), a method that enumerates all symbolic functions up to a given complexity $k$ within a specified operator basis and determines which admit closed-form antiderivatives within the same class. This allows us to compute the "integrability fraction" $ρ(k)$ (the fraction of functions whose derivatives lie within the same class), which we do for five operator bases including combinations of rational functions, powers, exponentials, logarithms and trigonometric functions. We find that $ρ(k)$ declines at high complexity and that the operator basis has a dramatic effect -- in particular, adding the logarithm boosts $ρ(k)$ by a factor of $\sim$3 and produces or exacerbates a clear peak at $k=6$. We also deploy ESI as a novel integration algorithm, identifying three integrals that resist SymPy, Mathematica, RUBI, FriCAS, Maxima and Giac under all tested strategies. When an antiderivative can be found by multiple methods, ESI often returns the simplest form. These results reveal that the landscape of symbolic integrability is shaped primarily by the choice of operators, and that exhaustive enumeration can systematically discover integrable forms -- including novel ones -- that elude computer albegra systems.</description>
+    </item>
+    <item>
+      <title>On Minimum CADs for Algebraic Sets in Dimension Three</title>
+      <link>https://arxiv.org/abs/2605.04718</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2605.04718</guid>
+      <pubDate>Wed, 06 May 2026 00:00:00 -0000</pubDate>
+      <description>Cylindrical Algebraic Decomposition (CAD) algorithms typically produce a decomposition adapted to a finite family of semi-algebraic sets $\mathcal{F}$ (i.e. every member of $\mathcal{F}$ is a union of cells). Different algorithms may produce different outputs, and introduce unnecessary cell divisions. Recent work by Michel, Mathonet, and Zénaïdi in ISSAC 2024 formalised this issue by studying the refinement order on the set of all CADs adapted to $\mathcal{F}$ and analysing the existence of a minimum (coarsest) adapted CAD. It was shown that such a minimum adapted CAD always exists for subsets of $\mathbb{R}$ and $\mathbb{R}^2$, but not of $\mathbb{R}^n$ ($n \geqslant 3$) in general. It is natural to seek natural classes of subsets of $\mathbb{R}^n$ that admit a minimum adapted CAD. In this paper, we identify a class of subsets of $\mathbb{R}^3$ that contains all algebraic sets for which minimum adapted CADs do exist. This provides the first positive existence theorem for minimum CAD for a non-trivial class of sets.</description>
+    </item>
+    <item>
+      <title>Computing a holonomic submodule of the partial Weyl closure</title>
+      <link>https://arxiv.org/abs/2602.06209</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.06209</guid>
+      <pubDate>Tue, 05 May 2026 00:00:00 -0000</pubDate>
+      <description>The Weyl closure is a basic operation in algebraic analysis: it converts a system of differential operators with rational coefficients into an equivalent system with polynomial coefficients. In addition to encoding finer information on the singularities of the system, it serves as a preparatory step for many algorithms in symbolic integration. A new algorithm is introduced to compute a holonomic submodule of the partial Weyl closure of a finite-rank module, where the closure is taken with respect to a subset of the variables. The method relies on a non-commutative analogue of Rabinowitsch's trick. The algorithm is implemented in the Julia package MultivariateCreativeTelescoping.jl and shows substantial speedups over existing exact Weyl closure algorithms in Singular and Macaulay2.</description>
+    </item>
+    <item>
+      <title>ABD: Default Exception Abduction in Finite First Order Worlds</title>
+      <link>https://arxiv.org/abs/2602.18843</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.18843</guid>
+      <pubDate>Sun, 03 May 2026 00:00:00 -0000</pubDate>
+      <description>We introduce ABD, a benchmark for default-exception abduction over finite first-order worlds. Given a background theory with an abnormality predicate and a set of relational structures, a model must output a first-order formula that defines exceptions, restoring satisfiability while keeping exceptions sparse. We formalize three observation regimes (closed-world, existential completion, universal completion) with exact SMT verification. Evaluating ten frontier LLMs on 600 instances, the best models achieve high validity but parsimony gaps remain, and holdout evaluation reveals distinct generalization failure modes across regimes.</description>
+    </item>
+    <item>
+      <title>A Generalisation of Goursat's Algorithm for Integration in Finite Terms</title>
+      <link>https://arxiv.org/abs/2604.27806</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2604.27806</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 -0000</pubDate>
+      <description>We give a self-contained, modern exposition of Édouard Goursat's 1887 theorem on pseudo-elliptic integrals -- those integrals of the form $\int F(t)\,\d t/\sqrt{R(t)}$ with $R$ a cubic or quartic polynomial that, despite living on a genus-$1$ algebraic curve, admit elementary antiderivatives. After reviewing integration in finite terms and Liouville's theorem, we present Goursat's two main theorems with proofs phrased in the language of Möbius automorphisms of the underlying hyperelliptic curve. We then develop a cube-root analog: for integrals of the form $\int F(t)\,\d t/\sqrt[3]{R(t)}$ with $R$ cubic, an order-$3$ Möbius substitution cyclically permuting the roots of $R$ induces an eigendecomposition into three pieces. Two of the three eigenpieces (eigenvalues $1$ and $ω^2$, where $ω= e^{2πi/3}$) descend through a chain of substitutions to genus-$0$ curves and yield elementary antiderivatives; the middle eigenpiece (eigenvalue $ω$) descends only to the genus-$1$ curve $y^3 = x(x-K)$ and is generically transcendental.</description>
+    </item>
+    <item>
+      <title>Factoring Linear Differential Operators in Positive Characteristic by means of Solving a Norm Equation</title>
+      <link>https://arxiv.org/abs/2403.06542</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2403.06542</guid>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 -0000</pubDate>
+      <description>The solutions of the equation $f^{(p-1)} + f^p = h^p$ in the unknown function $f $over an algebraic function field of characteristic $p$ are very closely linked to the structure and factorisations of linear differential operators with coefficients in function fields of characteristic $p$. However, while being able to solve this equation over general algebraic function fields is necessary even for operators with rational coefficients, no general resolution method has been developed. We present an algorithm for testing the existence of solutions in polynomial time in the ``size'' of h and an algorithm based on the computation of Riemann-Roch spaces and the selection of elements in the divisor class group, for computing solutions of size polynomial in the ``size'' of h in polynomial time in the size of h and linear in the characteristic $p$, and discuss its applications to the factorisation of linear differential operators in positive characteristic $p$.</description>
+    </item>
+    <item>
+      <title>Algebraic structure behind Odrzywołek's EML operator</title>
+      <link>https://arxiv.org/abs/2604.23893</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2604.23893</guid>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 -0000</pubDate>
+      <description>The binary EML operator yields all (transcendental) elementary functions by recursive application, or a binary tree. The structure of the operator itself carries two distinct ingredients: that of an abelian group, and of functional inverse, which reveal a constructive path to many distinct functional families.</description>
+    </item>
+    <item>
+      <title>Parallel Two-Stage Approach for Joint Symbolic Approximation of Time Series</title>
+      <link>https://arxiv.org/abs/2401.00109</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2401.00109</guid>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 -0000</pubDate>
+      <description>As time-series applications grow larger, there is increasing demand for symbolic representations that are compact, accurate, and scalable across many signals and computing resources. Current ABBA-based symbolic approximation methods produce high-quality, shape-preserving representations, but they handle each time series separately and sequentially. This means they do not ensure consistent symbols across different series and cannot fully exploit modern multicore systems and distributed-memory systems. This paper presents a joint symbolic time-series approximation method for large-scale time series. The proposed method decouples local compression from global digitization: (i) time series are partitioned into independent domains that can be compressed in parallel, and (ii) the resulting pieces are digitized using a shared global dictionary. To further improve scalability, we introduce a two-stage parallel digitization scheme, in which aggregation is first performed locally and then merged globally without requiring a full-data reassignment step. Extensive experiments on time-series datasets and large synthetic benchmarks show that our approach maintains competitive reconstruction quality while substantially reducing runtime. These results show that joint symbolic approximation can serve as an efficient, high-level parallel tool for analyzing large-scale temporal data.</description>
+    </item>
+    <item>
+      <title>Tractable Verification of Model Transformations: A Cutoff-Theorem Approach for DSLTrans</title>
+      <link>https://arxiv.org/abs/2604.18792</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2604.18792</guid>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 -0000</pubDate>
+      <description>Model transformations are central to MDE, but formal verification is difficult because mainstream transformation languages are undecidable. DSLTrans was designed to be Turing-incomplete to improve verifiability, yet earlier verification based on path-condition enumeration still suffered exponential blow-up and did not scale to realistic cases. We present a tractable verification workflow for DSLTrans and formalize when it is complete. The method combines three contributions: (i) a Cutoff Theorem proving that bounded model checking is complete for a precise DSLTrans fragment and positive existence/traceability properties, turning an infinite search into a finite computable bound; (ii) composable, soundness-preserving optimizations (per-class bounds, CEGAR-based fragment verification, and trace-aware dependency analysis) that reduce SMT encoding size; and (iii) a Z3-based implementation evaluated on realistic transformations from the ATL Zoo and related benchmarks. On 29 concrete transformations and 899 properties spanning compiler lowering, schema translation, behavioral modeling, graph mapping, and stress tests, 552 properties are proved, 345 produce concrete counterexamples (including intentional negative and boundary cases), and only 2 remain undecided within timeout. For properties beyond the tractability budget, we introduce tractability-driven refinement (precondition specialization, postcondition decomposition, and transformation instrumentation), achieving up to 112x speedup while eliminating spurious counterexamples. The workflow is supported by a web IDE and a concrete execution engine for runtime validation.</description>
+    </item>
+    <item>
+      <title>Graded Symbolic Verification with a Fuzzy Dolev-Yao Attacker Model</title>
+      <link>https://arxiv.org/abs/2604.15402</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2604.15402</guid>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 -0000</pubDate>
+      <description>Classical symbolic protocol verification under Dolev--Yao uses binary attacker knowledge (known/unknown). This abstraction misses cumulative side-channel settings, where repeated noisy observations progressively improve attacker knowledge. We model this process with a graded attacker view \(μ_K\in[0,1]\), product T-norm leak updates, and finite-grid explicit-state execution in Modified Murphi. The method is optimised with exact concept-lattice attribute reducts and exposes threshold-driven safe-to-fail transitions that are not represented in corresponding binary runs under the same bounded assumptions. Executed results on symmetric and asymmetric protocols, including Needham--Schroeder--Lowe (NSL), show that baseline models passing under crisp semantics can fail once cumulative side-channel leakage is enabled.</description>
+    </item>
+    <item>
+      <title>Learning to Unscramble: Simplifying Symbolic Expressions via Self-Supervised Oracle Trajectories</title>
+      <link>https://arxiv.org/abs/2603.11164</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.11164</guid>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 -0000</pubDate>
+      <description>We present a new self-supervised machine learning approach for symbolic simplification of complex mathematical expressions. Training data is generated by scrambling simple expressions and recording the inverse operations, creating oracle trajectories that provide both goal states and explicit paths to reach them. A permutation-equivariant, transformer-based policy network is then trained on this data step-wise to predict the oracle action given the input expression. We demonstrate this approach on two problems in high-energy physics: dilogarithm reduction and spinor-helicity scattering amplitude simplification. In both cases, our trained policy network achieves near perfect solve rates across a wide range of difficulty levels, substantially outperforming prior approaches based on reinforcement learning and end-to-end regression. When combined with contrastive grouping and beam search, our model achieves a 100\% full simplification rate on a representative selection of 5-point gluon tree-level amplitudes in Yang-Mills theory, including expressions with over 200 initial terms.</description>
+    </item>
+    <item>
+      <title>All elementary functions from a single binary operator</title>
+      <link>https://arxiv.org/abs/2603.21852</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.21852</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 -0000</pubDate>
+      <description>A single two-input gate suffices for all of Boolean logic in digital hardware. No comparable primitive has been known for continuous mathematics: computing elementary functions such as sin, cos, sqrt, and log has always required multiple distinct operations. Here I show that a single binary operator, eml(x,y)=exp(x)-ln(y), together with the constant 1, generates the standard repertoire of a scientific calculator. This includes constants such as e, pi, and i; arithmetic operations including addition, subtraction, multiplication, division, and exponentiation as well as the usual transcendental and algebraic functions. For example, exp(x)=eml(x,1), ln(x)=eml(1,eml(eml(1,x),1)), and likewise for all other operations. That such an operator exists was not anticipated; I found it by systematic exhaustive search and established constructively that it suffices for the concrete scientific-calculator basis. In EML (Exp-Minus-Log) form, every such expression becomes a binary tree of identical nodes, yielding a grammar as simple as S -&gt; 1 | eml(S,S). This uniform structure also enables gradient-based symbolic regression: using EML trees as trainable circuits with standard optimizers (Adam), I demonstrate the feasibility of exact recovery of closed-form elementary functions from numerical data at shallow tree depths up to 4. The same architecture can fit arbitrary data, but when the generating law is elementary, it may recover the exact formula.</description>
+    </item>
+    <item>
+      <title>Enes Causal Discovery</title>
+      <link>https://arxiv.org/abs/2603.24436</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.24436</guid>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 -0000</pubDate>
+      <description>Enes The proposed architecture is a mixture of experts, which allows for the model entities, such as the causal relationships, to be further parameterized. More specifically, an attempt is made to exploit a neural net as implementing neurons poses a great challenge for this dataset. To explain, a simple and fast Pearson coefficient linear model usually achieves good scores. An aggressive baseline that requires a really good model to overcome that is. Moreover, there are major limitations when it comes to causal discovery of observational data. Unlike the sachs one did not use interventions but only prior knowledge; the most prohibiting limitation is that of the data which is addressed. Thereafter, the method and the model are described and after that the results are presented.</description>
+    </item>
+    <item>
+      <title>Computing Characteristic Polynomials of p-Curvatures in Average Polynomial Time</title>
+      <link>https://arxiv.org/abs/2106.14637</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2106.14637</guid>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 -0000</pubDate>
+      <description>We design a fast algorithm that computes, for a given linear differential operator with coefficients in $Z[x ]$, all the characteristic polynomials of its p-curvatures, for all primes $p &lt; N$ , in asymptotically quasi-linear bit complexity in N. We discuss implementations and applications of our algorithm. We shall see in particular that the good performances of our algorithm are quickly visible.</description>
+    </item>
+    <item>
+      <title>Introducing the vfunc R package</title>
+      <link>https://arxiv.org/abs/2603.15156</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.15156</guid>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 -0000</pubDate>
+      <description>$f,g\colon\mathbb{R}\longrightarrow\mathbb{R}$, it is natural to define $f+g$ as the function that maps $x\in\mathbb{R}$ to $f(x) + g(x)$. However, in base R, objects of class function do not have arithmetic methods defined, so idiom such as "f + g" returns an error, even though it has a perfectly reasonable expectation. The vfunc package offers this functionality. Other similar features are provided, which lead to compact and readable idiom. A wide class of coding bugs is eliminated.</description>
+    </item>
+    <item>
+      <title>Executable Archaeology: Reanimating the Logic Theorist from its IPL-V Source</title>
+      <link>https://arxiv.org/abs/2603.13514</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.13514</guid>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 -0000</pubDate>
+      <description>The Logic Theorist (LT), created by Allen Newell, J. C. Shaw, and Herbert Simon in 1955-1956, is widely regarded as the first artificial intelligence program. While the original conceptual model was described in 1956, it underwent several iterations as the underlying Information Processing Language (IPL) evolved. Here I describe the construction of a new IPL-V interpreter, written in Common Lisp, and the faithful reanimation of the Logic Theorist from code transcribed directly from Stefferud's 1963 RAND technical report. Stefferud's version represents a pedagogical re-coding of the original heuristic logic into the standardized IPL-V. The reanimated LT successfully proves 16 of 23 attempted theorems from Chapter 2 of Principia Mathematica, results that are historically consistent with the original system's behavior within its search limits. To the author's knowledge, this is the first successful execution of the original Logic Theorist code in over half a century.</description>
+    </item>
+    <item>
+      <title>Randomized Distributed Function Computation (RDFC): Ultra-Efficient Semantic Communication Applications to Privacy</title>
+      <link>https://arxiv.org/abs/2603.09577</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.09577</guid>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 -0000</pubDate>
+      <description>We establish the randomized distributed function computation (RDFC) framework, in which a sender transmits just enough information for a receiver to generate a randomized function of the input data. Describing RDFC as a form of semantic communication, which can be essentially seen as a generalized remote-source-coding problem, we show that security and privacy constraints naturally fit this model, as they generally require a randomization step. Using strong coordination metrics, we ensure (local differential) privacy for every input sequence and prove that such guarantees can be met even when no common randomness is shared between the transmitter and receiver. This work provides lower bounds on Wyner's common information (WCI), which is the communication cost when common randomness is absent, and proposes numerical techniques to evaluate the other corner point of the RDFC rate region for continuous-alphabet random variables with unlimited shared randomness. Experiments illustrate that a sufficient amount of common randomness can reduce the semantic communication rate by up to two orders of magnitude compared to the WCI point, while RDFC without any shared randomness still outperforms lossless transmission by a large margin. A finite blocklength analysis further confirms that the privacy parameter gap between the asymptotic and non-asymptotic RDFC methods closes exponentially fast with input length. Our results position RDFC as an energy-efficient semantic communication strategy for privacy-aware distributed computation systems.</description>
+    </item>
+    <item>
+      <title>Looking Through Glass Box</title>
+      <link>https://arxiv.org/abs/2603.06272</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.06272</guid>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 -0000</pubDate>
+      <description>This essay is about a neural implementation of the fuzzy cognitive map, the FHM, and corresponding evaluations. Firstly, a neural net has been designed to behave the same way that an FCM does; as inputs it accepts many fuzzy cognitive maps and propagates them in order to learn causality patterns. Moreover, the network uses langevin differential Dynamics, which avoid overfit, to inverse solve the output node values according to some policy. Nevertheless, having obtained an inverse solution provides the user a modification criterion. Having the modification criterion suggests that information is now according to discretion as a different service or product is a better fit. Lastly, evaluation has been done on several data sets in order to examine the networks performance.</description>
+    </item>
+    <item>
+      <title>Fast polynomial computations with space constraints</title>
+      <link>https://arxiv.org/abs/2511.11267</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.11267</guid>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 -0000</pubDate>
+      <description>The works presented in this habilitation concern the algorithmics of polynomials. This is a central topic in computer algebra, with numerous applications both within and outside the field - cryptography, error-correcting codes, etc. For many problems, extremely efficient algorithms have been developed since the 1960s. Here, we are interested in how this efficiency is affected when space constraints are introduced. The first part focuses on the time-space complexity of fundamental polynomial computations - multiplication, division, interpolation, ... While naive algorithms typically have constant space complexity, fast algorithms generally require linear space. We develop algorithms that are both time- and space-efficient. This leads us to discuss and refine definitions of space complexity for function computation. In the second part, the space constraints are put on the inputs and outputs. Algorithms for polynomials assume in general a dense representation for the polynomials, that is storing the full list of coefficients. In contrast, we work with sparse polynomials, in which most coefficients vanish. In particular, we describe the first quasi-linear algorithm for sparse interpolation, which plays a role analogous to the Fast Fourier Transform in the sparse settings. We also explore computationally hard problems concerning divisibility and factorization of sparse polynomials.</description>
+    </item>
+    <item>
+      <title>Fast Matrix Multiplication in Small Formats: Discovering New Schemes with an Open-Source Flip Graph Framework</title>
+      <link>https://arxiv.org/abs/2603.02398</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.02398</guid>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 -0000</pubDate>
+      <description>An open-source C++ framework for discovering fast matrix multiplication schemes using the flip graph approach is presented. The framework supports multiple coefficient rings -- binary ($\mathbb{Z}_2$), modular ternary ($\mathbb{Z}_3$) and integer ternary ($\mathbb{Z}_T = \{-1,0,1\}$) -- and implements both fixed-dimension and meta-dimensional search operators. Using efficient bit-level encoding of coefficient vectors and OpenMP parallelism, the tools enable large-scale exploration on commodity hardware. The study covers 680 schemes ranging from $(2 \times 2 \times 2)$ to $(16 \times 16 \times 16)$, with 276 schemes now in $\mathbb{Z}_T$ coefficients and 117 in integer coefficients. With this framework, the multiplicative complexity (rank) is improved for 79 matrix multiplication schemes. Notably, a new $4 \times 4 \times 10$ scheme requiring only 115 multiplications is discovered, achieving $ω\approx 2.80478$ and beating Strassen's exponent for this specific size. Additionally, 93 schemes are rediscovered in ternary coefficients that were previously known only over rationals or integers, and 68 schemes in integer coefficients that previously required fractions. All tools and discovered schemes are made publicly available to enable reproducible research.</description>
+    </item>
+    <item>
+      <title>Order Bounds for Hypergeometric and q-Hypergeometric Creative Telescoping</title>
+      <link>https://arxiv.org/abs/2602.19886</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.19886</guid>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 -0000</pubDate>
+      <description>Leveraging a general framework adapted from symbolic integration, a unified reduction-based algorithm for computing telescopers of minimal order for hypergeometric and q-hypergeometric terms has been recently developed. In this paper, we conduct a deeper exploration and put forth a new argument for the termination of the algorithm. This not only provides an independent proof of existence of telescopers, but also allows us to derive unified upper and lower bounds on the order of telescopers for hypergeometric terms and their q-analogues. Compared with known bounds in the literature, our bounds, in the hypergeometric case, are exactly the same as the tight ones obtained in 2016; while in the q-hypergeometric case, no lower bounds were known before, and our upper bound is sometimes better and never worse than the known one.</description>
+    </item>
+    <item>
+      <title>Ontology-Guided Neuro-Symbolic Inference: Grounding Language Models with Mathematical Domain Knowledge</title>
+      <link>https://arxiv.org/abs/2602.17826</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.17826</guid>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 -0000</pubDate>
+      <description>Language models exhibit fundamental limitations -- hallucination, brittleness, and lack of formal grounding -- that are particularly problematic in high-stakes specialist fields requiring verifiable reasoning. I investigate whether formal domain ontologies can enhance language model reliability through retrieval-augmented generation. Using mathematics as proof of concept, I implement a neuro-symbolic pipeline leveraging the OpenMath ontology with hybrid retrieval and cross-encoder reranking to inject relevant definitions into model prompts. Evaluation on the MATH benchmark with three open-source models reveals that ontology-guided context improves performance when retrieval quality is high, but irrelevant context actively degrades it -- highlighting both the promise and challenges of neuro-symbolic approaches.</description>
+    </item>
+    <item>
+      <title>Debugging code world models</title>
+      <link>https://arxiv.org/abs/2602.07672</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.07672</guid>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 -0000</pubDate>
+      <description>Code World Models (CWMs) are language models trained to simulate program execution by predicting explicit runtime state after every executed command. This execution-based world modeling enables internal verification within the model, offering an alternative to natural language chain-of-thought reasoning. However, the sources of errors and the nature of CWMs' limitations remain poorly understood. We study CWMs from two complementary perspectives: local semantic execution and long-horizon state tracking. On real-code benchmarks, we identify two dominant failure regimes. First, dense runtime state reveals produce token-intensive execution traces, leading to token-budget exhaustion on programs with long execution histories. Second, failures disproportionately concentrate in string-valued state, which we attribute to limitations of subword tokenization rather than program structure. To study long-horizon behavior, we use a controlled permutation-tracking benchmark that isolates state propagation under action execution. We show that long-horizon degradation is driven primarily by incorrect action generation: when actions are replaced with ground-truth commands, a Transformer-based CWM propagates state accurately over long horizons, despite known limitations of Transformers in long-horizon state tracking. These findings suggest directions for more efficient supervision and state representations in CWMs that are better aligned with program execution and data types.</description>
+    </item>
+    <item>
+      <title>The Neurosymbolic Frontier of Nonuniform Ellipticity: Formalizing Sharp Schauder Theory via Topos-Theoretic Reasoning Models</title>
+      <link>https://arxiv.org/abs/2602.10632</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.10632</guid>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 -0000</pubDate>
+      <description>This white paper presents a critical synthesis of the recent breakthrough in nonuniformly elliptic regularity theory and the burgeoning field of neurosymbolic large reasoning models (LRMs). We explore the resolution of the long-standing sharp growth rate conjecture in Schauder theory, achieved by Cristiana De Filippis and Giuseppe Mingione, which identifies the exact threshold $q/p &lt; 1 + α/n$ for gradient Hölder continuity. Central to this mathematical achievement is the ``ghost equation'' methodology, a sophisticated auxiliary derivation that bypasses the non-differentiability of classical Euler-Lagrange systems. We propose that the next era of mathematical discovery lies in the integration of these pure analytical constructs with LRMs grounded in topos theory and formal verification frameworks such as Safe and Typed Chain-of-Thought (PC-CoT). By modeling the reasoning process as a categorical colimit in a slice topos, we demonstrate how LRMs can autonomously navigate the ``Dark Side'' of the calculus of variations, providing machine-checkable proofs for regularity bounds in complex, multi-phase physical systems.</description>
+    </item>
+    <item>
+      <title>Artificial Intelligence Software Structured to Simulate Human Working Memory, Mental Imagery, and Mental Continuity</title>
+      <link>https://arxiv.org/abs/2204.05138</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2204.05138</guid>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 -0000</pubDate>
+      <description>This article presents an artificial intelligence (AI) architecture intended to simulate the iterative updating of the human working memory system. It features several interconnected neural networks designed to emulate the specialized modules of the cerebral cortex. These are structured hierarchically and integrated into a global workspace. They are capable of temporarily maintaining high-level representational patterns akin to the psychological items maintained in working memory. This maintenance is made possible by persistent neural activity in the form of two modalities: sustained neural firing (resulting in a focus of attention) and synaptic potentiation (resulting in a short-term store). Representations held in persistent activity are recursively replaced resulting in incremental changes to the content of the working memory system. As this content gradually evolves, successive processing states overlap and are continuous with one another. The present article will explore how this architecture can lead to iterative shift in the distribution of coactive representations, ultimately leading to mental continuity between processing states, and thus to human-like thought and cognition. Taken together, these components outline a biologically motivated route toward synthetic consciousness or artificial sentience and subjectivity.</description>
+    </item>
+    <item>
+      <title>LCM decomposition of linear differential operators in positive characteristic</title>
+      <link>https://arxiv.org/abs/2602.07237</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.07237</guid>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 -0000</pubDate>
+      <description>We present an algorithm to compute $\mathrm{LCLM}$-decompositions for linear differentials operators with coefficients in the rational function field of characteristic $p$, $\mathbb{F}_{p^n}(t)$. We show that for an operator $L$ of order $r$ with coefficients of degree $d$, it finishes in polynomial time in $r$, $d$ and $p$. This algorithm proceeds in three steps. We begin by showing that the ''shape'' of the factorisation of $L$ can be easily obtained from the Frobenius normal form of its $p$-curvature, which can be efficiently computed an algorithm from Bostan, Caruso and Schost. Using results from the thesis of the author, we are then able to construct an operator $L^*$ in the same equivalence class as $L$ for which an $\mathrm{LCLM}$-decomposition is known. Finally, by computing an isomorphism between the quotient modules $\mathbb{F}_q(t)\langle\partial\rangle/\mathbb{F}_q(t)\langle\partial\rangle L^*$ and $\mathbb{F}_q(t)\langle\partial\rangle/\mathbb{F}_q(t)\langle\partial\rangle L$, we find a corresponding $\mathrm{LCLM}$-decomposition of $L$.</description>
+    </item>
+    <item>
+      <title>Solving parametric polynomial systems using Generic Rational Univariate Representation</title>
+      <link>https://arxiv.org/abs/2602.06817</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.06817</guid>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 -0000</pubDate>
+      <description>In this paper, we present a generic parametrization of generically zero-dimensional parametric polynomial systems. More specifically, we study the specialization properties of the Rational Univariate Representation and derive bounds on the degrees and heights of its elements. In addition to that, we propose two algorithms to effectively compute this parametrization.</description>
+    </item>
+    <item>
+      <title>Determining unit groups and $\mathrm{K}_1$ of finite rings</title>
+      <link>https://arxiv.org/abs/2506.00266</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2506.00266</guid>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 -0000</pubDate>
+      <description>We consider the computational problem of determining the unit group of a finite ring, by which we mean the computation of a finite presentation together with an algorithm to express units as words in the generators. We show that the problem is equivalent to the number theoretic problems of factoring integers and solving discrete logarithms in finite fields. A similar equivalence is shown for the problem of determining the abelianization of the unit group or the first $K$-group of finite rings.</description>
+    </item>
+    <item>
+      <title>Formal Power Series on Algebraic Cryptanalysis</title>
+      <link>https://arxiv.org/abs/2007.14729</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2007.14729</guid>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 -0000</pubDate>
+      <description>In the complexity estimation for an attack that reduces a cryptosystem to solving a system of polynomial equations, the degree of regularity and an upper bound of the first fall degree are often used in cryptanalysis. While the degree of regularity can be easily computed using a univariate formal power series under the semi-regularity assumption, determining an upper bound of the first fall degree requires investigating the concrete syzygies of an input system. In this paper, we investigate an upper bound of the first fall degree for a polynomial system over a sufficiently large field. In this case, we prove that the first fall degree of a non-semi-regular system is bounded above by the degree of regularity, and that the first fall degree of a multi-graded polynomial system is bounded above by a certain value determined from a multivariate formal power series. Moreover, we provide a theoretical assumption for computing the first fall degree of a polynomial system over a sufficiently large field.</description>
+    </item>
+    <item>
+      <title>A Qualitative Model to Reason about Object Rotations (QOR) applied to solve the Cube Comparison Test (CCT)</title>
+      <link>https://arxiv.org/abs/2601.08382</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2601.08382</guid>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 -0000</pubDate>
+      <description>This paper presents a Qualitative model for Reasoning about Object Rotations (QOR) which is applied to solve the Cube Comparison Test (CCT) by Ekstrom et al. (1976). A conceptual neighborhood graph relating the Rotation movement to the Location change and the Orientation change (CNGRLO) of the features on the cube sides has been built and it produces composition tables to calculate inferences for reasoning about rotations.</description>
+    </item>
+    <item>
+      <title>On some Exotic Cylindrical Algebraic Decompositions and Cells</title>
+      <link>https://arxiv.org/abs/2601.09795</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2601.09795</guid>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 -0000</pubDate>
+      <description>Cylindrical Algebraic Decompositions (CADs) endowed with additional topological properties have found applications beyond their original logical setting, including algorithmic optimizations in CAD construction, robot motion planning, and the algorithmic study of the topology of semi-algebraic sets. In this paper, we construct explicit examples of CADs and CAD cells that refute several conjectures and open questions of J. H. Davenport, A. Locatelli, and G. K. Sankaran concerning these topological assumptions.</description>
+    </item>
+    <item>
+      <title>130k Lines of Formal Topology in Two Weeks: Simple and Cheap Autoformalization for Everyone?</title>
+      <link>https://arxiv.org/abs/2601.03298</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2601.03298</guid>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 -0000</pubDate>
+      <description>This is a brief description of a project that has already autoformalized a large portion of the general topology from the Munkres textbook (which has in total 241 pages in 7 chapters and 39 sections). The project has been running since November 21, 2025 and has as of January 4, 2026, produced 160k lines of formalized topology. Most of it (about 130k lines) have been done in two weeks,from December 22 to January 4, for an LLM subscription cost of about \$100. This includes a 3k-line proof of Urysohn's lemma, a 2k-line proof of Urysohn's Metrization theorem, over 10k-line proof of the Tietze extension theorem, and many more (in total over 1.5k lemmas/theorems). The approach is quite simple and cheap: build a long-running feedback loop between an LLM and a reasonably fast proof checker equipped with a core foundational library. The LLM is now instantiated as ChatGPT (mostly 5.2) or Claude Sonnet (4.5) run through the respective Codex or Claude Code command line interfaces. The proof checker is Chad Brown's higher-order set theory system Megalodon, and the core library is Brown's formalization of basic set theory and surreal numbers (including reals, etc). The rest is some prompt engineering and technical choices which we describe here. Based on the fast progress, low cost, virtually unknown ITP/library, and the simple setup available to everyone, we believe that (auto)formalization may become quite easy and ubiquitous in 2026, regardless of which proof assistant is used.</description>
+    </item>
+    <item>
+      <title>Exact Constructive Digit-by-Digit Algorithms for Integer $e$-th Root Extraction</title>
+      <link>https://arxiv.org/abs/2601.02703</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2601.02703</guid>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 -0000</pubDate>
+      <description>We present a unified constructive digit-by-digit framework for exact root extraction using only integer arithmetic. The core contribution is a complete correctness theory for the fractional square root algorithm, proving that each computed decimal digit is exact and final, together with a sharp truncation error bound of $10^{-k}$ after $k$ digits. We further develop an invariant-based framework for computing the integer $e$-th root $\lfloor N^{1/e} \rfloor$ of a non-negative integer $N$ for arbitrary fixed exponents $e \ge 2$, derived directly from the binomial theorem. This method generalizes the classical long-division square root algorithm, preserves a constructive remainder invariant throughout the computation, and provides an exact decision procedure for perfect $e$-th power detection. We also explain why exact digit-by-digit fractional extraction with non-revisable digits is structurally possible only for square roots ($e=2$), whereas higher-order roots ($e \ge 3$) exhibit nonlinear coupling that prevents digit stability under scaling. All proofs are carried out in a constructive, algorithmic manner consistent with Bishop-style constructive mathematics, yielding explicit algorithmic witnesses, decidable predicates, and guaranteed termination. The resulting algorithms require no division or floating-point operations and are well suited to symbolic computation, verified exact arithmetic, educational exposition, and digital hardware implementation.</description>
+    </item>
+    <item>
+      <title>OGRe: An Object-Oriented General Relativity Package for Mathematica</title>
+      <link>https://arxiv.org/abs/2109.04193</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2109.04193</guid>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 -0000</pubDate>
+      <description>We present OGRe, a modern Mathematica package for tensor calculus, designed to be both powerful and user-friendly. The package can be used in a variety of contexts where tensor calculations are needed, in both mathematics and physics, but it is especially suitable for general relativity. By implementing an object-oriented design paradigm, OGRe allows calculating arbitrarily complicated tensor formulas easily, and automatically transforms between index configurations and coordinate systems behind the scenes as needed, eliminating user errors by making it impossible for the user to combine tensors in inconsistent ways. Other features include displaying tensors in various forms, automatic calculation of curvature tensors and geodesic equations, easy importing and exporting of tensors between sessions, optimized algorithms and parallelization for improved performance, and more.</description>
+    </item>
+    <item>
+      <title>Logic Sketch Prompting (LSP): A Deterministic and Interpretable Prompting Method</title>
+      <link>https://arxiv.org/abs/2512.22258</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.22258</guid>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 -0000</pubDate>
+      <description>Large language models (LLMs) excel at natural language reasoning but remain unreliable on tasks requiring strict rule adherence, determinism, and auditability. Logic Sketch Prompting (LSP) is a lightweight prompting framework that introduces typed variables, deterministic condition evaluators, and a rule based validator that produces traceable and repeatable outputs. Using two pharmacologic logic compliance tasks, we benchmark LSP against zero shot prompting, chain of thought prompting, and concise prompting across three open weight models: Gemma 2, Mistral, and Llama 3. Across both tasks and all models, LSP consistently achieves the highest accuracy (0.83 to 0.89) and F1 score (0.83 to 0.89), substantially outperforming zero shot prompting (0.24 to 0.60), concise prompts (0.16 to 0.30), and chain of thought prompting (0.56 to 0.75). McNemar tests show statistically significant gains for LSP across nearly all comparisons (p &lt; 0.01). These results demonstrate that LSP improves determinism, interpretability, and consistency without sacrificing performance, supporting its use in clinical, regulated, and safety critical decision support systems.</description>
+    </item>
+    <item>
+      <title>OGRePy: An Object-Oriented General Relativity Package for Python</title>
+      <link>https://arxiv.org/abs/2409.03803</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2409.03803</guid>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 -0000</pubDate>
+      <description>OGRePy is a modern, open-source Python package designed to perform symbolic tensor calculations, with a particular focus on applications in general relativity. Built on an object-oriented architecture, OGRePy encapsulates tensors, metrics, and coordinate systems as self-contained objects, automatically handling raising and lowering of indices, coordinate transformations, contractions, partial or covariant derivatives, and all tensor operations. By leveraging the capabilities of SymPy and Jupyter Notebook, OGRePy provides a robust, user-friendly environment that facilitates both research and teaching in general relativity and differential geometry. This Python package reproduces the functionality of the popular Mathematica package OGRe, while greatly improving upon it by making use of Python's native object-oriented syntax. In this paper, we describe OGRePy's design and implementation, and discuss its potential for reuse across research and education in mathematics and physics.</description>
+    </item>
+    <item>
+      <title>Parallel Heuristic Exploration for Additive Complexity Reduction in Fast Matrix Multiplication</title>
+      <link>https://arxiv.org/abs/2512.13365</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.13365</guid>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 -0000</pubDate>
+      <description>This paper presents a parallel random-search method for reducing additive complexity in fast matrix multiplication algorithms with ternary coefficients $\{-1,0,1\}$. The approach replaces expensive exact evaluation with fast heuristic scoring, including the new Greedy-Intersections strategy. The method runs many independent common subexpression elimination processes in parallel, exploring the search space through random pair substitutions and diverse selection strategies while sharing promising partial solutions. Tested on 149 ternary-coefficient schemes, the method achieves lower addition counts than the state-of-the-art Greedy-Potential on 102 schemes (including 57 new best-known results for optimal-rank schemes), matches it on 45, and is outperformed on only 2. For most schemes, it provides equal or better results while being significantly faster, making it practical for algorithm exploration. All software and results are open source.</description>
+    </item>
+    <item>
+      <title>Mechanizing Operads with Event-B</title>
+      <link>https://arxiv.org/abs/2512.16342</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.16342</guid>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 -0000</pubDate>
+      <description>Rigorous modelling of natural and industrial systems still conveys various challenges related to abstractions, methods to proceed with and easy-to-use tools to build, compose and reason on models. Operads are mathematical structures that provide such abstractions to compose various objects and garanteeing well-formedness. Concrete implementations of operads will offer practical means to exploit operads and to use them for various technical applications. Going from the mathematical structures, we develop with Event-B a complete refinement chain that implements algebraic operads and their basic operations. The result of this work, can be used from the methodological point of view to handle similar implementations for symbolic computation questions, and also to reason on symbolic computation applications supported by operads structures.</description>
+    </item>
+    <item>
+      <title>Projective Variety Recovery from Unknown Linear Projections</title>
+      <link>https://arxiv.org/abs/2504.16771</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2504.16771</guid>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 -0000</pubDate>
+      <description>We study how a smooth irreducible algebraic variety $X$ of dimension $n$ embedded in $\mathbb{C} \mathbb{P}^{m}$ (with $m \geq n+2$), which degree is $d$, can be recovered using two projections from unknown points onto unknown hyperplanes. The centers and the hyperplanes of projection are unknown: the only input is the defining equations of each projected varieties. We show how both the projection operators and the variety in $\mathbb{C} \mathbb{P}^{m}$ can be recovered modulo some action of the group of projective transformations of $\mathbb{C} \mathbb{P}^{m}$. This configuration generalizes results obtained in the context of curves embedded in $\mathbb{C} \mathbb{P}^3$ and results concerning surfaces embedded in $\mathbb{C} \mathbb{P}^4$. We show how in a generic situation, a characteristic matrix of the pair of projections can be recovered. In the process we address dimensional issues and as a result establish a necessary condition, as well as a sufficient condition to compute this characteristic matrix up to a finite-fold ambiguity. These conditions are expressed as minimal values of the degree of the dual variety. Then we use this matrix to recover the class of the couple of projections and as a consequence to recover the variety. For a generic situation, two projections define a variety with two irreducible components. One component has degree $d(d-1)$ and the other has degree $d$, being the original variety.</description>
+    </item>
+    <item>
+      <title>A priori bounds for certified Krawczyk homotopy tracking</title>
+      <link>https://arxiv.org/abs/2512.01355</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.01355</guid>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 -0000</pubDate>
+      <description>We establish the first complexity analysis for Krawczyk-based certified homotopy tracking. It consists of explicit a priori stepsize bounds ensuring the success of the Krawczyk test, and an iteration count bound proportional to the weighted length of the solution path. Our a priori bounds reduce the overhead of interval arithmetic, resulting in fewer iterations than previous methods. Experiments using a proof-of-concept implementation validate the results.</description>
+    </item>
+    <item>
+      <title>Fast Matrix Multiplication via Ternary Meta Flip Graphs</title>
+      <link>https://arxiv.org/abs/2511.20317</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.20317</guid>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 -0000</pubDate>
+      <description>Matrix multiplication optimization remains a fundamental challenge in computational mathematics. This work introduces a novel approach that discovers matrix multiplication schemes whose coefficients are restricted to the set $\{-1, 0, 1\}$ (denoted $Z_T$), minimizing naive additive complexity for efficient hardware implementation. The core of the method is a GPU-accelerated meta flip graph algorithm that maintains ternary safety through specialized arithmetic operations and sign symmetry breaking. Key results include new best ranks for the formats $4 \times 5 \times 12$, $5 \times 6 \times 10$, and $6 \times 7 \times 9$, the independent discovery of 32 schemes in $Z_T$ that match known optimal ranks (including 8 previously known only with rational coefficients), and 30 rank improvements in the binary field. The analysis of 164 known schemes shows that 92 admit a ternary-coefficient implementation, while 72 could not be found under this constraint, defining the current boundaries of the approach. All software, results, and discovered schemes are provided as open-source.</description>
+    </item>
+    <item>
+      <title>Decomposition and Preprocessing of Ternary Constraint Networks</title>
+      <link>https://arxiv.org/abs/2511.11872</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.11872</guid>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 -0000</pubDate>
+      <description>Constraint programming is a general and exact method based on constraint propagation and backtracking search. We provide a function decomposing a constraint network into a ternary constraint network (TCN) with a reduced number of operators. TCNs are not new and have been used since the inception of constraint programming, notably in constraint logic programming systems. This work aims to specify formally the decomposition function of discrete constraint network into TCN and its preprocessing. We aim to be self-contained and descriptive enough to serve as the basis of an implementation. Our primary usage of TCN is to obtain a regular data layout of constraints to efficiently execute propagators on graphics processing unit (GPU) hardware.</description>
+    </item>
+    <item>
+      <title>On the integrality of some P-recursive sequences</title>
+      <link>https://arxiv.org/abs/2511.02121</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.02121</guid>
+      <pubDate>Mon, 03 Nov 2025 00:00:00 -0000</pubDate>
+      <description>We investigate the arithmetic nature of P-recursive sequences through the lens of their D-finite generating functions. Building on classical tools from differential algebra, we revisit the integrality criterion for Motzkin-type sequences due to Klazar and Luca, and propose a unified method for analysing global boundedness and algebraicity within a broader class of holonomic sequences. The central contribution is an algorithm that determines whether all, none, or a one-dimensional family of solutions to certain second-order recurrences are globally bounded. This approach generalizes earlier ad hoc methods and applies successfully to several well-known sequences from the On-Line Encyclopedia of Integer Sequences (OEIS).</description>
+    </item>
+    <item>
+      <title>D-algebraic Guessing</title>
+      <link>https://arxiv.org/abs/2510.26869</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2510.26869</guid>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 -0000</pubDate>
+      <description>Given finitely many consecutive terms of an infinite sequence, we discuss the construction of a polynomial difference equation that the sequence may satisfy. We also present a method to seek a candidate polynomial differential equation for its generating function. It appears that these methods often lead to effective D-algebraic operations.</description>
+    </item>
+    <item>
+      <title>Semantic Properties of Computations Defined by Elementary Inference Systems</title>
+      <link>https://arxiv.org/abs/2510.26429</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2510.26429</guid>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 -0000</pubDate>
+      <description>We consider sets/relations/computations defined by *Elementary Inference Systems* I, which are obtained from Smullyan's *elementary formal systems* using Gentzen's notation for inference rules, and proof trees for atoms P(t_1,...,t_n), where predicate P represents the considered set/relation/computation. A first-order theory Th(I), actually a set of definite Horn clauses, is given to I. Properties of objects defined by I are expressed as first-order sentences F, which are proved true or false by *satisfaction* M |= F of F in a *canonical* model M of Th(I). For this reason, we call F a *semantic property* of I. Since canonical models are, in general, incomputable, we show how to (dis)prove semantic properties by satisfiability in an *arbitrary* model A of Th(I). We apply these ideas to the analysis of properties of programming languages and systems whose computations can be described by means of an elementary inference system. In particular, rewriting-based systems.</description>
+    </item>
+    <item>
+      <title>Runtime Repeated Recursion Unfolding in CHR: A Just-In-Time Online Program Optimization Strategy That Can Achieve Super-Linear Speedup</title>
+      <link>https://arxiv.org/abs/2307.02180</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2307.02180</guid>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 -0000</pubDate>
+      <description>We introduce a just-in-time runtime program transformation strategy based on repeated recursion unfolding. Our online program optimization generates several versions of a recursion differentiated by the minimal number of recursive steps covered. The base case of the recursion is ignored in our technique. Our method is introduced here on the basis of single linear direct recursive rules. When a recursive call is encountered at runtime, first an unfolder creates specializations of the associated recursive rule on-the-fly and then an interpreter applies these rules to the call. Our approach reduces the number of recursive rule applications to its logarithm at the expense of introducing a logarithmic number of generic unfolded rules. We prove correctness of our online optimization technique and determine its time complexity. For recursions which have enough simplifyable unfoldings, a super-linear is possible, i.e. speedup by more than a constant factor. The necessary simplification is problem-specific and has to be provided at compile-time. In our speedup analysis, we prove a sufficient condition as well as a sufficient and necessary condition for super-linear speedup relating the complexity of the recursive steps of the original rule and the unfolded rules. We have implemented an unfolder and meta-interpreter for runtime repeated recursion unfolding with just five rules in Constraint Handling Rules (CHR) embedded in Prolog. We illustrate the feasibility of our approach with simplifications, time complexity results and benchmarks for some basic tractable algorithms. The simplifications require some insight and were derived manually. The runtime improvement quickly reaches several orders of magnitude, consistent with the super-linear speedup predicted by our theorems.</description>
+    </item>
+    <item>
+      <title>Union of Finitely Generated Congruences on Ground Term Algebra</title>
+      <link>https://arxiv.org/abs/2411.14559</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2411.14559</guid>
+      <pubDate>Thu, 16 Oct 2025 00:00:00 -0000</pubDate>
+      <description>We show that for any ground term equation systems $E$ and $F$, (1) the union of the generated congruences by $E$ and $F$ is a congruence on the ground term algebra if and only if there exists a ground term equation system $H$ such that the congruence generated by $H$ is equal to the union of the congruences generated by $E$ and $F$ if and only if the congruence generated by the union of $E $ and $F$ is equal to the union of the congruences generated by $E $ and $F$, and (2) it is decidable in square time whether the congruence generated by the union of $E$ and $F$ is equal to the union of the congruences generated by $E $ and $F$, where the size of the input is the number of occurrences of symbols in $E$ plus the number of occurrences of symbols in $F$.</description>
+    </item>
+    <item>
+      <title>Computing with D-Algebraic Sequences</title>
+      <link>https://arxiv.org/abs/2412.20630</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2412.20630</guid>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 -0000</pubDate>
+      <description>A sequence is difference algebraic (or D-algebraic) if finitely many shifts of its general term satisfy a polynomial relationship; that is, they are the coordinates of a generic point on an affine hypersurface. The corresponding equations are denoted algebraic difference equations (ADEs). We propose a formal definition of D-algebraicity for sequences and investigate algorithms for their closure properties. We show that subsequences of D-algebraic sequences, indexed by arithmetic progressions, satisfy ADEs of the same orders as the original sequences. Additionally, we discuss the special difference-algebraic nature of holonomic and $C^2$-finite sequences.</description>
+    </item>
+    <item>
+      <title>Deducing Closed-Form Expressions for Bright-Solitons in Strongly Magnetized Plasmas with Physics Informed Symbolic Regression (PISR)</title>
+      <link>https://arxiv.org/abs/2510.02551</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2510.02551</guid>
+      <pubDate>Thu, 02 Oct 2025 00:00:00 -0000</pubDate>
+      <description>This paper presents a novel approach to finding analytical approximations for bright-soliton solutions in strongly magnetized plasmas. We leverage Physics-Informed Symbolic Regression (PISR) to discover closed-form expressions for the vector potential and number density profiles, governed by a reduced-order model derived from Maxwell-fluid equations. The PISR framework combines symbolic regression with physics-based constraints, boundary conditions, and available simulation data to guide the search for solutions. We demonstrate the effectiveness of the approach by rediscovering approximate solutions consistent with previously published numerical results, showcasing the potential of PISR for reducing simulation costs of reduced-order models in plasma physics.</description>
+    </item>
+    <item>
+      <title>Improving NLSAT for Nonlinear Real Arithmetic</title>
+      <link>https://arxiv.org/abs/2406.02122</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2406.02122</guid>
+      <pubDate>Fri, 26 Sep 2025 00:00:00 -0000</pubDate>
+      <description>The Model-Constructing Satisfiability Calculus (MCSAT) framework has been applied to SMT problems over various arithmetic theories. NLSAT, an implementation using cylindrical algebraic decomposition (CAD) for explanation, is especially competitive for nonlinear real arithmetic (NRA) constraints. However, current Conflict-Driven Clause Learning (CDCL)-style algorithms only consider literal information when making decisions, and thus ignore the influence of clauses on arithmetic variables. This limitation may lead NLSAT to encounter unnecessary conflicts due to suboptimal literal choices. To address this issue, we analyze conflicts caused by literal decisions and incorporate clause-level information that directly affects arithmetic variables. We propose two main algorithmic improvements: a clause-level feasible-set-based look-ahead mechanism and an arithmetic propagation-based branching heuristic. We implement our solver, named clauseSMT, based on a dynamic variable ordering framework. Experiments indicate that clauseSMT is competitive on nonlinear real arithmetic problems compared with existing SMT solvers (CVC5, Z3, YICES2), and it outperforms all of them on satisfiable instances of SMT(QF_NRA) in SMT-LIB. We also evaluate the effectiveness of our proposed methods.</description>
+    </item>
+    <item>
+      <title>A Category Theoretic Approach to Approximate Game Theory</title>
+      <link>https://arxiv.org/abs/2509.20932</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2509.20932</guid>
+      <pubDate>Thu, 25 Sep 2025 00:00:00 -0000</pubDate>
+      <description>This paper uses category theory to develop an entirely new approach to approximate game theory. Game theory is the study of how different agents within a multi-agent system take decisions. At its core, game theory asks what an optimal decision is in a given scenario. Thus approximate game theory asks what is an approximately optimal decision in a given scenario. This is important in practice as -- just like in much of computing -- exact answers maybe too difficult to compute or even impossible to compute given inherent uncertainty in input. We consider first "Selection Functions" which are functions and develop a simple yet robust model of approximate equilibria. We develop the algebraic properties of approximation wrt selection functions and also relate approximation to the compositional structure of selection functions. We then repeat this process successfully for Open Games -- a more advanced model of game theory.</description>
+    </item>
+    <item>
+      <title>Un cadre paraconsistant pour l'{é}valuation de similarit{é} dans les bases de connaissances</title>
+      <link>https://arxiv.org/abs/2509.08433</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2509.08433</guid>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 -0000</pubDate>
+      <description>This article proposes a paraconsistent framework for evaluating similarity in knowledge bases. Unlike classical approaches, this framework explicitly integrates contradictions, enabling a more robust and interpretable similarity measure. A new measure $ S^* $ is introduced, which penalizes inconsistencies while rewarding shared properties. Paraconsistent super-categories $ Ξ_K^* $ are defined to hierarchically organize knowledge entities. The model also includes a contradiction extractor $ E $ and a repair mechanism, ensuring consistency in the evaluations. Theoretical results guarantee reflexivity, symmetry, and boundedness of $ S^* $. This approach offers a promising solution for managing conflicting knowledge, with perspectives in multi-agent systems.</description>
+    </item>
+    <item>
+      <title>Deciding One to One property of Boolean maps: Condition and algorithm in terms of implicants</title>
+      <link>https://arxiv.org/abs/2307.07788</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2307.07788</guid>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 -0000</pubDate>
+      <description>This paper addresses the computational problem of deciding invertibility (or one to one-ness) of a Boolean map $F$ in $n$-Boolean variables. This problem is a special case of deciding invertibilty of a map $F:\mathbb{F}_{q}^n\rightarrow\mathbb{F}_{q}^n$ over the finite field $\mathbb{F}_q$ for $q=2$. Algebraic condition for invertibility of $F$ is well known to be equivalent to invertibility of the Koopman operator of $F$ as shown in \cite{RamSule}. In this paper a condition for invertibility is derived in the special case of Boolean maps $F:B_0^n\rightarrow B_0^n$ where $B_0$ is the two element Boolean algebra in terms of \emph{implicants} of Boolean equations defined by the map. This condition is then extended to the case of general maps in $n$ variables and $m\geq n$ equations. Hence this condition answers the special case of invertibility of maps $F$ defined over the binary field $\mathbb{F}_2$ alternatively, in terms of implicants instead of the Koopman operator. The problem of deciding invertibility of a map $F$ (or that of finding its Garden of Eden (GOE)) over finite fields is distinct from the satisfiability problem (SAT) or the problem of deciding consistency of polynomial equations over finite fields. Hence the well known algorithms for deciding SAT or of solvability using Grobner basis for checking membership in an ideal generated by polynomials is not known to answer the question of invertibility of a map. Similarly it appears that algorithms for satisfiability or polynomial solvability are not useful for computation of GOE of $F$ even for maps over the binary field $\mathbb{F}_2$.</description>
+    </item>
+    <item>
+      <title>Playstyle and Artificial Intelligence: An Initial Blueprint Through the Lens of Video Games</title>
+      <link>https://arxiv.org/abs/2508.19152</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2508.19152</guid>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 -0000</pubDate>
+      <description>Contemporary artificial intelligence (AI) development largely centers on rational decision-making, valued for its measurability and suitability for objective evaluation. Yet in real-world contexts, an intelligent agent's decisions are shaped not only by logic but also by deeper influences such as beliefs, values, and preferences. The diversity of human decision-making styles emerges from these differences, highlighting that "style" is an essential but often overlooked dimension of intelligence. This dissertation introduces playstyle as an alternative lens for observing and analyzing the decision-making behavior of intelligent agents, and examines its foundational meaning and historical context from a philosophical perspective. By analyzing how beliefs and values drive intentions and actions, we construct a two-tier framework for style formation: the external interaction loop with the environment and the internal cognitive loop of deliberation. On this basis, we formalize style-related characteristics and propose measurable indicators such as style capacity, style popularity, and evolutionary dynamics. The study focuses on three core research directions: (1) Defining and measuring playstyle, proposing a general playstyle metric based on discretized state spaces, and extending it to quantify strategic diversity and competitive balance; (2) Expressing and generating playstyle, exploring how reinforcement learning and imitation learning can be used to train agents exhibiting specific stylistic tendencies, and introducing a novel approach for human-like style learning and modeling; and (3) Practical applications, analyzing the potential of these techniques in domains such as game design and interactive entertainment. Finally, the dissertation outlines future extensions, including the role of style as a core element in building artificial general intelligence (AGI).</description>
+    </item>
+    <item>
+      <title>Probably faster multiplication of sparse polynomials</title>
+      <link>https://arxiv.org/abs/2508.16164</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2508.16164</guid>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 -0000</pubDate>
+      <description>In this paper, we present a probabilistic algorithm to multiply two sparse polynomials almost as efficiently as two dense univariate polynomials with a result of approximately the same size. The algorithm depends on unproven heuristics that will be made precise. Non-heuristic versions that are a constant times slower are also presented.</description>
+    </item>
+    <item>
+      <title>Boolean Matrix Logic Programming on the GPU</title>
+      <link>https://arxiv.org/abs/2408.10369</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2408.10369</guid>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 -0000</pubDate>
+      <description>Traditional logic programming relies on symbolic computation on the CPU, which can limit performance for large-scale inference tasks. Recent advances in GPU hardware enable high-throughput matrix operations, motivating a shift toward parallel logic inference. Boolean Matrix Logic Programming (BMLP) introduces a novel approach to datalog query evaluation using Boolean matrix algebra, well-suited to GPU acceleration. Building on this paradigm, we present two GPU-accelerated BMLP algorithms for bottom-up inference over linear dyadic recursive datalog programs. We further extend the BMLP theoretical framework to support general linear recursion with binary predicates. Empirical evaluations on reachability queries in large directed graphs and the Freebase 15K dataset show that our methods achieve 1-4 orders of magnitude speed up over state-of-the-art systems. These results demonstrate that Boolean matrix-based reasoning can significantly advance the scalability and efficiency of logic programming on modern hardware. Source code is available on https://github.com/lun-ai/BMLP.git.</description>
+    </item>
+    <item>
+      <title>Generalized ODE reduction algorithm with bounded degree transformation</title>
+      <link>https://arxiv.org/abs/2508.09754</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2508.09754</guid>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 -0000</pubDate>
+      <description>As a generalization of our previous result\cite{huang2025algorithm}, this paper aims to answer the following question: Given a 2-dimensional polynomial vector field $y^{\prime}=\frac{M(x,y)}{N(x,y)}$, how to find a rational transformation $y \to \frac{A(x,y)}{B(x,y)}$ with bounded degree numerator, the inverse of which transforms this vector field into a simpler form $y^{\prime}=\sum_{i=0}^nf_i(x)y^i$. Such a structure, often known as the generalized Abel equation and has been studied in various areas, provides a deeper insight into the property of the original vector field. We have implemented an algorithm with considerable performance to tackle this problem and the code is available in \href{https://www.researchgate.net/publication/393362858_Generalized_ODE_reduction_algorithm}{Researchgate}.</description>
+    </item>
+    <item>
+      <title>Algebraically Observable Physics-Informed Neural Network and its Application to Epidemiological Modelling</title>
+      <link>https://arxiv.org/abs/2508.04590</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2508.04590</guid>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 -0000</pubDate>
+      <description>Physics-Informed Neural Network (PINN) is a deep learning framework that integrates the governing equations underlying data into a loss function. In this study, we consider the problem of estimating state variables and parameters in epidemiological models governed by ordinary differential equations using PINNs. In practice, not all trajectory data corresponding to the population described by models can be measured. Learning PINNs to estimate the unmeasured state variables and epidemiological parameters using partial measurements is challenging. Accordingly, we introduce the concept of algebraic observability of the state variables. Specifically, we propose augmenting the unmeasured data based on algebraic observability analysis. The validity of the proposed method is demonstrated through numerical experiments under three scenarios in the context of epidemiological modelling. Specifically, given noisy and partial measurements, the accuracy of unmeasured states and parameter estimation of the proposed method is shown to be higher than that of the conventional methods. The proposed method is also shown to be effective in practical scenarios, such as when the data corresponding to certain variables cannot be reconstructed from the measurements.</description>
+    </item>
+    <item>
+      <title>A Comparative Study of Neurosymbolic AI Approaches to Interpretable Logical Reasoning</title>
+      <link>https://arxiv.org/abs/2508.03366</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2508.03366</guid>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 -0000</pubDate>
+      <description>General logical reasoning, defined as the ability to reason deductively on domain-agnostic tasks, continues to be a challenge for large language models (LLMs). Current LLMs fail to reason deterministically and are not interpretable. As such, there has been a recent surge in interest in neurosymbolic AI, which attempts to incorporate logic into neural networks. We first identify two main neurosymbolic approaches to improving logical reasoning: (i) the integrative approach comprising models where symbolic reasoning is contained within the neural network, and (ii) the hybrid approach comprising models where a symbolic solver, separate from the neural network, performs symbolic reasoning. Both contain AI systems with promising results on domain-specific logical reasoning benchmarks. However, their performance on domain-agnostic benchmarks is understudied. To the best of our knowledge, there has not been a comparison of the contrasting approaches that answers the following question: Which approach is more promising for developing general logical reasoning? To analyze their potential, the following best-in-class domain-agnostic models are introduced: Logic Neural Network (LNN), which uses the integrative approach, and LLM-Symbolic Solver (LLM-SS), which uses the hybrid approach. Using both models as case studies and representatives of each approach, our analysis demonstrates that the hybrid approach is more promising for developing general logical reasoning because (i) its reasoning chain is more interpretable, and (ii) it retains the capabilities and advantages of existing LLMs. To support future works using the hybrid approach, we propose a generalizable framework based on LLM-SS that is modular by design, model-agnostic, domain-agnostic, and requires little to no human input.</description>
+    </item>
+    <item>
+      <title>On Automating Proofs of Multiplier Adder Trees using the RTL Books</title>
+      <link>https://arxiv.org/abs/2507.19010</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.19010</guid>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 -0000</pubDate>
+      <description>We present an experimental, verified clause processor ctv-cp that fits into the framework used at Arm for formal verification of arithmetic hardware designs. This largely automates the ACL2 proof development effort for integer multiplier modules that exist in designs ranging from floating-point division to matrix multiplication.</description>
+    </item>
+    <item>
+      <title>Numerically Computing Galois Groups of Minimal Problems</title>
+      <link>https://arxiv.org/abs/2507.10407</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.10407</guid>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 -0000</pubDate>
+      <description>I discuss a seemingly unlikely confluence of topics in algebra, numerical computation, and computer vision. The motivating problem is that of solving multiples instances of a parametric family of systems of algebraic (polynomial or rational function) equations. No doubt already of interest to ISSAC attendees, this problem arises in the context of robust model-fitting paradigms currently utilized by the computer vision community (namely "Random Sampling and Consensus", aka "RanSaC".) This talk will give an overview of work in the last 5+ years that aspires to measure the intrinsic difficulty of solving such parametric systems, and makes strides towards practical solutions.</description>
+    </item>
+    <item>
+      <title>A matrix criterion and algorithmic approach for the Peterson hit problem: Part I</title>
+      <link>https://arxiv.org/abs/2506.18392</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2506.18392</guid>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 -0000</pubDate>
+      <description>The Peterson hit problem in algebraic topology is to explicitly determine the dimension of the quotient space $Q\mathcal P_k = \mathbb F_2\otimes_{\mathcal A}\mathcal P_k$ in positive degrees, where $\mathcal{P}_k$ denotes the polynomial algebra in $k$ variables over the field $\mathbb{F}_2$, considered as an unstable module over the Steenrod algebra $\mathcal{A}$. Current approaches to this problem still rely heavily on manual computations, which are highly prone to errors due to the intricate nature of the underlying calculations. To date, no efficient algorithm implemented in any computer algebra system has been made publicly available to tackle this problem in a systematic manner. Motivated by the above, in this work, which is considered as Part I of our project, we first establish a criterion based entirely on linear algebra for determining whether a given homogeneous polynomial is "hit". Accordingly, we describe the dimensions of the hit spaces. This leads to a practical and reliable computational method for determining the dimension of $Q\mathcal{P}_k$ for arbitrary $k$ and any positive degrees, with the support of a computer algebra system. We then give a concrete implementation of the obtained results as novel algorithms in \textsc{SageMath}. As an application, our algorithm demonstrates that the manually computed result presented in the recent work of Sum and Tai [15] for the dimension of $Q\mathcal{P}_5$ in degree $2^{6}$ is not correct. Furthermore, our algorithm determines that $\dim(Q\mathcal{P}_5)_{2^{7}} = 1985,$ which falls within the range $1984 \leq \dim(Q\mathcal{P}_5)_{2^{7}} \leq 1990$ as estimated in [15].</description>
+    </item>
+    <item>
+      <title>Computing Euler products and coefficients of classical modular forms for twisted L-functions</title>
+      <link>https://arxiv.org/abs/2507.06681</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.06681</guid>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 -0000</pubDate>
+      <description>We describe a complete algorithm to compute millions of coefficients of classical modular forms in a few seconds. We also review operations on Euler products and illustrate our methods with a computation of triple product L-function of large conductor.</description>
+    </item>
+    <item>
+      <title>Periods of fibre products of elliptic surfaces and the Gamma conjecture</title>
+      <link>https://arxiv.org/abs/2505.07685</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2505.07685</guid>
+      <pubDate>Tue, 08 Jul 2025 00:00:00 -0000</pubDate>
+      <description>We provide an algorithm for computing a basis of homology of fibre products of elliptic surfaces over $\mathbb P^1$, along with the corresponding intersection product and period matrices. We use this data to investigate the Gamma conjecture for Calabi-Yau threefolds obtained in this manner. We find a formula that works for all operators of a list of 105 fibre products, as well as for fourth order operators of the Calabi-Yau database. This algorithm comes with a SageMath implementation.</description>
+    </item>
+    <item>
+      <title>Computing in complete local equicharacteristic Noetherian rings via topological rewriting on commutative formal power series</title>
+      <link>https://arxiv.org/abs/2507.04045</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.04045</guid>
+      <pubDate>Sat, 05 Jul 2025 00:00:00 -0000</pubDate>
+      <description>In commutative algebra, the theory of Gröbner bases enables one to compute in any finitely generated algebra over a given computable field. For non-finitely generated algebras however, other methods have to be pursued. For instance, it follows from the Cohen structure theorem that standard bases of formal power series ideals offer a similar prospect but for complete local equicharacteristic rings whose residue field is computable. Using the language of rewriting theory, one can characterise Gröbner bases in terms of confluence of the induced rewriting system. It has been shown, so far via purely algebraic tools, that an analogous characterisation holds for standard bases with a generalised notion of confluence. Subsequently, that result is utilised to prove that two generalised confluence properties, where one is actually in general strictly stronger than the other, are actually equivalent in the context of formal power series. In the present paper, we propose alternative proofs making use of tools purely from the new theory of topological rewriting to recover both the characterisation of standard bases and the equivalence between generalised confluence properties. The objective is to extend the analogy between Gröbner basis theory together with classical algebraic rewriting theory and standard basis theory with topological rewriting theory.</description>
+    </item>
+    <item>
+      <title>Generalized ODE reduction algorithm for bounded degree transformation</title>
+      <link>https://arxiv.org/abs/2507.01878</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.01878</guid>
+      <pubDate>Thu, 03 Jul 2025 00:00:00 -0000</pubDate>
+      <description>The integrability problem of rational first-order ODEs $y^{\prime}=\frac{M(x,y)}{N(x,y)}$, where $M,N \in \mathbb{R}[x,y]$ is a long-term research focus in the area of dynamical systems, physics, etc. Although the computer algebra system such as Mathematica, Maple has developed standard algorithms to tackle its first integral expressed by Liouvillian or special function, this problem is quite difficult and the general method requires specifying a tight degree bound for the Darboux polynomial. Computing the bounded degree first integral, in general, is very expensive for a computer algebra system\cite{duarte2021efficient}\cite{cheze2020symbolic} and becomes impractical for ODE of large size. In \cite{huang2025algorithm}, we have proposed an algorithm to find the inverse of a local rational transformation $y \to \frac{A(x,y)}{B(x,y)}$ that transforms a rational ODE to a simpler and more tractable structure $y^{\prime}=\sum_{i=0}^nf_i(x)y^i$, whose integrability under linear transformation $\left\{x \to F(x),y \to P(x)y+Q(x)\right\}$ can be detected by Maple efficiently \cite{CHEBTERRAB2000204}\cite{cheb2000first}. In that paper we have also mentioned when $M(x,y),N(x,y)$ of the reducible structure are not coprime, canceling the common factors in $y$ will alter the structure which makes that algorithm fail. In this paper, we consider this issue. We conclude that with the exact tight degree bound for the polynomial $A(x,y)$ given, we have an efficient algorithm to compute such transformation and the reduced ODE for "quite a lot of" cases where $M,N$ are not coprime. We have also implemented this algorithm in Maple and the code is available in researchgate.</description>
+    </item>
+    <item>
+      <title>Exploring Commutative Matrix Multiplication Schemes via Flip Graphs</title>
+      <link>https://arxiv.org/abs/2506.22113</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2506.22113</guid>
+      <pubDate>Fri, 27 Jun 2025 00:00:00 -0000</pubDate>
+      <description>We explore new approaches for finding matrix multiplication algorithms in the commutative setting by adapting the flip graph technique: a method previously shown to be effective for discovering fast algorithms in the non-commutative case. While an earlier attempt to apply flip graphs to commutative algorithms saw limited success, we overcome both theoretical and practical obstacles using two strategies: one inspired by Marakov's algorithm to multiply 3x3 matrices, in which we construct a commutative tensor and approximate its rank using the standard flip graph; and a second that introduces a fully commutative variant of the flip graph defined via a quotient tensor space. We also present a hybrid method that combines the strengths of both. Across all matrix sizes up to 5x5, these methods recover the best known bounds on the number of multiplications and allow for a comparison of their efficiency and efficacy. Although no new improvements are found, our results demonstrate strong potential for these techniques at larger scales.</description>
+    </item>
+    <item>
+      <title>An $O(n$)-Algorithm for the Higher-Order Kinematics and Inverse Dynamics of Serial Manipulators using Spatial Representation of Twists</title>
+      <link>https://arxiv.org/abs/2506.10686</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2506.10686</guid>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 -0000</pubDate>
+      <description>Optimal control in general, and flatness-based control in particular, of robotic arms necessitate to compute the first and second time derivatives of the joint torques/forces required to achieve a desired motion. In view of the required computational efficiency, recursive $O(n)$-algorithms were proposed to this end. Aiming at compact yet efficient formulations, a Lie group formulation was recently proposed, making use of body-fixed and hybrid representation of twists and wrenches. In this paper a formulation is introduced using the spatial representation. The second-order inverse dynamics algorithm is accompanied by a fourth-order forward and inverse kinematics algorithm. An advantage of all Lie group formulations is that they can be parameterized in terms of vectorial quantities that are readily available. The method is demonstrated for the 7 DOF Franka Emika Panda robot.</description>
+    </item>
+    <item>
+      <title>Primender Sequence: A Novel Mathematical Construct for Testing Symbolic Inference and AI Reasoning</title>
+      <link>https://arxiv.org/abs/2506.10585</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2506.10585</guid>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 -0000</pubDate>
+      <description>This paper introduces the Primender sequence, a novel integer sequence defined by a hybrid rule that combines classical primality with modular digit-based conditions. Specifically, a number n is included in the sequence if it is prime or ends with a prime number of unit digit or any length. In other words, numbers which are primes or have at least one prime suffix. The resulting sequence exhibits a deterministic yet non-trivial structure, blending number-theoretic properties with symbolic patterning. We propose the Primender sequence as a benchmark for evaluating the symbolic reasoning capabilities of Large Language Models (LLMs). The study is motivated by the need for interpretable, rule-based testbeds that can assess an LLM's ability to infer hidden rules, validate mathematical hypotheses, and generalize symbolic logic at scale. A key hypothesis explored is: Whenever a number in the Primender sequence is exactly one more than the largest prime less than or equal to it, the difference between it and the previous number in the sequence is also 1. We design a structured prompt and evaluation framework to test this hypothesis across multiple state-of-the-art LLMs, including ChatGPT, Copilot, DeepSeek, Gemini, Grok, and LLaMA. The models are tasked with identifying the underlying rule, validating the hypothesis, and generating the next 100,000 terms of the sequence. Comparative metrics such as rule inference accuracy, hypothesis evaluation, sequence validity, and symbolic explanation quality are used to assess model performance. This work contributes a novel mathematical construct and a reproducible methodology for benchmarking LLMs in symbolic reasoning, hypothesis testing, and scalable pattern generalization - bridging the domains of number theory, artificial intelligence, and software engineering.</description>
+    </item>
+    <item>
+      <title>Directional Non-Commutative Monoidal Structures with Interchange Law via Commutative Generators</title>
+      <link>https://arxiv.org/abs/2505.24533</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2505.24533</guid>
+      <pubDate>Fri, 30 May 2025 00:00:00 -0000</pubDate>
+      <description>We introduce a novel framework consisting of a class of algebraic structures that generalize one-dimensional monoidal systems into higher dimensions by defining per-axis composition operators subject to non-commutativity and a global interchange law. These structures, defined recursively from a base case of vector-matrix pairs, model directional composition in multiple dimensions while preserving structural coherence through commutative linear operators. We show that the framework that unifies several well-known linear transforms in signal processing and data analysis. In this framework, data indices are embedded into a composite structure that decomposes into simpler components. We show that classic transforms such as the Discrete Fourier Transform (DFT), the Walsh transform, and the Hadamard transform are special cases of our algebraic structure. The framework provides a systematic way to derive these transforms by appropriately choosing vector and matrix pairs. By subsuming classical transforms within a common structure, the framework also enables the development of learnable transformations tailored to specific data modalities and tasks.</description>
+    </item>
+    <item>
+      <title>Towards LLM-based Generation of Human-Readable Proofs in Polynomial Formal Verification</title>
+      <link>https://arxiv.org/abs/2505.23311</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2505.23311</guid>
+      <pubDate>Thu, 29 May 2025 00:00:00 -0000</pubDate>
+      <description>Verification is one of the central tasks in circuit and system design. While simulation and emulation are widely used, complete correctness can only be ensured based on formal proof techniques. But these approaches often have very high run time and memory requirements. Recently, Polynomial Formal Verification (PFV) has been introduced showing that for many instances of practical relevance upper bounds on needed resources can be given. But proofs have to be provided that are human-readable. Here, we study how modern approaches from Artificial Intelligence (AI) based on Large Language Models (LLMs) can be used to generate proofs that later on can be validated based on reasoning engines. Examples are given that show how LLMs can interact with proof engines, and directions for future work are outlined.</description>
+    </item>
+    <item>
+      <title>Fractal Attractors in Random Nonlinear Iterated Function Systems: Existence, Stability, and Dimensional Properties</title>
+      <link>https://arxiv.org/abs/2505.18849</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2505.18849</guid>
+      <pubDate>Sat, 24 May 2025 00:00:00 -0000</pubDate>
+      <description>This study develops a comprehensive theoretical and computational framework for Random Nonlinear Iterated Function Systems (RNIFS), a generalization of classical IFS models that incorporates both nonlinearity and stochasticity. We establish mathematical guarantees for the existence and stability of invariant fractal attractors by leveraging contractivity conditions, Lyapunov-type criteria, and measure-theoretic arguments. Empirically, we design a set of high-resolution simulations across diverse nonlinear functions and probabilistic schemes to analyze the emergent attractors geometry and dimensionality. A box-counting method is used to estimate the fractal dimension, revealing attractors with rich internal structure and dimensions ranging from 1.4 to 1.89. Additionally, we present a case study comparing RNIFS to the classical Sierpiński triangle, demonstrating the generalization's ability to preserve global shape while enhancing geometric complexity. These findings affirm the capacity of RNIFS to model intricate, self-similar structures beyond the reach of traditional deterministic systems, offering new directions for the study of random fractals in both theory and applications.</description>
+    </item>
+  </channel>
+</rss>

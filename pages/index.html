@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>One Author / arXiv CS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="alternate" type="application/rss+xml" title="One Author — latest papers" href="feed.xml">
   </head>
   <body>
     <main>
       <header>
-        <p class="eyebrow">a quiet arXiv archive</p>
+        <div class="header-top">
+          <p class="eyebrow">a quiet arXiv archive</p>
+          <a class="github-link" href="https://github.com/mmcs-work/arxiv" aria-label="View the code on GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.49-2.7-.95-2.7-.95-.36-.93-.89-1.18-.89-1.18-.73-.5.06-.49.06-.49.81.06 1.23.83 1.23.83.72 1.23 1.89.87 2.35.66.07-.52.28-.87.51-1.07-1.78-.2-3.65-.89-3.65-3.96 0-.88.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .68-.22 2.2.82A7.65 7.65 0 0 1 8 3.8a7.7 7.7 0 0 1 2.01.27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.52.56.83 1.27.83 2.15 0 3.08-1.87 3.75-3.66 3.95.29.25.54.73.54 1.48v2.21c0 .21.14.46.55.38A8 8 0 0 0 8 0Z"/></svg>
+            <span>Code</span>
+          </a>
+        </div>
         <h1>One Author</h1>
         <p class="lede">Computer Science papers written by one person.</p>
       </header>
@@ -23,7 +30,7 @@
       <p id="status" role="status">Connecting to the archive…</p>
       <section id="papers" aria-live="polite"></section>
       <button id="more" hidden>Show more</button>
-      <footer>Metadata from <a href="https://arxiv.org">arXiv</a>. Full text remains with arXiv.</footer>
+      <footer>Metadata from <a href="https://arxiv.org">arXiv</a>. <a href="feed.xml">RSS</a>. Full text remains with arXiv.</footer>
     </main>
     <script src="app.js"></script>
   </body>

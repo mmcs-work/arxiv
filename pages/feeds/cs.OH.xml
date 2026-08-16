@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>One Author — Other Computer Science</title>
+    <link>https://mmcs-work.github.io/arxiv</link>
+    <description>Single-author arXiv papers.</description>
+    <item>
+      <title>Highest Trees of Random Mappings</title>
+      <link>https://arxiv.org/abs/1504.04532</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1504.04532</guid>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 -0000</pubDate>
+      <description>Using a symbolic method, we prove that the probability that the underlying graph of a random mapping of $n$ elements possesses a unique highest tree in the entire functional graph is $1 - \sqrt{\fracπ{8}} n^{-1/2} + \mathcal{O}(n^{-1})$. The property of having a unique highest tree plays a crucial role in the solution of the famous Road Coloring Problem [Trahtman~2009]. We also generalize this result to $c$-branches (subtrees rooted at distance $c$ from the cycle core), namely, that for any constant $c&gt;0$ the highest $c$-branch is unique, dominates the second highest by at least a height of 2, and supports a crown exceeding $α$ times its root count (for any fixed constant $α&gt; 1$), with probability $1 - Θ(n^{-1/2})$. The latter result is used in the author's paper establishing the $1-\mathcal{O}(1/n)$ bound for a random automaton being synchronizable.</description>
+    </item>
+    <item>
+      <title>Model Collapse: On Recursion, Noise, and Uncharted Machine Visions</title>
+      <link>https://arxiv.org/abs/2607.09705</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2607.09705</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 -0000</pubDate>
+      <description>Since 2023, computer scientists have warned against model collapse -- the contamination of training sets with AI-generated outputs that progressively degrade model performance. Exemplifying a positive-feedback-driven failure, it produces effects such as word repetition or pixel noise, ultimately leading to a loss of meaning and coherence -- at least from an engineering standpoint. From a creative one, however, collapse is not merely a breakdown: it also functions as a recursive mirror that recalls early analog video feedback experiments, raising once again the question of what happens when a system turns inward and sees itself. In such cases, so-called machine vision no longer transmits the world (as in tele-vision) but increasingly generates worlds from within. Drawing on media archaeology through case studies of both historical video synthesis techniques and contemporary artistic uses of machine learning, this paper examines what recursive training reveals about the dependent nature of AI-generated data. It argues that the potential effects of collapse challenge transhumanist ideals while inviting an aesthetic perspective, positioning noise and recursion as key concepts for understanding both artmaking and the AI ecosystem. Distributing agency across scales and networks, the latter currently remains reliant on new human-produced content, particularly within foundation models trained on massive datasets.</description>
+    </item>
+    <item>
+      <title>Modelling Scenarios for Carbon-aware Geographic Load Shifting of Compute Workloads</title>
+      <link>https://arxiv.org/abs/2509.07043</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2509.07043</guid>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 -0000</pubDate>
+      <description>We present an analytical model to evaluate the reductions in emissions resulting from geographic load shifting. This model is optimistic as it ignores issues of grid capacity, demand and curtailment. In other words, real-world reductions will be smaller than the estimates. However, even with these assumptions, the presented scenarios show that the realistic reductions from carbon-aware geographic load shifting are small, of the order of 5\%. This is not enough to compensate the growth in emissions from global data centre expansion.</description>
+    </item>
+    <item>
+      <title>Optimal Small-Bitwidth Moduli Set for Residue Number Systems</title>
+      <link>https://arxiv.org/abs/2603.24387</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.24387</guid>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 -0000</pubDate>
+      <description>This technical note presents a algorithmic approach for generating optimal sets of co-prime moduli within specified integer ranges. The proposed method addresses the challenge of balancing moduli bit-lengths while maximizing the dynamic range in Residue Number System (RNS) implementations. Experimental results demonstrate that the generated moduli sets achieve optimal dynamic range coverage while maintaining balanced bit-length distribution, making them particularly suitable for parallel hardware implementations based on RNS.</description>
+    </item>
+    <item>
+      <title>A Novel Approach for Testing Water Safety Using Deep Learning Inference of Microscopic Images of Unincubated Water Samples</title>
+      <link>https://arxiv.org/abs/2603.06611</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2603.06611</guid>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 -0000</pubDate>
+      <description>Fecal-contaminated water causes diseases and even death. Current microbial water safety tests require pathogen incubation, taking 24-72 hours and costing \$20-\$50 per test. This paper presents a solution (DeepScope) exceeding UNICEF's ideal Target Product Profile requirements for presence/absence testing, with an estimated per-test cost of \$0.44. By eliminating the need for pathogen incubation, DeepScope reduces testing time by over 98\%. In DeepScope, a dataset of microscope images of bacteria and water samples was assembled. An innovative augmentation technique, generating up to 21 trillion images from a single microscope image, was developed. Four convolutional neural network models were developed using transfer learning and regularization techniques, then evaluated on a field-test dataset comprising 100,000 microscope images of unseen, real-world water samples collected from fourteen different water sources across Sammamish, WA. Precision-recall analysis showed the DeepScope model achieves 93\% accuracy, with precision of 90\% and recall exceeding 94\%. The DeepScope model was deployed on a web server, and mobile applications for Android and iOS were developed, enabling Internet-based or smartphone-based water safety testing, with results obtained in seconds.</description>
+    </item>
+    <item>
+      <title>Partial Symmetry Enforced Attention Decomposition (PSEAD): A Group-Theoretic Framework for Equivariant Transformers in Biological Systems</title>
+      <link>https://arxiv.org/abs/2507.14908</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.14908</guid>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 -0000</pubDate>
+      <description>This research introduces the Theory of Partial Symmetry Enforced Attention Decomposition (PSEAD), a new and rigorous group-theoretic framework designed to seamlessly integrate local symmetry awareness into the core architecture of self-attention mechanisms within Transformer models. We formalize the concept of local permutation subgroup actions on windows of biological data, proving that under such actions, the attention mechanism naturally decomposes into a direct sum of orthogonal irreducible components. Critically, these components are intrinsically aligned with the irreducible representations of the acting permutation subgroup, thereby providing a powerful mathematical basis for disentangling symmetric and asymmetric features. We show that PSEAD offers substantial advantages. These include enhanced generalization capabilities to novel biological motifs exhibiting similar partial symmetries, unprecedented interpretability by allowing direct visualization and analysis of attention contributions from different symmetry channels, and significant computational efficiency gains by focusing representational capacity on relevant symmetric subspaces. Beyond static data analysis, we extend PSEAD's applicability to dynamic biological processes within reinforcement learning paradigms, showcasing its potential to accelerate the discovery and optimization of biologically meaningful policies in complex environments like protein folding and drug discovery. This work lays the groundwork for a new generation of biologically informed, symmetry-aware artificial intelligence models.</description>
+    </item>
+    <item>
+      <title>A Conceptual Hybrid Framework for Post-Quantum Security: Integrating BB84 QKD, AES, and Bio-inspired Mechanisms</title>
+      <link>https://arxiv.org/abs/2602.16922</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2602.16922</guid>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 -0000</pubDate>
+      <description>Quantum computing is a significant risk to classical cryptographic, especially RSA, which depends on the difficulty of factoring large numbers. Classical factorization methods, such as Trial Division and Pollard's Rho, are inefficient for large keys, while Shor's quantum algorithm can break RSA efficiently in polynomial time. This research studies RSA's vulnerabilities under both classical and quantum attacks and designs a hybrid security framework to ensure data protection in the post-quantum era. The conceptual framework combines AES encryption for classical security, BB84 Quantum Key Distribution (QKD) for secure key exchange with eavesdropping detection, quantum state comparison for lightweight authentication, and a bio-inspired immune system for adaptive threat detection. RSA is vulnerable to Shor's algorithm, BB84 achieves full key agreement in ideal conditions, and it detects eavesdropping with high accuracy. The conceptual model includes both classical and quantum security methods, providing a scalable and adaptive solution for Post-Quantum encryption data protection. This work primarily proposes a conceptual framework. Detailed implementation, security proofs, and extensive experimental validation are considered future work.</description>
+    </item>
+    <item>
+      <title>Hacia una moderna "republica de las ideas" via un nuevo ecosistema de comunicacion cientifica (Toward a modern "Republic of Ideas" via a new Ecosystem of Scientific Communication)</title>
+      <link>https://arxiv.org/abs/2512.08977</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2512.08977</guid>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 -0000</pubDate>
+      <description>The contemporary academic ecosystem, heir to the Enlightenment's "Republic of Letters," finds itself in a state of profound and unsustainable crisis. That order, based on the free flow of correspondence and the disinterested pursuit of knowledge, has been supplanted by a system teetering under the weight of its own contradictions. This work embarks on a fundamental redesign to articulate an innovative and coherent framework for scientific communication. To this end, four distinct but complementary schools of thought are synthesized: From Ordoliberalism, we take the rigor of designing an "economic constitution" that prevents the concentration of power and fosters fair competition. From Humanistic Economics, we extract the telos, or normative purpose (human flourishing and shared prosperity). From Digital Humanism, we derive the technological ethos, ensuring that the infrastructure serves human dignity. Finally, from Decentralized Science (DeSci), we take the set of architectural tools (smart contracts, DAOs, tokens) capable of building this new order from the ground up. The narrative arc is deliberate: Part 1 offers an anatomy of decay, using the Uddin demand as a scalpel to dissect the economic, institutional, and epistemic pathologies of the current system. Part 2 articulates the philosophical constitution of the new republic. Part 3 details the architectural blueprint and technological infrastructure of this new order. Part 4 subjects this design to rigorous stress tests to forge its resilience and antifragility. Part 5 charts a strategic roadmap for the transition, a plausible path to navigate from the status quo to full community sovereignty. Finally, Part 6 brings the book full circle, returning to the foundational vision. This is a call to action to build the New Republic of Ideas that the pursuit of truth deserves in the 21st century.</description>
+    </item>
+    <item>
+      <title>Expected by Whom? A Skill-Adjusted Expected Goals Model for NHL Shooters and Goaltenders</title>
+      <link>https://arxiv.org/abs/2511.07703</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.07703</guid>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 -0000</pubDate>
+      <description>This study outlines a light gradient boosted model aimed at predicting shot outcomes in the NHL. The model uses the NHL's spatiotemporal data to account for both the skill of shooters and goaltenders. This approach involves isolating and engineering features for different aspects of shooter and goaltender skill. These aspects include the overall skill, the locational skill, which is engineered using a shot binning technique previously outlined by Shuckers and Curro, and the situational skill, which is engineered using Gower distance. Three separate datasets were created based on the skill of the shooter and goaltender. For each, a baseline model was created in order to compare and contrast its performance with the skill-adjusted model. The results seen in this study show performance increases for the skill-adjusted model over the baseline model in log loss, brier scores, and area under the ROC curve. These performance increases have a high of 5\% and outperform previous works, which have attempted to account only for player skill. This highlights the importance of accounting for both player and goaltender skill, while also accounting for different aspects of their skill. In future works, a skill-adjusted expected goals model could benefit models interested in predicting other aspects of the game, such as scoring leaders or individual game outcomes.</description>
+    </item>
+    <item>
+      <title>Reconfigurable Analog Computers</title>
+      <link>https://arxiv.org/abs/2510.25942</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2510.25942</guid>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 -0000</pubDate>
+      <description>The Achilles heel of classic analog computers was the complex, error prone, and time consuming process of programming. This typically involved manually patching hundreds or even thousands of connections between individual computing elements as well as setting many precision 10-turn potentiometers manually, often taking hours, or even days. Albeit being simplified by means of removable patch panels, switching from one program to another still was time consuming and thus expensive. With digital computers about to hit physical boundaries with respect to energy consumption, clock frequency, and integration density, analog computers have gained a lot of interest as co-processors for certain application areas in recent years. This requires some means for automatic reconfiguration of these systems under control of an attached digital computer. The following sections give an overview of classic and modern approaches towards such autopatch systems.</description>
+    </item>
+    <item>
+      <title>Design-Based Supply Chain Operations Research Model: Fostering Resilience And Sustainability In Modern Supply Chains</title>
+      <link>https://arxiv.org/abs/2511.01878</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2511.01878</guid>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 -0000</pubDate>
+      <description>In the rapidly evolving landscape of global supply chains, where digital disruptions and sustainability imperatives converge, traditional operational frameworks often struggle to adapt. This paper introduces the Design-Based Supply Chain Operations Research Model, a novel extension of the Design SCOR framework, which embeds operational research techniques to enhance decision-making, resilience, and environmental stewardship. Building on the foundational processes of DSCOR such as Design, Orchestrate, Plan, Order, Source, Transform, Fulfil, and Return DSCORM incorporates predictive analytics, simulation modelling, and optimization algorithms to address contemporary challenges like supply chain volatility and ESG (environmental, social, governance) compliance. Through a comprehensive literature synthesis and methodological approach involving case-based simulations, we explore DSCORM's hierarchical structure, performance metrics, implementation strategies, and digital modernization pathways. Results from simulated scenarios indicate potential efficiency gains of 15to25 percent, reduced carbon footprints by up to 20 percent, and improved agility in dynamic markets. Discussions delve into practical implications for industries like manufacturing and logistics, highlighting barriers such as data integration hurdles and the need for skilled workforces. By humanizing supply chain management emphasizing collaborative, adaptive strategies over rigid automation DSCORM positions itself as a blueprint for sustainable growth. Conclusions underscore its role in advancing digital transformation, with recommendations for future empirical validations in real-world settings</description>
+    </item>
+    <item>
+      <title>Temperature Optimisation in Data Centres</title>
+      <link>https://arxiv.org/abs/2509.26163</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2509.26163</guid>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 -0000</pubDate>
+      <description>Raising server inlet temperatures tends to increase the server power consumption due to heightened server fan activity needed to compensate for the warmer air, and to decrease cooling infrastructure power consumption due to less intense and possibly less frequent chiller activity. Relying on primary data from two data centres of a colocation provider in Switzerland, this study succeeds in confirming and quantifying the first effect: In the upper half of the ASHRAE recommended temperature range and slightly above it, i.e., between 23 - 30 °C, the server power consumption correlated positively with the temperature, with a server room-wide temperature sensitivity of 0.35 - 0.5 %/°C. Based on the available data and due to ambivalent results, the study did not succeed in answering which effect is stronger for the entire data centre: the increase in server consumption or the savings in cooling consumption. Whether raising inlet temperatures beyond the ASHRAE upper limit (i.e., 27 °C) yields additional overall benefits thus remains an open question that would be best addressed through controlled experiments. A few pieces of evidence indicate nevertheless that the upper part of the current ASHRAE recommendation (i.e., around 25 - 27 °C) might be the current sweet spot for colocation DCs. The widely used power usage effectiveness (PUE) metric is not at all useful in this context. For practical reasons but semantically wrong, the server fan power consumption is included in the consumption of servers (and thus, of the IT infrastructure) and is thus on the wrong side of the PUE fraction. An inlet temperature raise, which will lead to increased fan consumption, will thus always yield a PUE decrease, irrespective of what happens to the overall data centre power consumption.</description>
+    </item>
+    <item>
+      <title>Towards a Periodic Table of Computer System Design Principles</title>
+      <link>https://arxiv.org/abs/2507.22098</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.22098</guid>
+      <pubDate>Tue, 29 Jul 2025 00:00:00 -0000</pubDate>
+      <description>System design is often taught through domain-specific solutions specific to particular domains, such as databases, operating systems, or computer architecture, each with its own methods and vocabulary. While this diversity is a strength, it can obscure cross-cutting principles that recur across domains. This paper proposes a preliminary "periodic table" of system design principles distilled from several domains in computer systems. The goal is a shared, concise vocabulary that helps students, researchers, and practitioners reason about structure and trade-offs, compare designs across domains, and communicate choices more clearly. For supporting materials and updates, please refer to the repository at: https://github.com/jarulraj/periodic-table.</description>
+    </item>
+    <item>
+      <title>Statistical Quality and Reproducibility of Pseudorandom Number Generators in Machine Learning technologies</title>
+      <link>https://arxiv.org/abs/2507.03007</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.03007</guid>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 -0000</pubDate>
+      <description>Machine learning (ML) frameworks rely heavily on pseudorandom number generators (PRNGs) for tasks such as data shuffling, weight initialization, dropout, and optimization. Yet, the statistical quality and reproducibility of these generators-particularly when integrated into frameworks like PyTorch, TensorFlow, and NumPy-are underexplored. In this paper, we compare the statistical quality of PRNGs used in ML frameworks (Mersenne Twister, PCG, and Philox) against their original C implementations. Using the rigorous TestU01 BigCrush test suite, we evaluate 896 independent random streams for each generator. Our findings challenge claims of statistical robustness, revealing that even generators labeled ''crush-resistant'' (e.g., PCG, Philox) may fail certain statistical tests. Surprisingly, we can observe some differences in failure profiles between the native and framework-integrated versions of the same algorithm, highlighting some implementation differences that may exist.</description>
+    </item>
+    <item>
+      <title>Evolution, Future of AI, and Singularity</title>
+      <link>https://arxiv.org/abs/2507.02876</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.02876</guid>
+      <pubDate>Wed, 18 Jun 2025 00:00:00 -0000</pubDate>
+      <description>This article critically examines the foundational principles of contemporary AI methods, exploring the limitations that hinder its potential. We draw parallels between the modern AI landscape and the 20th-century Modern Synthesis in evolutionary biology, and highlight how advancements in evolutionary theory that augmented the Modern Synthesis, particularly those of Evolutionary Developmental Biology, offer insights that can inform a new design paradigm for AI. By synthesizing findings across AI and evolutionary theory, we propose a pathway to overcome existing limitations, enabling AI to achieve its aspirational goals. We also examine how this perspective transforms the idea of an AI-driven technological singularity from speculative futurism into a grounded prospect.</description>
+    </item>
+    <item>
+      <title>Pancomputationalism: Theory or metaphor?</title>
+      <link>https://arxiv.org/abs/2506.13263</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2506.13263</guid>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 -0000</pubDate>
+      <description>The theory that all processes in the universe are computational is attractive in its promise to provide an understandable theory of everything. I want to suggest here that this pancomputationalism is not sufficiently clear on which problem it is trying to solve, and how. I propose two interpretations of pancomputationalism as a theory: I) the world is a computer and II) the world can be described as a computer. The first implies a thesis of supervenience of the physical over computation and is thus reduced ad absurdum. The second is underdetermined by the world, and thus equally unsuccessful as theory. Finally, I suggest that pancomputationalism as metaphor can be useful.</description>
+    </item>
+    <item>
+      <title>Mixed Fractional Information: Consistency of Dissipation Measures for Stable Laws</title>
+      <link>https://arxiv.org/abs/2504.13423</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2504.13423</guid>
+      <pubDate>Sat, 03 May 2025 00:00:00 -0000</pubDate>
+      <description>Symmetric alpha-stable (S alpha S) distributions with alpha&lt;2 lack finite classical Fisher information. Building on Johnson's framework, we define Mixed Fractional Information (MFI) via the initial rate of relative entropy dissipation during interpolation between S alpha S laws with differing scales, v and s. We demonstrate two equivalent formulations for MFI in this specific S alpha S-to-S alpha S setting. The first involves the derivative D'(v) of the relative entropy between the two S alpha S densities. The second uses an integral expectation E_gv[u(x,0) (pF_v(x) - pF_s(x))] involving the difference between Fisher scores (pF_v, pF_s) and a specific MMSE-related score function u(x,0) derived from the interpolation dynamics. Our central contribution is a rigorous proof of the consistency identity: D'(v) = (1/(alpha v)) E_gv[X (pF_v(X) - pF_s(X))]. This identity mathematically validates the equivalence of the two MFI formulations for S alpha S inputs, establishing MFI's internal coherence and directly linking entropy dissipation rates to score function differences. We further establish MFI's non-negativity (zero if and only if v=s), derive its closed-form expression for the Cauchy case (alpha=1), and numerically validate the consistency identity. MFI provides a finite, coherent, and computable information-theoretic measure for comparing S alpha S distributions where classical Fisher information fails, connecting entropy dynamics to score functions and estimation concepts. This work lays a foundation for exploring potential fractional I-MMSE relations and new functional inequalities tailored to heavy-tailed systems.</description>
+    </item>
+    <item>
+      <title>Beyond Coordinates: Meta-Equivariance in Statistical Inference</title>
+      <link>https://arxiv.org/abs/2504.10667</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2504.10667</guid>
+      <pubDate>Sat, 03 May 2025 00:00:00 -0000</pubDate>
+      <description>Optimal statistical decisions should transcend the language used to describe them. Yet, how do we guarantee that the choice of coordinates - the parameterisation of an optimisation problem - does not subtly dictate the solution? This paper reveals a fundamental geometric invariance principle. We first analyse the optimal combination of two asymptotically normal estimators under a strictly convex trace-AMSE risk. While methods for finding optimal weights are known, we prove that the resulting optimal estimator is invariant under direct affine reparameterisations of the weighting scheme. This exemplifies a broader principle we term meta-equivariance: the unique minimiser of any strictly convex, differentiable scalar objective over a matrix space transforms covariantly under any invertible affine reparameterisation of that space. Distinct from classical statistical equivariance tied to data symmetries, meta-equivariance arises from the immutable geometry of convex optimisation itself. It guarantees that optimality, in these settings, is not an artefact of representation but an intrinsic, coordinate-free truth.</description>
+    </item>
+    <item>
+      <title>A Hierarchical Decomposition of Kullback-Leibler Divergence: Disentangling Marginal Mismatches from Statistical Dependencies</title>
+      <link>https://arxiv.org/abs/2504.09029</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2504.09029</guid>
+      <pubDate>Sat, 03 May 2025 00:00:00 -0000</pubDate>
+      <description>The Kullback-Leibler (KL) divergence is a foundational measure for comparing probability distributions. Yet in multivariate settings, its single value often obscures the underlying reasons for divergence, conflating mismatches in individual variable distributions (marginals) with effects arising from statistical dependencies. We derive an algebraically exact, additive, and hierarchical decomposition of the KL divergence between a joint distribution P(X1,...,Xn) and a standard product reference distribution Q(X1,...,Xn) = product_i q(Xi), where variables are assumed independent and identically distributed according to a common reference q. The total divergence precisely splits into two primary components: (1) the summed divergence of each marginal distribution Pi(Xi) from the common reference q(Xi), quantifying marginal deviations; and (2) the total correlation (or multi-information), capturing the total statistical dependency among variables. Leveraging Mobius inversion on the subset lattice, we further decompose this total correlation term into a hierarchy of signed contributions from distinct pairwise, triplet, and higher-order statistical interactions, expressed using standard Shannon information quantities. This decomposition provides an algebraically complete and interpretable breakdown of KL divergence using established information measures, requiring no approximations or model assumptions. Numerical validation using hypergeometric sampling confirms the decomposition's exactness to machine precision across diverse system configurations.</description>
+    </item>
+    <item>
+      <title>Artifact Validity in Design Science Research (DSR): A Comparative Analysis of Three Influential Frameworks</title>
+      <link>https://arxiv.org/abs/2502.11199</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2502.11199</guid>
+      <pubDate>Sat, 12 Apr 2025 00:00:00 -0000</pubDate>
+      <description>Although the methodology of Design Science Research (DSR) is playing an increasingly important role with the emergence of the "sciences of the artificial", the validity of the resulting artifacts is occasionally questioned. This paper compares three influential DSR frameworks to assess their support for artifact validity. Using five essential validity types (instrument validity, technical validity, design validity, purpose validity and generalization), the qualitative analysis reveals that while purpose validity is explicitly emphasized, instrument and design validity remain the least developed. Their implicit treatment in all frameworks poses a risk of overlooked validation, and the absence of mandatory instrument validity can lead to invalid artifacts, threatening research credibility. Beyond these findings, the paper contributes (a) a comparative overview of each framework's strengths and weaknesses and (b) a revised DSR framework incorporating all five validity types with definitions and examples. This ensures systematic artifact evaluation and improvement, reinforcing the rigor of DSR.</description>
+    </item>
+    <item>
+      <title>Redefining Network Topology in Complex Systems: Merging Centrality Metrics, Spectral Theory, and Diffusion Dynamics</title>
+      <link>https://arxiv.org/abs/2503.21709</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2503.21709</guid>
+      <pubDate>Thu, 27 Mar 2025 00:00:00 -0000</pubDate>
+      <description>This paper introduces a novel framework that combines traditional centrality measures with eigenvalue spectra and diffusion processes for a more comprehensive analysis of complex networks. While centrality measures such as degree, closeness, and betweenness have been commonly used to assess nodal importance, they provide limited insight into dynamic network behaviors. By incorporating eigenvalue analysis, which evaluates network robustness and connectivity through spectral properties, and diffusion processes that model information flow, this framework offers a deeper understanding of how networks function under dynamic conditions. Applied to synthetic networks, the approach identifies key nodes not only by centrality but also by their role in diffusion dynamics and vulnerability points, offering a multi-dimensional view that traditional methods alone cannot. This integrated analysis enables a more precise identification of critical nodes and potential weaknesses, with implications for improving network resilience in fields ranging from epidemiology to cybersecurity. Keywords: Centrality measures, eigenvalue spectra, diffusion processes, network analysis, network robustness, information flow, synthetic networks.</description>
+    </item>
+    <item>
+      <title>Digital Twins in Industrial Applications: Concepts, Mathematical Modeling, and Use Cases</title>
+      <link>https://arxiv.org/abs/2507.12468</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2507.12468</guid>
+      <pubDate>Thu, 27 Feb 2025 00:00:00 -0000</pubDate>
+      <description>Digital Twins (DTs) are virtual representations of physical systems synchronized in real time through Internet of Things (IoT) sensors and computational models. In industrial applications, DTs enable predictive maintenance, fault diagnosis, and process optimization. This paper explores the mathematical foundations of DTs, hybrid modeling techniques, including Physics Informed Neural Networks (PINNs), and their implementation in industrial scenarios. We present key applications, computational tools, and future research directions.</description>
+    </item>
+    <item>
+      <title>Even the "Devil" has Rights!</title>
+      <link>https://arxiv.org/abs/2410.22963</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2410.22963</guid>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 -0000</pubDate>
+      <description>There have been works discussing the adoption of a human rights framework for responsible AI, emphasizing various rights such as the right to contribute to scientific advancements. Yet, to the best of our knowledge, this is the first attempt to take this framework with special focus on computer vision and documenting human rights violations in its community. This work summarizes such incidents accompanied with evidence from the lens of a female African Muslim Hijabi researcher. While previous works resorted to qualitative surveys that gather opinions from various researchers in the field, this work argues that a single documented violation is sufficient to warrant attention regardless of the stature of this researcher. Incidents documented in this work include silence on Genocides that are occurring while promoting the governments contributing to it, a broken reviewing system and corruption in the faculty support systems. This work discusses that demonizing individuals for discrimination based on gender, ethnicity, creed or reprisal has been a successful tool for exclusion with documented evidence from a single case. We argue that human rights are guaranteed for every single individual even the ones that might be labelled as devils in the community for whichever reasons to dismantle such a tool from its roots.</description>
+    </item>
+    <item>
+      <title>Probability Bracket Notation, Markov Chains, Stochastic Processes, and Microscopic Probabilistic Processes</title>
+      <link>https://arxiv.org/abs/cs/0702021</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/cs/0702021</guid>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 -0000</pubDate>
+      <description>Inspired by the Dirac vector probability notation (VPN), we propose the Probability Bracket Notation (PBN), a new set of symbols defined similarly (but not identically) as in the VPN. Applying the PBN to fundamental definitions and theorems for discrete and continuous random variables, we show that the PBN could play a similar role in the probability space as the VBN in the Hilbert vector. Our system P-kets are identified with the probability vectors in Markov chains (MC). The master equation of homogeneous MC in the Schrodinger pictures can be basis-independent. Our system P-bra is linked to the Doi state function and the Peliti standard bra. Transformed from the Schrodinger picture to the Heisenberg picture, the time dependence of the system P-ket of a homogeneous MC (HMC) is shifted to the observable as a stochastic process. Using the correlations established by the special Wick rotation (SWR), the microscopic probabilistic processes (MPPs) are investigated for single and many-particle systems. The expected occupation number of particles in quantum statistics is reproduced by associating time with temperature (the Wick-Matsubara relation).</description>
+    </item>
+    <item>
+      <title>Generalized "Square roots of Not" matrices, their application to the unveiling of hidden logical operators and to the definition of fully matrix circular Euler functions</title>
+      <link>https://arxiv.org/abs/2107.06067</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2107.06067</guid>
+      <pubDate>Mon, 10 Jun 2024 00:00:00 -0000</pubDate>
+      <description>The square root of Not is a logical operator of importance in quantum computing theory and of interest as a mathematical object in its own right. In physics, it is a square complex matrix of dimension 2. In the present work it is a complex square matrix of arbitrary dimension. The introduction of linear algebra into logical theory has been enhanced in recent decades by the researches in the field of neural networks and quantum computing. Here we will make a brief description of the representation of logical operations through matrices and we show how general expressions for the two square roots of the Not operator are obtained. Then, we explore two topics. First, we study an extension to a non-quantum domain of a short form of Deutsch's algorithm. Then, we assume that a root of Not is a matrix extension of the imaginary unit i, and under this idea we obtain fully matrix versions for the Euler expansions and for the representations of circular functions by complex exponentials.</description>
+    </item>
+    <item>
+      <title>Big5PersonalityEssays: Introducing a Novel Synthetic Generated Dataset Consisting of Short State-of-Consciousness Essays Annotated Based on the Five Factor Model of Personality</title>
+      <link>https://arxiv.org/abs/2407.17586</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2407.17586</guid>
+      <pubDate>Wed, 22 May 2024 00:00:00 -0000</pubDate>
+      <description>Given the high advances of large language models (LLM) it is of vital importance to study their behaviors and apply their utility in all kinds of scientific fields. Psychology has been, in recent years, poorly approached using novel computational tools. One of the reasons is the high complexity of the data required for a proper analysis. Moreover, psychology, with a focus on psychometry, has few datasets available for analysis and artificial intelligence usage. Because of these facts, this study introduces a synthethic database of short essays labeled based on the five factor model (FFM) of personality traits.</description>
+    </item>
+    <item>
+      <title>Research on the evolution of smart meter technology</title>
+      <link>https://arxiv.org/abs/2403.15406</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2403.15406</guid>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 -0000</pubDate>
+      <description>Smart meter is not only a device used to measure the amount of electricity, but also a core component of the smart grid, realizing the efficient monitoring, prediction and management of power use. With an insight into the evolution of smart meter technology, I realized that this change didn't happen overnight. It has undergone a long journey from the initial mechanical electricity meters to the electronic electricity meters, and now to the highly intelligent electricity meters. Technological breakthroughs at each stage have laid the foundation for the final form of smart meters. In the era of mechanical watt-hour meters, the measurement of electric energy mainly depends on the rotation and counting of mechanical structures. The accuracy and stability of this method are affected by mechanical wear, environmental interference and other factors, and it is difficult to meet the increasing demand for power management. With the rapid development of electronic technology, the electronic electricity meter came into being. It uses electronic technology to sample and process the current and voltage, which greatly improves the accuracy and stability of the measurement. At the same time, the electronic electricity meter also has the function of remote meter reading and data processing, which has brought great convenience to the power management. However, there still have some limitations, such as the complexity of data processing and the limitation of communication capacity. It is these challenges that drive the creation of smart power meters. smart meters combine advanced technologies such as the Internet of Things, big data and cloud computing to realize the real-time monitoring, analysis and prediction of the use of power.</description>
+    </item>
+    <item>
+      <title>Research on the evolution of domestic multi-functional meter technology</title>
+      <link>https://arxiv.org/abs/2402.05573</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2402.05573</guid>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 -0000</pubDate>
+      <description>The technical evolution of domestic multi-functional electricity meter is deeply discussed. With the rapid development of the domestic power market and the continuous innovation of technology, the domestic multi-functional electricity meters have experienced the transformation from simple billing to complex multi-functional, from a single application to a wide range of fields. This transformation has not only driven the rapid development of electricity meter technology, but also met the increasing power demand and management requirements. This paper expounds the concept of multi-function meter, the working principle and algorithm of digital multiplier, the initiation and evolution of multi-function electricity meter standard, and the initiation and evolution of domestic multi-function electricity meter products. Although the domestic independent production of multi-functional meter has made great achievements in performance, but in the reliability and key process technology still need to be improved. In addition, the development of communication technology also provides a new opportunity for the progress of electricity meter technology. The application of the new technology provides a more convenient and efficient way for the data transmission and remote management of electricity meters. Domestic multi-functional electricity meters have made remarkable achievements in technology evolution and application and expansion, but they still face some challenges and opportunities. In the future, with the continuous development of the power market and the promotion of smart grid construction, domestic multi-functional electricity meters need to continue to strengthen technological innovation and product research and development, improve the reliability and competitiveness of products, in order to meet higher application needs and market requirements.</description>
+    </item>
+    <item>
+      <title>Design of an Analog Memory Cell in 0.25 micron CMOS process</title>
+      <link>https://arxiv.org/abs/2402.14822</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2402.14822</guid>
+      <pubDate>Sun, 04 Feb 2024 00:00:00 -0000</pubDate>
+      <description>CMOS VLSI technology is the most dominant integration methodology prevailing in the world today. Various signal-processing blocks are made using analog or digital design techniques in MOS VLSI. An important component is the Memory unit used to store data. In the project a memory cell has been built up using analog design method. A capacitor is used as the basic storage device. The main idea behind analog memory is that the analog value of the charge or voltage stored in the capacitor is the data stored. So the dielectric quality of the capacitor becomes important here to determine how effectively it can store some charge. Analog memory is a trade off between hardware cost, chip area and accuracy or quality of storage. The circuit of analog memory cell was developed starting from the idea that required voltage will be stored in a capacitor and MOS transistors were used as switches. A given technology of integration was used and hence the dielectric property of the capacitor was fixed. By suitable circuit configuration the analog voltage value was written to the capacitor, read out when required and the charge loss was also refreshed. The results obtained are as given in the thesis.</description>
+    </item>
+    <item>
+      <title>Is 3-(F)WL Enough to Distinguish All 3D Graphs?</title>
+      <link>https://arxiv.org/abs/2402.08429</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2402.08429</guid>
+      <pubDate>Wed, 24 Jan 2024 00:00:00 -0000</pubDate>
+      <description>The problem of graph isomorphism is an important but challenging problem in the field of graph analysis, for example: analyzing the similarity of two chemical molecules, or studying the expressive ability of graph neural networks. WL test is a method to judge whether two graphs are isomorphic, but it cannot distinguish all non-isomorphic graphs. As an improvement of WL, k-WL has stronger isomorphism discrimination ability, and as k increases, its discrimination ability is strictly increasing. However, whether the isomorphic discrimination power of k-WL is strictly increasing for more complex 3D graphs, or whether there exists k that can discriminate all 3D graphs, remains unexplored. This paper attempts to explore this problem from the perspective of graph generation.</description>
+    </item>
+    <item>
+      <title>Foundations of Work-Systems Modeling</title>
+      <link>https://arxiv.org/abs/2401.16221</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2401.16221</guid>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 -0000</pubDate>
+      <description>In 2006, the course "Modeling of Organizations" is taught for the third time. This third time will be the second time we will use the new lecture notes "Work Systems Modelling" from the DA VINCI series. These lecture notes, however, will be evolved further hand-in-hand with the actual process of lecturing. In the academic year 2005/2006, a second incarnation of these lecture notes will be created, where the aim is to deliver these lecture notes in three increments. An important step that will be taken in this academic year is the integration of the ICIS Work Systems Modelling lecture notes with the NICI course on Organisational Dynamics. The first results of this integration will start to appear in the second and third trimester.</description>
+    </item>
+    <item>
+      <title>On the relevance of the Godot Engine in the indie game development industry</title>
+      <link>https://arxiv.org/abs/2401.01909</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2401.01909</guid>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 -0000</pubDate>
+      <description>This paper examines the relevance of the Godot Engine in the indie game industry. The Godot Engine is a relatively new game engine from 2014 and competes with leading market players. To get to the bottom of its relevance, two major online sales platforms and the game engines that are commonly used, Steam and itch[dot]io, are examined. Mainly, these findings are compared with reference data from 2018. It turns out that the Godot engine has gained massive relevance in 2020 and now seems to be one of the leading players in the indie game industry. The exact causes are difficult to determine. However, this paper provides many clues for further research in this area.</description>
+    </item>
+    <item>
+      <title>Foundations and Scoping of Data Science</title>
+      <link>https://arxiv.org/abs/2301.13761</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2301.13761</guid>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 -0000</pubDate>
+      <description>There has been an increasing recognition of the value of data and of data-based decision making. As a consequence, the development of data science as a field of study has intensified in recent years. However, there is no systematic and comprehensive treatment and understanding of data science. This article describes a systematic and end-to-end framing of the field based on an inclusive definition. It identifies the core components making up the data science ecosystem, presents its lifecycle modeling the development process, and argues its interdisciplinarity.</description>
+    </item>
+    <item>
+      <title>Analog Circuit Sizing Using Machine Learning Based Transistor Circuit Model</title>
+      <link>https://arxiv.org/abs/2401.16425</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2401.16425</guid>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 -0000</pubDate>
+      <description>In this work, a new method for designing an analog circuit for deep sub-micron CMOS fabrication processes is proposed. The proposed method leverages the regression algorithms with the transistor circuit model to size a transistor in 0.18 um technology fast and without using simulation software. Threshold voltage, output resistance, and the product of mobility and oxide capacitance are key parameters in the transistor circuit model to size a transistor. For nano-scale transistors, however, these parameters are nonlinear with respect to electrical and physical characteristics of transistors and circuit simulator is needed to find the value of these parameters and therefore the design time increases. Regression analysis is utilized to predict values of these parameters. We demonstrate the performance of the proposed method by designing a Current Feedback Instrumentational Amplifier (CFIA). We show that the presented method accomplishes higher than 90% accuracy in predicting the desired value of W. It reduces the design time over 97% compared to conventional methods. The designed circuit using the proposed method consumes 5.76 uW power and has a Common Mode Rejection Ratio (CMRR) of 35.83 dB and it results in achieving 8.17 V/V gain.</description>
+    </item>
+    <item>
+      <title>Rock Climbing Route Generation and Grading as Computational Creativity</title>
+      <link>https://arxiv.org/abs/2311.02211</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2311.02211</guid>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 -0000</pubDate>
+      <description>In this paper, we bridge work in rock climbing route generation and grading into the computational creativity community. We provide the necessary background to situate that literature and demonstrate the domain's intellectual merit in the computational creativity community. We provide a guiding set of desiderata for future work in this area. We propose an approach to computational route grading. Finally, we identify important gaps in the literature and consider how they may be filled. This paper thus also serves as a pilot study, planting a flag for our ongoing research in this domain.</description>
+    </item>
+    <item>
+      <title>Morphological Computing as Logic Underlying Cognition in Human, Animal, and Intelligent Machine</title>
+      <link>https://arxiv.org/abs/2309.13979</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2309.13979</guid>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 -0000</pubDate>
+      <description>This work examines the interconnections between logic, epistemology, and sciences within the Naturalist tradition. It presents a scheme that connects logic, mathematics, physics, chemistry, biology, and cognition, emphasizing scale-invariant, self-organizing dynamics across organizational tiers of nature. The inherent logic of agency exists in natural processes at various levels, under information exchanges. It applies to humans, animals, and artifactual agents. The common human-centric, natural language-based logic is an example of complex logic evolved by living organisms that already appears in the simplest form at the level of basal cognition of unicellular organisms. Thus, cognitive logic stems from the evolution of physical, chemical, and biological logic. In a computing nature framework with a self-organizing agency, innovative computational frameworks grounded in morphological/physical/natural computation can be used to explain the genesis of human-centered logic through the steps of naturalized logical processes at lower levels of organization. The Extended Evolutionary Synthesis of living agents is essential for understanding the emergence of human-level logic and the relationship between logic and information processing/computational epistemology. We conclude that more research is needed to elucidate the details of the mechanisms linking natural phenomena with the logic of agency in nature.</description>
+    </item>
+    <item>
+      <title>The Standard Problem</title>
+      <link>https://arxiv.org/abs/2304.09114</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2304.09114</guid>
+      <pubDate>Wed, 16 Aug 2023 00:00:00 -0000</pubDate>
+      <description>Objective: This paper proposes a framework to support the scientific research of standards so that they can be better measured, evaluated, and designed. Methods: Beginning with the notion of common models, the framework describes the general standard problem - the seeming impossibility of creating a singular, persistent and definitive standard which is not subject to change over time in an open system. Results: The standard problem arises from uncertainty driven by variations in operating context, standard quality, differences in implementation, and drift over time. As a result, fitting work using conformance services is needed to repair these gaps between a standard and what is required for real-world use. To guide standards design and repair, a framework for measuring performance in context is suggested, based on signal detection theory and technomarkers. Based on the type of common model in operation, different conformance strategies are identified: (a) Universal conformance (all agents access the same standard); (b) Mediated conformance (an interoperability layer supports heterogeneous agents) and (c) Localized conformance (autonomous adaptive agents manage their own needs). Conformance methods include incremental design, modular design, adaptors, and creating interactive and adaptive agents. Discussion: Machine learning should have a major role in adaptive fitting. Research to guide the choice and design of conformance services may focus on the stability and homogeneity of shared tasks, and whether common models are shared ahead of time or adjusted at task time. Conclusion: This analysis conceptually decouples interoperability and standardization. While standards facilitate interoperability, interoperability is achievable without standardization.</description>
+    </item>
+    <item>
+      <title>Towards a unified language in experimental designs propagated by a software framework</title>
+      <link>https://arxiv.org/abs/2307.11593</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2307.11593</guid>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 -0000</pubDate>
+      <description>Experiments require human decisions in the design process, which in turn are reformulated and summarized as inputs into a system (computational or otherwise) to generate the experimental design. I leverage this system to promote a language of experimental designs by proposing a novel computational framework, called "the grammar of experimental designs", to specify experimental designs based on an object-oriented programming system that declaratively encapsulates the experimental structure. The framework aims to engage human cognition by building experimental designs with modular functions that modify a targeted singular element of the experimental design object. The syntax and semantics of the framework are built upon consideration from multiple perspectives. While the core framework is language-agnostic, the framework is implemented in the `edibble` R-package. A range of examples is shown to demonstrate the utility of the framework.</description>
+    </item>
+    <item>
+      <title>Impacts of Business Architecture in the Context of Digital Transformation: An Empirical Study Using PLS-SEM Approach</title>
+      <link>https://arxiv.org/abs/2307.11895</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2307.11895</guid>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 -0000</pubDate>
+      <description>Despite the critical importance of Digital Transformation, up to 95% of initiatives fail to deliver expected business benefits. This paper explores the role of Business Architecture practices in enhancing digital transformation success. Using an adapted Balanced Scorecard approach and a Structural Equation Model (SEM), we analysed survey responses from 129 industry practitioners using a Partial Least Squares (PLS) approach. Our findings indicate that effective business architecture practices significantly improve business alignment, efficiency, service delivery, and strategic outcomes, leading to successful digital transformation. The study also validates factors proposed by AL-Malaise AL-Ghamdi (2017) in the context of digital transformation. The paper presents an adapted conceptual model addressing discriminant validity issues in previous models and benefiting from the robustness of the Balanced Scorecard approach. The study concludes by highlighting the essential role of business architecture in driving digital transformation success.</description>
+    </item>
+    <item>
+      <title>Towards The Ultimate Brain: Exploring Scientific Discovery with ChatGPT AI</title>
+      <link>https://arxiv.org/abs/2308.12400</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2308.12400</guid>
+      <pubDate>Sat, 08 Jul 2023 00:00:00 -0000</pubDate>
+      <description>This paper presents a novel approach to scientific discovery using an artificial intelligence (AI) environment known as ChatGPT, developed by OpenAI. This is the first paper entirely generated with outputs from ChatGPT. We demonstrate how ChatGPT can be instructed through a gamification environment to define and benchmark hypothetical physical theories. Through this environment, ChatGPT successfully simulates the creation of a new improved model, called GPT$^4$, which combines the concepts of GPT in AI (generative pretrained transformer) and GPT in physics (generalized probabilistic theory). We show that GPT$^4$ can use its built-in mathematical and statistical capabilities to simulate and analyze physical laws and phenomena. As a demonstration of its language capabilities, GPT$^4$ also generates a limerick about itself. Overall, our results demonstrate the promising potential for human-AI collaboration in scientific discovery, as well as the importance of designing systems that effectively integrate AI's capabilities with human intelligence.</description>
+    </item>
+    <item>
+      <title>Classification of Sequential Circuits as Causal Functions</title>
+      <link>https://arxiv.org/abs/2306.17583</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2306.17583</guid>
+      <pubDate>Wed, 24 May 2023 00:00:00 -0000</pubDate>
+      <description>In sequential circuits, the current output may depend on both past and current inputs. However, certain kinds of sequential circuits do not refer to all of the past inputs to generate the current output; they only refer to a subset of past inputs. This paper investigates which subset of past inputs a sequential circuit refers to, and proposes a new classification of sequential circuits based on this criterion. The conventional classification of sequential circuits distinguishes between synchronous and asynchronous circuits. In contrast, the new classification consolidates synchronous circuits and multiple clock domain circuits into the same category.</description>
+    </item>
+    <item>
+      <title>Exploring the use of Eye Tracking Technology to improve Website Usability</title>
+      <link>https://arxiv.org/abs/2305.11345</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2305.11345</guid>
+      <pubDate>Thu, 18 May 2023 00:00:00 -0000</pubDate>
+      <description>This study investigates the capability blessings of the use of eye-monitoring technology to beautify the usability of web sites. With the upward thrust of on-line interactions, website usability has turn out to be increasingly important for making sure person pleasure and engagement. Eye-tracking technology offers a non-invasive way to measure how users interact with web sites with the aid of monitoring their eye actions and gaze styles. By studying those statistics, internet site designers and builders can advantage insights into how customers navigate, examine, and method data on their web sites. This paper affords an overview of applicable literature on eye-monitoring and website usability, as well as a precis of research which have explored the usage of eye-tracking era to improve website design and overall performance. The outcomes propose that eye-tracking era can offer valuable records for enhancing internet site usability, inclusive of insights into consumer attention, visible hierarchy, and consumer engagement. Further studies are wanted to explore the full potential of eye-tracking generation and to develop great practices for incorporating this technology into website design and development techniques.</description>
+    </item>
+    <item>
+      <title>Assessing Exoplanet Habitability through Data-driven Approaches: A Comprehensive Literature Review</title>
+      <link>https://arxiv.org/abs/2305.11204</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2305.11204</guid>
+      <pubDate>Thu, 18 May 2023 00:00:00 -0000</pubDate>
+      <description>The exploration and study of exoplanets remain at the frontier of astronomical research, challenging scientists to continuously innovate and refine methodologies to navigate the vast, complex data these celestial bodies produce. This literature the review aims to illuminate the emerging trends and advancements within this sphere, specifically focusing on the interplay between exoplanet detection, classification, and visualization, and the the increasingly pivotal role of machine learning and computational models. Our journey through this realm of exploration commences with a comprehensive analysis of fifteen meticulously selected, seminal papers in the field. These papers, each representing a distinct facet of exoplanet research, collectively offer a multi-dimensional perspective on the current state of the field. They provide valuable insights into the innovative application of machine learning techniques to overcome the challenges posed by the analysis and interpretation of astronomical data. From the application of Support Vector Machines (SVM) to Deep Learning models, the review encapsulates the broad spectrum of machine learning approaches employed in exoplanet research. The review also seeks to unravel the story woven by the data within these papers, detailing the triumphs and tribulations of the field. It highlights the increasing reliance on diverse datasets, such as Kepler and TESS, and the push for improved accuracy in exoplanet detection and classification models. The narrative concludes with key takeaways and insights, drawing together the threads of research to present a cohesive picture of the direction in which the field is moving. This literature review, therefore, serves not just as an academic exploration, but also as a narrative of scientific discovery and innovation in the quest to understand our cosmic neighborhood.</description>
+    </item>
+    <item>
+      <title>CoCoMo: Computational Consciousness Modeling for Generative and Ethical AI</title>
+      <link>https://arxiv.org/abs/2304.02438</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2304.02438</guid>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 -0000</pubDate>
+      <description>The CoCoMo model proposes a computational solution to the challenge of incorporating ethical and emotional intelligence considerations into AI systems, with the aim of creating AI agents that combine knowledge with compassion. To achieve this goal, CoCoMo prioritizes fairness, beneficence, non-maleficence, empathy, adaptability, transparency, and critical and exploratory thinking abilities. The model employs consciousness modeling, reinforcement learning, and prompt template formulation to support these desired traits. By incorporating ethical and emotional intelligence considerations, a generative AI model can potentially lead to improved fairness, reduced toxicity, and increased reliability.</description>
+    </item>
+    <item>
+      <title>Computational Language $ β$ based on Orthomodular Lattices with the Non-distributivity of Quantum Logic</title>
+      <link>https://arxiv.org/abs/2203.12385</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2203.12385</guid>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 -0000</pubDate>
+      <description>It is argued that transformation processes (generation rules) showing evidence of a long evolutionary history in universal computing systems can be generalized. The explicit function class $ Ω$ is defined as follows: "Operators whose eigenvectors (or eigenvalues) have an irrational number in their components constitute a class of functions with quasi-periodic structure, $ Ω$, and the class $ Ω$ shows evidence of a long evolutionary history." In order to empirically prove this theorem by examining physical systems carrying out life activities or intellectual outputs of developed intelligence, the basic framework of the universal machine model C and the computational language $ β$ is presented as a model for general computational methods, which allow transformation processes (generation rules) with deep algorithmic complexity to be derived from generation results. C and $ β$ perform massively parallel computations on event-state systems consisting of exponential combinations of propositional elements expressed in terms of correlations between subsystems. The logical structure of the computational language relies on a non-distributivity in Hilbert spaces or orthogonal modular lattices, allowing for the manipulation and deduction of simultaneous propositions. In this logical local structure, the propositions implying certain consequences are not uniquely determined.</description>
+    </item>
+    <item>
+      <title>Arithmetic logical Irreversibility and the Turing's Halt Problem</title>
+      <link>https://arxiv.org/abs/2204.00563</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2204.00563</guid>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 -0000</pubDate>
+      <description>The Turing machine halting problem can be explained by several factors, including arithmetic logic irreversibility and memory erasure, which contribute to computational uncertainty due to information loss during computation. Essentially, this means that an algorithm can only preserve information about an input, rather than generate new information. This uncertainty arises from characteristics such as arithmetic logical irreversibility, Landauer's principle, and memory erasure, which ultimately lead to a loss of information and an increase in entropy. To measure this uncertainty and loss of information, the concept of arithmetic logical entropy can be used. The Turing machine and its equivalent, general recursive functions can be understood through the λ calculus and the Turing/Church thesis. However, there are certain recursive functions that cannot be fully understood or predicted by other algorithms due to the loss of information during logical-arithmetic operations. In other words, the behaviour of these functions cannot be completely determined at every stage of the computation due to a lack of information in their definition. While there are some cases where the behaviour of recursive functions is highly predictable, the lack of information in most cases makes it impossible for algorithms to determine if a program will halt or not. This inability to predict the outcome of the computation is the essence of the halting problem of the Turing machine. Even in cases where more information is available about the program, it is still difficult to determine with certainty if the program will halt or not. This also highlights the importance of the Turing oracle machine, which introduces information from outside the computation to compensate for the lack of information and ultimately decide the result of the computation.</description>
+    </item>
+    <item>
+      <title>Lost in Algorithms</title>
+      <link>https://arxiv.org/abs/2301.10333</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2301.10333</guid>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 -0000</pubDate>
+      <description>Algorithms are becoming more capable, and with that comes hic sunt dracones (here be dragons). The term symbolizes areas beyond our known maps. We use this term since we are stepping into an exciting, potentially dangerous, and unknown area with algorithms. Our curiosity to understand the natural world drives our search for new methods. For this reason, it is crucial to explore this subject. The project's objective is to overlay the information obtained, in conjunction with the state of hardware today, to see if we can determine the likely directions for future algorithms'. Even though we slightly cover non-classical computing in this paper, our primary focus is on classical computing (i.e., digital computers). It is worth noting that non-classical quantum computing requires classical computers to operate; they are not mutually exclusive.</description>
+    </item>
+    <item>
+      <title>Explanation of an Invisible Common Constraint of Mind, Mathematics and Computational Complexity</title>
+      <link>https://arxiv.org/abs/1711.10874</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1711.10874</guid>
+      <pubDate>Wed, 21 Dec 2022 00:00:00 -0000</pubDate>
+      <description>There is a cognitive limit in Human Mind. This cognitive limit has played a decisive role in almost all fields including computer sciences. The cognitive limit replicated in computer sciences is responsible for inherent Computational Complexity. The complexity starts decreasing if certain conditions are met, even sometime it does not appears at all. Very simple Mechanical computing systems are designed and implemented to demonstrate this idea and it is further supported by Electrical systems. These verifiable and consistent systems demonstrate the idea of computational complexity reduction. This work explains a very important but invisible connection from Mind to Mathematical axioms (Peano Axioms etc.) and Mathematical axioms to computational complexity. This study gives a completely new perspective that goes well beyond Cognitive Science, Mathematics, Physics, Computer Sciences and Philosophy. Based on this new insight some important predictions are made.</description>
+    </item>
+    <item>
+      <title>Clifford algebras, Spin groups and qubit trees</title>
+      <link>https://arxiv.org/abs/1904.09912</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1904.09912</guid>
+      <pubDate>Mon, 05 Dec 2022 00:00:00 -0000</pubDate>
+      <description>Representations of Spin groups and Clifford algebras derived from the structure of qubit trees are introduced in this work. For ternary trees the construction is more general and reduction to binary trees is formally defined by deletion of superfluous branches. The usual Jordan--Wigner construction also may be formally obtained in this approach by bringing the process up to trivial qubit chain (trunk). The methods can also be used for effective simulation of some quantum circuits corresponding to the binary tree structure. The modeling of more general qubit trees, as well as the relationship with the mapping used in the Bravyi--Kitaev transformation, are also briefly discussed.</description>
+    </item>
+    <item>
+      <title>Extracting task trees using knowledge retrieval search algorithms in functional object-oriented network</title>
+      <link>https://arxiv.org/abs/2211.08314</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2211.08314</guid>
+      <pubDate>Tue, 15 Nov 2022 00:00:00 -0000</pubDate>
+      <description>The functional object-oriented network (FOON) has been developed as a knowledge representation method that can be used by robots in order to perform task planning. A FOON can be observed as a graph that can provide an ordered plan for robots to retrieve a task tree, through the knowledge retrieval process. We compare two search algorithms to evaluate their performance in extracting task trees: iterative deepening search (IDS) and greedy best-first search (GBFS) with two different heuristic functions. Then, we determine which algorithm is capable of obtaining a task tree for various cooking recipes using the least number of functional units. Preliminary results show that each algorithm can perform better than the other, depending on the recipe provided to the search algorithm.</description>
+    </item>
+    <item>
+      <title>Brief on tool path generation/optimization methods for multi-axis CNC machining</title>
+      <link>https://arxiv.org/abs/2212.07941</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2212.07941</guid>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 -0000</pubDate>
+      <description>The quality of tool paths is a dominant factor in CNC machining, determining its efficiency and accuracy. This paper provides a brief review (in Chinese) on tool path planning methods reported in the literature, focusing on their categorization, motivating problems/issues, and historical development. Some promising research trends have also been stressed, especially for the paradigm shift from tool path generation towards tool path optimization.</description>
+    </item>
+    <item>
+      <title>Knowledge Retrieval With Functional Object-Oriented Networks</title>
+      <link>https://arxiv.org/abs/2211.02608</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2211.02608</guid>
+      <pubDate>Sat, 22 Oct 2022 00:00:00 -0000</pubDate>
+      <description>In this experiment, three different search algorithms are implemented for the purpose of extracting a task tree from a large knowledge graph, known as the Functional Object-Oriented Network (FOON). Using a universal FOON, which contains knowledge extracted by annotating online cooking videos, and a desired goal, a task tree can be retrieved. The process of searching the universal FOON for task tree retrieval is tested using iterative deepening search and greedy best-first search with two different heuristic functions. The performance of these three algorithms is analyzed and compared. The results of the experiment show that iterative deepening performs strongly overall. However, different heuristics in an informed search proved to be beneficial for certain situations.</description>
+    </item>
+    <item>
+      <title>O Problema do Roteamento de Interligações Elétricas em Circuitos Integrados</title>
+      <link>https://arxiv.org/abs/2210.10483</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2210.10483</guid>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 -0000</pubDate>
+      <description>Integrated circuit design automation tools are essential for the feasibility of complex designs with millions of transistors. One of the steps performed within the process is the routing of interconnections between components of a circuit. This problem, which also aims to optimize the utilization of connection resources, has been shown to be NP-Complete and requires heuristic algorithms to look for the best achievable solutions. In this work, we present a definition of this problem in context with a brief review of existing solutions in the literature. Then, we propose a methodology for the development of an original algorithm, which aims to differentiate itself, in certain domains, from the solutions already proposed.</description>
+    </item>
+    <item>
+      <title>Alternate Timelines for TidalCycles</title>
+      <link>https://arxiv.org/abs/2209.04289</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2209.04289</guid>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 -0000</pubDate>
+      <description>The TidalCycles (or Tidal for short) live coding environment has been developed since around 2009, via several rewrites of its core representation. Rather than having fixed goals, this development has been guided by use, motivated by the open aim to make music. This development process can be seen as a long-form improvisation, with insights into the nature of Tidal gained through the process of writing it, feeding back to guide the next steps of development. This brings the worrying thought that key insights will have been missed along this development journey, that would otherwise have lead to very different software. Indeed participants at beginners' workshops that I have lead or co-lead have often asked questions without good answers, because they made deficiencies or missing features in the software clear. It is well known that a beginner's mind is able to see much that an expert has become blind to. Running workshops are an excellent way to find new development ideas, but the present paper explores a different technique - the rewrite.</description>
+    </item>
+    <item>
+      <title>Language and Intelligence, Artificial vs. Natural or What Can and What Cannot AI Do with NL?</title>
+      <link>https://arxiv.org/abs/2209.12829</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2209.12829</guid>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 -0000</pubDate>
+      <description>In this talk, I argue that there are certain pragmatic features of natural language (that I will call 'productivity' and 'malleability', on top of syntactical generativity and semantical compositionality), which are not only hard, but even impossible to capture in an artificial language used by an AI system, and the reason for this is to be found in certain deep, metaphysical differences between artificial and natural intelligence, accounting for the differences in their respective processes of concept-formation.</description>
+    </item>
+    <item>
+      <title>Device for measuring the plant physiology and electrophysiology</title>
+      <link>https://arxiv.org/abs/2206.10459</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2206.10459</guid>
+      <pubDate>Tue, 24 May 2022 00:00:00 -0000</pubDate>
+      <description>This paper briefly describes the device - the phytosensor - for measuring physiological and electrophysiological parameters of plants. This system is developed as a bio-physiological sensor in precise agriculture, as a tool in plant research and environmental biology, and for plant enthusiasts in smart home or entertainment applications. The phytosentor measures main physiological parameters such as the leaf transpiration rate, sap flow, tissue conductivity and frequency response, biopotentials (action potentials and variation potentials), and can conduct electrochemical impedance spectroscopy with organic tissues. Soil moisture and temperature, air quality (CO2, NO2, O3 and other sensors on I2C bus), and general environmental parameters (light, temperature, humidity, air pressure, electromagnetic and magnetic fields) are also recorded in real time. In addition to phytosensing, the device can also perform phytoactuation, i.e. execute electrical or light stimulation of plants, control irrigation and lighting modes, conduct fully autonomous experiments with complex feedback-based and adaptive scenarios in robotic or biohybrid systems. This article represents the revised and extended version of original paper and includes some descriptions and images from the FloraRobotica and BioHybrids projects.</description>
+    </item>
+    <item>
+      <title>A Non-Habituating Configurable Audio Visual Animal Deterrent System to Mitigate Roadkill</title>
+      <link>https://arxiv.org/abs/2205.11514</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2205.11514</guid>
+      <pubDate>Mon, 23 May 2022 00:00:00 -0000</pubDate>
+      <description>Growth economies continue to be more reliant on roadways than ever before. Over 30,000 miles of road are added yearly to the already enormous road system that exists in the United States. As roads segment habitats, animals have no option but to walk across them for food, water and companionship. In this process they end up becoming roadkill. Wherever wildlife habitat and roadways overlap, death and destruction seem impossible to control. These animal deaths have a direct impact on the biodiversity and dynamics of an ecosystem and roadkill poses a threat to many species that are fighting extinction. Vehicles colliding with animals results in human fatalities, life changing injuries and extensive property damage. Current methods of handling roadkill are primarily passive and do not utilize the animal's natural instincts. This paper presents an alternative approach by actively involving the animal, warning them of an oncoming vehicle and triggering their survival instincts. Making the animal an integral part of the solution, augmenting their sensory perception with science and technology and utilizing their heightened reflexes and survival instincts provides a better chance at mitigating the problem of roadkill. The results show that this solution is able to provide animals a warning of an oncoming vehicle, consistently, reliably and in a wide range of testing conditions.</description>
+    </item>
+    <item>
+      <title>Application of Stochastic Optimization Techniques to the Unit Commitment Problem -- A Review</title>
+      <link>https://arxiv.org/abs/2204.00922</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2204.00922</guid>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 -0000</pubDate>
+      <description>Due to the established energy production methods contribution to the climate crisis, renewable energy is to replace a substantial part of coal or nuclear plants to prevent greenhouse gases or toxic waste entering the atmosphere. This relatively quick shift in energy production, primarily pushed by increasing political and economical pressure, requires enormous effort on the part of the energy providers to balance out production fluctuations. Consequently, a lot of research is conducted in the key area of stochastic unit commitment (UC) on electrical grids and microgrids. The term unit commitment includes a large variety of optimization techniques, and in this paper we will review recent developments in this area. We start by giving an overview over different problem definitions and stochastic optimization procedures, to then assess recent contributions to this topic. We therefore compare the proposals and case studies of several papers.</description>
+    </item>
+    <item>
+      <title>Designing a cost-time-quality-efficient grinding process using MODM methods</title>
+      <link>https://arxiv.org/abs/1804.10710</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1804.10710</guid>
+      <pubDate>Sun, 13 Mar 2022 00:00:00 -0000</pubDate>
+      <description>In this paper a multi-objective mathematical model has been used to optimize grinding parameters include workpiece speed, depth of cut and wheel speed which highly affect the final surface quality. The mathematical model of the optimization problem consists of three conflict objective functions subject to wheel wear and production rate constraints. Exact methods can solve the NLP model in few seconds, therefore using Meta-heuristic algorithms which provide near optimal solutions in not suitable. Considering this, five Multi-Objective Decision Making methods have been used to solve the multi-objective mathematical model using GAMS software to achieve the optimal parameters of the grinding process. The Multi-Objective Decision Making methods provide different effective solutions where the decision maker can choose each solution in different situations. Different criteria have been considered to evaluate the performance of the five Multi-Objective Decision Making methods. Also, Technique for Order of Preference by Similarity to Ideal Solution method has been used to obtain the priority of each method and determine which Multi-Objective Decision Making method performs better considering all criteria simultaneously. The results indicated that Weighted Sum Method and Goal programming method are the best Multi-Objective Decision Making methods. The Weighted Sum Method and Goal programming provided solutions which are competitive to each other. In addition, these methods obtained solutions which have minimum grinding time, cost and surface roughness among other Multi-Objective Decision Making methods.</description>
+    </item>
+    <item>
+      <title>Dimensional Complexity and Algorithmic Efficiency</title>
+      <link>https://arxiv.org/abs/2201.05050</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2201.05050</guid>
+      <pubDate>Fri, 11 Mar 2022 00:00:00 -0000</pubDate>
+      <description>This paper uses the concept of algorithmic efficiency to present a unified theory of intelligence. Intelligence is defined informally, formally, and computationally. We introduce the concept of Dimensional complexity in algorithmic efficiency and deduce that an optimally efficient algorithm has zero Time complexity, zero Space complexity, and an infinite Dimensional complexity. This algorithm is used to generate the number line.</description>
+    </item>
+    <item>
+      <title>Accuracy of Garmin GPS Running Watches over Repetitive Trials on the Same Route</title>
+      <link>https://arxiv.org/abs/2203.00491</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2203.00491</guid>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 -0000</pubDate>
+      <description>Many runners use watches incorporating Global Positioning System technology to track their workouts. These devices can be valuable training aids, but they have limitations. For several reasons including variations in satellite position, environmental factors, and design decisions made by the manufacturer, GPS-enabled watches can produce position measurement errors. These can result in incorrect estimations of total distance covered as well as running pace. This study examined the accuracy of three Garmin running watches of different technological generations using repetitive trials, over several years, by the same runner over the same route. The older watches, a Forerunner 205 and a Forerunner 220, showed similar accuracy when traversing the route. The newer generation watch, a Forerunner 45S, was found to be significantly less accurate in terms of both the trueness and precision of its distance measurements. This may indicate that Garmin, in competition with other manufacturers of similar devices, has chosen in recent years to prioritize device miniaturization and battery life over accuracy.</description>
+    </item>
+    <item>
+      <title>A Brief Analysis of the Apollo Guidance Computer</title>
+      <link>https://arxiv.org/abs/2201.08230</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2201.08230</guid>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 -0000</pubDate>
+      <description>The AGC was designed with the sole purpose of providing navigational guidance and spacecraft control during the Apollo program throughout the 1960s and early 1970s. The AGC sported 72kb of ROM, 4kb of RAM, and a whopping 14,245 FLOPS, roughly 30 million times fewer than the computer this report is being written on. These limitations are what make the AGC so interesting, as its programmers had to ration each individual word of memory due to the bulk of memory technology of the time. Despite these limitations (or perhaps due to them), the AGC was highly optimized, and arguably the most advanced computer of its time, as its computational power was only matched in the late 1970s by computers like the Apple II. It is safe to say that the AGC had no intended market, and was explicitly designed to enhance control of the Apollo Command Module and Apollo Lunar Module. The AGC was not entirely internal to NASA, however, and was designed in MIT's Instrumentation Laboratory, and manufactured by Raytheon, a weapons and defense contractor.</description>
+    </item>
+    <item>
+      <title>Easy and structured approach for software and firmware co-simulation for bus centric designs</title>
+      <link>https://arxiv.org/abs/2110.10447</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2110.10447</guid>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 -0000</pubDate>
+      <description>Although software and firmware co-simulation is gaining popularity, it is still not widely used in the FPGA designs. This work presents easy and structured approach for software and firmware co-simulation for bus centric designs. The proposed approach is very modular and software language agnostic. The only requirement is that the firmware design is accessible via some kind of system bus. The concept has been used for testing DAQ system being developed for high energy physics experiment.</description>
+    </item>
+    <item>
+      <title>A Computable Piece of Uncomputable Art whose Expansion May Explain the Universe in Software Space</title>
+      <link>https://arxiv.org/abs/2109.08523</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2109.08523</guid>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 -0000</pubDate>
+      <description>At the intersection of what I call uncomputable art and computational epistemology, a form of experimental philosophy, we find an exciting and promising area of science related to causation with an alternative, possibly best possible, solution to the challenge of the inverse problem. That is the problem of finding the possible causes, mechanistic origins, first principles, and generative models of a piece of data from a physical phenomenon. Here we explain how generating and exploring software space following the framework of Algorithmic Information Dynamics, it is possible to find small models and learn to navigate a sci-fi-looking space that can advance the field of scientific discovery with complementary tools to offer an opportunity to advance science itself.</description>
+    </item>
+    <item>
+      <title>Gain and Pain of a Reliable Delay Model</title>
+      <link>https://arxiv.org/abs/2107.06814</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2107.06814</guid>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 -0000</pubDate>
+      <description>State-of-the-art digital circuit design tools almost exclusively rely on pure and inertial delay for timing simulations. While these provide reasonable estimations at very low execution time in the average case, their ability to cover complex signal traces is limited. Research has provided the dynamic Involution Delay Model (IDM) as a promising alternative, which was shown (i) to depict reality more closely and recently (ii) to be compatible with modern simulation suites. In this paper we complement these encouraging results by experimentally exploring the behavioral coverage for more advanced circuits. In detail we apply the IDM to three simple circuits (a combinatorial loop, an SR latch and an adder), interpret the delivered results and evaluate the overhead in realistic settings. Comparisons to digital (inertial delay) and analog (SPICE) simulations reveal, that the IDM delivers very fine-grained results, which match analog simulations very closely. Moreover, severe shortcomings of inertial delay become apparent in our simulations, as it fails to depict a range of malicious behaviors. Overall the Involution Delay Model hence represents a viable upgrade to the available delay models in modern digital timing simulation tools.</description>
+    </item>
+    <item>
+      <title>No Substitute for Functionalism -- A Reply to 'Falsification &amp; Consciousness'</title>
+      <link>https://arxiv.org/abs/2006.13664</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2006.13664</guid>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 -0000</pubDate>
+      <description>In their paper 'Falsification and Consciousness' [1], Kleiner and Hoel introduced a formal mathematical model of the process of generating observable data from experiments and using that data to generate inferences and predictions onto an experience space. The resulting substitution argument built on this framework was used to show that any theory of consciousness with independent inference and prediction data are pre-falsified, if the inference reports are considered valid. If this argument does indeed pre-falsify many of the leading theories of consciousness, it would indicate a fundamental problem affecting the field of consciousness as a whole that would require radical changes to how consciousness science is performed. In this reply, the author will identify avenues of expansion for the model proposed in [1], allowing us to distinguish between different types of variation. Motivated by examples from neural networks, state machines and Turing machines, we will prove that substitutions do not exist for a very broad class of Level-1 functionalist theories, rendering them immune to the aforementioned substitution argument.</description>
+    </item>
+    <item>
+      <title>Designing an Android Application for Bills Segregation</title>
+      <link>https://arxiv.org/abs/2104.06823</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2104.06823</guid>
+      <pubDate>Wed, 14 Apr 2021 00:00:00 -0000</pubDate>
+      <description>In recent years, several people have been hanging out or sharing rental house with others. For utilities bills and other items, most people have been using the tedious way where a person pay the bill and others transfer the money to their bank account. We research and develop android app as there has been a few companies trying to solve this. Our android application for bills segregation can resolve this problem. In our novel system, the user can create event which represent all events that required to split the payment to everyone. In this application, the user can invite the people and set the rules such as the percentage of each person. More importantly, the users will have the dashboard to display all the event and be able to chat with each other seamlessly.</description>
+    </item>
+    <item>
+      <title>Signal filtering to obtain number of Hamiltonian paths</title>
+      <link>https://arxiv.org/abs/1504.05429</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1504.05429</guid>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 -0000</pubDate>
+      <description>This paper consists of two parts. First, the (undirected) Hamiltonian path problem is reduced to a signal filtering problem - number of Hamiltonian paths becomes amplitude at zero frequency for (a combination of) sinusoidal signal f(t) that encodes a graph. Then a 'divide and conquer' strategy to filtering out wide bandwidth components of a signal is suggested - one filters out angular frequency 1/2 to 1, then 1/4 to 1/2, then 1/8 to 1/4 and so on. An actual implementation of this strategy involves careful local polynomial extrapolation using numerical differentiation filters. When conjectures regarding required number of samples for specified filter designs and time complexity of obtaining filter coefficients hold, P=NP conditionally.</description>
+    </item>
+    <item>
+      <title>Total Novel and Complexity. Literature and Complexity Science</title>
+      <link>https://arxiv.org/abs/2105.02774</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2105.02774</guid>
+      <pubDate>Sat, 03 Apr 2021 00:00:00 -0000</pubDate>
+      <description>A strong link between complexity theory and literature is possible, i.e. feasible, under one proviso, namely that total novels be considered. However, neither in literature at large nor in complexity science has been literature seriously taken into consideration. This paper argues that a total novel is most conspicuous example of a complex system. The argument is supported by a clear characterization of what a total novel is and entails. Science and literature can be thus complemented and developed, hand in hand.</description>
+    </item>
+    <item>
+      <title>One-Time Pads from the Digits of Pi</title>
+      <link>https://arxiv.org/abs/2103.08783</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2103.08783</guid>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 -0000</pubDate>
+      <description>I present a method for generating one-time pads from the digits of pi. Computer code is given to generate such pads from passphrases in a method having an extremely low probability (&lt;10^-53) of a successful discovery of the one-time pads by a brute-force attack. The advantages and disadvantages of this method are discussed.</description>
+    </item>
+    <item>
+      <title>Designing a Binary Clock using logic gates</title>
+      <link>https://arxiv.org/abs/2102.02845</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2102.02845</guid>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 -0000</pubDate>
+      <description>Wristwatches have been a common fashion accessory addition for several people. However, the concept of using a seven-segment digital display or sometimes, even an analog indicator hasn't changed for a number of years. This project aims to test and design a binary clock, also referred to as 32, 16, 8, 4, 2, 1 clock or even 8, 4, 2, 1 clock (due to their display configuration), that could change this everlasting display for watches. Specifically, digital logic and design engineers would find interest in this topic due to the sophistication involved in reading-out the time. This project will do so using by showing each decimal digit of sexagesimal time as a binary value. This design will be primarily functioning on logic gates and would involve the use of several basic components that include, but are not limited to, integrated circuits (or ICs), Light-emitting diodes (LEDs), and resistors.</description>
+    </item>
+    <item>
+      <title>Foresight AND Hindsight</title>
+      <link>https://arxiv.org/abs/2101.03111</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2101.03111</guid>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 -0000</pubDate>
+      <description>To model is to represent. The threshold of decidability defines two epistemological choices: one model (or a finite number of models) suffices for representing the dynamics below the undecidable; above this threshold (defined as G-complexity), every model is partial, no complete modeling is possible.</description>
+    </item>
+    <item>
+      <title>Analogy, Mind, and Life</title>
+      <link>https://arxiv.org/abs/2012.13803</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2012.13803</guid>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 -0000</pubDate>
+      <description>I'll show that the kind of analogy between life and information [argue for by authors such as Davies (2000), Walker and Davies (2013), Dyson (1979), Gleick (2011), Kurzweil (2012), Ward (2009)], that seems to be central to the effect that artificial mind may represents an expected advance in the life evolution in Universe, is like the design argument and that if the design argument is unfounded and invalid, the argument to the effect that artificial mind may represents an expected advance in the life evolution in Universe is also unfounded and invalid. However, if we are prepared to admit (though we should not do) this method of reasoning as valid, I'll show that the analogy between life and information to the effect that artificial mind may represents an expected advance in the life evolution in Universe seems suggest some type of reductionism of life to information, but biology respectively chemistry or physics are not reductionist, contrary to what seems to be suggested by the analogy between life and information.</description>
+    </item>
+    <item>
+      <title>Looking for non-compliant documents using error messages from multiple parsers</title>
+      <link>https://arxiv.org/abs/2012.10211</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2012.10211</guid>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 -0000</pubDate>
+      <description>Whether a file is accepted by a single parser is not a reliable indication of whether a file complies with its stated format. Bugs within both the parser and the format specification mean that a compliant file may fail to parse, or that a non-compliant file might be read without any apparent trouble. The latter situation presents a significant security risk, and should be avoided. This article suggests that a better way to assess format specification compliance is to examine the set of error messages produced by a set of parsers rather than a single parser. If both a sample of compliant files and a sample of non-compliant files are available, then we show how a statistical test based on a pseudo-likelihood ratio can be very effective at determining a file's compliance. Our method is format agnostic, and does not directly rely upon a formal specification of the format. Although this article focuses upon the case of the PDF format (ISO 32000-2), we make no attempt to use any specific details of the format. Furthermore, we show how principal components analysis can be useful for a format specification designer to assess the quality and structure of these samples of files and parsers. While these tests are absolutely rudimentary, it appears that their use to measure file format variability and to identify non-compliant files is both novel and surprisingly effective.</description>
+    </item>
+    <item>
+      <title>AI Chiller: An Open IoT Cloud Based Machine Learning Framework for the Energy Saving of Building HVAC System via Big Data Analytics on the Fusion of BMS and Environmental Data</title>
+      <link>https://arxiv.org/abs/2011.01047</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2011.01047</guid>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 -0000</pubDate>
+      <description>Energy saving and carbon emission reduction in buildings is one of the key measures in combating climate change. Heating, Ventilation, and Air Conditioning (HVAC) system account for the majority of the energy consumption in the built environment, and among which, the chiller plant constitutes the top portion. The optimization of chiller system power consumption had been extensively studied in the mechanical engineering and building service domains. Many works employ physical models from the domain knowledge. With the advance of big data and AI, the adoption of machine learning into the optimization problems becomes popular. Although many research works and projects turn to this direction for energy saving, the application into the optimization problem remains a challenging task. This work is targeted to outline a framework for such problems on how the energy saving should be benchmarked, if holistic or individually modeling should be used, how the optimization is to be conducted, why data pattern augmentation at the initial deployment is a must, why the gradually increasing changes strategy must be used. Results of analysis on historical data and empirical experiment on live data are presented.</description>
+    </item>
+    <item>
+      <title>Inflationary Constant Factors and Why Python is Faster Than C++</title>
+      <link>https://arxiv.org/abs/1911.12338</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1911.12338</guid>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 -0000</pubDate>
+      <description>Constant-factor differences are frequently ignored when analyzing the complexity of algorithms and implementations, as they appear to be insignificant in practice. In this paper, we demonstrate that this assumption can in fact have far more profound implications on time complexity than is obvious at first glance, and that a poor consideration of trade-offs can result in polynomially slower algorithms whose roots can be deeply and fundamentally ingrained into a programming language itself. While the general observation may not be novel from a theoretical standpoint, it is rarely (if ever) presented in traditional computer science curricula or other settings, and appears to be far from common knowledge in practical software engineering. We thus hope bring awareness to this issue and urge careful consideration of significant trade-offs that can result from trivial decisions made while programming.</description>
+    </item>
+    <item>
+      <title>How to Design While Loops</title>
+      <link>https://arxiv.org/abs/2008.12375</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2008.12375</guid>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 -0000</pubDate>
+      <description>Beginning students find the syntactic construct known as a while loop difficult to master. The difficulties revolve around guaranteeing loop termination and around learning how to properly sequence mutations to solve a problem. In fact, both of these are intertwined and students need to be taught a model that helps them reason about how to design while loops. For students that have been introduced to how to design programs using structural recursion, generative recursion, accumulative recursion, and mutation, the task of teaching them how to design while loops is made easier. These students are familiar, for example, with state variables, termination arguments, and accumulator invariants. All of these are fundamental in the design of while loops. This articles presents a novel technique used at Seton Hall University to introduce beginners to the design of while loops. It presents a design recipe that students can follow step-by-step to establish such things as the driver of the loop, the loop invariant, and the proper sequencing of mutations. The article also presents an example of designing a while-loop based function using the new design recipe.</description>
+    </item>
+    <item>
+      <title>Privacy vs National Security</title>
+      <link>https://arxiv.org/abs/2007.12633</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2007.12633</guid>
+      <pubDate>Fri, 10 Jul 2020 00:00:00 -0000</pubDate>
+      <description>There are growing concerns and anxiety about privacy among the general public especially after the revelations of former NSA contractor and whistleblowers like Edward Snowden and others. While privacy is the fundamental concept of being human, the growing tug-of-war between an individuals privacy and freedom vs national security has renewed the concerns about where the fine balance should lie between the two. For the first time in history the technological advancement has made the mass data gathering, analysis, and storage a financially and technologically feasible option for the governments and private businesses. This has led to the growing interest of governments and security agencies around the globe to develop sophisticated algorithms using the power of Big-Data, Machine-Learning and Artificial Intelligence. The technology has enabled governments and private businesses to collect and store thousands of data points on every individual, which has put an individuals privacy under constant threat. This article analyses the individual's privacy concepts and its perceived link with national security. The article will also discuss the various aspects of privacy and national-security, arguments of both sides and where a boundary should be drawn between privacy and national security.</description>
+    </item>
+    <item>
+      <title>Quality Classification of Defective Parts from Injection Moulding</title>
+      <link>https://arxiv.org/abs/2008.02872</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2008.02872</guid>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 -0000</pubDate>
+      <description>This report examines machine learning algorithms for detecting short forming and weaving in plastic parts produced by injection moulding. Transfer learning was implemented by using pretrained models and finetuning them on our dataset of 494 samples of 150 by 150 pixels images. The models tested were Xception, InceptionV3 and Resnet-50. Xception showed the highest overall accuracy (86.66%), followed by InceptionV3 (82.47%) and Resnet-50 (80.41%). Short forming was the easiest fault to identify, with the highest F1 score for each model.</description>
+    </item>
+    <item>
+      <title>Business Email Compromise (BEC) and Cyberpsychology</title>
+      <link>https://arxiv.org/abs/2007.02415</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2007.02415</guid>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 -0000</pubDate>
+      <description>The paper gives a brief introduction about what BEC (Business Email Compromise) is and why we should be concerned about. In addition, it presents 2 examples, Ubiquity and Peebles Media Group, which have been chosen to analyse the phenomena of BEC and underpin how universal BEC threat is for all companies. The psychology behind this scam has been, then, studied. In particular, the Big Five Framework has been analysed to understand how personality traits play an important role in Social Engineering-based attacks. Furthermore, the 6 basic principles of influence, by Cialdini, have been presented to show which strategies are adopted in such scam. The paper follows with the analysis of the BEC impacts, the incidents evaluation and, finally, with the description of some precautions, that companies should undertake in order to mitigate the likelihood of a Business Email Compromise.</description>
+    </item>
+    <item>
+      <title>Artificial Buildings: Safety, Complexity and a Quantifiable Measure of Beauty</title>
+      <link>https://arxiv.org/abs/2006.11113</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2006.11113</guid>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 -0000</pubDate>
+      <description>A place to live is one of the most crucial necessities for all living organisms since the advent of life on planet Earth. The nature of homes has changed considerably over time. At the very early stages, human begins lived in natural places such as caves. Later on, they started to use their intelligence to build places with special purposes. Nowadays, modern technologies such as robotics and artificial intelligence have made their ways into the construction process and opened up a whole new area of opportunities and concerns that may be of interest to both technologists and philosophers. In this article, I review the evolution of buildings from fully natural to fully artificial and discuss philosophical thoughts that a fully automated construction technology may raise. I elaborate on the safety concerns of a fully automated architectural process. Then, I'll borrow Kolmogorov complexity from algorithmic information theory to define a complexity measure for buildings. The proposed measure is then used to provide a quantifiable measure of beauty.</description>
+    </item>
+    <item>
+      <title>Smart Motion Detection System using Raspberry Pi</title>
+      <link>https://arxiv.org/abs/2006.06442</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2006.06442</guid>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 -0000</pubDate>
+      <description>This paper throws light on the security issues that modern day homes and businesses face and describes the implementation of a motion detection system using Raspberry Pi which could be an effective solution to address the security concerns. The goal of the solution is to provide an implementation that uses PIR motion sensors for motion detection and sends notifications to users via emails. Furthermore, the system is verified using a verification tool named UPPAAL.</description>
+    </item>
+    <item>
+      <title>AGI and the Knight-Darwin Law: why idealized AGI reproduction requires collaboration</title>
+      <link>https://arxiv.org/abs/2005.08801</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2005.08801</guid>
+      <pubDate>Sat, 09 May 2020 00:00:00 -0000</pubDate>
+      <description>Can an AGI create a more intelligent AGI? Under idealized assumptions, for a certain theoretical type of intelligence, our answer is: "Not without outside help". This is a paper on the mathematical structure of AGI populations when parent AGIs create child AGIs. We argue that such populations satisfy a certain biological law. Motivated by observations of sexual reproduction in seemingly-asexual species, the Knight-Darwin Law states that it is impossible for one organism to asexually produce another, which asexually produces another, and so on forever: that any sequence of organisms (each one a child of the previous) must contain occasional multi-parent organisms, or must terminate. By proving that a certain measure (arguably an intelligence measure) decreases when an idealized parent AGI single-handedly creates a child AGI, we argue that a similar Law holds for AGIs.</description>
+    </item>
+    <item>
+      <title>Neighbourhood Evaluation Criteria for Vertex Cover Problem</title>
+      <link>https://arxiv.org/abs/2005.05065</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2005.05065</guid>
+      <pubDate>Thu, 07 May 2020 00:00:00 -0000</pubDate>
+      <description>Neighbourhood Evaluation Criteria is a heuristical approximate algorithm that attempts to solve the Minimum Vertex Cover. degree count is kept in check for each vertex and the highest count based vertex is included in our cover set. In the case of multiple equivalent vertices, the one with the lowest neighbourhood influence is selected. In the case of still existing multiple equivalent vertices, the one with the lowest remaining active vertex count (the highest Independent Set enabling count) is selected as a tie-breaker.</description>
+    </item>
+    <item>
+      <title>System of Computer Modeling and Features of their use in the Educational Process of General Secondary Eeducation</title>
+      <link>https://arxiv.org/abs/2005.07552</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2005.07552</guid>
+      <pubDate>Sun, 03 May 2020 00:00:00 -0000</pubDate>
+      <description>The article analyzes the historical aspect of the formation of computer modeling as one of the perspective directions of educational process development. The notion of "system of computer modeling", conceptual model of system of computer modeling (SCMod), its components (mathematical, animation, graphic, strategic), functions, principles and purposes of use are grounded. The features of the organization of students work using SCMod, individual and group work, the formation of subject competencies are described; the aspect of students' motivation to learning is considered. It is established that educational institutions can use SCMod at different levels and stages of training and in different contexts, which consist of interrelated physical, social, cultural and technological aspects. It is determined that the use of SCMod in general secondary school would increase the capacity of teachers to improve the training of students in natural and mathematical subjects and contribute to the individualization of the learning process, in order to meet the pace, educational interests and capabilities of each particular student. It is substantiated that the use of SCMod in the study of natural-mathematical subjects contributes to the formation of subject competencies, develops the skills of analysis and decision-making, increases the level of digital communication, develops vigilance, raises the level of knowledge, increases the duration of attention of students. Further research requires the justification of the process of forming students' competencies in natural-mathematical subjects and designing cognitive tasks using SCMod.</description>
+    </item>
+    <item>
+      <title>Knowledge Management Systems Requirements Specifications</title>
+      <link>https://arxiv.org/abs/2004.08961</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2004.08961</guid>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 -0000</pubDate>
+      <description>In recent years, Knowledge Management Systems (KMS) have drawn remarkable attention. However, there is no common understanding of how a knowledge management system should look like or where the corresponding research should be directed at. Based on a number of essential requirements that a KMS should satisfy, this report introduces some possible requirements for the commonwealth's KMS components forming the KMS architecture. Also, these requirements will be analysed through evaluating and measuring there functionality to produce a tangible outcome.</description>
+    </item>
+    <item>
+      <title>Interactive distributed cloud-based web-server systems for the smart healthcare industry</title>
+      <link>https://arxiv.org/abs/2005.01442</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2005.01442</guid>
+      <pubDate>Tue, 14 Apr 2020 00:00:00 -0000</pubDate>
+      <description>The work aims to investigate the possible contemporary interactive cloud based solutions in the fields of the applied medicine for the smart Healthcare as the data visualization open-source free system distributed under the MIT license. A comparative study of a number of the well-known implementations of the Ray Casting algorithms was studied. A new method of numerical calculus is proposed for calculating the volume -- the method of spheres, as well as a proposal for paralleling the algorithm on graphic accelerators in a linearly homogeneous computing environment using the block decomposition methods. For the artifacts control -- algorithm of the cubic interpolation was used. The cloud server architecture was proposed.</description>
+    </item>
+    <item>
+      <title>NDE 4.0: Digital Twin, Semantics, Interfaces, Networking, Feedback, New Markets and Integration into the Industrial Internet of Things</title>
+      <link>https://arxiv.org/abs/2004.05193</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2004.05193</guid>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 -0000</pubDate>
+      <description>The industrial revolution is divided into three phases by historians: The invention of the steam engine (mechanization), electricity (mass production) and the microelectric revolution (automation). There was a similar development in non-destructive evaluation: tools such as lenses or stethoscopes allowed the human senses to be sharpened, the conversion of waves makes the invisible visible and thus offers a "look" into the components and finally automation, digitization and reconstruction. During the entire industrial development NDE was decisively responsible for the quality and thus for the success of the manufactured goods. Industry is now talking about a fourth revolution: The informatization, digitization and networking of industrial production. As always, NDE will be critical to the success of this fourth revolution by providing the database needed for feedback in a networked production environment. For NDE, this will lead to change. The test results must be made available to a networked production environment in such a way that they can be evaluated for feedback loops, the testability must be considered in the design and the reliability of the test statements will become increasingly important. This publication presents first an orientation to NDE 4.0, including the development of Industry and NDE, a definition of its revolutions, a collection of several current-day challenges of NDE, and a discussion whether and how those can be solved with NDE 4.0. Second this publication presents concepts on how NDE can be integrated into Industry 4.0 landscapes: The Reference Architecture Model Industry 4.0 (RAMI 4.0) shows the complete Industry 4.0 space and allows every Industry 4.0 standard and interface to be located. The Industry 4.0 Asset Administration Shell (AAS) implements the digital twin and is the interface between Industry 4.0 communication and the physical device. The ...</description>
+    </item>
+    <item>
+      <title>BiEntropy, TriEntropy and Primality</title>
+      <link>https://arxiv.org/abs/1912.08051</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1912.08051</guid>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 -0000</pubDate>
+      <description>The order and disorder of binary representations of the natural numbers &lt; 2^8 is measured using the BiEntropy function. Significant differences are detected between the primes and the non primes. The BiEntropic prime density is shown to be quadratic with a very small Gaussian distributed error. The work is repeated in binary using a monte carlo simulation for a sample of the natural numbers &lt; 2^32 and in trinary for all natural numbers &lt; 3^9 with similar but cubic results. We find a significant relationship between BiEntropy and TriEntropy such that we can discriminate between the primes and numbers divisible by six. We discuss the theoretical underpinnings of these results and show how they generalise to give a tight bound on the variance of Pi(x) - Li(x) for all x. This bound is much tighter than the bound given by Von Koch in 1901 as an equivalence for proof of the Riemann Hypothesis. Since the primes are Gaussian due to a simple induction on the binary derivative, this implies that the twin primes conjecture is true. We also provide absolutely convergent asymptotes for the numbers of Fermat and Mersenne primes in the appendices.</description>
+    </item>
+    <item>
+      <title>Testability of Reversible Iterative Logic Arrays</title>
+      <link>https://arxiv.org/abs/0805.1293</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/0805.1293</guid>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 -0000</pubDate>
+      <description>Iterative Logic Arrays (ILAs) are ideal as VLSI sub-systems because of their regular structure and its close resemblance with FPGAs (Field Programmable Gate Arrays). Reversible circuits are of interest in the design of very low power circuits where energy loss implied by high frequency switching is not of much consideration. Reversibility is essential for Quantum Computing. This paper examines the testability of Reversible Iterative Logic Arrays (ILAs) composed of reversible k-CNOT gates. For certain ILAs it is possible to find a test set whose size remains constant irrespective of the size of the ILA, while for others it varies with array size. Former type of ILAs is known as Constant-Testable, i.e. C-Testable. It has been shown that Reversible Logic Arrays are C-Testable and size of test set is equal to number of entries in cells truth table implying that the reversible ILAs are also Optimal-Testable, i.e. O-Testable. Uniform-Testability, i.e. U-Testability has been defined and Reversible Heterogeneous ILAs have been characterized as U-Testable. The test generation problem has been shown to be related to certain properties of cycles in a set of graphs derived from cell truth table. By careful analysis of these cycles an efficient test generation technique that can be easily converted to an ATPG program has been presented for both 1-D and 2D ILAs. The same algorithms can be easily extended for n-Dimensional Reversible ILAs.</description>
+    </item>
+    <item>
+      <title>Proposal of a standard of Knowledge Management and Technological Innovation for Mexico</title>
+      <link>https://arxiv.org/abs/2001.11379</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2001.11379</guid>
+      <pubDate>Tue, 28 Jan 2020 00:00:00 -0000</pubDate>
+      <description>The purpose of this work is to offer a methodology that allows to construct a standard in Knowledge Management and Technological Innovation which may be used in various organizations in México to improve the operation of their resources and productivity. Based on the review of the existing literature, a model is offered including several elements to enable organizations to establish their position in relation to both concepts. The following proposal is based on a systematic effort to understand and integrate models of Knowledge Management and Innovation published in recent years as well as the results of the experiences to propose standards of Knowledge Management and Technological Innovation. In order to elaborate the proposal, factors and their associated components have been analyzed through a review of the literature in order to build and validate a standard proposal. To test the research study, a six-stage research model has been constructed. For this purpose, an in-depth exploratory research study has been carried out in a public sector organization, in an area that allows the replicability of the model. The results have been analyzed to construct and empirically validate the Mexican Standard of Knowledge Management an Technological Innovation. Finally, after the statistical analysis, results obtained from the application of the validated instrument are shown , which supports the definition of the model.</description>
+    </item>
+    <item>
+      <title>The Epistemic Landscape: a Computability Perspective</title>
+      <link>https://arxiv.org/abs/2001.10800</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2001.10800</guid>
+      <pubDate>Fri, 27 Dec 2019 00:00:00 -0000</pubDate>
+      <description>By nature, transmissible human knowledge is enumerable: every sentence, movie, audio record can be encoded in a sufficiently long string of 0's and 1's. The works of Gödel, Turing and others showed that there are inherent limits and properties associated with the fact that language technology is enumerable. Gödel's numbering technique is universal for enumerable structures and shows strong limits of the language technology. Computability theory is a particular example: programs can be numbered and all sorts of limits can be studied from there. Computability is also at the heart of science since any experimental validation of a theory supposes that theoretical results have been computed, then checked against concrete experiments. It implies that limitations on what is computable ultimately are also limits of what we understand as "scientific theory", and more generally to all the transmissible knowledge. We argue that it is fruitful to look a epistemology from a computability perspective. We show that it allows to precisely define different kinds of knowledge acquisition techniques, and helps the study of how they are related to one another.</description>
+    </item>
+    <item>
+      <title>Estudo comparativo de meta-heurísticas para problemas de colorações de grafos</title>
+      <link>https://arxiv.org/abs/1912.11533</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1912.11533</guid>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 -0000</pubDate>
+      <description>A classic graph coloring problem is to assign colors to vertices of any graph so that distinct colors are assigned to adjacent vertices. Optimal graph coloring colors a graph with a minimum number of colors, which is its chromatic number. Finding out the chromatic number is a combinatorial optimization problem proven to be computationally intractable, which implies that no algorithm that computes large instances of the problem in a reasonable time is known. For this reason, approximate methods and metaheuristics form a set of techniques that do not guarantee optimality but obtain good solutions in a reasonable time. This paper reports a comparative study of the Hill-Climbing, Simulated Annealing, Tabu Search, and Iterated Local Search metaheuristics for the classic graph coloring problem considering its time efficiency for processing the DSJC125 and DSJC250 instances of the DIMACS benchmark.</description>
+    </item>
+    <item>
+      <title>Bayesian Gates for Reliable Logical Operations under Noisy Condition</title>
+      <link>https://arxiv.org/abs/1703.00444</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1703.00444</guid>
+      <pubDate>Mon, 16 Dec 2019 00:00:00 -0000</pubDate>
+      <description>The reliability of logical operations is indispensable for the reliable operation of computational systems. Since the down-sizing of micro-fabrication generates non-negligible noise in these systems, a new approach for designing noise-immune gates is required. In this paper, we demonstrate that noise-immune gates can be designed by combining Bayesian inference theory with the idea of computation over a noisy signal. To reveal their practical advantages, the performance of these gates is evaluated in comparison with a stochastic resonance-based gate proposed previously. This approach for computation is also demonstrated to be better than a conventional one that conducts information transmission and computation separately.</description>
+    </item>
+    <item>
+      <title>Nonintrusive Load Monitoring for Machines used in Manufacturing</title>
+      <link>https://arxiv.org/abs/1912.01500</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1912.01500</guid>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 -0000</pubDate>
+      <description>In order to increase the electric energy efficiency of production machines, it is necessary to determine the energy demand of the constituent electric loads. Therefore, a new measurement system based on nonintrusive load monitoring is proposed in this paper. It only measures the voltage and current of the aggregate load and then uses automatic disaggregation methods to estimate the energy demand of the constituent loads. In two case studies, the energy demand of most loads could be determined with an accuracy of 85~\% or more in this way.</description>
+    </item>
+    <item>
+      <title>Context Adaptivity as Enabler for Meaningful Pervasive Advertising</title>
+      <link>https://arxiv.org/abs/1912.01490</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1912.01490</guid>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 -0000</pubDate>
+      <description>Socio-demographic user profiles are currently regarded as the most convenient base for successful personalized advertising. However, signs point to the dormant power of context recognition. While technologies that can sense the environment are increasingly advanced, questions such as what to sense and how to adapt to a consumer's context are largely unanswered. Research in the field is scattered and frequently prototype-driven. What the community lacks is a thorough methodology to provide the basis for any context-adaptive system: conceptualizing context. This position paper describes our current research of conceptualizing context for pervasive advertising. It summarizes findings from literature analysis and proposes a methodology for context conceptualization, which is currently work-in-progress.</description>
+    </item>
+    <item>
+      <title>Scalability of TTool's AMS extensions: a case study</title>
+      <link>https://arxiv.org/abs/1910.06091</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1910.06091</guid>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 -0000</pubDate>
+      <description>Embedded cyber-physical systems (CPS) are commonly built upon heterogeneous digital and analog integrated circuits, including sensors and actuators. Less common is their deployment on parallel, NoC based designs based on general purpose processor cores of a Multi-processor System-on-chip (MPSoC). Application code has to be run on the MPSoC for the digital part, and interact with the analog sensors. We recently proposed a major extension to the design and exploration tool named TTool, now allowing the design of CPS on a high level of abstraction and the generation of cycle-bit accurate simulations. We explore the scalability of our approach with an automotive case study.</description>
+    </item>
+    <item>
+      <title>A note on 'Collaborative hub location problem under cost uncertainty'</title>
+      <link>https://arxiv.org/abs/1910.02044</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1910.02044</guid>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 -0000</pubDate>
+      <description>Three models were presented in M.K. Khakim Habibi, Hamid Allaoui, Gilles Goncalves, Collaborative hub location problem under cost uncertainty, Computers &amp; Industrial Engineering Volume 124, October 2018, Pages 393-410 as models for collaborative Capacitated Multiple Allocation Hub Location Problem. In this note, we point out a few flaws in modeling. In particular, we elaborate and explain that none of the those models incorporates any element of a collaborative activity.</description>
+    </item>
+    <item>
+      <title>A Self-Healing Hardware Architecture for Safety-Critical Digital Embedded Devices</title>
+      <link>https://arxiv.org/abs/1910.00064</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1910.00064</guid>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 -0000</pubDate>
+      <description>Digital Embedded Devices of next-generation safety-critical industrial automation systems require high levels of survivability and resilience against the hardware and software failure. One of the concepts for achieving this requirement is the design of resilient and survivable digital embedded systems. In the last two decades, development of self-healing digital systems based on molecular and cellular biology have received attention for the design of robust digital systems. However, many of these approaches have not been architected from the outset with safety in mind, nor have they been targeted for the applications of automation community where a significant need exists. This paper presents a new self-healing hardware architecture, inspired from the way nature responds, defends and heals: the stem cells in the immune system of living organisms, the life cycle of the living cell, and the pathway from Deoxyribonucleic acid (DNA) to protein. The proposed architecture is integrating cellular-based biological concepts, traditional fault tolerance techniques, and operational schematics for the international standard IEC 61131-3 to facilitate adoption in the automation industry and safety-critical applications. To date, two industrial applications have been mapped on the proposed architecture, which are capable of tolerating a significant number of faults that can stem from harsh environmental changes and external disturbances and we believe the nexus of its concepts can positively impact the next generation of critical systems in the automation industry</description>
+    </item>
+    <item>
+      <title>Detection of fraudulent users in P2P financial market</title>
+      <link>https://arxiv.org/abs/1910.02010</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/1910.02010</guid>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 -0000</pubDate>
+      <description>Financial fraud detection is one of the core technological assets of Fintech companies. It saves tens of millions of money fro m Chinese Fintech companies since the bad loan rate is more than 10%. HC Financial Service Group is the 3rd largest company in the Chinese P2P financial market. In this paper we illustrate how we tackle the fraud detection problem at HC Financial. We utilize two powerful workhorses in the machine learning field - random forest and gradient boosting decision tree to detect fraudulent users . We demonstrate that by carefully select features and tune model parameters , we could effectively filter out fraudulent users in the P2P market.</description>
+    </item>
+  </channel>
+</rss>
