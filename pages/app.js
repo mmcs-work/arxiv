@@ -2,6 +2,7 @@ const perPage = 20;
 const cache = new Map();
 let shown = [];
 let currentPage = 1;
+let renderVersion = 0;
 
 const categories = {};
 
@@ -48,7 +49,7 @@ function matches(item, active) {
 function card(item) {
   const article = document.createElement("article");
   const title = document.createElement("a");
-  title.href = item.arxiv_url; title.target = "_blank"; title.rel = "noreferrer"; title.textContent = item.title;
+  title.href = item.arxiv_url || `https://arxiv.org/abs/${item.arxiv_id}`; title.target = "_blank"; title.rel = "noreferrer"; title.textContent = item.title;
   const meta = document.createElement("p"); meta.className = "meta"; meta.textContent = `${item.author} · ${item.published.slice(0, 10)} · ${item.primary_category}`;
   const abstract = document.createElement("details"); abstract.className = "abstract";
   const summary = document.createElement("summary"); summary.textContent = "Read abstract";
@@ -57,10 +58,21 @@ function card(item) {
   article.append(title, meta, abstract);
   return article;
 }
-function render() {
+async function pageRecords(page) {
+  if (page.every(item => item.abstract)) return page;
+  const months = [...new Set(page.map(item => item.published.slice(0, 7)))];
+  const full = (await Promise.all(months.map(month => data(`data/months/${month}.json`)))).flat();
+  const byId = new Map(full.map(item => [item.arxiv_id, item]));
+  return page.map(item => byId.get(item.arxiv_id) || item);
+}
+async function render() {
+  const version = ++renderVersion;
   const pages = Math.ceil(shown.length / perPage);
   const page = shown.slice((currentPage - 1) * perPage, currentPage * perPage);
-  paperList.replaceChildren(...page.map(card));
+  if (page.length) status.textContent = "Loading page…";
+  const records = await pageRecords(page);
+  if (version !== renderVersion) return;
+  paperList.replaceChildren(...records.map(card));
   status.textContent = shown.length ? `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}.` : "No papers found.";
   pagination.hidden = !shown.length;
   previous.disabled = currentPage === 1;
@@ -68,7 +80,7 @@ function render() {
   pageNumber.textContent = `Page ${currentPage} of ${pages}`;
 }
 async function load() {
-  const active = filters(); currentPage = 1; paperList.replaceChildren(); status.textContent = "Loading archive…"; pagination.hidden = true;
+  const active = filters(); currentPage = 1; renderVersion += 1; paperList.replaceChildren(); status.textContent = "Loading archive…"; pagination.hidden = true;
   try {
     let records;
     if (active.query.trim()) {
@@ -86,7 +98,7 @@ async function load() {
     } else if (active.category) {
       records = await data(`data/categories/${active.category}.json`);
     } else {
-      records = await data("data/latest.json");
+      records = await data("data/search.json");
     }
     shown = records.filter(item => matches(item, active)).sort((a, b) => b.published.localeCompare(a.published));
     render();
