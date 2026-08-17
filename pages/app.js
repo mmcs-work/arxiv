@@ -88,7 +88,7 @@ function card(item) {
 }
 function updateAbstractToggle() {
   const abstracts = [...paperList.querySelectorAll(".abstract")];
-  abstractToggle.hidden = !abstracts.length;
+  abstractToggle.parentElement.hidden = !abstracts.length;
   const expanded = abstracts.length && abstracts.every(abstract => abstract.open);
   abstractToggle.textContent = expanded ? "Collapse all" : "Expand all";
   abstractToggle.setAttribute("aria-label", expanded ? "Collapse all abstracts" : "Expand all abstracts");
