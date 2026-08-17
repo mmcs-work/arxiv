@@ -56,7 +56,14 @@ article a:hover { color:var(--accent); }
 .page-size select { font-size:.82rem; padding:.4rem; }
 .export-tools { align-items:center; display:flex; gap:.45rem; justify-content:flex-end; margin:1rem 0; }
 .export-tools span { color:var(--muted); font:.78rem/1 ui-sans-serif, system-ui; margin-right:.2rem; }
-.export-tools button { font-size:.78rem; padding:.45rem .6rem; }
+.export-tools button { align-items:center; display:inline-flex; font-size:.78rem; height:2rem; justify-content:center; line-height:1; padding:.45rem .6rem; }
 footer { color:var(--muted); font-size:.85rem; margin-top:4rem; }
 footer a { color:inherit; }
+input, select, button, .rss-controls a { border-radius:999px; padding:.45rem .58rem; }
+button { font-size:.82rem; }
+.rss-controls button { font-size:.78rem; }
+form button, .rss-controls a, .rss-controls button { height:2.15rem; }
+form button { align-items:center; display:inline-flex; justify-content:center; line-height:1; }
+form { gap:.45rem; }
+#pagination button { font-size:.76rem; padding:.4rem .6rem; }
 @media (max-width:680px) { main { margin-top:3rem; } form { grid-template-columns:1fr 1fr; } form label:first-child { grid-column:1 / -1; } form button { grid-column:1 / -1; } }

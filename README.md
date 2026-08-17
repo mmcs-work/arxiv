@@ -1,8 +1,8 @@
 # One Author
 
-A small, static archive of arXiv papers in selected categories whose metadata
-lists exactly one author. The website lets people browse a category, select any
-date range, search titles or authors, and open the full abstract. It is hosted
+A small, static archive of single-author papers from arXiv's Computer Science
+(CS) branch. The website lets people browse a category, select any date range,
+search titles or authors, and open the full abstract. It is hosted
 on GitHub Pages and needs no server, database, token, or external service at
 runtime.
 
