@@ -15,6 +15,8 @@ const next = document.querySelector("#next");
 const pageLinks = document.querySelector("#page-links");
 const pageNumber = document.querySelector("#page-number");
 const pageSize = document.querySelector("#page-size");
+const pageJump = document.querySelector("#page-jump");
+const pageJumpSubmit = document.querySelector("#page-jump-submit");
 const exportJson = document.querySelector("#export-json");
 const exportMarkdown = document.querySelector("#export-markdown");
 const abstractToggle = document.querySelector("#abstract-toggle");
@@ -114,6 +116,8 @@ async function render() {
   previous.disabled = currentPage === 1;
   next.disabled = currentPage === pages;
   pageNumber.textContent = `Page ${currentPage} of ${pages}`;
+  pageJump.max = pages;
+  pageJump.value = currentPage;
   pageLinks.replaceChildren();
   const numbers = [...new Set([1, pages, currentPage - 1, currentPage, currentPage + 1].filter(number => number > 0 && number <= pages))].sort((a, b) => a - b);
   numbers.forEach((number, index) => {
@@ -155,6 +159,13 @@ form.addEventListener("submit", event => { event.preventDefault(); load(); });
 previous.addEventListener("click", () => { currentPage -= 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 next.addEventListener("click", () => { currentPage += 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 pageSize.addEventListener("change", () => { perPage = Number(pageSize.value); currentPage = 1; render(); });
+function jumpToPage() {
+  const pages = Math.max(1, Math.ceil(shown.length / perPage));
+  currentPage = Math.min(pages, Math.max(1, Number(pageJump.value) || 1));
+  render(); window.scrollTo({ top: 0, behavior: "smooth" });
+}
+pageJumpSubmit.addEventListener("click", jumpToPage);
+pageJump.addEventListener("keydown", event => { if (event.key === "Enter") jumpToPage(); });
 abstractToggle.addEventListener("click", () => {
   const abstracts = [...paperList.querySelectorAll(".abstract")];
   const expand = abstracts.some(abstract => !abstract.open);
