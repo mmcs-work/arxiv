@@ -17,6 +17,7 @@ const rssOpen = document.querySelector("#rss-open");
 const rssCopy = document.querySelector("#rss-copy");
 const rssToggle = document.querySelector("#rss-toggle");
 const rssPanel = document.querySelector("#rss-panel");
+const themeToggle = document.querySelector("#theme-toggle");
 
 function url(path) { return new URL(path, document.baseURI).href; }
 async function data(path) {
@@ -107,6 +108,16 @@ rssToggle.addEventListener("click", () => {
   rssPanel.open = true;
   rssPanel.scrollIntoView({ behavior: "smooth", block: "center" });
 });
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") document.documentElement.dataset.theme = "dark";
+themeToggle.addEventListener("click", () => {
+  const dark = document.documentElement.dataset.theme === "dark";
+  document.documentElement.dataset.theme = dark ? "" : "dark";
+  localStorage.setItem("theme", dark ? "light" : "dark");
+  themeToggle.textContent = dark ? "☾" : "☀";
+  themeToggle.setAttribute("aria-label", dark ? "Use dark theme" : "Use light theme");
+});
+if (savedTheme === "dark") { themeToggle.textContent = "☀"; themeToggle.setAttribute("aria-label", "Use light theme"); }
 async function initialize() {
   try {
     Object.assign(categories, (await data("data/manifest.json")).categories || {});
