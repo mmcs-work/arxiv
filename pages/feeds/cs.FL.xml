@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>One Author — Formal Languages and Automata Theory</title>
-    <link>https://mmcs-work.github.io/arxiv</link>
+    <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
       <title>Certified Split Windows for Parallel Lexing: Recovering Boundaries Where No Byte Certifies</title>

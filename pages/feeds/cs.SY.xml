@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>One Author — Systems and Control</title>
-    <link>https://mmcs-work.github.io/arxiv</link>
+    <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
       <title>On the global feature importance for interpretable and trustworthy heat demand forecasting</title>

@@ -1,4 +1,4 @@
-# One Author
+# Single-author arXiv CS
 
 A small, static archive of single-author papers from arXiv's Computer Science
 (CS) branch. The website lets people browse a category, select any date range,

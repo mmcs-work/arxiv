@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>One Author — Hardware Architecture</title>
-    <link>https://mmcs-work.github.io/arxiv</link>
+    <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
       <title>GateTruth: Auditing the Rigor of RTL Design Benchmarks via Mutation Testing</title>

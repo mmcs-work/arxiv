@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>One Author — Digital Libraries</title>
-    <link>https://mmcs-work.github.io/arxiv</link>
+    <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
       <title>Is this Citation on Point?</title>

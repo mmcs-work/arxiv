@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "pages" / "data"
 PAGES = DATA.parent
-SITE_URL = os.environ.get("SITE_URL", "https://mmcs-work.github.io/arxiv").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://mmcs-work.github.io/single-author-arxiv-cs").rstrip("/")
 sys.path.insert(0, str(ROOT))
 from config import CATEGORIES
 COLUMNS = (

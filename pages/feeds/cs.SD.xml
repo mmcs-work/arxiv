@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>One Author — Sound</title>
-    <link>https://mmcs-work.github.io/arxiv</link>
+    <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
       <title>Do Text-to-Music Models Really Follow Instructions? A Counterfactual Evaluation of Key and Beat Grouping</title>

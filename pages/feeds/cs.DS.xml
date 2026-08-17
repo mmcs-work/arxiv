@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>One Author — Data Structures and Algorithms</title>
-    <link>https://mmcs-work.github.io/arxiv</link>
+    <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
       <title>Bagging Robustly Learns VC Classes with Linear Sample Complexity</title>
