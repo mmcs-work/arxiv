@@ -15,6 +15,8 @@ const pageNumber = document.querySelector("#page-number");
 const rssCategory = document.querySelector("#rss-category");
 const rssOpen = document.querySelector("#rss-open");
 const rssCopy = document.querySelector("#rss-copy");
+const rssToggle = document.querySelector("#rss-toggle");
+const rssPanel = document.querySelector("#rss-panel");
 
 function url(path) { return new URL(path, document.baseURI).href; }
 async function data(path) {
@@ -100,6 +102,10 @@ rssCopy.addEventListener("click", async () => {
   } catch {
     rssCopy.textContent = "Open to copy";
   }
+});
+rssToggle.addEventListener("click", () => {
+  rssPanel.open = true;
+  rssPanel.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 async function initialize() {
   try {
