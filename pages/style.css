@@ -36,6 +36,8 @@ form button, .rss-controls a, .rss-controls button { height:2.4rem; }
 .rss-controls select { flex:1; font-size:.88rem; padding:.4rem .55rem; }
 .rss-controls a, .rss-controls button { background:#b95816; border:0; border-radius:5px; color:white; font:.84rem/1 ui-sans-serif, system-ui; padding:.55rem .7rem; text-decoration:none; }
 #status { min-height:1.55em; color:var(--muted); font-size:.9rem; margin:1.2rem 0; }
+.abstract-tools { display:flex; justify-content:flex-end; margin:-.5rem 0 .35rem; }
+.abstract-tools button { font-size:.76rem; padding:.4rem .6rem; }
 article { padding:1.3rem 0; border-top:1px solid var(--line); }
 article a { color:var(--ink); font-size:1.2rem; font-weight:600; text-decoration:none; }
 article a:hover { color:var(--accent); }

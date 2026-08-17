@@ -17,6 +17,7 @@ const pageNumber = document.querySelector("#page-number");
 const pageSize = document.querySelector("#page-size");
 const exportJson = document.querySelector("#export-json");
 const exportMarkdown = document.querySelector("#export-markdown");
+const abstractToggle = document.querySelector("#abstract-toggle");
 const rssCategory = document.querySelector("#rss-category");
 const rssOpen = document.querySelector("#rss-open");
 const rssCopy = document.querySelector("#rss-copy");
@@ -85,6 +86,13 @@ function card(item) {
   article.append(title, meta, abstract);
   return article;
 }
+function updateAbstractToggle() {
+  const abstracts = [...paperList.querySelectorAll(".abstract")];
+  abstractToggle.hidden = !abstracts.length;
+  const expanded = abstracts.length && abstracts.every(abstract => abstract.open);
+  abstractToggle.textContent = expanded ? "Collapse all" : "Expand all";
+  abstractToggle.setAttribute("aria-label", expanded ? "Collapse all abstracts" : "Expand all abstracts");
+}
 async function pageRecords(page) {
   if (page.every(item => item.abstract)) return page;
   const months = [...new Set(page.map(item => item.published.slice(0, 7)))];
@@ -100,6 +108,7 @@ async function render() {
   const records = await pageRecords(page);
   if (version !== renderVersion) return;
   paperList.replaceChildren(...records.map(card));
+  updateAbstractToggle();
   status.textContent = shown.length ? `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}.` : "No papers found.";
   pagination.hidden = !shown.length;
   previous.disabled = currentPage === 1;
@@ -146,6 +155,12 @@ form.addEventListener("submit", event => { event.preventDefault(); load(); });
 previous.addEventListener("click", () => { currentPage -= 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 next.addEventListener("click", () => { currentPage += 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 pageSize.addEventListener("change", () => { perPage = Number(pageSize.value); currentPage = 1; render(); });
+abstractToggle.addEventListener("click", () => {
+  const abstracts = [...paperList.querySelectorAll(".abstract")];
+  const expand = abstracts.some(abstract => !abstract.open);
+  abstracts.forEach(abstract => { abstract.open = expand; });
+  updateAbstractToggle();
+});
 exportJson.addEventListener("click", async () => download("one-author-results.json", JSON.stringify(await completeRecords(), null, 2), "application/json"));
 exportMarkdown.addEventListener("click", async () => download("one-author-results.md", markdown(await completeRecords()), "text/markdown"));
 document.querySelectorAll("[data-range]").forEach(button => button.addEventListener("click", () => setRange(Number(button.dataset.range))));
