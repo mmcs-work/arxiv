@@ -1,14 +1,17 @@
 const perPage = 20;
 const cache = new Map();
 let shown = [];
-let offset = 0;
+let currentPage = 1;
 
 const categories = {};
 
 const form = document.querySelector("#filters");
 const paperList = document.querySelector("#papers");
 const status = document.querySelector("#status");
-const more = document.querySelector("#more");
+const pagination = document.querySelector("#pagination");
+const previous = document.querySelector("#previous");
+const next = document.querySelector("#next");
+const pageNumber = document.querySelector("#page-number");
 const rssCategory = document.querySelector("#rss-category");
 const rssOpen = document.querySelector("#rss-open");
 const rssCopy = document.querySelector("#rss-copy");
@@ -52,14 +55,17 @@ function card(item) {
   return article;
 }
 function render() {
-  const page = shown.slice(offset, offset + perPage);
-  page.forEach(item => paperList.append(card(item)));
-  offset += page.length;
+  const pages = Math.ceil(shown.length / perPage);
+  const page = shown.slice((currentPage - 1) * perPage, currentPage * perPage);
+  paperList.replaceChildren(...page.map(card));
   status.textContent = shown.length ? `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}.` : "No papers found.";
-  more.hidden = offset >= shown.length;
+  pagination.hidden = !shown.length;
+  previous.disabled = currentPage === 1;
+  next.disabled = currentPage === pages;
+  pageNumber.textContent = `Page ${currentPage} of ${pages}`;
 }
 async function load() {
-  const active = filters(); offset = 0; paperList.replaceChildren(); status.textContent = "Loading archive…"; more.hidden = true;
+  const active = filters(); currentPage = 1; paperList.replaceChildren(); status.textContent = "Loading archive…"; pagination.hidden = true;
   try {
     let records;
     if (active.query.trim()) {
@@ -84,7 +90,8 @@ async function load() {
   } catch (error) { status.textContent = error.message; }
 }
 form.addEventListener("submit", event => { event.preventDefault(); load(); });
-more.addEventListener("click", render);
+previous.addEventListener("click", () => { currentPage -= 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+next.addEventListener("click", () => { currentPage += 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 rssCopy.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(url(rssOpen.getAttribute("href")));

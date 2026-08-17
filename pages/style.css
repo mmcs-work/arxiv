@@ -34,7 +34,10 @@ article a:hover { color:var(--accent); }
 .abstract summary { color:var(--accent); cursor:pointer; font:.82rem/1.4 ui-sans-serif, system-ui; }
 .abstract summary:hover { text-decoration:underline; }
 .abstract p { margin:.65rem 0 0; }
-#more { display:block; margin:1.5rem auto; }
+#pagination { align-items:center; display:flex; gap:.7rem; justify-content:center; margin:1.5rem auto; }
+#pagination button { font-size:.85rem; padding:.5rem .7rem; }
+#pagination button:disabled { cursor:default; opacity:.45; }
+#page-number { color:var(--muted); font:.82rem/1 ui-sans-serif, system-ui; min-width:7.5rem; text-align:center; }
 footer { color:var(--muted); font-size:.85rem; margin-top:4rem; }
 footer a { color:inherit; }
 @media (max-width:680px) { main { margin-top:3rem; } form { grid-template-columns:1fr 1fr; } form label:first-child { grid-column:1 / -1; } form button { grid-column:1 / -1; } }

@@ -44,7 +44,11 @@
       </details>
       <p id="status" role="status">Connecting to the archive…</p>
       <section id="papers" aria-live="polite"></section>
-      <button id="more" hidden>Show more</button>
+      <nav id="pagination" aria-label="Paper pages" hidden>
+        <button id="previous" type="button">Previous</button>
+        <span id="page-number"></span>
+        <button id="next" type="button">Next</button>
+      </nav>
       <footer>Metadata from <a href="https://arxiv.org">arXiv</a>. <a href="feed.xml">RSS</a>. Full text remains with arXiv.</footer>
     </main>
     <script src="app.js"></script>
