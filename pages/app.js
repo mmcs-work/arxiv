@@ -1,4 +1,4 @@
-const perPage = 20;
+let perPage = 20;
 const cache = new Map();
 let shown = [];
 let currentPage = 1;
@@ -12,7 +12,11 @@ const status = document.querySelector("#status");
 const pagination = document.querySelector("#pagination");
 const previous = document.querySelector("#previous");
 const next = document.querySelector("#next");
+const pageLinks = document.querySelector("#page-links");
 const pageNumber = document.querySelector("#page-number");
+const pageSize = document.querySelector("#page-size");
+const exportJson = document.querySelector("#export-json");
+const exportMarkdown = document.querySelector("#export-markdown");
 const rssCategory = document.querySelector("#rss-category");
 const rssOpen = document.querySelector("#rss-open");
 const rssCopy = document.querySelector("#rss-copy");
@@ -34,6 +38,29 @@ async function data(path) {
   return cache.get(path);
 }
 function filters() { return Object.fromEntries(new FormData(form)); }
+function setRange(days) {
+  const end = new Date();
+  const start = new Date(end);
+  start.setDate(start.getDate() - days + 1);
+  form.elements.start.value = start.toISOString().slice(0, 10);
+  form.elements.end.value = end.toISOString().slice(0, 10);
+  load();
+}
+function download(name, content, type) {
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(new Blob([content], { type }));
+  link.download = name; link.click(); URL.revokeObjectURL(link.href);
+}
+function markdown(records) {
+  return records.map(item => `## ${item.title}\n\n- Author: ${item.author}\n- Date: ${item.published.slice(0, 10)}\n- Category: ${item.primary_category}\n- arXiv: ${item.arxiv_url || `https://arxiv.org/abs/${item.arxiv_id}`}\n\n${item.abstract || ""}`).join("\n\n---\n\n");
+}
+async function completeRecords() {
+  if (shown.every(item => item.abstract && item.updated && item.pdf_url)) return shown;
+  const months = [...new Set(shown.map(item => item.published.slice(0, 7)))];
+  const full = (await Promise.all(months.map(month => data(`data/months/${month}.json`)))).flat();
+  const byId = new Map(full.map(item => [item.arxiv_id, item]));
+  return shown.map(item => byId.get(item.arxiv_id) || item);
+}
 function monthRange(start, end) {
   const first = new Date(`${(start || "1990-01").slice(0, 7)}-01T00:00:00Z`);
   const last = new Date(`${(end || new Date().toISOString()).slice(0, 7)}-01T00:00:00Z`);
@@ -78,6 +105,17 @@ async function render() {
   previous.disabled = currentPage === 1;
   next.disabled = currentPage === pages;
   pageNumber.textContent = `Page ${currentPage} of ${pages}`;
+  pageLinks.replaceChildren();
+  const numbers = [...new Set([1, pages, currentPage - 1, currentPage, currentPage + 1].filter(number => number > 0 && number <= pages))].sort((a, b) => a - b);
+  numbers.forEach((number, index) => {
+    if (index && number > numbers[index - 1] + 1) pageLinks.append("…");
+    const link = document.createElement("button");
+    link.type = "button"; link.textContent = number; link.className = number === currentPage ? "current" : "";
+    link.setAttribute("aria-label", `Page ${number}`);
+    if (number === currentPage) link.setAttribute("aria-current", "page");
+    link.addEventListener("click", () => { currentPage = number; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+    pageLinks.append(link);
+  });
 }
 async function load() {
   const active = filters(); currentPage = 1; renderVersion += 1; paperList.replaceChildren(); status.textContent = "Loading archive…"; pagination.hidden = true;
@@ -107,6 +145,10 @@ async function load() {
 form.addEventListener("submit", event => { event.preventDefault(); load(); });
 previous.addEventListener("click", () => { currentPage -= 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 next.addEventListener("click", () => { currentPage += 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+pageSize.addEventListener("change", () => { perPage = Number(pageSize.value); currentPage = 1; render(); });
+exportJson.addEventListener("click", async () => download("one-author-results.json", JSON.stringify(await completeRecords(), null, 2), "application/json"));
+exportMarkdown.addEventListener("click", async () => download("one-author-results.md", markdown(await completeRecords()), "text/markdown"));
+document.querySelectorAll("[data-range]").forEach(button => button.addEventListener("click", () => setRange(Number(button.dataset.range))));
 rssCopy.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(url(rssOpen.getAttribute("href")));
@@ -140,7 +182,7 @@ async function initialize() {
     rssCategory.addEventListener("change", () => {
       rssOpen.href = rssCategory.value ? `feeds/${rssCategory.value}.xml` : "feed.xml";
     });
-    load();
+    setRange(7);
   } catch (error) { status.textContent = error.message; }
 }
 initialize();
