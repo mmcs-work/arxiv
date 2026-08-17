@@ -6,6 +6,13 @@ search titles or authors, and open the full abstract. It is hosted
 on GitHub Pages and needs no server, database, token, or external service at
 runtime.
 
+Single-author papers can reveal focused research directions that are approachable
+for independent researchers. This archive helps people discover potential
+problem statements, collect promising ideas, and find questions that may be small
+enough—or interesting enough—to pursue as a starting point. Results can be
+searched, filtered, exported, and tracked over time, then used with an LLM for
+summarization, comparison, and further exploration.
+
 ## How it works
 
 `pages/` is the website. Its JSON data lives in `pages/data/` and is committed
