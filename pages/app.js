@@ -86,7 +86,7 @@ async function load() {
     if (active.query.trim()) {
       const query = active.query.trim().toLowerCase();
       const index = await data("data/search.json");
-      const matchedIndex = index.filter(item => `${item.title} ${item.author}`.toLowerCase().includes(query) && matches(item, active)).slice(0, 100);
+      const matchedIndex = index.filter(item => `${item.title} ${item.author}`.toLowerCase().includes(query) && matches(item, active));
       const months = [...new Set(matchedIndex.map(item => item.published.slice(0, 7)))];
       const full = (await Promise.all(months.map(month => data(`data/months/${month}.json`)))).flat();
       const ids = new Set(matchedIndex.map(item => item.arxiv_id));
