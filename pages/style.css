@@ -24,7 +24,7 @@ button { align-self:end; background:var(--accent); border-color:var(--accent); c
 .rss-panel p { margin:.6rem 0; }
 .rss-controls { display:flex; gap:.5rem; }
 .rss-controls select { flex:1; font-size:.88rem; padding:.4rem .55rem; }
-.rss-controls a { background:#b95816; border-radius:5px; color:white; font:.84rem/1 ui-sans-serif, system-ui; padding:.55rem .7rem; text-decoration:none; }
+.rss-controls a, .rss-controls button { background:#b95816; border:0; border-radius:5px; color:white; font:.84rem/1 ui-sans-serif, system-ui; padding:.55rem .7rem; text-decoration:none; }
 #status { min-height:1.55em; color:var(--muted); font-size:.9rem; margin:1.2rem 0; }
 article { padding:1.3rem 0; border-top:1px solid var(--line); }
 article a { color:var(--ink); font-size:1.2rem; font-weight:600; text-decoration:none; }

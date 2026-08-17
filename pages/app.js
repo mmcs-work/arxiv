@@ -11,6 +11,7 @@ const status = document.querySelector("#status");
 const more = document.querySelector("#more");
 const rssCategory = document.querySelector("#rss-category");
 const rssOpen = document.querySelector("#rss-open");
+const rssCopy = document.querySelector("#rss-copy");
 
 function url(path) { return new URL(path, document.baseURI).href; }
 async function data(path) {
@@ -84,6 +85,15 @@ async function load() {
 }
 form.addEventListener("submit", event => { event.preventDefault(); load(); });
 more.addEventListener("click", render);
+rssCopy.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(url(rssOpen.getAttribute("href")));
+    rssCopy.textContent = "Copied";
+    setTimeout(() => { rssCopy.textContent = "Copy link"; }, 1600);
+  } catch {
+    rssCopy.textContent = "Open to copy";
+  }
+});
 async function initialize() {
   try {
     Object.assign(categories, (await data("data/manifest.json")).categories || {});
