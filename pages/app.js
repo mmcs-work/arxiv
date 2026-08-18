@@ -170,6 +170,7 @@ async function load() {
   } catch (error) { status.textContent = error.message; }
 }
 form.addEventListener("submit", event => { event.preventDefault(); load(); });
+form.elements.query.addEventListener("input", () => { if (!form.elements.query.value) load(); });
 previous.addEventListener("click", () => { currentPage -= 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 next.addEventListener("click", () => { currentPage += 1; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
 pageSize.addEventListener("change", () => { perPage = Number(pageSize.value); currentPage = 1; render(); });
