@@ -13,6 +13,11 @@ enough—or interesting enough—to pursue as a starting point. Results can be
 searched, filtered, exported, and tracked over time, then used with an LLM for
 summarization, comparison, and further exploration.
 
+The archive can also surface researchers whose interests overlap with a problem
+you want to explore. Reading a single-author paper offers a direct view of one
+person's work, making it easier to understand their research direction and, in
+some cases, identify potential future collaborators.
+
 ## How it works
 
 `pages/` is the website. Its JSON data lives in `pages/data/` and is committed
