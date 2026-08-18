@@ -5,6 +5,20 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>A Stable Transport-Mechanism Descriptor for Per-Pixel Rendering Difficulty</title>
+      <link>http://arxiv.org/abs/2608.16730v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.16730v1</guid>
+      <pubDate>Mon, 17 Aug 2026 15:43:47 +0000</pubDate>
+      <description>Per-pixel rendering difficulty is conventionally measured by the sample variance $\hatσ^2(p)$ of a Monte Carlo estimator, yet this signal is least reliable exactly where difficulty concentrates: under heavy-tailed transport its relative error is governed by the integrand's kurtosis, and the split-half reliability of variance-derived evaluation targets reaches only 0.23-0.29 even at 40,000 samples per pixel. We propose a complementary discrete transport-mechanism descriptor: every contribution event is classified by its end-vertex BSDF lobe, the presence of a delta-specular event, and a single-/multi-bounce distinction, yielding seven mutually exclusive labels whose six named mechanisms receive all observed energy on tested scenes, with continuous side-channels retaining the mechanism mixture. Across seven scenes, the dominant label agrees 87-99.6% between 64 and 4096 samples per pixel -- where quantile-binned variance agrees as little as 21% -- and is robust to restoring the estimator's MIS half. The descriptor exposes cross-scene structure a scalar variance cannot represent, including a geometry-controlled sign reversal of the delta-mediated/glossy correlation. Using the label to correct a noisy pilot variance improves on pilot-variance sample allocation at equal budget on every test-matrix scene with heavy-tailed buckets, while reducing exactly to the incumbent where such buckets are absent, with gains surviving a random-partition placebo and persisting over a robust (median-of-means) pilot baseline. Pre-registered third-party sentinel tests confirm the account out of distribution: coverage and stability transfer, a structural finding survives a blind sign prediction, and on the ajar-door scene, where pilot-variance allocation fails 6.8 dB below uniform sampling, the label identifies from the pilot alone that the failure is not of the kind it repairs, and correctly abstains.</description>
+    </item>
+    <item>
+      <title>Content Based Video Narration of Gameplay with Vision Language Models</title>
+      <link>http://arxiv.org/abs/2608.14016v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.14016v1</guid>
+      <pubDate>Fri, 14 Aug 2026 07:03:30 +0000</pubDate>
+      <description>Live game commentary is scarce: it exists for professional esports broadcasts and almost nowhere else. We present a content-based video narration system that produces spoken, esports-style commentary for arbitrary gameplay recordings using a general-purpose vision-language model (VLM) and a text-to-speech back end, with no game-specific instrumentation, no engine telemetry, and no task-specific training. Three mechanisms carry the system. Temporal mosaic packing arranges nine uniformly sampled frames into a single 3x3 image, letting an image-native VLM reason about motion while consuming one image payload per segment instead of nine. Context-conditioned prompting replays the K most recent narrations as assistant-role history, suppressing the repetition that dominates per-segment captioning of static scenes. Duration-conditioned generation and elastic alignment constrain narration length in the prompt, then time-scale or symmetrically pad the synthesized audio so each utterance fills its segment slot exactly, giving frame-accurate muxing without a forced aligner. The implementation supports either cloud TTS or a 6-bit quantized 4B-parameter on-device TTS model on Apple silicon, making the speech stage fully local. We report a qualitative case study on real-time strategy footage, a cost model showing the mosaic reduces per-minute image payloads by 9x, and a candid account of observed failure modes - hallucinated game state, resolution loss from mosaicking, and prosody artifacts from time-scaling. We release the system as a reproducible baseline, with an evaluation protocol for the quantitative study a full version will report.</description>
+    </item>
+    <item>
       <title>Blue Noise as a Lattice Gibbs Ensemble</title>
       <link>https://arxiv.org/abs/2608.13446</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.13446</guid>
@@ -689,20 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2505.09350</guid>
       <pubDate>Wed, 14 May 2025 00:00:00 -0000</pubDate>
       <description>In computer games, traditional procedural terrain generation relies on a grid of vertices, with each point representing terrain elevation. For each square in the grid, two triangles are created by connecting fixed vertex indices, resulting in a continuous 3D surface. While this method is efficient for modelling smooth terrain, the grid-like structure lacks the distinct, chaotic appearance of low-poly objects and is not suitable to be used for our purposes. The technique presented in this paper aims to solve the following problem: Generate random, low-poly looking terraced terrain with different biomes and add vegetation to create an interesting environment.</description>
-    </item>
-    <item>
-      <title>A Gpu-based solution for large-scale skeletal animation simulation</title>
-      <link>https://arxiv.org/abs/2505.06703</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2505.06703</guid>
-      <pubDate>Sat, 10 May 2025 00:00:00 -0000</pubDate>
-      <description>Skeletal animations of large-scale characters are widely used in video games. However, with a large number of characters are involved, relying on the CPU to calculate skeletal animations leads to significant performance problems. There are two main types of traditional GPU- based solutions. One is referred to as pre-baked animation texture technology. The problem with this solution is that it can only play animations from the pre-baked animation. It is impossible to perform interpolation, blending and other calculations on the animation, which affects the quality of the animations. The other solution is referred to as dedicated processing with a simple skeleton hierarchy (the number of skeleton levels &lt; 64). This option does not need to simulate and bake animation data in advance. However, performance is dramatically impaired when processing complex skeletons with too many skeleton levels (such as fluttering clothing, soft plants, dragon-like creatures, etc.). In order to solve these issues, we developed a parallel prefix tree update solution to optimize the animation update process of complex skeletons with too many levels, and combined traditional solutions to implement a GPU-based skeletal animation solution. This solution does not need to simulate and bake animation results. In addition, the performance is superior to traditional solutions for complex skeletons with too many levels. Our work can provide a new option for optimizing the performance of large-scale skeletal animation simulations, providing GPU-based skeletal animations a wider range of application scenarios.</description>
-    </item>
-    <item>
-      <title>Photoshop Batch Rendering Using Actions for Stylistic Video Editing</title>
-      <link>https://arxiv.org/abs/2505.01001</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2505.01001</guid>
-      <pubDate>Fri, 02 May 2025 00:00:00 -0000</pubDate>
-      <description>My project looks at an efficient workflow for creative image/video editing using Adobe Photoshop Actions tool and Batch Processing System. This innovative approach to video editing through Photoshop creates a fundamental shift to creative workflow management through the integration of industry-leading image manipulation with video editing techniques. Through systematic automation of Actions, users can achieve a simple and consistent application of visual edits across a string of images. This approach provides an alternative method to optimize productivity while ensuring uniform results across image collections through a post-processing pipeline.</description>
     </item>
   </channel>
 </rss>

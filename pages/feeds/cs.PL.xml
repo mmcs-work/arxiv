@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Internalized Truth in Reflective Grounded Arithmetic</title>
+      <link>http://arxiv.org/abs/2608.16140v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.16140v1</guid>
+      <pubDate>Mon, 17 Aug 2026 05:48:42 +0000</pubDate>
+      <description>By Tarski's undefinability theorem, no consistent classical formal system that includes arithmetic can define its own truth predicate. Reflective Grounded Arithmetic (RGA) is a powerful arithmetic whose universal quantifier is grounded in its own reflected proof search, and whose paracompleteness circumvents Tarski's theorem. This paper presents a machine-checked Isabelle/HOL development that defines a truth predicate for RGA's full language, quantifiers included, as an internal term of RGA itself. This term is compiled from a primitive-recursive decider for its operational semantics, and proven adequate in both directions. Around this predicate the development closes a square of metatheorems: for every formula RGA proves, RGA derives the formula's internal truth; every grounded-true formula is internally provable; internal truth implies internal provability; and the consistency of RGA follows. The two directions run on disjoint internal machines---a certified decider and a certified proof-checker, both RGA terms. Reaching these results involved substantial ordinary reasoning carried out within RGA: coded syntax and substitution, compiled primitive-recursive functions with symbolic unfolding laws, internal strong induction, and a verified proof-checker for the system written in the system's own formal language. The development thus demonstrates along the way that RGA is a workable formal system supporting nontrivial mathematical reasoning.</description>
+    </item>
+    <item>
       <title>A Rig of Transformations</title>
       <link>https://arxiv.org/abs/2608.12409</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.12409</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2507.08759</guid>
       <pubDate>Tue, 19 May 2026 00:00:00 -0000</pubDate>
       <description>We present a novel dependent linear type theory in which the multiplicity of some variable-i.e., the number of times the variable can be used in a program-can depend on other variables. This allows us to give precise resource annotations to programs involving branching and recursion that cannot be adequately typed in other theories. Our type system is obtained by embedding linear logic into dependent type theory and specifying how the embedded logic interacts with the host theory. We can then use the natural numbers of the dependent type theory to derive a quantitative typing system with dependent multiplicities. Our theory supports W-types, thereby giving a principled resource-aware treatment of a large class of inductive types. We characterise the semantics as Categories with Families indexed in symmetric monoidal categories, thereby generalising Quantitative Categories with Families. Existing dependently typed languages can easily be extended with our system, which we demonstrate with an implementation in Agda.</description>
-    </item>
-    <item>
-      <title>Optimizing Optimizations, Declaratively: Optimizing the Higher-Order Functions in Mathematical Optimization with egglog</title>
-      <link>https://arxiv.org/abs/2605.17884</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2605.17884</guid>
-      <pubDate>Mon, 18 May 2026 00:00:00 -0000</pubDate>
-      <description>We present two applications of egglog to mathematical optimization in JijModeling 2, a mathematical modeller whose internal representation is based on simply typed $λ$-calculus. First, we use egglog to improve $\LaTeX$ output for mathematical models expressed with higher-order functions. Python comprehensions are desugared into stream operations such as $\textsf{map}$, $\textsf{flat_map}$, and $\textsf{filter}$; emitting these terms directly produces unnatural mathematical notation. We reconstruct comprehension syntax by \emph{ensugaring} higher-order terms and use equality saturation with a custom cost model to minimize temporary variable rebindings. Second, we use egglog as a declarative engine for \emph{constraint detection}, extending the previous egg-based approach presented at EGRAPHS '25. Egglog's datalog-style rules let us express multi-step detection logic directly, without external Rust orchestration code. We encode parametrized constraints using \emph{Henkin-like constants} and propagate side conditions on subterms and indices through egglog facts. Finally, we show that the same ensugaring procedure also reduces large domain-set conditions before saturation, turning a problematic detection case from minutes or nontermination into a few seconds. Through these topics, we want to provide an example of an industrial application of egglog, demonstrate the trick to propagate the constraints using the ideas from mathematical logic, and show the importance of optimizing \emph{premises} of egglog rules to get practical performance in egglog programs.</description>
     </item>
   </channel>
 </rss>

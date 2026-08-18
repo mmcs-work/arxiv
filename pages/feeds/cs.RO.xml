@@ -5,6 +5,20 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Readiness Barrier Functions: Forward-Invariant Control Authority for Overactuated Multirotor Allocation</title>
+      <link>http://arxiv.org/abs/2608.16335v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.16335v1</guid>
+      <pubDate>Mon, 17 Aug 2026 09:43:42 +0000</pubDate>
+      <description>Allocation schemes that greedily maximize a readiness metric over the actuator fiber bundle of an overactuated multirotor produce commands that jump between disconnected optimal strata, demanding actuator rates no motor can deliver; effort-minimizing schemes are continuous but cannot guarantee that wrench-rate authority stays above any certified level. We reconcile the two by treating authority as a forward-invariant quantity: a control barrier function on the log-determinant of the drag-aware actuator-authority co-metric, enforced at torque level by a quadratic program in the allocation null space. A single design inequality renders the certified set compact and strictly interior to the actuator box, with the readiness cost of any rotor deactivation given in closed form as $\ln(n/(n{-}m))$ for symmetric designs. Tracking is sacrificed only through an explicit alignment ratio, with wrench error bounded by $\mathcal{O}(ρ^{-1/2})$ and a robust variant handles motor-parameter uncertainty with a closed-form floor shift independent of the airframe matrix. On a hexarotor and a fully-actuated octorotor the closed-form gap matches simulation to machine precision; in the authority-scarce regime greedy maximization violates the certified floor and commits wrench errors up to eighty times larger than the proposed filter, which holds invariance of the certified set at negligible tracking cost.</description>
+    </item>
+    <item>
+      <title>Pluralistic Human-Robot Interaction: Designing for Robot Interaction with Diverse Communities</title>
+      <link>http://arxiv.org/abs/2608.16049v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.16049v1</guid>
+      <pubDate>Mon, 17 Aug 2026 03:22:38 +0000</pubDate>
+      <description>Social robots are being developed for homes, schools, and other environments where they will interact with diverse users. While Human-Robot Interaction (HRI) research often emphasizes natural communication, engagement, personalization, and task success, these goals do not fully address the social complexity of real-world deployment. This paper proposes \emph{Pluralistic HRI}, a framework for designing social robots that treat human diversity as a foundational design concern. The framework brings together pluralism, civic dialogue, perspective-taking, empathy, intercultural competence, cultural humility, and moral imagination to guide inclusive, adaptive, and ethically grounded interaction. We outline how pluralistic HRI can inform design, evaluation, and deployment in diverse human communities.</description>
+    </item>
+    <item>
       <title>FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving</title>
       <link>https://arxiv.org/abs/2608.13395</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.13395</guid>
@@ -689,20 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2606.17897</guid>
       <pubDate>Tue, 16 Jun 2026 00:00:00 -0000</pubDate>
       <description>Long-term human path forecasting in crowds is critical for autonomous moving platforms (like autonomous driving cars and social robots) to avoid collision and make high-quality planning. Although the current research take into account social interactions for prediction, they don't reveal the exact kinds of social interactions happened among people and how the social interactions affect the decision-making process of pedestrians, which further limits its robustness. Social interactions in pedestrian walking are intuitively massive and hard to label and quantify. In this paper, we explore creatively to quantify and interpret how pedestrians interact with others by proposing Learn to Cluster. Our clustering social interactions is probabilistic latent variable generative, learning directly from sequential trajectory observations, scalable to arbitrary number of pedestrians. Learn to cluster is label-free and can be naturally integrated into the training process of the prediction model. The latent variables will then serve as 'labels' to categorize social interactions. Extensive experiments over several trajectory prediction benchmarks demonstrate that our method is able to learn the patterns of social interactions and effectively integrate the patterns to pedestrian trajectory prediction.</description>
-    </item>
-    <item>
-      <title>Credibility-Weighted Pricing of Autonomous Vehicle Liability Under Operational Design Domain Shift</title>
-      <link>https://arxiv.org/abs/2606.17451</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.17451</guid>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 -0000</pubDate>
-      <description>Automated Driving System deployments create a foundational ratemaking challenge: sparse experience, shifting operational design domains, and non-stationary risk across software releases. We propose a hierarchical Bayesian credibility framework pooling across cities, software versions, and territories via a learned ODD-similarity kernel, nesting Buhlmann-Straub as a limiting case. Demonstrated on 648 verified-engaged Waymo crashes across four U.S. metros from the NHTSA Standing General Order database against 116 million matched miles, city-aggregate credibility weights are moderate (0.12-0.46), partial pooling decisively outperforms no pooling, and a power analysis shows the learned kernel's advantage becomes detectable at approximately twelve deployed cities.</description>
-    </item>
-    <item>
-      <title>FlowMPC: Improving Flow Matching policies with World Models</title>
-      <link>https://arxiv.org/abs/2606.16286</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.16286</guid>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 -0000</pubDate>
-      <description>Flow Matching (FM) is a powerful approach for behavior cloning in multimodal action spaces [Jiang et al., 2025], but because it is not trained to directly maximize expected return, there is still room to improve how FM policies act at test time. This work investigates whether a learned world model can improve FM policies by enabling Model Predictive Path Integral (MPPI) planning over candidate action sequences proposed by the policy. Building on TD-MPC2 [Hansen et al., 2024], I introduce FlowMPC, a framework that combines an imitation-learned FM policy with a learned world model for test-time planning in ManiSkill manipulation tasks [Tao et al., 2025]. Across PickCube and PickSingleYCB, adding the world model improved performance over the FM policy alone, with especially clear gains in end-of-episode success. These results suggest that world-model-based planning can effectively complement flow-based imitation policies without modifying the FM training objective.</description>
     </item>
   </channel>
 </rss>

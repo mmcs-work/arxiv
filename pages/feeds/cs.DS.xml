@@ -5,6 +5,41 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>A Simple Las Vegas Algorithm for Sparse Nonnegative Convolution</title>
+      <link>http://arxiv.org/abs/2608.16123v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.16123v1</guid>
+      <pubDate>Mon, 17 Aug 2026 05:28:01 +0000</pubDate>
+      <description>Let $A, B \in \mathbb{Z}_{\ge 0}^n$ be nonnegative vectors and let $t = |\operatorname{supp}(A \star B)|$. We give a Las Vegas algorithm that computes $A \star B$ in $O(t \log t)$ expected time. More generally, for every $0 &lt; δ\le \frac{1}{2}$, the algorithm terminates within $O(t \log t \log \frac{1}δ)$ time with probability at least $1 - δ$. The algorithm uses dense convolution, linear hashing, and the length reduction of \cite{BFN22}. Its main ingredient is a carry-free representation of the indices as vectors of constant dimension $d$ whose coordinates have size $O(t / \log t)$. We can then take our hash function to be the inner product with a random element of $\mathbb{F}_p^d$ for a prime $p$ of size $Ω(t / \log t)$: this preserves addition and gives collision probability exactly $1/p$, while identities regarding the moments of the vectors identify and recover the isolated terms as in \cite{BFN22}. Our expected running time matches that of Jin and Xu~\cite{JX24} while using substantially different tools and yielding a simpler algorithm. Note that their algorithm also terminates within $O(t \log t)$ time with probability at least $1 - \frac{1}{t}$, while our tail bound is weaker.</description>
+    </item>
+    <item>
+      <title>A Near-Optimal Lower Bound for $\ell_p$-Subspace Embeddings, $1\leq p&lt;2$</title>
+      <link>http://arxiv.org/abs/2608.14201v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.14201v1</guid>
+      <pubDate>Fri, 14 Aug 2026 11:18:38 +0000</pubDate>
+      <description>For $d \geq 2$, $p \geq 1$ and $ε&gt; 0$, let $N_p(d,ε)$ be the smallest integer $N$ such that for every integer $n$ and every $A\in\mathbb{R}^{n\times d}$, there exists a matrix $Φ\in\mathbb{R}^{N\times n}$ satisfying $(1-ε)\lVert Ax\rVert_p\leq \lVertΦA x\rVert_p\leq (1+ε)\lVert Ax\rVert_p$ for all $x\in\mathbb{R}^d$. For every constant $p\geq 1$ with $p\not\in 2\mathbb{Z}$, when $d\gtrsim_p \log(1/ε)$, the bound \[ N_p(d,ε) \gtrsim_{p} \frac{d}{ε^2 \operatorname{polylog}(d/ε)} \] is established. This improves the previous lower bound $Ω(1/(ε^2\operatorname{polylog}(1/ε)))$ due to Li et al. (SICOMP 2021) and is optimal up to logarithmic factors for $1\leq p&lt;2$. The central technical idea originated from ChatGPT 5.6 Sol.</description>
+    </item>
+    <item>
+      <title>Horospherically convex optimization for fractional subspace packing and its applications</title>
+      <link>http://arxiv.org/abs/2608.13972v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.13972v1</guid>
+      <pubDate>Fri, 14 Aug 2026 05:32:26 +0000</pubDate>
+      <description>In this paper, we address a semi-infinite LP relaxation of the vector-subspace packing problem. This is a higher-dimensional generalization of the fractional linear matroid parity problem and is closely related to Brascamp-Lieb polytopes. We show that the dual of this LP can be formulated as ``linear programming on a Euclidean building," namely, the problem of minimizing a Busemann function over an intersection of horoballs. This provides a natural example of horospherically convex optimization, recently introduced by Goodwin et al. (2026) and Criscitiello and Kim (2025). By applying the incremental Busemann subgradient method, we obtain an additive FPTAS for the problem. As applications, we obtain a new and simpler polynomial-time algorithm for fractional linear matroid parity, and new algorithms for the membership problem of Brascamp-Lieb polytopes.</description>
+    </item>
+    <item>
+      <title>CavityRank: Zero-Extra-Byte Residual Routing for Cuckoo Filters</title>
+      <link>http://arxiv.org/abs/2608.13970v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.13970v1</guid>
+      <pubDate>Fri, 14 Aug 2026 05:31:51 +0000</pubDate>
+      <description>Near capacity, a cuckoo filter may reject an insertion even though a legal placement still exists: the table remains structurally feasible, but a bounded policy fails to find an augmenting path. Random kick-out keeps each step cheap but leaves no persistent direction; breadth-first search recovers direction by expanding a frontier and maintaining table-scaled state. CavityRank exploits a resource already present in four-slot packed buckets. Lookup observes only the fingerprint multiset, so query-equivalent lane orders can encode two comparison bits without widening the 64-bit bucket or changing the two-bucket query. The bits form a four-level ordinal residual rank. Insertion follows a minimum-rank edge and re-encodes each modified bucket from its outgoing edges after relocation, propagating the rank actually realized by the packed word. An exact capacity-four orientation oracle separates structural infeasibility from bounded-search loss. In a paired 4,096-bucket XOR16 ladder, CR2 closes 86.47% of Random CF's oracle gap and CavityRank leaves 1.39% of that original gap. A canonical-tie CR2-versus-CavityRank ablation isolates the second implicit bit, which closes 89.95% and 90.69% of CR2's residual gap; the corresponding closures at 65,536 buckets are 83.95% and 84.27%. A separate packed implementation study at 64 MiB and 97.75% load records 42.53 logical reads per insertion, versus 62.67 for explicit labels and 355.74 for depth-10 BFS, with zero extra bytes per bucket and no table-scaled workspace. CavityRank therefore occupies a practical design point between unguided eviction and frontier search.</description>
+    </item>
+    <item>
+      <title>The Sharp Dimension Bound in the Johnson--Lindenstrauss Lemma</title>
+      <link>http://arxiv.org/abs/2608.13782v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.13782v1</guid>
+      <pubDate>Thu, 13 Aug 2026 21:21:35 +0000</pubDate>
+      <description>The Johnson--Lindenstrauss lemma asserts that every set of $n$ points in $d$-dimensional Euclidean space embeds into $O(\varepsilon^{-2}\log n)$-dimensional Euclidean space with distortion at most $1+\varepsilon$. Larsen and Nelson conjectured that the optimal target dimension throughout the full range of the parameters $n,d, \varepsilon$ is \[ Θ\left(\min\left\{d,n-1,\frac{\log(2+\varepsilon^2n)}{\varepsilon^2}\right\}\right). \] We resolve this conjecture in the affirmative. In fact, we prove the stronger statement that the upper bound is attained by a linear map. The matching lower bound, due to Larsen--Nelson and Alon--Klartag, holds even for nonlinear embeddings.</description>
+    </item>
+    <item>
       <title>Bagging Robustly Learns VC Classes with Linear Sample Complexity</title>
       <link>https://arxiv.org/abs/2608.13514</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.13514</guid>
@@ -668,41 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2509.08148</guid>
       <pubDate>Mon, 20 Jul 2026 00:00:00 -0000</pubDate>
       <description>The original description of the k-d tree recognized that rebalancing techniques, used for building an AVL or red-black tree, are not applicable to a k-d tree, because these techniques involve cyclic exchange of tree nodes that violates the invariant of the k-d tree. For this reason, a static, balanced k-d tree is often built from all of the k-dimensional data en masse. However, it is possible to build a dynamic k-d tree that self-balances when necessary after insertion or deletion of each k-dimensional datum. This article describes insertion, deletion, and rebalancing algorithms for a dynamic, self-balancing k-d tree, and measures their performance.</description>
-    </item>
-    <item>
-      <title>Stringological sequence prediction II: Right-to-left automaticity and related complexity measures</title>
-      <link>https://arxiv.org/abs/2607.17369</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.17369</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
-      <description>In a previous paper, we began the study of sequence prediction algorithms adapted to stringological word complexity measures. One measure we considered was left-to-right (most-significant-digit-first) automaticity. Here, we show a statistically and computationally efficient algorithm adapted to the ``dual'' right-to-left (least-significant-digit-first) automaticity, which turns out to be substantially different for our purpose. We also demonstrate a prediction algorithm for a more expressive measure that we call ``arithmetic repetition complexity''. In particular, the latter can be used for predicting the so-called mix-automatic sequences.</description>
-    </item>
-    <item>
-      <title>Compressed Inverse Suffix Arrays</title>
-      <link>https://arxiv.org/abs/2607.17287</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.17287</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
-      <description>The suffix array ($\SA$) and inverse suffix array ($\ISA$) are fundamental data structures in string algorithms. Given a text of length $n$ over an integer alphabet of size $σ$, explicitly storing these structures requires $Θ(n\log n)$ bits, motivating compressed representations that approach the information-theoretic minimum of $n\logσ$ bits. Two landmark solutions are the FM-index, which achieves succinct space and supports $\SA$ and $\ISA$ queries in roughly logarithmic time, and the Compressed Suffix Array (CSA), which uses $O(n\logσ)$ bits and answers both queries in $O(\log_σ^εn)$ time. Nearly all subsequent compressed indexes, including entropy-compressed and repetitiveness-aware variants, support $\SA$ and $\ISA$ using essentially the same techniques, leading to similar space--time trade-offs. This raises a fundamental question: under the same asymptotic space bound, do $\SA$ and $\ISA$ have the same inherent query complexity? We provide evidence that this symmetry is not intrinsic. Under an $O(n\logσ)$-bit space bound, we show that $\SA$ queries are unlikely to admit $\log^{o(1)} n$ query time, suggesting that improving the classical CSA bound would require a major breakthrough. In contrast, we present a new encoding supporting $\ISA$ queries in $O(τ+\log\log n/\log\logσ)$ time using $(1+1/τ+o(1))n\logσ$ bits, for any $τ\ge1$. Our main insight is that the $\LF$-mapping, traditionally implemented using the Burrows--Wheeler Transform, can be adapted to support $\ISA$ queries directly from the packed text, eliminating the need to store the BWT while achieving substantially faster query times.</description>
-    </item>
-    <item>
-      <title>Gårding's Theorem for Posynomials</title>
-      <link>https://arxiv.org/abs/2607.09168</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.09168</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
-      <description>We extend Gårding's theorem to homogeneous posynomials: if a finite positive sum of monomials with arbitrary nonnegative real exponents is zero-free on a product of right half-planes, then its degree-normalized root is concave. Consequently, zero-freeness in a sector of aperture $απ$ implies $α$-fractional log-concavity. This sharpens generic mixing and domain-sparsification guarantees for fixed-size matchings and nonsymmetric determinantal point processes. The result was developed in an AI-assisted interaction initiated and checked by the author; Codex also assisted with assembling and typesetting the manuscript.</description>
-    </item>
-    <item>
-      <title>Provably Good Prim-Dijkstra Revisited: New Theory and a Practical Algorithm for a Classical VLSI Routing Problem with LLMs</title>
-      <link>https://arxiv.org/abs/2607.17005</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.17005</guid>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 -0000</pubDate>
-      <description>Large language models may make precise but dormant algorithmic problems practical to revisit, and may expose new paths toward fundamental ones. We demonstrate this possibility through Prim-Dijkstra routing, a classic VLSI problem whose terminal-only Manhattan complexity remained open despite decades of practical work. We prove weak NP-completeness, derive a continuous cost-radius tradeoff with a balanced (2,2) guarantee, and build HP-RCRST, a height-partition-based multi-mode solver. On 28 development instances, its stronger modes Pareto-dominate the published-method union on 23 and tie on five. The case shows how conflicting conjectures, counterexamples, formal checks, and implementation can reopen neglected questions. Code and reproducibility materials are available at https://github.com/CODA-Team/hp-rcrst.</description>
-    </item>
-    <item>
-      <title>Locality in Open Addressing Hash Tables</title>
-      <link>https://arxiv.org/abs/2607.16390</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.16390</guid>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 -0000</pubDate>
-      <description>Open-addressed hash tables without reordering, such as linear probing and uniform probing, are among the simplest and most widely used data structures. Their performance is traditionally measured by probe count. We study a complementary parameter: locality, defined as the geometric distance from the first probed location to the farthest cell inspected or used. At load factor $1-\varepsilon$, uniform probing achieves the optimal $Θ(1/\varepsilon)$ probe count among greedy schemes, but has essentially no locality, whereas linear probing is highly local but performs $Θ(1/\varepsilon^2)$ probes. We show that this quadratic locality scale is fundamental: no open-addressing algorithm without reordering can achieve locality $o(1/\varepsilon^2)$ simultaneously at every load $1-\varepsilon$. We also prove an amortized expected-locality lower bound of $Ω(1/\varepsilon)$ over any sequence of $(1-\varepsilon)n$ insertions, even when the final load is known in advance. Our lower bound further implies that page size $B=Ω(1/\varepsilon^2)$ is necessary for $1+o(1)$ expected page span in immutable open addressing. We complement these lower bounds with two upper bounds. When the target load is known in advance, every insertion and every successful or unsuccessful search can be given expected probe count and locality $\widetilde O(1/\varepsilon)$, essentially deamortizing the amortized lower bound. We also give a load-oblivious greedy scheme with optimal expected probe count $Θ(1/\varepsilon)$ whose $i$-th probe is at distance $O(i^2)$ from the first probe. Its analysis gives a general variance bound for occupied-cell densities in symmetric probing schemes, implying an $O(\log n/\varepsilon^2)$ expected probe bound for every fixed-shift probing sequence and every load $1-\varepsilon$.</description>
     </item>
   </channel>
 </rss>

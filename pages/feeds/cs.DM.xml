@@ -5,6 +5,20 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Towards discrete convex analysis over classical root systems</title>
+      <link>http://arxiv.org/abs/2608.16090v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.16090v1</guid>
+      <pubDate>Mon, 17 Aug 2026 04:31:39 +0000</pubDate>
+      <description>Discrete Convex Analysis (DCA) is a discrete analog of continuous convex analysis, originally proposed as a unified theoretical framework for efficiently solvable combinatorial optimization problems. Recently, DCA has proven to be a powerful tool across diverse fields, ranging from operations research to economics and pure mathematics. Motivated by the broad applicability of DCA, this paper establishes a unified theory of discrete convex analysis over discrete structures arising from classical root systems, extending the usual setting of the integer lattice, which essentially corresponds to type A. We adopt the vertex set of the Euclidean Coxeter complex as the primal discrete domain for L-convexity, and the root lattice as the dual discrete domain for M-convexity. Using the associated polyhedral structures, we formulate L- and M-convex functions together with notions of integrality determined by the root system. We show that local optimality guarantees global optimality for these functions. Furthermore, we establish that integral L-convex functions and integral M-convex functions correspond one-to-one via the discrete Fenchel--Legendre conjugate, thereby extending the conjugacy in the original DCA from type A to all classical root systems.</description>
+    </item>
+    <item>
+      <title>A counterexample to the Albertson-Berman conjecture about induced forests in planar graphs</title>
+      <link>http://arxiv.org/abs/2608.13964v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.13964v1</guid>
+      <pubDate>Fri, 14 Aug 2026 05:13:58 +0000</pubDate>
+      <description>For a graph $G$, denote by $a(G)$ the number of vertices in the largest induced forest in $G$. The Albertson-Berman conjecture, which had been open since 1979, states that $a(G) \geq \frac{n}{2}$ for every simple planar graph $G$ on $n$ vertices. Although the Albertson-Berman conjecture was recently resolved in the negative by constructing a counterexample with the help of AI, we independently found a counterexample to the Albertson-Berman conjecture without AI and present it in this article. Our counterexample is on $39$ vertices with $a(G)=19$. Finally, we indicate, without a full proof, a variant of this construction with a larger number of vertices, but with a slightly smaller ratio $\frac{a(G)}{n}=\frac{37}{76}$.</description>
+    </item>
+    <item>
       <title>On the Structure of $(\min,+)$ Convolution</title>
       <link>https://arxiv.org/abs/2608.13310</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.13310</guid>
@@ -689,20 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2507.15667</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 -0000</pubDate>
       <description>Every semicomplete multipartite digraph contains a quasi-Hamiltonian path, but the problem of finding a quasi-Hamiltonian path with prescribed start and end vertex is NP-complete even when restricted to semicomplete multipartite digraphs with independence number exactly 3. Bang-Jensen, Wang and Yeo (arXiv 2024) showed that deciding the presence of a quasi-Hamiltonian cycle which does not contain at least one vertex from each color class is NP-complete. Similarly, deciding the presence of a quasi-Hamiltonian cycle which intersects every part exactly once is also NP-complete as shown in the same work. In this paper, we continue the study of paths with constraints on the number of covered vertices from each color class. We consider the problem of finding a path with prescribed start and end vertex that contains at least $a$ and at most $b$ vertices from each color class where all color classes have size exactly $α$. This unifies the Hamiltonian path problem, the quasi-Hamiltonian path problem and the path-version of the cycle problems mentioned above, among other problems. Using Schaefer's dichotomy theorem, we classify the complexity of almost all problems in our framework. Notable open problems are the Hamiltonian path problem on semicomplete multipartite digraphs as well as the quasi-Hamiltonian path problem restricted to semicomplete multipartite digraphs with independence number 2. We then investigate the quasi-Hamiltonian path problem restricted to semicomplete multipartite digraphs with independence number 2. We generalize sufficient criteria for Hamiltonian $(s,t)$-paths in semicomplete digraphs to sufficient criteria for quasi-Hamiltonian $(s,t)$-paths in this class. Although this does not settle the problem, the initial results suggest that this special case may be solvable in polynomial time.</description>
-    </item>
-    <item>
-      <title>Height functions on the $m \times n$ Miura-ori flip graph: degree sequence and diameter</title>
-      <link>https://arxiv.org/abs/2606.22614</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.22614</guid>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 -0000</pubDate>
-      <description>The state space of an origami crease pattern forms a flip graph, whose vertices are the flat-foldable mountain-valley assignments and whose edges join assignments differing by a single face flip. For the $m \times n$ Miura-ori, the degree sequence and diameter of this graph are known only for two rows. Each assignment maps to an integer height function on the grid, under which a vertex's degree equals its number of local extrema. In this model the vertices of each degree up to five are counted by an explicit polynomial in $m$ and $n$, valid once both exceed a bound that grows with the degree, and the height functions realizing those degrees are described explicitly. A closed-form lower bound for the diameter holds for all $m$ and $n$, and the matching upper bound reduces to an extremal inequality for $1$-Lipschitz functions on the grid, recovering the two-row distance at $m=2$. Since each invariant is read from the extrema or height differences of a grid function, the same reduction applies to any flip-graph quantity expressible in those terms.</description>
-    </item>
-    <item>
-      <title>Explicit Formulas and Unimodality Phenomena for General Position Polynomials</title>
-      <link>https://arxiv.org/abs/2603.06930</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2603.06930</guid>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 -0000</pubDate>
-      <description>The general position problem in graphs seeks the largest set of vertices such that no three vertices lie on a common geodesic. Its counting refinement, the general position polynomial $ψ(G)$, asks for all such possible sets. In this paper, We describe general position sets for several classes of graphs and provide explicit formulas for the general position polynomials of complete multipartite graphs. We specialize to balanced complete multipartite graphs and show that for part size $r\le 4$, the polynomial $ψ(K_{r,\dots,r})$ is log-concave and unimodal for all numbers of parts, while for larger $r$, counterexamples show that these properties fail. Finally, we analyze the corona $G\circ K_1$ and prove that unimodality of $ψ(G)$ is retained for some classes, and counterexamples exists for complete bipartite and complete multipartite graphs. The results verify the analogy between general position polynomials and classical position-type parameters, and establish balanced multipartite graphs and coronas as potential subjects for further investigation.</description>
     </item>
   </channel>
 </rss>
