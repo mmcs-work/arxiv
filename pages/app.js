@@ -76,11 +76,25 @@ function matches(item, active) {
     && (!active.start || item.published.slice(0, 10) >= active.start)
     && (!active.end || item.published.slice(0, 10) <= active.end);
 }
+function highlight(element, value) {
+  const query = form.elements.query.value.trim().toLowerCase();
+  const text = value.toLowerCase();
+  const first = query ? text.indexOf(query) : -1;
+  if (first < 0) { element.textContent = value; return; }
+  const fragment = document.createDocumentFragment();
+  let start = 0, index = first;
+  while (index >= 0) {
+    fragment.append(value.slice(start, index));
+    const match = document.createElement("mark"); match.textContent = value.slice(index, index + query.length); fragment.append(match);
+    start = index + query.length; index = text.indexOf(query, start);
+  }
+  fragment.append(value.slice(start)); element.replaceChildren(fragment);
+}
 function card(item) {
   const article = document.createElement("article");
   const title = document.createElement("a");
-  title.href = item.arxiv_url || `https://arxiv.org/abs/${item.arxiv_id}`; title.target = "_blank"; title.rel = "noreferrer"; title.textContent = item.title;
-  const meta = document.createElement("p"); meta.className = "meta"; meta.textContent = `${item.author} · ${item.published.slice(0, 10)} · ${item.primary_category}`;
+  title.href = item.arxiv_url || `https://arxiv.org/abs/${item.arxiv_id}`; title.target = "_blank"; title.rel = "noreferrer"; highlight(title, item.title);
+  const meta = document.createElement("p"); meta.className = "meta"; highlight(meta, item.author); meta.append(` · ${item.published.slice(0, 10)} · ${item.primary_category}`);
   const abstract = document.createElement("details"); abstract.className = "abstract";
   const summary = document.createElement("summary"); summary.textContent = "Read abstract";
   const text = document.createElement("p"); text.textContent = item.abstract;

@@ -40,6 +40,7 @@ form button, .rss-controls a, .rss-controls button { height:2.1rem; }
 article { padding:1rem 0; border-top:1px solid var(--line); }
 article a { color:var(--ink); font-size:1.03rem; font-weight:650; line-height:1.35; text-decoration:none; }
 article a:hover { color:var(--accent); }
+mark { background:color-mix(in srgb, var(--accent) 18%, transparent); border-radius:2px; color:inherit; padding:0 .08em; }
 .meta { color:var(--muted); font: .78rem/1.4 ui-sans-serif, system-ui; margin:.3rem 0 .55rem; }
 .abstract { margin:0; color:var(--muted); }
 .abstract summary { color:var(--accent); cursor:pointer; font:.82rem/1.4 ui-sans-serif, system-ui; }
