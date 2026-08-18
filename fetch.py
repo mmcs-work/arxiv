@@ -1,12 +1,17 @@
 """Small arXiv API helper shared by the daily static-data updater."""
 
 import re
+import socket
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
 API_URL = "https://export.arxiv.org/api/query"
 ATOM = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
+TIMEOUT = 60
+RETRY_DELAYS = (5, 15, 45)
 
 
 def text(entry, name):
@@ -27,10 +32,23 @@ def fetch_category(category, start, end, max_results):
     )
     request = urllib.request.Request(
         f"{API_URL}?{params}",
-        headers={"User-Agent": "single-author-archive/1.0 (contact: local-archive)"},
+        headers={"User-Agent": "single-author-arxiv-cs/1.0 (https://github.com/mmcs-work/single-author-arxiv-cs)"},
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return ET.parse(response).getroot().findall("atom:entry", ATOM)
+    last_error = None
+    for delay in (*RETRY_DELAYS, None):
+        try:
+            with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+                return ET.parse(response).getroot().findall("atom:entry", ATOM)
+        except urllib.error.HTTPError as error:
+            if error.code != 429 and not 500 <= error.code < 600:
+                raise
+            last_error = error
+        except (TimeoutError, socket.timeout, urllib.error.URLError, ConnectionError) as error:
+            last_error = error
+        if delay is None:
+            raise last_error
+        print(f"arXiv request for {category} failed ({last_error}); retrying in {delay}s…", flush=True)
+        time.sleep(delay)
 
 
 def paper_from(entry):
