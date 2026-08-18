@@ -1,178 +1,256 @@
-"""Build same-origin JSON data for the static GitHub Pages archive."""
+"""Fetch and parse papers from the arXiv API."""
 
-import argparse
-import json
-import os
-import sqlite3
-import sys
+import socket
 import time
+import urllib.error
+import urllib.parse
+import urllib.request
 import xml.etree.ElementTree as ET
-from collections import defaultdict
-from datetime import datetime, timedelta, timezone
-from email.utils import format_datetime
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "pages" / "data"
-PAGES = DATA.parent
-SITE_URL = os.environ.get("SITE_URL", "https://mmcs-work.github.io/single-author-arxiv-cs").rstrip("/")
-sys.path.insert(0, str(ROOT))
-from config import CATEGORIES
-COLUMNS = (
-    "arxiv_id", "title", "author", "abstract", "primary_category", "categories",
-    "published", "updated", "arxiv_url", "pdf_url",
+
+ARXIV_API = "https://export.arxiv.org/api/query"
+
+NS = {
+    "atom": "http://www.w3.org/2005/Atom",
+    "arxiv": "http://arxiv.org/schemas/atom",
+}
+
+TIMEOUT = 60
+MAX_RETRIES = 5
+
+USER_AGENT = (
+    "single-author-arxiv-cs/1.0 "
+    "(https://github.com/mmcs-work/single-author-arxiv-cs)"
 )
 
 
-def record(row):
-    return dict(zip(COLUMNS, row))
+def get_text(element, path, default=""):
+    """Return stripped text from an XML child element."""
+    child = element.find(path, NS)
+    if child is None or child.text is None:
+        return default
+    return child.text.strip()
 
 
-def write_json(path, value):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, separators=(",", ":")))
+def fetch_with_retry(request, category):
+    """Fetch a URL with retry/backoff for transient network failures."""
+    for attempt in range(MAX_RETRIES):
+        try:
+            with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+                return response.read()
+
+        except urllib.error.HTTPError as exc:
+            retryable = exc.code == 429 or 500 <= exc.code < 600
+
+            if not retryable or attempt == MAX_RETRIES - 1:
+                raise
+
+            retry_after = exc.headers.get("Retry-After")
+
+            if retry_after:
+                try:
+                    delay = int(retry_after)
+                except ValueError:
+                    delay = 5 * (2 ** attempt)
+            else:
+                delay = 5 * (2 ** attempt)
+
+            delay = min(delay, 120)
+
+            print(
+                f"arXiv HTTP {exc.code} for {category}; "
+                f"retrying in {delay}s "
+                f"({attempt + 1}/{MAX_RETRIES})...",
+                flush=True,
+            )
+
+            time.sleep(delay)
+
+        except (
+            TimeoutError,
+            socket.timeout,
+            urllib.error.URLError,
+            ConnectionError,
+        ) as exc:
+            if attempt == MAX_RETRIES - 1:
+                raise
+
+            delay = min(5 * (2 ** attempt), 120)
+
+            print(
+                f"arXiv request failed for {category}: {exc}; "
+                f"retrying in {delay}s "
+                f"({attempt + 1}/{MAX_RETRIES})...",
+                flush=True,
+            )
+
+            time.sleep(delay)
+
+    raise RuntimeError(f"Failed to fetch arXiv category {category}")
 
 
-def write_feed(path, title, records):
-    rss = ET.Element("rss", version="2.0")
-    channel = ET.SubElement(rss, "channel")
-    ET.SubElement(channel, "title").text = title
-    ET.SubElement(channel, "link").text = SITE_URL
-    ET.SubElement(channel, "description").text = "Single-author arXiv papers."
-    for record in sort(records)[:100]:
-        item = ET.SubElement(channel, "item")
-        ET.SubElement(item, "title").text = record["title"]
-        ET.SubElement(item, "link").text = record["arxiv_url"]
-        ET.SubElement(item, "guid", isPermaLink="true").text = record["arxiv_url"]
-        published = datetime.fromisoformat(record["published"].replace("Z", "+00:00"))
-        ET.SubElement(item, "pubDate").text = format_datetime(published)
-        ET.SubElement(item, "description").text = record["abstract"]
-    tree = ET.ElementTree(rss)
-    ET.indent(tree, space="  ")
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tree.write(path, encoding="utf-8", xml_declaration=True)
+def fetch_category(category, start_date, end_date, max_results=2000):
+    """Fetch arXiv entries for a category within a submitted-date range."""
+    query = (
+        f"cat:{category} "
+        f"AND submittedDate:[{start_date} TO {end_date}]"
+    )
+
+    params = {
+        "search_query": query,
+        "start": 0,
+        "max_results": max_results,
+        "sortBy": "submittedDate",
+        "sortOrder": "descending",
+    }
+
+    url = ARXIV_API + "?" + urllib.parse.urlencode(params)
+
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "application/atom+xml",
+        },
+    )
+
+    print(
+        f"Fetching {category} "
+        f"({start_date} -> {end_date}, max {max_results})...",
+        flush=True,
+    )
+
+    data = fetch_with_retry(request, category)
+
+    try:
+        root = ET.fromstring(data)
+    except ET.ParseError as exc:
+        raise RuntimeError(
+            f"arXiv returned invalid XML for {category}"
+        ) from exc
+
+    entries = root.findall("atom:entry", NS)
+
+    print(
+        f"{category}: received {len(entries)} "
+        f"{'entry' if len(entries) == 1 else 'entries'}",
+        flush=True,
+    )
+
+    return entries
 
 
-def read_json(path):
-    return json.loads(path.read_text()) if path.exists() else []
+def clean_text(value):
+    """Collapse repeated whitespace/newlines into ordinary spaces."""
+    return " ".join(value.split())
 
 
-def sort(records):
-    return sorted(records, key=lambda item: (item["published"], item["arxiv_id"]), reverse=True)
+def get_arxiv_id(entry):
+    """Extract the bare arXiv identifier from an Atom entry."""
+    value = get_text(entry, "atom:id")
+    value = value.rstrip("/").rsplit("/", 1)[-1]
+
+    if "v" in value:
+        base, version = value.rsplit("v", 1)
+        if version.isdigit():
+            value = base
+
+    return value
 
 
-def full_records(database):
-    with sqlite3.connect(database) as connection:
-        rows = connection.execute(f"SELECT {', '.join(COLUMNS)} FROM papers")
-        return [record(row) for row in rows]
+def get_authors(entry):
+    """Return all author names from an Atom entry."""
+    authors = []
+
+    for author in entry.findall("atom:author", NS):
+        name = get_text(author, "atom:name")
+        if name:
+            authors.append(name)
+
+    return authors
 
 
-def recent_records(days):
-    from config import CATEGORIES
-    from fetch import fetch_category, paper_from
+def get_categories(entry):
+    """Return all arXiv categories attached to an entry."""
+    categories = []
 
-    now = datetime.now(timezone.utc)
-    first_day = (now - timedelta(days=days - 1)).date()
-    found = {}
-    for index, category in enumerate(CATEGORIES):
-        if index:
-            time.sleep(3)
-        for entry in fetch_category(category, f"{first_day:%Y%m%d}0000", f"{now:%Y%m%d%H%M}", 2000):
-            paper = paper_from(entry)
-            if paper:
-                found[paper[0]] = record(paper)
-    return list(found.values())
+    for element in entry.findall("atom:category", NS):
+        category = element.attrib.get("term", "").strip()
+
+        if category and category not in categories:
+            categories.append(category)
+
+    return categories
 
 
-def merge(path, additions):
-    records = {item["arxiv_id"]: item for item in read_json(path)}
-    records.update({item["arxiv_id"]: item for item in additions})
-    write_json(path, sort(records.values()))
+def get_primary_category(entry):
+    """Return the paper's primary arXiv category."""
+    element = entry.find("arxiv:primary_category", NS)
+
+    if element is None:
+        return ""
+
+    return element.attrib.get("term", "").strip()
 
 
-def search_rows(records):
-    return [
-        {key: item[key] for key in ("arxiv_id", "title", "author", "primary_category", "categories", "published")}
-        for item in sort(records)
-    ]
+def get_links(entry):
+    """Return the abstract and PDF URLs."""
+    arxiv_url = ""
+    pdf_url = ""
+
+    for link in entry.findall("atom:link", NS):
+        href = link.attrib.get("href", "").strip()
+        rel = link.attrib.get("rel", "")
+        link_type = link.attrib.get("type", "")
+        title = link.attrib.get("title", "")
+
+        if rel == "alternate" and href:
+            arxiv_url = href
+
+        if title == "pdf" or link_type == "application/pdf":
+            pdf_url = href
+
+    return arxiv_url, pdf_url
 
 
-def rebuild(records):
-    by_month, by_category = defaultdict(list), defaultdict(list)
-    for item in records:
-        by_month[item["published"][:7]].append(item)
-        for category in item["categories"].split(","):
-            if category in CATEGORIES:
-                by_category[category].append(item)
-    for month, items in by_month.items():
-        write_json(DATA / "months" / f"{month}.json", sort(items))
-    for category, items in by_category.items():
-        write_json(DATA / "categories" / f"{category}.json", sort(items))
-        write_feed(PAGES / "feeds" / f"{category}.xml", f"One Author — {CATEGORIES[category]}", items)
-    write_json(DATA / "latest.json", sort(records)[:100])
-    write_feed(PAGES / "feed.xml", "One Author — latest papers", records)
-    write_json(DATA / "search.json", search_rows(records))
-    write_json(DATA / "manifest.json", {
-        "records": len(records),
-        "months": sorted(by_month),
-        "categories": CATEGORIES,
-        "updated": datetime.now(timezone.utc).isoformat(),
-    })
+def paper_from(entry):
+    """Convert an arXiv entry into a single-author paper record."""
+    authors = get_authors(entry)
 
+    if len(authors) != 1:
+        return None
 
-def refresh(records):
-    index_path = DATA / "search.json"
-    index = {item["arxiv_id"]: item for item in read_json(index_path)}
-    additions = [item for item in records if item["arxiv_id"] not in index]
-    if not additions:
-        return 0
+    arxiv_id = get_arxiv_id(entry)
 
-    by_month, by_category = defaultdict(list), defaultdict(list)
-    for item in additions:
-        by_month[item["published"][:7]].append(item)
-        for category in item["categories"].split(","):
-            if category in CATEGORIES:
-                by_category[category].append(item)
-    for month, items in by_month.items():
-        merge(DATA / "months" / f"{month}.json", items)
-    for category, items in by_category.items():
-        merge(DATA / "categories" / f"{category}.json", items)
-        category_records = read_json(DATA / "categories" / f"{category}.json")
-        write_feed(PAGES / "feeds" / f"{category}.xml", f"One Author — {CATEGORIES[category]}", category_records)
-    latest = {item["arxiv_id"]: item for item in read_json(DATA / "latest.json")}
-    latest.update({item["arxiv_id"]: item for item in additions})
-    write_json(DATA / "latest.json", sort(latest.values())[:100])
-    write_feed(PAGES / "feed.xml", "One Author — latest papers", latest.values())
-    index.update({item["arxiv_id"]: item for item in search_rows(additions)})
-    write_json(index_path, sort(index.values()))
-    manifest_path = DATA / "manifest.json"
-    manifest = read_json(manifest_path) if manifest_path.exists() else {}
-    manifest.update({
-        "records": len(index),
-        "categories": CATEGORIES,
-        "updated": datetime.now(timezone.utc).isoformat(),
-    })
-    write_json(manifest_path, manifest)
-    return len(additions)
+    if not arxiv_id:
+        return None
 
+    title = clean_text(get_text(entry, "atom:title"))
+    abstract = clean_text(get_text(entry, "atom:summary"))
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    source = parser.add_mutually_exclusive_group(required=True)
-    source.add_argument("--database", type=Path)
-    source.add_argument("--recent", action="store_true")
-    parser.add_argument("--days", type=int, default=2)
-    args = parser.parse_args()
-    if args.days < 1:
-        parser.error("--days must be positive")
-    records = recent_records(args.days) if args.recent else full_records(args.database)
-    if args.recent:
-        added = refresh(records)
-        print(f"Found {len(records):,} recent record(s); added {added:,} new record(s).")
-    else:
-        rebuild(records)
-        print(f"Wrote static data for {len(records):,} record(s).")
+    primary_category = get_primary_category(entry)
+    categories = get_categories(entry)
 
+    published = get_text(entry, "atom:published")
+    updated = get_text(entry, "atom:updated")
 
-if __name__ == "__main__":
-    main()
+    arxiv_url, pdf_url = get_links(entry)
+
+    if not arxiv_url:
+        arxiv_url = f"https://arxiv.org/abs/{arxiv_id}"
+
+    if not pdf_url:
+        pdf_url = f"https://arxiv.org/pdf/{arxiv_id}"
+
+    return (
+        arxiv_id,
+        title,
+        authors[0],
+        abstract,
+        primary_category,
+        ",".join(categories),
+        published,
+        updated,
+        arxiv_url,
+        pdf_url,
+    )
