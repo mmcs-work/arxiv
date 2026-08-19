@@ -5,6 +5,20 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Parameterized complexity of $k$-Coloring in graphs with no long induced paths</title>
+      <link>http://arxiv.org/abs/2608.17835v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.17835v1</guid>
+      <pubDate>Tue, 18 Aug 2026 14:34:48 +0000</pubDate>
+      <description>We study the parameterized complexity of $k$-Coloring in $H$-free graphs, when $H$ is a linear forest (i.e., a disjoint union of paths) as an induced subgraph. We show two hardness results: * $k$-Coloring is W[1]-hard in $2P_2$-free graphs when parameterized by $k$. * $3$-Coloring is W[1]-hard in $P_t$-free graphs when parameterized by $t$. Moreover, assuming the ETH, these problems admit no algorithms solving $n$-vertex instances in time $f(k) \cdot n^{o(k)}$ and $f(t) \cdot n^{o(t/\log t)}$, respectively, for any computable function $f$. The first result resolves in a strong form a long-standing open problem, originally posed by Hoàng, Kamiński, Lozin, Sawada, and Shu [Algorithmica, 2010]. The second result answers a question of Golovach, Johnson, Paulusma, and Song [Journal of Graph Theory, 2017].</description>
+    </item>
+    <item>
+      <title>Integer Quadratic Programming is W[1]-Hard Parameterized by the Number of Variables</title>
+      <link>http://arxiv.org/abs/2608.17818v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.17818v1</guid>
+      <pubDate>Tue, 18 Aug 2026 14:18:26 +0000</pubDate>
+      <description>We show that Integer Quadratic Programming is W[1]-hard parameterized by the number of variables. Thus, under standard complexity assumptions, Integer Quadratic Programming cannot be solved in f(n)|I|^{O(1)} time for any computable function f where |I| is the size of the encoding and n is the number of variables.</description>
+    </item>
+    <item>
       <title>A Simple Las Vegas Algorithm for Sparse Nonnegative Convolution</title>
       <link>http://arxiv.org/abs/2608.16123v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.16123v1</guid>
@@ -689,20 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.11956</guid>
       <pubDate>Mon, 20 Jul 2026 00:00:00 -0000</pubDate>
       <description>Data Shapley answers which training points are worth what, and its nearest-neighbor specialization is the version actually deployed, shipped by toolkits such as pyDVL and OpenDataVal. Exact algorithms exist for unweighted nearest-neighbor classification and regression, and recently for weighted classification; weighted regression and soft-label prediction have resisted, the only exact method being enumeration exponential in the neighborhood size. The obstruction, in the prior authors' own words, is that the weighted regression prediction is a ratio of two coalition-dependent weighted sums: its normalization denominator blocks the additive and threshold routes, and leaves the counting route exponential in the target resolution. We close this gap with a counting dynamic program over the joint integer state of accumulated weight and weighted target, a minimal sufficient statistic for the ratio; it is exact, pseudo-polynomial, and matched exhaustive enumeration with zero mismatch. We add a certified approximation scheme for continuous weights and targets carrying a machine-checkable per-value certificate, a complexity landscape delimiting the exact problem, and a soft-label extension. We release an open-source, CPU-only library and the first exact weighted-regression ground truth. On mislabel detection our exact values are statistically equivalent to Monte-Carlo Data Shapley; exactness instead buys determinism, a certified bound, and an auditing reference, and it puts a measured price on approximation.</description>
-    </item>
-    <item>
-      <title>Almost-Optimal Approximation Algorithms for Global Minimum Cut in Directed Graphs</title>
-      <link>https://arxiv.org/abs/2512.09080</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2512.09080</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 -0000</pubDate>
-      <description>We develop new $(1+ε)$-approximation algorithms for finding the global minimum edge-cut in a directed edge-weighted graph, and for finding the global minimum vertex-cut in a directed vertex-weighted graph. Our algorithms are randomized, and have a running time of $O\left(m^{1+o(1)}/ε\right)$ on any $m$-edge $n$-vertex input graph, assuming all edge/vertex weights are polynomially-bounded. In particular, for any constant $ε&gt;0$, our algorithms have an almost-optimal running time of $O\left(m^{1+o(1)}\right)$. The fastest previously-known running time for this setting, due to (Cen et al., FOCS 2021), is $\tilde{O}\left(\min\left\{n^2/ε^2,m^{1+o(1)}\sqrt{n}\right\}\right)$ for Minimum Edge-Cut, and $\tilde{O}\left(n^2/ε^2\right)$ for Minimum Vertex-Cut. Our results further extend to the rooted variants of the Minimum Edge-Cut and Minimum Vertex-Cut problems, where the algorithm is additionally given a root vertex $r$, and the goal is to find a minimum-weight cut separating any vertex from the root $r$. In terms of techniques, we build upon and extend a framework that was recently introduced by (Chuzhoy et al., SODA 2026) for solving the Minimum Vertex-Cut problem in unweighted directed graphs. Additionally, in order to obtain our result for the Global Minimum Vertex-Cut problem, we develop a novel black-box reduction from this problem to its rooted variant. Prior to our work, such reductions were only known for more restricted settings, such as when all vertex-weights are unit.</description>
-    </item>
-    <item>
-      <title>A Dynamic, Self-balancing k-d Tree</title>
-      <link>https://arxiv.org/abs/2509.08148</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2509.08148</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 -0000</pubDate>
-      <description>The original description of the k-d tree recognized that rebalancing techniques, used for building an AVL or red-black tree, are not applicable to a k-d tree, because these techniques involve cyclic exchange of tree nodes that violates the invariant of the k-d tree. For this reason, a static, balanced k-d tree is often built from all of the k-dimensional data en masse. However, it is possible to build a dynamic k-d tree that self-balances when necessary after insertion or deletion of each k-dimensional datum. This article describes insertion, deletion, and rebalancing algorithms for a dynamic, self-balancing k-d tree, and measures their performance.</description>
     </item>
   </channel>
 </rss>

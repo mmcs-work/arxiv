@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>On computational approaches to Pop music culture</title>
+      <link>http://arxiv.org/abs/2608.17812v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.17812v1</guid>
+      <pubDate>Tue, 18 Aug 2026 14:11:22 +0000</pubDate>
+      <description>This overview article presents arguments why the computational study of Pop music culture needs to be conducted in a multi-modal way beyond mere audio analysis, gives a survey of already published quantitative work on analyzing Pop music at scale, and discusses challenges and promising research avenues for future work. We argue that Pop music culture is a rich tapestry of audio, visual, textual and cultural connotations and relations which needs to be studied in an integrative way as a multi-modal socio-cultural phenomenon. What is needed is an approach which is reminiscent of "distant reading", i.e. algorithmic analysis of thousands of books as a research tool in digital humanities. In addition to listening to audio, algorithms need to view album artwork and music videos, to read meta-information, lyrics, music magazines and books. Our review of already available work on distant reading/listening/viewing and multi-modal combinations thereof reveals two major open issues: a scarcity of truly multi-modal approaches and questionable external validity rooted in sampling practices when building music corpora. In trying to overcome these shortcomings we sketch three exemplary avenues for future research on Pop music culture: charting the topic universe of music lyrics, providing an iconography of album cover art, tracking retro cycles in music's timeline.</description>
+    </item>
+    <item>
       <title>HAMP-LIC: Hessian-Aware Mixed-Precision Post-Training Quantization for Learned Image Compression</title>
       <link>https://arxiv.org/abs/2608.12239</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.12239</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2409.19506</guid>
       <pubDate>Sun, 29 Sep 2024 00:00:00 -0000</pubDate>
       <description>In the expanding field of digital media, maintaining the strength and integrity of watermarking technology is becoming increasingly challenging. This paper, inspired by the Idempotent Generative Network (IGN), explores the prospects of introducing idempotency into image watermark processing and proposes an innovative neural network model - the Idempotent Watermarking Network (IWN). The proposed model, which focuses on enhancing the recovery quality of color image watermarks, leverages idempotency to ensure superior image reversibility. This feature ensures that, even if color image watermarks are attacked or damaged, they can be effectively projected and mapped back to their original state. Therefore, the extracted watermarks have unquestionably increased quality. The IWN model achieves a balance between embedding capacity and robustness, alleviating to some extent the inherent contradiction between these two factors in traditional watermarking techniques and steganography methods.</description>
-    </item>
-    <item>
-      <title>MSMF: Multi-Scale Multi-Modal Fusion for Enhanced Stock Market Prediction</title>
-      <link>https://arxiv.org/abs/2409.07855</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2409.07855</guid>
-      <pubDate>Thu, 12 Sep 2024 00:00:00 -0000</pubDate>
-      <description>This paper presents MSMF (Multi-Scale Multi-Modal Fusion), a novel approach for enhanced stock market prediction. MSMF addresses key challenges in multi-modal stock analysis by integrating a modality completion encoder, multi-scale feature extraction, and an innovative fusion mechanism. Our model leverages blank learning and progressive fusion to balance complementarity and redundancy across modalities, while multi-scale alignment facilitates direct correlations between heterogeneous data types. We introduce Multi-Granularity Gates and a specialized architecture to optimize the integration of local and global information for different tasks. Additionally, a Task-targeted Prediction layer is employed to preserve both coarse and fine-grained features during fusion. Experimental results demonstrate that MSMF outperforms existing methods, achieving significant improvements in accuracy and reducing prediction errors across various stock market forecasting tasks. This research contributes valuable insights to the field of multi-modal financial analysis and offers a robust framework for enhanced market prediction.</description>
     </item>
   </channel>
 </rss>

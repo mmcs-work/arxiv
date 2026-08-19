@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Array-Based Molecular Pulse Encoding for Neuro-Spike Communication in Intra-Body Nano-networks</title>
+      <link>http://arxiv.org/abs/2608.17675v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.17675v1</guid>
+      <pubDate>Tue, 18 Aug 2026 11:47:34 +0000</pubDate>
+      <description>In this paper, we investigate a neuro-spike communication system designed to bridge severed connections between damaged neurons using auxiliary nano-machines. Natural neuro-spike communication typically relies on instantaneous spike rates and temporal intervals to convey information. However, these temporal encoding schemes require exact time synchronization between the transmitter and receiver, a requirement that poses a significant challenge for resource-constrained nano-machines. To address this issue, it is imperative for future intra-body nano-networks to develop communication schemes that operate under reduced-order synchronization (e.g., symbol-synchronized). In this paper, we propose a novel neuro-spike array-based communication scheme where information is encoded through the specific arrangement of distinct molecular pulses emitted by nano-machines. By distinguishing symbols based on the sequence of these emissions rather than their exact timing, the need for stringent time synchronization is eliminated. We theoretically analyze the performance of the proposed scheme by deriving expressions for the probability of inter-symbol interference (ISI), error probability, and the achievable communication rate. Analytical and numerical results demonstrate that our array-based scheme significantly outperforms previously proposed symbol-synchronized models, providing a 75% - 150% enhancement in the communication rate across various diffusion coefficients.</description>
+    </item>
+    <item>
       <title>Integrated Sensing and Communication in 3GPP: Evolution from 5G-Advanced to 6G</title>
       <link>https://arxiv.org/abs/2608.11606</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.11606</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2604.20049</guid>
       <pubDate>Tue, 21 Apr 2026 00:00:00 -0000</pubDate>
       <description>This paper aims to provide a proof of concept of the accuracy of simulations for advanced networking study. The particular target technology is the Differentiated Services (DiffServ) architecture. The method has been to apply experimental activities conducted in a real network to a simulation environment, to gather the same performance parameters and to compare results. A worthy re-engineering of the DiffServ module of the deployed software program has been carried out and significant contribution have been made to overcome the encountered limitations and to enrich its modeling capabilities. Final results give useful suggestions for a more critical approach to simulations targeted for advanced networking study.</description>
-    </item>
-    <item>
-      <title>Greedy Routing in a Sequentially Grown One-Dimensional Random Graph</title>
-      <link>https://arxiv.org/abs/2604.19733</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2604.19733</guid>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 -0000</pubDate>
-      <description>We analyze greedy routing in a random graph G_n constructed on the vertex set V = {1, 2, ..., n} embedded in Z. Vertices are inserted according to a uniform random permutation pi, and each newly inserted vertex connects to its nearest already-inserted neighbors on the left and right (if they exist). This work addresses a conjecture originating from empirical studies (Ponomarenko et al., 2011; Malkov et al., 2012), which observed through simulations that greedy search in sequentially grown graphs exhibits logarithmic routing complexity across various dimensions. While the original claim was based on experiments and geometric intuition, a rigorous mathematical foundation remained open. Here, we formalize and resolve this conjecture for the one-dimensional case. For a greedy walk GW starting at vertex 1 targeting vertex n -- which at each step moves to the neighbor closest to n -- we prove that the number of steps S_n required to reach n satisfies S_n = Theta(log n) with high probability. Precisely, S_n = L_n + R_n - 2, where L_n and R_n are the numbers of left-to-right and right-to-left minima in the insertion-time permutation. Consequently, E[S_n] = 2H_n - 2 ~ 2 log n and P(S_n &gt;= (2+c) log n) &lt;= n^(-h(c/2) + o(1)) for any constant c &gt; 0, with an analogous lower tail bound for 0 &lt; c &lt; 2, where h(u) = (1+u) ln(1+u) - u is the Bennett rate function. Furthermore, we establish that this logarithmic scaling is robust: for arbitrary or uniformly random start-target pairs, the expected routing complexity remains E[S_{s,t}] = 2 log n + O(1), closely mirroring decentralized routing scenarios in real-world networks where endpoints are chosen dynamically rather than fixed a priori.</description>
     </item>
   </channel>
 </rss>

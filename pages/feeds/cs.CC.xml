@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Integer Quadratic Programming is W[1]-Hard Parameterized by the Number of Variables</title>
+      <link>http://arxiv.org/abs/2608.17818v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.17818v1</guid>
+      <pubDate>Tue, 18 Aug 2026 14:18:26 +0000</pubDate>
+      <description>We show that Integer Quadratic Programming is W[1]-hard parameterized by the number of variables. Thus, under standard complexity assumptions, Integer Quadratic Programming cannot be solved in f(n)|I|^{O(1)} time for any computable function f where |I| is the size of the encoding and n is the number of variables.</description>
+    </item>
+    <item>
       <title>Tight Inapproximability of Pacing and Throttling Equilibria in Second-Price Auctions</title>
       <link>http://arxiv.org/abs/2608.16682v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.16682v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.06092</guid>
       <pubDate>Tue, 07 Jul 2026 00:00:00 -0000</pubDate>
       <description>G.\ D.\ Baker formulated a forcing method to interpret integer optimisation problem into $2$-adic linear regression, and proved the NP-hardness of $2$-adic linear regression. We generalise the forcing method to a wider class of $p$-adic optimisation for the case where $p$ is not necessarily $2$, and prove the NP-hardness of $p$-adic linear regression, the NP-hardness of $2$-adic dynamic neural network by S.\ Albeverio, A.\ Khrennikov, and B.\ Tirrozi, and the NP-hardness of a partial generalisation of the $p$-adic optimisation problem associated to van der Put neural network by G.\ L.\ R.\ N'guessan.</description>
-    </item>
-    <item>
-      <title>A Lower Bound for Read-Once Parity Branching Programs</title>
-      <link>https://arxiv.org/abs/2607.05944</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.05944</guid>
-      <pubDate>Tue, 07 Jul 2026 00:00:00 -0000</pubDate>
-      <description>We prove an $\tildeΩ(n^2)$ lower bound for read-once parity branching programs computing an explicit boolean function on $n$ variables. The previous best lower bound was $\tildeΩ(n^{1.5})$. Our lower bound is proved by reducing the problem to a lower bound in algebraic circuit complexity.</description>
     </item>
   </channel>
 </rss>

@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Six Ways to Draw Vangers with WebGPU: Real-Time Rendering of Editable Multi-Layer Height Fields</title>
+      <link>http://arxiv.org/abs/2608.17390v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.17390v1</guid>
+      <pubDate>Tue, 18 Aug 2026 05:31:23 +0000</pubDate>
+      <description>Terrain level-of-detail is measured almost exclusively on digital elevation models: single-valued, smooth at the sampling scale, sampled from real topography. Game terrain is often none of these. We compare six rendering methods - height-field ray marching, voxel-accelerated ray marching, sliced proxy geometry, per-sample bar rasterization, compute scattering, and a fitted triangle mesh - implemented in a single engine over a single data path, on the hand-authored multi-layer terrain of Vangers (1998), scored against a CPU ray cast of the same source data. Every method must preserve the two solid intervals available at a ground sample, render at interactive rates, and reflect local terrain destruction without reloading the level. These constraints rule out treating caves as decoration or amortizing a static preprocessing step over an immutable map. From the original game's top-down camera the six methods look interchangeable. At eye-level horizons they do not: point scattering loses coverage, slicing bands, and an over-simplified mesh can miss a wall. At the selected quality settings a greedy triangulated irregular network (TIN) has the lowest mean frame time on every device we measured, but the fit cost is set by the second layer rather than by floor relief, and making that mesh editable retains 319 MiB of GPU geometry and 535 MiB of CPU triangulation. All six implementations use the same native wgpu / WebGPU API and canonical WGSL. We release the engine, the harness, and a one-command measurement protocol.</description>
+    </item>
+    <item>
       <title>A Stable Transport-Mechanism Descriptor for Per-Pixel Rendering Difficulty</title>
       <link>http://arxiv.org/abs/2608.16730v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.16730v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2505.12373</guid>
       <pubDate>Sun, 18 May 2025 00:00:00 -0000</pubDate>
       <description>Human aesthetic preferences for 3D shapes are central to industrial design, virtual reality, and consumer product development. However, most computational models of 3D aesthetics lack empirical grounding in large-scale human judgments, limiting their practical relevance. We present a large-scale study of human preferences. We collected 22,301 pairwise comparisons across five object categories (chairs, tables, mugs, lamps, and dining chairs) via Amazon Mechanical Turk. Building on a previously published dataset~\cite{dev2020learning}, we introduce new non-linear modeling and cross-category analysis to uncover the geometric drivers of aesthetic preference. We apply the Bradley-Terry model to infer latent aesthetic scores and use Random Forests with SHAP analysis to identify and interpret the most influential geometric features (e.g., symmetry, curvature, compactness). Our cross-category analysis reveals both universal principles and domain-specific trends in aesthetic preferences. We focus on human interpretable geometric features to ensure model transparency and actionable design insights, rather than relying on black-box deep learning approaches. Our findings bridge computational aesthetics and cognitive science, providing practical guidance for designers and a publicly available dataset to support reproducibility. This work advances the understanding of 3D shape aesthetics through a human-centric, data-driven framework.</description>
-    </item>
-    <item>
-      <title>Procedural Low-Poly Terrain Generation with Terracing for Computer Games</title>
-      <link>https://arxiv.org/abs/2505.09350</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2505.09350</guid>
-      <pubDate>Wed, 14 May 2025 00:00:00 -0000</pubDate>
-      <description>In computer games, traditional procedural terrain generation relies on a grid of vertices, with each point representing terrain elevation. For each square in the grid, two triangles are created by connecting fixed vertex indices, resulting in a continuous 3D surface. While this method is efficient for modelling smooth terrain, the grid-like structure lacks the distinct, chaotic appearance of low-poly objects and is not suitable to be used for our purposes. The technique presented in this paper aims to solve the following problem: Generate random, low-poly looking terraced terrain with different biomes and add vegetation to create an interesting environment.</description>
     </item>
   </channel>
 </rss>

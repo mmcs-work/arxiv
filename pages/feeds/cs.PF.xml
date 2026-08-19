@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>rl-triton: High-Performance Triton GPU Kernels for Reinforcement Learning Credit Assignment</title>
+      <link>http://arxiv.org/abs/2608.17641v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.17641v1</guid>
+      <pubDate>Tue, 18 Aug 2026 10:58:20 +0000</pubDate>
+      <description>We present rl-triton, an open-source library of high-performance GPU kernels for reinforcement learning credit assignment, implemented in Triton. The core contribution is a unified associative scan framework that recasts seven distinct RL estimation algorithms - Generalized Advantage Estimation (GAE), V-Trace, Retrace($λ$), TD($λ$) returns, discounted returns, eligibility traces, and episodic prefix sums - as instances of a single first-order linear recurrence solved in $O(\log T)$ parallel steps. All algorithms share the same associative scan operator, with algorithm-specific fused Triton kernels constructing their recurrence coefficients on-chip. We verify the associative operator algebraically and define the treatment of terminated and truncated episodes explicitly. Benchmarks show a 1.6-5.70$\times$ full-call speedup over a vectorized torch.compile baseline in the massively parallel simulation regime (thousands of environments, short rollouts). The reported range covers all seven algorithms on both GPUs, both with and without per-step truncation handling. For most algorithms, speedups increase at longer sequence lengths, as the baseline requires more scan stages as $\log T$ grows, each adding an intermediate HBM round-trip. The library is available at https://github.com/simonsays1980/rl-triton.</description>
+    </item>
+    <item>
       <title>Performance Evaluation of an Adaptive Quadrature and a Double Exponential Formula Using Arbitrary-Precision Floating-Point Arithmetic</title>
       <link>https://arxiv.org/abs/2608.13187</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.13187</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2603.09333</guid>
       <pubDate>Tue, 10 Mar 2026 00:00:00 -0000</pubDate>
       <description>Low-cost embedded processors such as the ESP32 (Xtensa LX6, 32-bit dual-core, 240 MHz) are increasingly used in edge computing applications that require real-time physical simulation, sensor fusion, and control systems. Although the ESP32 integrates a single-precision IEEE 754 floating-point unit, floating-point operations introduce pipeline overhead and higher energy consumption compared to integer arithmetic, limiting throughput for floating-point intensive workloads. This paper presents the design, formal specification, and empirical evaluation of a Dynamic Precision Math Engine for the ESP32. The system integrates three main components: a Q16.16 fixed-point arithmetic core that maps mathematical operations onto the integer pipeline of the Xtensa LX6, a 16-iteration CORDIC trigonometric module that computes sine and cosine using only additions and bit shifts, and a cache-aware tiled matrix multiplication kernel with deferred correction to reduce rounding operations. The architecture introduces a runtime precision switching mechanism implemented through function pointer dispatch and a synchronization protocol compatible with FreeRTOS. This mechanism allows applications to dynamically transition between a fast fixed-point execution path and a precise IEEE 754 floating-point path without recompilation. Experimental evaluation on ESP32-WROOM-32 hardware using 300 paired measurements shows that the CORDIC trigonometric module achieves median latencies of 293 cycles for both sine and cosine, corresponding to mean speedups of 18.5x and 24.7x compared to the standard math library. The results demonstrate that precision-aware software architecture can significantly improve numerical performance on low-cost microcontrollers.</description>
-    </item>
-    <item>
-      <title>bsort: A theoretically efficient non-comparison-based sorting algorithm for integer and floating-point numbers</title>
-      <link>https://arxiv.org/abs/2603.08929</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2603.08929</guid>
-      <pubDate>Mon, 09 Mar 2026 00:00:00 -0000</pubDate>
-      <description>This paper presents bsort, a non-comparison-based sorting algorithm for signed and unsigned integers, and floating-point values. The algorithm unifies these cases through an approach derived from binary quicksort, achieving $O(wn)$ runtime asymptotic behavior and $O(w)$ auxiliary space, where $w$ is the element word size. This algorithm is highly efficient for data types with small word sizes, where empirical analysis exhibits performance competitive with highly optimized hybrid algorithms from popular libraries.</description>
     </item>
   </channel>
 </rss>

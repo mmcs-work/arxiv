@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>A Denotational Semantics for Synchronized Regular Expressions (extended version)</title>
+      <link>http://arxiv.org/abs/2608.18007v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18007v1</guid>
+      <pubDate>Tue, 18 Aug 2026 16:53:41 +0000</pubDate>
+      <description>Pure and full synchronized regular expressions (pure sregex and full sregex ) extend regular expressions by adding labels to the operators (Kleene star and alternation). Operators within the same scope are synchronized if they have the same label. We show that a regular expression with backreferences (known from practical regex engines) can be translated into a full sregex. Previous work did not consider synchronized alternations or nested star synchronization. Within the same scope, stars with the same label match the same number of iterations, alternations with the same label match the same choice. The scope may depend on the current iteration of an outer star. Pure sregexes restrict synchronization to the local scope, while full sregexes also allow synchronization across iterations. In contrast to operational semantics in previous work on backreferences, we present a denotational semantics, where concretizations act similarly to valuations in logic. As with backreferences, we show that matching a word is NP-complete. Pure and full synchronized languages are considered and we show that they are closed under concatenation, union and star. By a pumping lemma, they are not closed under intersection. Relationships to other language models are discussed.</description>
+    </item>
+    <item>
       <title>Certified Split Windows for Parallel Lexing: Recovering Boundaries Where No Byte Certifies</title>
       <link>https://arxiv.org/abs/2608.09761</link>
       <guid isPermaLink="true">https://arxiv.org/abs/2608.09761</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2602.22713</guid>
       <pubDate>Thu, 26 Feb 2026 00:00:00 -0000</pubDate>
       <description>Opacity has emerged as a central confidentiality notion for information-flow security in discrete event systems (DES), capturing the requirement that an external observer (intruder) should never be able to determine with certainty whether the system is, was, or will be in a secret state. This article provides a concise, newcomer-friendly overview of opacity in DES, emphasizing core definitions and the unifying estimation viewpoint behind major opacity notions,. We summarize representative verification techniques and highlight how different observation models reshape both the problem formulation and algorithmic structure. We then review principal enforcement paradigms, ranging from opacity-enforcing supervisory control to sensor activation/information release optimization and obfuscation/editing mechanisms. Beyond finite automata, we outline how opacity has been studied in richer models such as stochastic systems, timed systems, Petri nets, and continuous/hybrid dynamics, and we briefly survey applications in robotics, location privacy, and information services. Finally, we discuss selected open challenges, including solvability under incomparable information, scalable methods beyond worst-case complexity, and opacity under intelligent or data-driven adversaries.</description>
-    </item>
-    <item>
-      <title>Automating the Analysis and Improvement of Dynamic Programming Algorithms with Applications to Natural Language Processing</title>
-      <link>https://arxiv.org/abs/2603.13242</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2603.13242</guid>
-      <pubDate>Fri, 20 Feb 2026 00:00:00 -0000</pubDate>
-      <description>This thesis develops a system for automatically analyzing and improving dynamic programs, such as those that have driven progress in natural language processing and computer science, more generally, for decades. Finding a correct program with the optimal asymptotic runtime can be unintuitive, time-consuming, and error-prone. This thesis aims to automate this laborious process. To this end, we develop an approach based on 1. a high-level, domain-specific language called Dyna for concisely specifying dynamic programs 2. a general-purpose solver to efficiently execute these programs 3. a static analysis system that provides type analysis and worst-case time/space complexity analyses 4. a rich collection of meaning-preserving transformations to programs, which systematizes the repeated insights of numerous authors when speeding up algorithms in the literature 5. a search algorithm for identifying a good sequence of transformations that reduce the runtime complexity, given an initial, correct program We show that, in practice, automated search -- like the mental search performed by human programmers -- can find substantial improvements to the initial program. Empirically, we show that many speed-ups described in the NLP literature could have been discovered automatically by our system. We provide a freely available prototype system at https://github.com/timvieira/dyna-pi.</description>
     </item>
   </channel>
 </rss>
