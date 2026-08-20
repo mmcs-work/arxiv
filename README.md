@@ -18,6 +18,8 @@ you want to explore. Reading a single-author paper offers a direct view of one
 person's work, making it easier to understand their research direction and, in
 some cases, identify potential future collaborators.
 
+![One Author arXiv CS archive preview](docs/archive-preview.png)
+
 ## How it works
 
 `pages/` is the website. Its JSON data lives in `pages/data/` and is committed
