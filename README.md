@@ -32,7 +32,7 @@ The browser downloads only the category, month, or search index it needs.
 ## Daily updates
 
 [`Update static archive data`](.github/workflows/update-static-data.yml) runs
-every day at 09:37 UTC. It fetches the last two days from arXiv, keeps
+every day at [16:22 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260820T162200&p1=1440). It fetches the last two days from arXiv, keeps
 single-author records, merges them into `pages/data/`, and commits only when
 there is new data. The normal Pages workflow then deploys the site.
 
