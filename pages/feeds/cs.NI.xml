@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Autonomous Cyber Defense in Connected Vehicles: A Multi-Agent Approach to V2X Security</title>
+      <link>http://arxiv.org/abs/2608.19135v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.19135v1</guid>
+      <pubDate>Wed, 19 Aug 2026 17:28:32 +0000</pubDate>
+      <description>A connected vehicle has roughly 100 milliseconds to decide whether an incoming Basic Safety Message is real or fabricated. If a false emergency braking alert reaches the planning pipeline in time, the car brakes - a safety failure triggered by a security failure. Existing intrusion detection systems are not designed to handle that coupling. They operate per vehicle, per message, with static rules - blind to attack patterns that only emerge across a fleet or over time, and blind to the fundamental tension between dropping a suspicious message and dropping a real emergency alert. We propose a three-tier multi-agent architecture that treats this timing constraint as a hard design requirement, not a performance target. At the vehicle level, an onboard agent classifies each incoming V2X message into one of four actions - Accept, Drop, Quarantine, or Escalate - within a 10-millisecond budget, deliberately biased toward Escalate when uncertain, passing ambiguous cases to the roadside edge agent rather than risking a dropped legitimate alert. The edge agent operates across a roadside unit zone with a 50-millisecond budget, fusing threat assessments from multiple vehicles and resolving safety-security conflicts using complementary sensor observations. The cloud tier refines detection models through Byzantine fault-tolerant federated learning and redistributes updated weights to the fleet. Every timing constraint derives directly from the 100-millisecond Basic Safety Message cycles mandated by SAE J2735 and ETSI EN 302 637-2. No existing framework simultaneously assigns standards-grounded latency budgets to all three deployment tiers while treating safety-security conflict resolution as a first-class design constraint. Remaining open problems - adversarial poisoning at the edge and the absence of regulatory frameworks for autonomous security response - are discussed as future work.</description>
+    </item>
+    <item>
       <title>Array-Based Molecular Pulse Encoding for Neuro-Spike Communication in Intra-Body Nano-networks</title>
       <link>http://arxiv.org/abs/2608.17675v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.17675v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2605.30357</guid>
       <pubDate>Fri, 24 Apr 2026 00:00:00 -0000</pubDate>
       <description>The rapid proliferation of artificial intelligence, connected devices, and high speed mobile networks is driving unprecedented computational demands that challenge traditional sensor architectures. This article explores the shift toward edge computing, where computation is performed directly at the data source, and highlights the key architectures and performance metrics that may define the next generation of intelligent sensor systems.</description>
-    </item>
-    <item>
-      <title>Differentiated Services: an Experimental vs. Simulated Case Study</title>
-      <link>https://arxiv.org/abs/2604.20049</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2604.20049</guid>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 -0000</pubDate>
-      <description>This paper aims to provide a proof of concept of the accuracy of simulations for advanced networking study. The particular target technology is the Differentiated Services (DiffServ) architecture. The method has been to apply experimental activities conducted in a real network to a simulation environment, to gather the same performance parameters and to compare results. A worthy re-engineering of the DiffServ module of the deployed software program has been carried out and significant contribution have been made to overcome the encountered limitations and to enrich its modeling capabilities. Final results give useful suggestions for a more critical approach to simulations targeted for advanced networking study.</description>
     </item>
   </channel>
 </rss>

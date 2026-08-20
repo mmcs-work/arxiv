@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Optimal Deterministic Fully Sparse Matrix Multiplication</title>
+      <link>http://arxiv.org/abs/2608.18496v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18496v1</guid>
+      <pubDate>Wed, 19 Aug 2026 03:40:38 +0000</pubDate>
+      <description>We give the first deterministic algorithm for fully sparse matrix multiplication that attains the optimal running-time exponent. This result matches the best previously known randomized algorithm running-time exponent. Given compatible matrices $A$ and $B$ over an arbitrary associative ring with identity, with $\operatorname{nnz}(A),\operatorname{nnz}(B)=O(n^{δ_{\mathrm{in}}})$ and $\operatorname{nnz}(AB)=O(n^{δ_{\mathrm{out}}})$, our algorithm finds the support of $AB$ and computes the product exactly in $$O\!\left(n^{β_R(δ_{\mathrm{in}},\min\{δ_{\mathrm{out}},2δ_{\mathrm{in}}\})+\varepsilon}\right)$$ operations, where $β_R(δ_{\mathrm{in}},δ)$ denotes the maximum of $δ_{\mathrm{in}}$ and $ω_{δ_{\mathrm{in}},R}(a,1,b)$ over all $a,b\in[0,1]$ satisfying $a+b=δ$. For dense inputs over a commutative ring, this bound simplifies to $O(n^{ω_R((δ_{\mathrm{out}}-1)_+,1,1)+\varepsilon})$. With the current rectangular matrix multiplication bounds, this is nearly quadratic, namely $O(n^{2+\varepsilon})$, for every $δ_\mathrm{out}\le1.321334$, improving the previous deterministic range of $δ_{\mathrm{out}}\le 0.642668$. To prove this result, we develop a general deterministic recovery technique that finds and fixes sparse parts of an unknown matrix while keeping temporary errors in denser parts under control.</description>
+    </item>
+    <item>
       <title>Parameterized complexity of $k$-Coloring in graphs with no long induced paths</title>
       <link>http://arxiv.org/abs/2608.17835v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.17835v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/1702.02891</guid>
       <pubDate>Tue, 21 Jul 2026 00:00:00 -0000</pubDate>
       <description>The problem of sparse approximation and the closely related compressed sensing have received tremendous attention in the past decade. Primarily studied from the viewpoint of applied harmonic analysis and signal processing, there have been two dominant algorithmic approaches to this problem: Greedy methods called the matching pursuit (MP) and the linear programming based approaches called the basis pursuit (BP). The aim of the current paper is to bring a fresh perspective to sparse approximation by treating it as a combinatorial optimization problem and providing an algorithm based on the powerful optimization technique semidefinite programming (SDP). In particular, we show that there is a randomized algorithm based on a semidefinite relaxation of the problem with performance guarantees depending on the coherence and the restricted isometry constant of the dictionary used. We then show a derandomization of the algorithm based on the method of conditional probabilities.</description>
-    </item>
-    <item>
-      <title>Exact and Certified Data Shapley for Weighted k-Nearest-Neighbor Regression and Soft-Label Prediction</title>
-      <link>https://arxiv.org/abs/2607.11956</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.11956</guid>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 -0000</pubDate>
-      <description>Data Shapley answers which training points are worth what, and its nearest-neighbor specialization is the version actually deployed, shipped by toolkits such as pyDVL and OpenDataVal. Exact algorithms exist for unweighted nearest-neighbor classification and regression, and recently for weighted classification; weighted regression and soft-label prediction have resisted, the only exact method being enumeration exponential in the neighborhood size. The obstruction, in the prior authors' own words, is that the weighted regression prediction is a ratio of two coalition-dependent weighted sums: its normalization denominator blocks the additive and threshold routes, and leaves the counting route exponential in the target resolution. We close this gap with a counting dynamic program over the joint integer state of accumulated weight and weighted target, a minimal sufficient statistic for the ratio; it is exact, pseudo-polynomial, and matched exhaustive enumeration with zero mismatch. We add a certified approximation scheme for continuous weights and targets carrying a machine-checkable per-value certificate, a complexity landscape delimiting the exact problem, and a soft-label extension. We release an open-source, CPU-only library and the first exact weighted-regression ground truth. On mislabel detection our exact values are statistically equivalent to Monte-Carlo Data Shapley; exactness instead buys determinism, a certified bound, and an auditing reference, and it puts a measured price on approximation.</description>
     </item>
   </channel>
 </rss>

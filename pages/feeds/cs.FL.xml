@@ -5,6 +5,20 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Undecidability of Confluence for Binary Length-Reducing Cycle Rewriting</title>
+      <link>http://arxiv.org/abs/2608.18859v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18859v1</guid>
+      <pubDate>Wed, 19 Aug 2026 12:34:30 +0000</pubDate>
+      <description>Confluence guarantees that diverging rewrite choices can always be rejoined. For finite terminating string- and term-rewriting systems, confluence is decidable by critical-pair analysis, and in polynomial time for length-reducing strings. For finite terminating (hyper)graph transformation systems, in contrast, confluence is undecidable. We show that undecidability already appears for words on a circle, that is, strings up to rotation. Confluence of finite cycle-rewriting systems over the fixed alphabet $\{0,1\}$ is undecidable, indeed $Π^0_1$-complete, even when every rule has a nonempty right-hand side and strictly reduces length. Under this restriction termination is syntactically evident, and derivations from a nonempty length-$n$ cycle have fewer than $n$ steps. The same holds over every fixed alphabet with at least two letters, while the one-letter case is decidable. Rotation alone separates cyclic from string rewriting. The proof compiles a deterministic verifier into a weighted cycle system with one controlled branch, then into a binary length-reducing system via a run-length code whose cleanup rules send every reducible malformed cycle to one error normal form.</description>
+    </item>
+    <item>
+      <title>A strengthening of the MCFL-ness of $O_2$</title>
+      <link>http://arxiv.org/abs/2608.18813v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18813v1</guid>
+      <pubDate>Wed, 19 Aug 2026 11:11:49 +0000</pubDate>
+      <description>In the last years, a number of proofs of the fact that $O_2$ is a multiple context-free grammar (MCFG) were given. Such results can be exploited in the fields of both computational linguistics and of computational algebra. Here, we focus on a recent such proof spelled in terms of factorizations of string tuples, and give a new result with a stronger characterization of such factorizations than in existing theorems.</description>
+    </item>
+    <item>
       <title>A Denotational Semantics for Synchronized Regular Expressions (extended version)</title>
       <link>http://arxiv.org/abs/2608.18007v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.18007v1</guid>
@@ -689,20 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2501.08082</guid>
       <pubDate>Sat, 28 Feb 2026 00:00:00 -0000</pubDate>
       <description>This paper investigates complexity of the uniform membership problem for hyperedge replacement grammars in comparison with other mildly context-sensitive grammar formalisms. It turns out that the complexity of this problem depends on how one defines a hypergraph. There are two commonly used definitions in the field, which differ in whether repetitions of attachment nodes of a hyperedge are allowed in a hypergraph or not. We show that, in general, the problem under consideration is EXPTIME-complete, even for string-generating hyperedge replacement grammars, but it is NP-complete if repetitions are not allowed. We extend the developed proof techniques in order to prove a general meta-theorem: checking whether a given hyperedge replacement grammar generates a hypergraph satisfying a non-Parikh property is EXPTIME-hard. Non-Parikh properties are those that are not preimages of properties on Parikh vectors of hypergraphs. This includes any graph property relying significantly on structure of graphs, e.g. connectivity, Eulerianity, Hamiltonianity, acyclicity. A tight upper bound is established for EXPTIME-compatible properties via Filter Theorem.</description>
-    </item>
-    <item>
-      <title>Efficient Constructions of Finite-State Independent Normal Pairs</title>
-      <link>https://arxiv.org/abs/2602.23030</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2602.23030</guid>
-      <pubDate>Thu, 26 Feb 2026 00:00:00 -0000</pubDate>
-      <description>Finite-state independence is a robust notion of algorithmic independence for infinite words. It was introduced for general infinite words by Becher, Carton, and Heiber via deterministic asynchronous two-tape finite automata. Álvarez, Becher, and Carton then studied the normal case and characterized finite-state independence in terms of deterministic finite-state shufflers. A shuffler is a finite automaton that reads from two input tapes $x,y\inΣ^\infty$ and, at each step, chooses one tape to read next, outputs the symbol read, and updates its state based only on that output symbol. In terms of this characterization, two normal sources are finite-state independent if every deterministic finite-state way of shuffling (interleaving) them still produces a normal sequence. Álvarez, Becher, and Carton posed the following questions: (1) can one compute finite-state independent normal pairs efficiently, improving their doubly-exponential procedure; and (2) given a normal word $x$, can one effectively construct a normal word $y$ that is finite-state independent from $x$? We answer both questions by explicit deterministic constructions. First, we give a deterministic polynomial-time algorithm that, on input $N$, outputs the first $N$ symbols of two normal words $x$ and $y$ such that for every shuffler $S$, the shuffled output $S(x,y)$ is normal; hence $(x,y)$ is finite-state independent. Second, we solve the one-sided companion problem effectively. Given any computable normal word $x\inΣ^\infty$, we give an explicit deterministic construction of a computable normal word $y\inΣ^\infty$ such that for every shuffler $S$, the shuffled output $S(x,y)$ is normal. In particular, $x$ and $y$ are finite-state independent by the shuffler characterization theorem.</description>
-    </item>
-    <item>
-      <title>Opacity in Discrete Event Systems: A Perspective and Overview</title>
-      <link>https://arxiv.org/abs/2602.22713</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2602.22713</guid>
-      <pubDate>Thu, 26 Feb 2026 00:00:00 -0000</pubDate>
-      <description>Opacity has emerged as a central confidentiality notion for information-flow security in discrete event systems (DES), capturing the requirement that an external observer (intruder) should never be able to determine with certainty whether the system is, was, or will be in a secret state. This article provides a concise, newcomer-friendly overview of opacity in DES, emphasizing core definitions and the unifying estimation viewpoint behind major opacity notions,. We summarize representative verification techniques and highlight how different observation models reshape both the problem formulation and algorithmic structure. We then review principal enforcement paradigms, ranging from opacity-enforcing supervisory control to sensor activation/information release optimization and obfuscation/editing mechanisms. Beyond finite automata, we outline how opacity has been studied in richer models such as stochastic systems, timed systems, Petri nets, and continuous/hybrid dynamics, and we briefly survey applications in robotics, location privacy, and information services. Finally, we discuss selected open challenges, including solvability under incomparable information, scalable methods beyond worst-case complexity, and opacity under intelligent or data-driven adversaries.</description>
     </item>
   </channel>
 </rss>

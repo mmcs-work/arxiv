@@ -5,6 +5,34 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Undecidability of Confluence for Binary Length-Reducing Cycle Rewriting</title>
+      <link>http://arxiv.org/abs/2608.18859v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18859v1</guid>
+      <pubDate>Wed, 19 Aug 2026 12:34:30 +0000</pubDate>
+      <description>Confluence guarantees that diverging rewrite choices can always be rejoined. For finite terminating string- and term-rewriting systems, confluence is decidable by critical-pair analysis, and in polynomial time for length-reducing strings. For finite terminating (hyper)graph transformation systems, in contrast, confluence is undecidable. We show that undecidability already appears for words on a circle, that is, strings up to rotation. Confluence of finite cycle-rewriting systems over the fixed alphabet $\{0,1\}$ is undecidable, indeed $Π^0_1$-complete, even when every rule has a nonempty right-hand side and strictly reduces length. Under this restriction termination is syntactically evident, and derivations from a nonempty length-$n$ cycle have fewer than $n$ steps. The same holds over every fixed alphabet with at least two letters, while the one-letter case is decidable. Rotation alone separates cyclic from string rewriting. The proof compiles a deterministic verifier into a weighted cycle system with one controlled branch, then into a binary length-reducing system via a run-length code whose cleanup rules send every reducible malformed cycle to one error normal form.</description>
+    </item>
+    <item>
+      <title>A strengthening of the MCFL-ness of $O_2$</title>
+      <link>http://arxiv.org/abs/2608.18813v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18813v1</guid>
+      <pubDate>Wed, 19 Aug 2026 11:11:49 +0000</pubDate>
+      <description>In the last years, a number of proofs of the fact that $O_2$ is a multiple context-free grammar (MCFG) were given. Such results can be exploited in the fields of both computational linguistics and of computational algebra. Here, we focus on a recent such proof spelled in terms of factorizations of string tuples, and give a new result with a stronger characterization of such factorizations than in existing theorems.</description>
+    </item>
+    <item>
+      <title>Quantum-Logic Tsetlin Machines: Interpretable Quantum Machine Learning with Commuting Projector Clauses</title>
+      <link>http://arxiv.org/abs/2608.18659v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18659v1</guid>
+      <pubDate>Wed, 19 Aug 2026 08:04:26 +0000</pubDate>
+      <description>Tsetlin Machines (TMs) learn interpretable Boolean clauses using finite-state automata. We introduce the Quantum-Logic Tsetlin Machine (QL-TM), which replaces Boolean literals with quantum propositions represented by projectors while retaining classical include/exclude automata. Clauses are restricted to commuting measurement contexts and activate through the Born probability of their joint projector. We prove an exact reduction to ordinary Boolean TM clauses in diagonal computational-basis contexts and connect Pauli-projector clauses to stabilizer and syndrome semantics. Controlled experiments on Bell states, phase-flip syndromes, randomized 16-class stabilizer tasks, mixed literal pools, context-budget ablations, and finite-shot noise show that correct non-diagonal contexts recover physically meaningful clauses, while diagonal or wrong contexts lose the relevant phase/syndrome information. The context-budget results closely follow the predicted separability ladder 2^(b-k) as true stabilizer generators are removed. The contribution is a controlled bridge between Tsetlin clause learning and quantum logic, not a claim of quantum advantage.</description>
+    </item>
+    <item>
+      <title>Formal Verification of Romanov's Triplet Logic: A Verified Filter for Sliding-window 3-CNF with Application to Structured Formulas</title>
+      <link>http://arxiv.org/abs/2608.18445v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18445v1</guid>
+      <pubDate>Wed, 19 Aug 2026 02:20:59 +0000</pubDate>
+      <description>We present the first mechanised formalisation of Romanov's Triplet Logic (TLS) in the Rocq proof assistant. TLS is a triplet-based combinatorial framework for reasoning about compatible paths through layered triplet structures, called Compact Triplets Structures (CTS), and their intersection via Romanov's Effective Procedure, which we refer to as Simple Vertex Intersection (SVI). Originally motivated by Boolean satisfiability, TLS constitutes a self-contained mathematical theory whose formal properties had not been previously established. We formalise the core of TLS in Rocq, including Compact Triplets Formulas (CTF), CTS, hyperstructures, clearing, and SVI. For the well-formed sliding-window fragment we verify a clause-by-clause CNF-to-CTF translation, the clearing procedure, and aligned intersection, and we prove explicit polynomial-time bounds for the filter stages. Our main contribution is a precise correctness boundary: the existence of a joint satisfying set implies non-emptiness of SVI, but the converse does not hold in general; for aligned structures we recover a complete bi-implication, extended to systems of structures. We also formalise soundness of grouped-window translation and exhibit a formal counterexample to its completeness. We introduce VFR, an extracted OCaml prototype that provides a verified decision procedure for the sliding-window fragment and a sound one-sided filter for general 3-CNF, with a Python runtime and reproducible Docker packaging. Benchmarks on random and structured instances confirm the predicted behaviour, and the complete toolchain is available as a curated Zenodo artifact. The Rocq development comprises more than 23,000 lines of code across seventeen files, with 427 proved lemmas and theorems and zero admitted goals.</description>
+    </item>
+    <item>
       <title>Idealizing Useful Fictions in Omega Grounded Arithmetic</title>
       <link>http://arxiv.org/abs/2608.17862v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.17862v1</guid>
@@ -675,34 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.19419</guid>
       <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
       <description>Inference-behaviour semantics (I-bS) is a new approach to proof-theoretic semantics, grounded in two inferentialist principles: (1) the use of an expression in reasoning determines its meaning, and (2) a connective is defined by its operational rules. I-bS operationalises these ideas by measuring the syntactic use of a connective in the proof of its definability, against a substructurally minimal derivability relation. I-bS thereby gives the meaning of a connective in terms of its semantic clause, i.e. minimal substructural rule pair. This paper validates and verifies I-bS by applying it to all $10,816$ connective rule pairs that can be formulated in two-dimensional sequent calculi using at most two premiss sequents and at most two active formulae. As a result, we find semantic clauses for exactly $21$ meaningful connectives, namely bottom, top, two negations (intuitionistic and dual-intuitionistic), group and lattice conjunction, disjunction and implication, as well as their converses and inverses. We use these results to precisely map the semantic interrelations among the connectives, across linear, classical, intuitionistic, dual-intuitionistic, minimal, and lattice logic. Most notably, we find that intuitionistic negation, disjunction and implication each capture half of the meaning of their classical counterparts.</description>
-    </item>
-    <item>
-      <title>Topology in Synthetic Domain Theory and its Formalisation in Agda</title>
-      <link>https://arxiv.org/abs/2607.17292</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.17292</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
-      <description>This project investigates the Phoa principle in synthetic domain theory (SDT), and provides a generalisation to the transfinite cases. The Phoa principle plays a pivotal role in SDT by illustrating how the paths give the information order on the interval type and other algebraic structures in SDT. The project defines the dual simplices and spines and introduces the concept of sobriomorphisms, which contributes to a new interpretation of the Phoa principle and its generalisations. Finally, the project proposes a hypothetical completeness theorem that may unify the Segal completeness and the chain completeness in SDT based on investigations on the Phoa principle in the project. The project also includes axiomatisation of the interval type in Cubical Agda and the formalised proof for the main theorems.</description>
-    </item>
-    <item>
-      <title>Solver-Hard Is Not Model-Hard: A Hardness-Controlled Diagnostic for LLM Constraint Reasoning</title>
-      <link>https://arxiv.org/abs/2607.17047</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.17047</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
-      <description>LLM constraint reasoners are often evaluated near the random-SAT phase transition, confounding density and solver hardness. We test instance-level transfer while near-matching clause density. At aligned size bins, with near-matched density and matched maximum clause width, we compare proof-hard expander-Tseitin and proof-easy ladder-Tseitin formulas, pigeonhole anchors, and density-mismatched controls. Theory separates their resolution hardness; a solver-specific Glucose mean-conflict proxy differs by up to $51\times$, and five other solvers preserve the direction. Across three included models (243 instances each; a fourth is excluded for abstention), the near-matched-density accuracy gaps range from $-32$ to $+20$ points, with a pooled gap of $+1.7$ points ($p=0.74$) and a wrong-signed correctness-versus-conflict association ($r=+0.15$). A proof-preserving relabeling lowers accuracy in all five clusters for one model (mean $-93$ points) but not another, exposing model-surface sensitivity. In a preregistered extension, provider-reported completion-token spend does not consistently increase with the proxy after accounting for formula length and censoring. At 16k, the reasoning model spends more on proof-easy matched formulas and exhausts its budget on the solver-easiest UNSAT family; the 32k C1 gap is absent. These scoped dissociations concern verdict accuracy and observed token spend, not certificate solving, exact proof length, or allocation efficiency.</description>
-    </item>
-    <item>
-      <title>The Equational Theory of Relational Kleene Algebra with Graph Loop is PSPACE-Complete</title>
-      <link>https://arxiv.org/abs/2512.22930</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2512.22930</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
-      <description>In this paper, we show that the equational theory of relational Kleene algebra with the graph loop operator (a.k.a. fixset) is PSpace-complete. Here, the graph loop is the unary operator that restricts a binary relation to the identity relation. We further show that this PSpace-completeness still holds by extending the terms with top, tests, converse, and nominals, over relational models. Notably, for Kleene algebra with tests (KAT), while the equational theory of relational KAT with antidomain is ExpTime-complete, we show that the equational theory of relational KAT with domain is PSpace-complete, thereby resolving a problem left open in previous works. To this end, we introduce a novel automaton model on relational structures (graphs), called loop-automata. Loop-automata extend nondeterministic finite automata with a transition type that tests whether the current vertex has a loop. Using this model, we can give a polynomial-time reduction from the equational theories above to the language inclusion problem for 2-way alternating automata.</description>
-    </item>
-    <item>
-      <title>Subvarieties of pointed Abelian l-groups</title>
-      <link>https://arxiv.org/abs/2509.05044</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2509.05044</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
-      <description>This paper provides a complete classification of all subvarieties of pointed Abelian lattice-ordered groups (l-groups), as well as all subquasivarieties that are generated by their totally ordered members. We present two complementary approaches to achieve this classification. First, using purely l-group-theoretic methods, we analyze the structure of lexicographic products and values to identify all join-irreducible members of the lattice of subvarieties of positively pointed Abelian l-groups. We provide a novel equational basis for each of these subvarieties, leading to a complete description of the entire subvariety lattice. As a direct application, our l-group-theoretic classification yields an alternative, self-contained proof of Komori's classification of subvarieties of MV-algebras. Second, we explore the connection to MV-algebras via an extended version of Mundici's functor. We prove that this functor preserves universal classes, a result of independent model-theoretic interest. This allows us to lift the classification of universal classes of totally ordered MV-algebras, due to Gispert, to a complete classification of universal classes of totally ordered pointed Abelian l-groups. As a direct consequence, we obtain a complete structural description of the lattice of subquasivarieties that are generated by their totally ordered members.</description>
     </item>
   </channel>
 </rss>

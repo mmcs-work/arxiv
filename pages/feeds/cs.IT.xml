@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>A Framework for Enterprise Network Dimensioning</title>
+      <link>http://arxiv.org/abs/2608.18796v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.18796v1</guid>
+      <pubDate>Wed, 19 Aug 2026 10:51:55 +0000</pubDate>
+      <description>We study radio node (RN) placement for indoor enterprise networks. Using stochastic geometry (SG), we derive the meta-distribution (MD) of the SINR for a test user equipment (UE), with and without cooperation from outdoor macro base stations (MBSs), and compare these results with an integer linear programming (ILP) approach. SG provides an estimate of the required number of RNs but not their locations, while ILP can yield inaccurate local optima and requires high computational power. To address this, we investigate clustering-based algorithms for initializing RN locations using UE location distributions. Along with standard methods, we propose a weighted $k$-harmonic means (WKHM) clustering strategy tailored to maximize SINR. We then introduce a constrained sequential minimum cut algorithm, \texttt{SeqMinCut}, to merge multiple RNs into larger cells and further improve SINR. This is the first work that integrates SG-based statistical analysis, optimization, and clustering to obtain system design insights, dimensioning rules, and planning strategies for enterprise 5G.</description>
+    </item>
+    <item>
       <title>A First-Order Entropy Law for Canonical T-Complexity of Finite-Alphabet i.i.d. Sources</title>
       <link>http://arxiv.org/abs/2608.17958v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.17958v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2103.11904</guid>
       <pubDate>Wed, 22 Jul 2026 00:00:00 -0000</pubDate>
       <description>This paper considers a binary channel with deletions. We derive two closed-form upper bounds on the capacity of the binary deletion channel (BDC). The first bound is obtained by computing the capacity of an auxiliary channel, the two-bit Fixed-length-Input BDC (FI-BDC), and showing that this auxiliary capacity upper-bounds the capacity of the BDC. The second bound is obtained by approximating the mutual information between sent and received bits directly, yielding a closed-form expression parameterized by a first-order Markov correlation parameter $γ$. Both bounds use a first-order Markov process for the channel input. We verify Theorem~1's optimization from first principles, directly from the two-bit auxiliary channel's transition matrix rather than from the mutual-information expression alone: the underlying objective is strictly concave with a unique interior maximizer, and the resulting closed-form bound is confirmed correct. The second proposed upper bound is evaluated against the Fertonani--Duman and Dalai bounds in Fig.~4.</description>
-    </item>
-    <item>
-      <title>New lower bounds for binary constant-weight codes: $A(23,6,10)\geq 2979$ and $A(24,6,10)\geq 4214$</title>
-      <link>https://arxiv.org/abs/2607.19550</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.19550</guid>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 -0000</pubDate>
-      <description>Let $A(n,d,w)$ denote the maximum size of a binary constant-weight code of length $n$, minimum distance $d$, and weight $w$. We construct explicit codes proving $A(23,6,10)\ge 2979$ and $A(24,6,10)\ge 4214$. These improve the best surviving explicit codes of sizes 2969 and 4174 and surpass the corresponding 1990 bounds 2970 and 4200 of Brouwer, Shearer, Sloane and Smith, whose code listings were lost. We also obtain $A(23,6,11)\ge 3539$ and $A(24,6,8)\ge 1855$. All four bounds are now listed in Brouwer's online table. The constructions use a coordinate decomposition in which one half is fixed to a known code and the complementary half is selected from its full cross-compatible pool using CHILS for maximum-weight independent set. For the 2969-word $A(23,6,10)$ incumbent, exact computations with two solver families prove insertion maximality and exclude every improving exchange deleting at most three codewords. We also analyze codes invariant under prime-order permutations: several cycle types are excluded exactly, the $5+1^{18}$ type has upper bound 499, and reproducible heuristic saturation evidence is reported for the remaining types, with $13+1^{10}$ left open. Code files, an independent validator, model descriptions, and computational logs are released.</description>
     </item>
   </channel>
 </rss>
