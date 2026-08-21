@@ -5,6 +5,34 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Quantifying over Optimal MSO-Definable Sets on Graphs of Bounded Clique-Width</title>
+      <link>http://arxiv.org/abs/2608.20175v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.20175v1</guid>
+      <pubDate>Thu, 20 Aug 2026 15:28:11 +0000</pubDate>
+      <description>We introduce $\mathsf{AmCMSO}$, an extension of counting monadic second-order logic ($\mathsf{CMSO}$) with predicates that refer to minimum- and maximum-value satisfying assignments. We establish fixed-parameter tractable model-checking meta-theorems for $\mathsf{AmCMSO}_1$ on graphs of bounded clique-width and for $\mathsf{AmCMSO}_2$ on graphs of bounded treewidth. These meta-theorems yield fixed-parameter tractable algorithms for several bilevel graph optimization problems, including interdiction and preassignment problems for solution uniquification, as well as algorithms for maximizing the diversity of optimal solutions without parameterizing by the optimum value. In contrast, allowing an optimality predicate to depend on an external set variable makes model checking hard for every level of the polynomial hierarchy, even on trees of fixed depth.</description>
+    </item>
+    <item>
+      <title>A Canonical m-Atomic Decomposition of Bipartite Graphs via a Grid Model</title>
+      <link>http://arxiv.org/abs/2608.20051v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.20051v1</guid>
+      <pubDate>Thu, 20 Aug 2026 13:50:24 +0000</pubDate>
+      <description>We study finite, connected, simple bipartite graphs in a grid model, in which a graph is drawn as a rectangular array and its structure is read off from empty subrectangles, called holes. In this model we attach to every brick a numerical invariant, its characteristic m, the difference between the number of rows and the largest proper independent set. A brick is excessive if m &gt; 0. Our main results concern this invariant. We determine the characteristic of a disconnected excessive brick from those of its components, showing that m = min_i min{m_i, imb(W_i)} while the imbalance is additive; and we prove that an m-excessive brick is m-extendable, that is, every matching of size m extends to a maximum matching. Since Plummer's notion of n-extendability is defined only for graphs carrying a perfect matching, and our proof nowhere uses balance, the characteristic extends that notion canonically to unbalanced bipartite graphs. Using the characteristic we partition bipartite graphs into eleven structural classes. The underlying decomposition into atomic blocks is the classical decomposition into elementary components, and the description of the maximum proper independent sets by ideals of the block poset is likewise classical; the paper states precisely which results are classical and are not claimed here. What the grid model adds is a single geometric framework in which holes, characteristics and the block triangular form are read off from one picture.</description>
+    </item>
+    <item>
+      <title>Palette Sparsification for General Uniform Hypergraphs</title>
+      <link>http://arxiv.org/abs/2608.19623v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.19623v1</guid>
+      <pubDate>Thu, 20 Aug 2026 04:16:33 +0000</pubDate>
+      <description>We prove a palette sparsification theorem for general $r$-uniform hypergraphs. For all sufficiently large $n$, every $r\ge 3$, and every $α\ge 7.1$, we show that an $n$-vertex $r$-uniform hypergraph of maximum degree $Δ$ is w.h.p. colorable from independently sampled lists of size $O(\sqrt{\log n})$ drawn from an ambient palette of size $\lceil αΔ^{1/(r-1)}\rceil$. The $\sqrt{\log n}$ dependence is asymptotically tight.</description>
+    </item>
+    <item>
+      <title>A simple and practical $o(\sqrt{n})$-time algorithm for shortest paths in power law graphs</title>
+      <link>http://arxiv.org/abs/2608.19538v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.19538v1</guid>
+      <pubDate>Thu, 20 Aug 2026 01:18:46 +0000</pubDate>
+      <description>Computing shortest paths in large graphs is, and remains, a fundamental and practically motivated problem. While many algorithms were proposed to calculate shortest path between pairs of vertices efficiently, many of them (index-based methods) require substantial preprocessing, while others (traversal-based methods) have higher time complexity. In this paper, we propose and analyze Pruned Bidirectional Search (PBS), a simple sublinear approximation algorithm for power-law graphs with parameter $β\in[2,3)$: our algorithm does not require any preprocessing, yet exhibits performance comparable to light index-based algorithms (of linear or sublinear index size): that is, PBS runs in time $O(n^{(1-1/\log\log n)/2})$ and, with high probability, returns a path with length within $\frac{41}{32}$ of the shortest path. Moreover, if one does allow a $n^{Θ(2-1/\log\log n)}$-time preprocessing step, its query time improves to $n^{Θ(1/\log\log n})$. We complement our theoretical results by experiments on both real-world and synthetic power-law graphs, which show that PBS is typically $1.84\times$-$7.76\times$ times faster than existing alternatives, while achieving an approximation ratio at most 1.05.</description>
+    </item>
+    <item>
       <title>Optimal Deterministic Fully Sparse Matrix Multiplication</title>
       <link>http://arxiv.org/abs/2608.18496v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.18496v1</guid>
@@ -675,34 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2407.10526</guid>
       <pubDate>Tue, 21 Jul 2026 00:00:00 -0000</pubDate>
       <description>We provide algorithms for the minimum 2-edge-connected spanning subgraph problem and the minimum 2-vertex-connected spanning subgraph problem with approximation ratio $\frac{9}{7}$. This improves upon a recent algorithm with ratio slightly smaller than $\frac{4}{3}$ for 2-edge-connectivity, and another one with ratio $\frac{4}{3}$ for 2-vertex-connectivity.</description>
-    </item>
-    <item>
-      <title>4/3-Approximation of Graphic TSP</title>
-      <link>https://arxiv.org/abs/2305.05411</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2305.05411</guid>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 -0000</pubDate>
-      <description>We describe a $\frac{4}{3}$-approximation algorithm for the traveling salesman problem in which the distances between points are induced by graph-theoretical distances in an unweighted graph. The algorithm is based on finding a minimum cost perfect matching on the odd degree vertices of a carefully computed 2-edge-connected spanning subgraph.</description>
-    </item>
-    <item>
-      <title>A Unified Approach for Approximating 2-Edge-Connected Spanning Subgraph and 2-Vertex-Connected Spanning Subgraph</title>
-      <link>https://arxiv.org/abs/2305.05398</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2305.05398</guid>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 -0000</pubDate>
-      <description>We provide algorithms for the minimum 2-edge-connected spanning subgraph problem and the minimum 2-vertex-connected spanning subgraph problem with approximation ratio both $\frac{4}{3}$. Using a common theme, the algorithms and their analyses are very similar.</description>
-    </item>
-    <item>
-      <title>A New Approximation Algorithm for the Minimum 2-Edge-Connected Spanning Subgraph Problem</title>
-      <link>https://arxiv.org/abs/1911.07232</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/1911.07232</guid>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 -0000</pubDate>
-      <description>We present a new approximation algorithm for the minimum 2-edge-connected spanning subgraph problem. Its approximation ratio is $\frac{4}{3}$, which matches the current best ratio. The approximation ratio of the algorithm is $\frac{6}{5}$ on subcubic graphs, which is an improvement upon the previous best ratio of $\frac{5}{4}$. The algorithm is a novel extension of the primal-dual schema, which consists of two distinct phases. Both the algorithm and the analysis are much simpler than those of the previous approaches.</description>
-    </item>
-    <item>
-      <title>Sparse Approximation by Semidefinite Programming</title>
-      <link>https://arxiv.org/abs/1702.02891</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/1702.02891</guid>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 -0000</pubDate>
-      <description>The problem of sparse approximation and the closely related compressed sensing have received tremendous attention in the past decade. Primarily studied from the viewpoint of applied harmonic analysis and signal processing, there have been two dominant algorithmic approaches to this problem: Greedy methods called the matching pursuit (MP) and the linear programming based approaches called the basis pursuit (BP). The aim of the current paper is to bring a fresh perspective to sparse approximation by treating it as a combinatorial optimization problem and providing an algorithm based on the powerful optimization technique semidefinite programming (SDP). In particular, we show that there is a randomized algorithm based on a semidefinite relaxation of the problem with performance guarantees depending on the coherence and the restricted isometry constant of the dictionary used. We then show a derandomization of the algorithm based on the method of conditional probabilities.</description>
     </item>
   </channel>
 </rss>

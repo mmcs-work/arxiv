@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Spectrum of the refined Diophantine exponent</title>
+      <link>http://arxiv.org/abs/2608.20191v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.20191v1</guid>
+      <pubDate>Thu, 20 Aug 2026 15:49:01 +0000</pubDate>
+      <description>The refined Diophantine exponent, recently introduced by the author, is a quantity that measures the periodicity of an infinite word. In this article, we study this exponent from combinatorial and topological viewpoints. First, we show that, over a ternary alphabet, the spectrum of the refined Diophantine exponent is $[1,\infty]$. Second, we show that this exponent has topological properties similar to those of the set of Liouville numbers. Finally, we provide concrete examples with the Champernowne, Rudin--Shapiro, and Thue--Morse words, words coming from coding a rotation by intervals, and bracket words.</description>
+    </item>
+    <item>
       <title>Undecidability of Confluence for Binary Length-Reducing Cycle Rewriting</title>
       <link>http://arxiv.org/abs/2608.18859v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.18859v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2501.12932</guid>
       <pubDate>Wed, 04 Mar 2026 00:00:00 -0000</pubDate>
       <description>Recently, a distributed middleware application called contract automata runtime environment (CARE) has been introduced to realise service applications specified using a dialect of finite-state automata. In this paper, we detail the formal modelling, verification and testing of CARE. We provide a formalisation as a network of stochastic timed automata. The model is verified against the desired properties with the tool Uppaal, utilising exhaustive and statistical model checking techniques. Abstract tests are generated from the Uppaal models that are concretised for testing CARE. This research emphasises the advantages of employing formal modelling, verification and testing processes to enhance the dependability of an open-source distributed application. We discuss the methodology used for modelling the application and generating concrete tests from the abstract model, addressing the issues that have been identified and fixed.</description>
-    </item>
-    <item>
-      <title>Uniform Membership for Hyperedge Replacement Grammars and Related Decision Problems</title>
-      <link>https://arxiv.org/abs/2501.08082</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2501.08082</guid>
-      <pubDate>Sat, 28 Feb 2026 00:00:00 -0000</pubDate>
-      <description>This paper investigates complexity of the uniform membership problem for hyperedge replacement grammars in comparison with other mildly context-sensitive grammar formalisms. It turns out that the complexity of this problem depends on how one defines a hypergraph. There are two commonly used definitions in the field, which differ in whether repetitions of attachment nodes of a hyperedge are allowed in a hypergraph or not. We show that, in general, the problem under consideration is EXPTIME-complete, even for string-generating hyperedge replacement grammars, but it is NP-complete if repetitions are not allowed. We extend the developed proof techniques in order to prove a general meta-theorem: checking whether a given hyperedge replacement grammar generates a hypergraph satisfying a non-Parikh property is EXPTIME-hard. Non-Parikh properties are those that are not preimages of properties on Parikh vectors of hypergraphs. This includes any graph property relying significantly on structure of graphs, e.g. connectivity, Eulerianity, Hamiltonianity, acyclicity. A tight upper bound is established for EXPTIME-compatible properties via Filter Theorem.</description>
     </item>
   </channel>
 </rss>

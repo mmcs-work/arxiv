@@ -5,6 +5,34 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Information on trajectories: martingales and random times</title>
+      <link>http://arxiv.org/abs/2608.20337v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.20337v1</guid>
+      <pubDate>Thu, 20 Aug 2026 17:59:57 +0000</pubDate>
+      <description>Accounting for information flow on the path space of trajectories of a nonnegative martingale yields exact variational identities for it, even at arbitrary random times. This recovers the widely used classical concentration inequalities, from Ville to PAC-Bayes, and measures what each one discards. The tail a bound controls is itself a relative entropy, resolved by the chain rule into per-step conditional divergences. The discarded slack has an exact form in each of three geometries: a Gibbs tilt for the Azuma-Hoeffding and PAC-Bayes bounds, the crossing itself for Ville's and for pooled tests, and a dominating certificate for the $L^p$ maximal bound. That certificate's optional-stopping deficit resolves per step into Bregman divergences of the running maximum. On a path-time space, the same identity gains one factor that prices anticipation: an arbitrary random time carries an e-process ``peeking penalty.'' The partition function can be read as a coalescent--a prefix-sharing probability of independent copies--and geometric mixtures of test martingales gain a pooling benefit for multi-model safe testing.</description>
+    </item>
+    <item>
+      <title>Algorithms, Complexity, and Entropy of the Bernard-Letac Fair-Sampling Construction</title>
+      <link>http://arxiv.org/abs/2608.20234v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.20234v1</guid>
+      <pubDate>Thu, 20 Aug 2026 16:27:57 +0000</pubDate>
+      <description>Bernard and Letac (1971) introduced a method for uniform random sampling among m outcomes from an unknown biased source of independent and identically distributed symbols. The process terminates when the multinomial coefficient of the cumulative symbol counts equals zero modulo m. This study extends the computational and information-theoretic analysis of their construction by presenting five algorithms with formal correctness guarantees and comprehensive complexity analyses. For prime m = p, the Bernard-Letac framework is analyzed in greater detail. The Rényi entropies of the source yield an exact product formula for the expected number of draws. A first-order approximation consistently overestimates this value, and the entropy lower bound is never attained. As p approaches 1, the expected cost converges to a constant greater than 1, determined by the entire source distribution. Furthermore, a seven-state automaton computes the mod-2 first-passage kernel of the binary walk, reducing the fair assignment cost from quadratic to nearly linear.</description>
+    </item>
+    <item>
+      <title>New upper bounds on covering codes K_q(n,R) for alphabets of size six and seven</title>
+      <link>http://arxiv.org/abs/2608.19872v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.19872v1</guid>
+      <pubDate>Thu, 20 Aug 2026 10:31:38 +0000</pubDate>
+      <description>We present improved upper bounds for nine entries of the standard tables of bounds on K_q(n,R), the minimum cardinality of a q-ary code of length n with covering radius R, for q in {6,7}: K_6(7,3)&lt;=232, K_6(8,3)&lt;=1045, K_6(8,4)&lt;=167, K_6(9,4)&lt;=703, K_6(9,5)&lt;=123, K_6(10,4)&lt;=2951, K_6(10,5)&lt;=610, K_7(8,4)&lt;=329, and K_7(9,4)&lt;=1743. The previous best bounds, recorded in Keri's tables (last updated 2011), all arose from general constructions (direct sums and related product rules) rather than from explicit search; to our knowledge these are the first improvements to any upper bound on K_q(n,R) with q&gt;=5 since 2011. The new bounds were found by focused local search seeded with the construction-based incumbents. All nine codes are given explicitly in the ancillary files, together with a standalone verifier; each code was checked by four independent exhaustive verification methods.</description>
+    </item>
+    <item>
+      <title>The Verification Gap in Networked Physical AI: A Post-Semantic Communication Framework</title>
+      <link>http://arxiv.org/abs/2608.19593v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.19593v1</guid>
+      <pubDate>Thu, 20 Aug 2026 03:17:20 +0000</pubDate>
+      <description>A task-effective proposal is not yet a justified physical action. In networked Physical AI, a proposal may be understood while valid, timely, proposal-bound evidence or the authority required to finalize an action remains unavailable. We call this mismatch the verification gap and introduce a Post-Semantic Communication Framework for the systems interface between proposal formation and physical execution. The framework begins with application-declared evidence requirements, represents qualifying observations as evidence records, validates supporting and conflicting records through one path, and separates evidence sufficiency from authorized finalization and a downstream runtime gate. It further distinguishes evidence transfer, which can enlarge the record set reachable by a finalizer, from evidence coordination, which can suppress transmission around records already held at the finalization endpoint. Finite-state framework checks verify that the evaluator implements the declared distinctions consistently. Under the declared model, the controlled communication study exposes a finalizer-dependent asymmetry: sender-finalized Feedback uses evidence transfer to expand evidence reachability throughout the feasible plotted region, whereas receiver-finalized Feedback uses coordination to suppress redundant payload until loss, latency, freshness, and deadline costs shift selection to One-way. Finally, an episode-level reporting schema defines common denominators for future measured Physical-AI studies.</description>
+    </item>
+    <item>
       <title>A Framework for Enterprise Network Dimensioning</title>
       <link>http://arxiv.org/abs/2608.18796v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.18796v1</guid>
@@ -675,34 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.00205</guid>
       <pubDate>Wed, 22 Jul 2026 00:00:00 -0000</pubDate>
       <description>We establish the exact exponential growth rate of the $ρ$-th moment of the constrained guesswork $G_{\mathrm{coset}}$ -- the rank of the true noise vector within its syndrome coset of a random binary linear code under i.i.d.\ Bernoulli$(p)$ noise: \( \lim_{n\to\infty} \frac{1}{n}\log_2\Eb\!\left[G_{\mathrm{coset}}^ρ\right] = ρ\,h_{\frac{1}{1+ρ}}(p)\;+\;ρ(R-1), \, ρ&gt;0, \) where $h_α(p)$ is the binary Rényi entropy and $R=k/n$ is the code rate. The exponent shifts down by exactly $ρ(1-R)$ relative to the unconstrained Arıkan--Merhav exponent, with each of the $n(1-R)$ parity checks contributing equally. Finite-length simulations confirm convergence from below. We further establish: (i)~a transfer theorem expressing the partition-function exponent in terms of an arbitrary weight-enumerator growth rate $g(δ)$; (ii)~the exact exponent for $L_n$-list (``$k$-th'') constrained guesswork; and (iii)~a sharp second-order refinement of order $ρ\log_2 n$. Beyond the binary i.i.d.\ setting, we prove a universality theorem: for any code ensemble $\mathcal{E}$ whose weight enumerator concentrates at rate $g_{\mathcal{E}}(δ)$, the guesswork exponent equals $(1+ρ)ψ_{1/(1+ρ)}(g_{\mathcal{E}})-ρ\,ψ_1(g_{\mathcal{E}})$, where $ψ_α(g)=\sup_δ[g(δ)+α\ell(δ)]$. As concrete applications, we instantiate this theorem for the $q$-ary extension, $Λ_q(ρ)=ρ\,h^{(q)}_{1/(1+ρ)}(P)+ρ(R-1)\log_2 q$, and for Gallager's regular LDPC ensemble, obtaining a closed-form guesswork exponent via an exact finite-length identity for the ensemble-average weight enumerator.</description>
-    </item>
-    <item>
-      <title>On the Separability of Information in Diffusion Models</title>
-      <link>https://arxiv.org/abs/2509.23937</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2509.23937</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 -0000</pubDate>
-      <description>Diffusion models transform noise into data by injecting information that was captured in their neural network during the training phase. In this paper, we ask: \textit{what} is this information? We find that, in pixel-space diffusion models, (1) a large fraction of the total information in the neural network is committed to reconstructing small-scale perceptual details of the image, and (2) the correlations between images and their class labels are informed by the semantic content of the images, and are largely agnostic to the low-level details. We argue that these properties are intrinsically tied to the manifold structure of the data itself. Finally, we show that these facts explain the efficacy of classifier-free guidance: the guidance vector amplifies the mutual information between images and conditioning signals early in the generative process, influencing semantic structure, but tapers out as perceptual details are filled in.</description>
-    </item>
-    <item>
-      <title>Poisson-Sampled Fréchet Means on Gaussian Information Manifolds</title>
-      <link>https://arxiv.org/abs/2508.17382</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2508.17382</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 -0000</pubDate>
-      <description>Distribution-valued marks in a spatial network live on a statistical manifold, whereas their sampling locations are governed by stochastic geometry. We develop a rigorous finite-window theory for Fréchet means sampled by a Poisson point process. The population target is the barycenter of the normalized window mark law, avoiding the typically divergent unnormalized objective on the whole space. Conditional on the Poisson count, independently marked points form an ordinary independent sample; this yields an exact zero-truncated Poissonization transform for fixed-sample risks, tails, consistency, and intrinsic central limit theorems. For geodesic-supported marks, we obtain closed-form random-count mean-square errors. For a common spatial random field, the error separates exactly into a correlation floor and a Poisson term, and stationary Gaussian fields satisfy a spatial central limit theorem with variance equal to the integrated field covariance plus a Poisson diagonal contribution. Slivnyak's theorem and Poisson splitting then give valid reduced- and non-reduced Palm laws and exact resampling and thinning formulas; the correlation floor cancels when the retained and full barycenters share the same field realization. The theory is specialized to covariance-varying Gaussian models: the full univariate Fisher--Rao manifold and the affine-invariant manifold of multivariate covariance matrices, including arbitrary noncommuting, spatially heterogeneous covariance laws. The Wasserstein discussion records the correct one-dimensional covariance barycenter and isolates its commuting flat boundary case.</description>
-    </item>
-    <item>
-      <title>Loss-Complexity Landscape and Model Structure Functions</title>
-      <link>https://arxiv.org/abs/2507.13543</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2507.13543</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 -0000</pubDate>
-      <description>We develop a framework for dualizing the Kolmogorov structure function $h_x(α)$, which then allows using computable complexity proxies. We establish a mathematical analogy between information-theoretic constructs and statistical mechanics, introducing a suitable partition function and free energy functional. We explicitly prove the Legendre-Fenchel duality between the structure function and free energy, showing detailed balance of the Metropolis kernel, and interpret acceptance probabilities as information-theoretic scattering amplitudes. A susceptibility-like variance of model complexity is shown to peak precisely at loss-complexity trade-offs interpreted as phase transitions. Practical experiments with linear and tree-based regression models verify these theoretical predictions, explicitly demonstrating the interplay between the model complexity, generalization, and overfitting threshold.</description>
-    </item>
-    <item>
-      <title>New Capacity Upper Bounds For Binary Deletion Channel</title>
-      <link>https://arxiv.org/abs/2103.11904</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2103.11904</guid>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 -0000</pubDate>
-      <description>This paper considers a binary channel with deletions. We derive two closed-form upper bounds on the capacity of the binary deletion channel (BDC). The first bound is obtained by computing the capacity of an auxiliary channel, the two-bit Fixed-length-Input BDC (FI-BDC), and showing that this auxiliary capacity upper-bounds the capacity of the BDC. The second bound is obtained by approximating the mutual information between sent and received bits directly, yielding a closed-form expression parameterized by a first-order Markov correlation parameter $γ$. Both bounds use a first-order Markov process for the channel input. We verify Theorem~1's optimization from first principles, directly from the two-bit auxiliary channel's transition matrix rather than from the mutual-information expression alone: the underlying objective is strictly concave with a unique interior maximizer, and the resulting closed-form bound is confirmed correct. The second proposed upper bound is evaluated against the Fertonani--Duman and Dalai bounds in Fig.~4.</description>
     </item>
   </channel>
 </rss>

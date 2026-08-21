@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Product Gap Mechanisms for Multi-Facility Location</title>
+      <link>http://arxiv.org/abs/2608.19633v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.19633v1</guid>
+      <pubDate>Thu, 20 Aug 2026 04:54:19 +0000</pubDate>
+      <description>We study randomized strategyproof mechanisms for locating multiple facilities on the real line. We introduce the \emph{Product-Gap mechanism}, which selects $k$ reported locations with probability proportional to the product of the consecutive gaps between them and opens facilities at the selected locations. We prove that, for every $k\geq 2$, the mechanism achieves a tight approximation ratio of $2k$ for social cost. We then study its incentive properties and show that it is strategyproof in expectation for $k=2$ and $k=3$, but is not strategyproof for $k\geq 4$. In particular, the mechanism gives strategyproof $4$- and $6$-approximations for two and three facilities, respectively. Finally, for two facilities, we combine Product-Gap with the Proportional mechanism of Lu et al. We show that an optimized report-independent mixture is strategyproof and has a tight approximation ratio of $(74+4\sqrt{3})/23\approx 3.519$ on the line, improving upon the previous factor of $4$.</description>
+    </item>
+    <item>
       <title>Planning Against Learning in Rank-1 Games</title>
       <link>http://arxiv.org/abs/2608.18067v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.18067v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2210.16506</guid>
       <pubDate>Fri, 03 Jul 2026 00:00:00 -0000</pubDate>
       <description>While Nash equilibrium has emerged as the central game-theoretic solution concept, many important games contain several Nash equilibria and we must determine how to select between them in order to create real strategic agents. Several Nash equilibrium refinement concepts have been proposed and studied for sequential imperfect-information games, the most prominent being trembling-hand perfect equilibrium, quasi-perfect equilibrium, and recently one-sided quasi-perfect equilibrium. These concepts are robust to certain arbitrarily small mistakes, and are guaranteed to always exist; however, we argue that neither of these is the correct concept for developing strong agents in sequential games of imperfect information. We define a new equilibrium refinement concept for extensive-form games called observable perfect equilibrium in which the solution is robust over trembles in publicly-observable action probabilities (not necessarily over all action probabilities that may not be observable by opposing players). Observable perfect equilibrium correctly captures the assumption that the opponent is playing as rationally as possible given mistakes that have been observed (while previous solution concepts do not). We prove that observable perfect equilibrium is always guaranteed to exist, and demonstrate that it leads to a different solution than the prior extensive-form refinements in no-limit poker. We expect observable perfect equilibrium to be a useful equilibrium refinement concept for modeling many important imperfect-information games of interest in artificial intelligence.</description>
-    </item>
-    <item>
-      <title>On the Cost of Non-Adaptivity in Matroid Prophet Inequalities</title>
-      <link>https://arxiv.org/abs/2607.02766</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.02766</guid>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 -0000</pubDate>
-      <description>Matroid prophet inequalities admit an optimal 2-competitive algorithm, which relies on adaptively updating thresholds based on previous outcomes. Motivated by applications to posted-price mechanisms and the structural simplicity of fixed-threshold policies, recent work initiated the study of non-adaptive matroid prophet inequalities. The central question is to understand how much the performance deteriorates when thresholds must be fixed in advance. We explore the fundamental limits of non-adaptive algorithms and show new structural barriers and algorithmic insights. We first identify a simple case where non-adaptive algorithms admit a lower bound strictly above $2$: for truncated partition matroids where every local partition has rank $1$, there is an instance giving a lower bound of $\approx 2.179$, and we give a non-adaptive OCRS-style algorithm that exactly matches this ratio. We then show that richer matroid structures can amplify this barrier: we obtain stronger lower bounds of $2.217$ for laminar matroids and $3$ for graphic matroids, and complement the hardness results with improved upper bounds for these matroids.</description>
     </item>
   </channel>
 </rss>

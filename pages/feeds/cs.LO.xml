@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Quantifying over Optimal MSO-Definable Sets on Graphs of Bounded Clique-Width</title>
+      <link>http://arxiv.org/abs/2608.20175v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.20175v1</guid>
+      <pubDate>Thu, 20 Aug 2026 15:28:11 +0000</pubDate>
+      <description>We introduce $\mathsf{AmCMSO}$, an extension of counting monadic second-order logic ($\mathsf{CMSO}$) with predicates that refer to minimum- and maximum-value satisfying assignments. We establish fixed-parameter tractable model-checking meta-theorems for $\mathsf{AmCMSO}_1$ on graphs of bounded clique-width and for $\mathsf{AmCMSO}_2$ on graphs of bounded treewidth. These meta-theorems yield fixed-parameter tractable algorithms for several bilevel graph optimization problems, including interdiction and preassignment problems for solution uniquification, as well as algorithms for maximizing the diversity of optimal solutions without parameterizing by the optimum value. In contrast, allowing an optimality predicate to depend on an external set variable makes model checking hard for every level of the polynomial hierarchy, even on trees of fixed depth.</description>
+    </item>
+    <item>
       <title>Undecidability of Confluence for Binary Length-Reducing Cycle Rewriting</title>
       <link>http://arxiv.org/abs/2608.18859v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.18859v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2608.06386</guid>
       <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
       <description>A provenance-decorated generative system may contain distinct occurrences with the same visible endpoint. The central abstraction question is therefore exact: when may provenance be forgotten without changing the lawful future? We study this question through the labeled transition system induced by lawful generation and an endpoint projection U from occurrences to visible objects. Three observation levels are separated. Enabled sufficiency preserves immediately available rule labels; trace sufficiency preserves all finite lawful rule-label traces; quotient sufficiency preserves the branching transition structure modulo endpoint equivalence. The resulting hierarchy is strict. At the linear-time level, endpoint trace sufficiency is exactly inclusion of endpoint equivalence in finite-trace equivalence. At the branching level, the canonical endpoint quotient is representative-independent exactly when endpoint equivalence is a strong bisimulation equivalence. Two canonical repairs follow. Intersecting endpoint equivalence with trace equivalence gives the greatest endpoint-respecting relation preserving finite traces. The greatest endpoint-respecting bisimulation gives the maximally coarse exact branching quotient and is universal among endpoint-respecting exact quotients. For finite systems it is computed by a terminating partition-refinement procedure initialized by endpoint classes. A self-contained application to provenance-decorated nested recursive-recombinant generation exhibits two occurrences with the same visible graph I-&gt;A-&gt;B but different enabled futures; the refinement procedure separates them in its first round. The result replaces an all-or-nothing demand to retain provenance with an exact criterion for retaining only the distinctions that remain behaviorally operative.</description>
-    </item>
-    <item>
-      <title>Inference-Behaviour Semantics for All$^\ast$ Connectives in Two-Dimensional Sequent Calculi</title>
-      <link>https://arxiv.org/abs/2607.19419</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.19419</guid>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 -0000</pubDate>
-      <description>Inference-behaviour semantics (I-bS) is a new approach to proof-theoretic semantics, grounded in two inferentialist principles: (1) the use of an expression in reasoning determines its meaning, and (2) a connective is defined by its operational rules. I-bS operationalises these ideas by measuring the syntactic use of a connective in the proof of its definability, against a substructurally minimal derivability relation. I-bS thereby gives the meaning of a connective in terms of its semantic clause, i.e. minimal substructural rule pair. This paper validates and verifies I-bS by applying it to all $10,816$ connective rule pairs that can be formulated in two-dimensional sequent calculi using at most two premiss sequents and at most two active formulae. As a result, we find semantic clauses for exactly $21$ meaningful connectives, namely bottom, top, two negations (intuitionistic and dual-intuitionistic), group and lattice conjunction, disjunction and implication, as well as their converses and inverses. We use these results to precisely map the semantic interrelations among the connectives, across linear, classical, intuitionistic, dual-intuitionistic, minimal, and lattice logic. Most notably, we find that intuitionistic negation, disjunction and implication each capture half of the meaning of their classical counterparts.</description>
     </item>
   </channel>
 </rss>

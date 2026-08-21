@@ -5,6 +5,20 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Broadcast Domination Number is at Most Twice the Multipacking Number</title>
+      <link>http://arxiv.org/abs/2608.20036v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.20036v1</guid>
+      <pubDate>Thu, 20 Aug 2026 13:43:04 +0000</pubDate>
+      <description>For a graph $ G = (V, E) $ with a vertex set $ V $ and an edge set $ E $, a function $ f : V \rightarrow \{0, 1, 2, . . . , diam(G)\} $ is called a \emph{broadcast} on $ G $. For each vertex $ u \in V $, if there exists a vertex $ v $ in $ G $ (possibly, $ u = v $) such that $ f (v) &gt; 0 $ and $ d(u, v) \leq f (v) $, then $ f $ is called a dominating broadcast on $ G $. The cost of the dominating broadcast $f$ is the quantity $ \sum_{v\in V}f(v) $. The minimum cost of a dominating broadcast is the broadcast domination number of $G$, denoted by $ γ_{b}(G) $. A multipacking is a set $ M \subseteq V $ in a graph $ G = (V, E) $ such that for every vertex $ v \in V $ and for every integer $ r \geq 1 $, the ball of radius $ r $ around $ v $ contains at most $ r $ vertices of $ M $, that is, there are at most $ r $ vertices in $ M $ at a distance at most $ r $ from $ v $ in $ G $. The multipacking number of $ G $ is the maximum cardinality of a multipacking of $ G $ and is denoted by $ mp(G) $. It is known that $mp(G)\leqγ_b(G)$. In 2014, Hartnell and Mynhardt proved that $γ_b(G)\leq 3mp(G)-2$ whenever $mp(G)\geq2$. In 2019, Beaudou, Brewster, and Foucaud improved this bound to $γ_b(G)\leq 2 mp(G)+3$ and conjectured that $γ_b(G)\leq 2 mp(G)$. We solve their conjecture by proving that $γ_b(G)\leq 2 mp(G)$ for every graph $G$. Our proof is constructive and yields a polynomial-time $2$-approximation algorithm for Maximum Multipacking problem which improves the earlier approximation factor $2+o(1)$.</description>
+    </item>
+    <item>
+      <title>Palette Sparsification for General Uniform Hypergraphs</title>
+      <link>http://arxiv.org/abs/2608.19623v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.19623v1</guid>
+      <pubDate>Thu, 20 Aug 2026 04:16:33 +0000</pubDate>
+      <description>We prove a palette sparsification theorem for general $r$-uniform hypergraphs. For all sufficiently large $n$, every $r\ge 3$, and every $α\ge 7.1$, we show that an $n$-vertex $r$-uniform hypergraph of maximum degree $Δ$ is w.h.p. colorable from independently sampled lists of size $O(\sqrt{\log n})$ drawn from an ambient palette of size $\lceil αΔ^{1/(r-1)}\rceil$. The $\sqrt{\log n}$ dependence is asymptotically tight.</description>
+    </item>
+    <item>
       <title>Completing the Boundary Case of the Mahmoodian-Mirzakhani Conjecture and 117 New Computational 5-Cycle Decompositions of Complete Tripartite Graphs</title>
       <link>http://arxiv.org/abs/2608.17227v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.17227v1</guid>
@@ -689,20 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2604.05146</guid>
       <pubDate>Fri, 26 Jun 2026 00:00:00 -0000</pubDate>
       <description>For a graph $G$, the \emph{equitable chromatic number} of $G$, denoted by $χ_e(G)$, is the smallest integer $k$ such that $G$ admits a proper $k$-coloring whose color classes differ in size by at most one. We prove that for every $ζ&gt;41/2$, there exists a constant $c=c(ζ)\in\mathbb{N}$ such that every bipartite graph $G$ with maximum degree $Δ(G)\ge c$ and $|V(G)|\ge ζΔ(G)$ satisfies $χ_e(G)\le \left\lceilΔ(G)/2\right\rceil+1$. The leading term $Δ(G)/2$ in this bound is best possible for upper bounds stated solely in terms of $Δ(G)$ for bipartite graphs. Our proof yields an $O(|V(G)|^2)$-time algorithm for constructing such a coloring.</description>
-    </item>
-    <item>
-      <title>Unbent collections of non-planar $s$-grid-drawing</title>
-      <link>https://arxiv.org/abs/2606.27501</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.27501</guid>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 -0000</pubDate>
-      <description>In a recent paper, Antić et al.~studied collections of planar orthogonal drawings of a graph where every edge is unbent in at least one drawing. This paper generalizes this concept to non-planar drawings, and shows that then two drawings always suffice (for planar drawings three drawings are sometimes needed). The results can also be generalized to $s$-grid drawings for $s\geq 3$.</description>
-    </item>
-    <item>
-      <title>How Long Can the Escaping Ant Be Confined?</title>
-      <link>https://arxiv.org/abs/2606.26677</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2606.26677</guid>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 -0000</pubDate>
-      <description>Langton's ant is a simple two-dimensional cellular automaton whose long-term behavior exhibits remarkable complexity. While it is known that the ant eventually escapes any finite connected region of the grid, the quantitative aspects of this escape remain poorly understood. In this paper, we study the escaping time of Langton's ant, defined as the maximum number of steps the ant can perform within a finite connected domain before leaving it. We establish general upper bounds on the escaping time as a function of the domain size, and derive improved bounds for rectangular domains. In particular, we obtain a factorial upper bound for square domains via an inductive decomposition argument. We also obtain linear upper bounds for rectangular domains of height two and three via a column-by-column analysis. More generally, for rectangular domains with a fixed height, we establish a polynomial upper bound in the number of columns. These results are complemented by exact values computed through an optimized simulation algorithm that exploits the geometric symmetries of the grid and employs a backtracking branching strategy to avoid exhaustive search over all color configurations. We also provide lower-bound constructions, proving that the linear upper bounds for rectangular domains of heights two and three are asymptotically optimal.</description>
     </item>
   </channel>
 </rss>

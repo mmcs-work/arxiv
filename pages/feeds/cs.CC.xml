@@ -5,6 +5,13 @@
     <link>https://mmcs-work.github.io/single-author-arxiv-cs</link>
     <description>Single-author arXiv papers.</description>
     <item>
+      <title>Quantifying over Optimal MSO-Definable Sets on Graphs of Bounded Clique-Width</title>
+      <link>http://arxiv.org/abs/2608.20175v1</link>
+      <guid isPermaLink="true">http://arxiv.org/abs/2608.20175v1</guid>
+      <pubDate>Thu, 20 Aug 2026 15:28:11 +0000</pubDate>
+      <description>We introduce $\mathsf{AmCMSO}$, an extension of counting monadic second-order logic ($\mathsf{CMSO}$) with predicates that refer to minimum- and maximum-value satisfying assignments. We establish fixed-parameter tractable model-checking meta-theorems for $\mathsf{AmCMSO}_1$ on graphs of bounded clique-width and for $\mathsf{AmCMSO}_2$ on graphs of bounded treewidth. These meta-theorems yield fixed-parameter tractable algorithms for several bilevel graph optimization problems, including interdiction and preassignment problems for solution uniquification, as well as algorithms for maximizing the diversity of optimal solutions without parameterizing by the optimum value. In contrast, allowing an optimality predicate to depend on an external set variable makes model checking hard for every level of the polynomial hierarchy, even on trees of fixed depth.</description>
+    </item>
+    <item>
       <title>Structure and Complexity of 2-Nilpotent Mal'cev Algebras</title>
       <link>http://arxiv.org/abs/2608.18917v1</link>
       <guid isPermaLink="true">http://arxiv.org/abs/2608.18917v1</guid>
@@ -696,13 +703,6 @@
       <guid isPermaLink="true">https://arxiv.org/abs/2607.08908</guid>
       <pubDate>Thu, 09 Jul 2026 00:00:00 -0000</pubDate>
       <description>In a binary polynomial optimization problem (BPO, in short) we are maximizing a multilinear polynomial expression depending on n binary variables. This is a hard optimization class, containing many NP-hard problems, including unconstrained quadratic binary optimization. Several tractable special classes were considered in the literature, including problems with bounded tree-width (Crama, Hansen, Jaumard, 1990), Berge-acyclic problems (Buchheim, Crama, and Heck, 2019), $β$-acyclic problems (Del Pia and Di Gregorio, 2022, 2023), limited reach problems (Clausen, Crama, Lusby, Rodríguez, and Ropke, 2024), and $α$-acyclic problems with bounded rank (Del Pia and Khajavirad, 2025). We focus on a general variable elimination scheme for BPO, and develop the unique explicit multi-linear polynomial form for the equivalent BPO problem obtained after the elimination of a given subset of the variables. The obtained closed form representation of such an equivalent BPO problem allows us to characterize new special classes for which this elimination method, when applied recursively, provides a computationally efficient solution. Our approach is elementary1, algebraic, and provides efficient solution to a wide problem class that properly generalizes all of the above mentioned tractable special cases.</description>
-    </item>
-    <item>
-      <title>Minimum Edge-Outerplanar Embeddings are Polynomial-Time Computable</title>
-      <link>https://arxiv.org/abs/2607.08110</link>
-      <guid isPermaLink="true">https://arxiv.org/abs/2607.08110</guid>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 -0000</pubDate>
-      <description>We prove that the minimum edge-outerplanarity of a planar graph can be computed in polynomial time, resolving an open problem of Bentz (2009). The proof was initially produced by GPT~5.5 Pro and then verified and polished manually.</description>
     </item>
   </channel>
 </rss>
